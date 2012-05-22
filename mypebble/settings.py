@@ -15,7 +15,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_pyscopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'mypebble_cms',                      # Or path to database file if using sqlite3.
         'USER': 'pebble',                      # Not used with sqlite3.
         'PASSWORD': 'pebble',                  # Not used with sqlite3.
@@ -31,11 +31,15 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Chicago'
+TIME_ZONE = 'Europe/London'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-gb'
+
+LANGUAGES = [
+    ('en', 'English'),
+]
 
 SITE_ID = 1
 
@@ -99,10 +103,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 
-#    'cms.middleware.multilingual.MultilingualURLMiddleware',
-#    'cms.middleware.page.CurrentPageMiddleware',
-#    'cms.middleware.user.CurrentUserMiddleware',
-#    'cms.middleware.toolbar.ToolbarMiddleware',
+    'cms.middleware.multilingual.MultilingualURLMiddleware',
+    'cms.middleware.page.CurrentPageMiddleware',
+    'cms.middleware.user.CurrentUserMiddleware',
+    'cms.middleware.toolbar.ToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'mypebble.urls'
@@ -125,11 +129,11 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 
 INSTALLED_APPS = (
-#   'cms', #django CMS itself
-#   'mptt', #utilities for implementing a modified pre-order traversal tree
-#   'menus', #helper for model independent hierarchical website navigation
-#   'south', #intelligent schema and data migrations
-#   'sekizai', #for javascript and css management
+   'cms', #django CMS itself
+   'mptt', #utilities for implementing a modified pre-order traversal tree
+   'menus', #helper for model independent hierarchical website navigation
+   'south', #intelligent schema and data migrations
+   'sekizai', #for javascript and css management
 
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -165,3 +169,8 @@ LOGGING = {
         },
     }
 }
+
+CMS_TEMPLATES = (
+    ('template_1.html', 'Template One'),
+    ('template_2.html', 'Template Two'),
+)
