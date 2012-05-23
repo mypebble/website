@@ -1,12 +1,19 @@
 {% load cms_tags sekizai_tags %}
 <html>
   <head>
-      {% render_block "css" %}
+	{% render_block "css" %}
+       	<link href="{{ STATIC_URL }}css/mypebble.css" />
   </head>
   <body>
-      {% cms_toolbar %}
-      {% placeholder base_content %}
-      {% block base_content%}{% endblock %}
-      {% render_block "js" %}
+	{% cms_toolbar %}
+
+	{% block primary %}
+
+
+
+
+	{% endblock primary %}
+      
+	{% render_block "js" %}
   </body>
 </html>

@@ -17,7 +17,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'mypebble_cms',                      # Or path to database file if using sqlite3.
-        'USER': 'pebble',                      # Not used with sqlite3.
+        'USER': 'pebble',                     	     # Not used with sqlite3.
         'PASSWORD': 'pebble',                  # Not used with sqlite3.
         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
@@ -55,11 +55,6 @@ USE_L10N = True
 # Example: "/home/media/media.lawrence.com/media/"
 MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
 MEDIA_URL = "/media/"
-
-# URL that handles the media served from MEDIA_ROOT. Make sure to use a
-# trailing slash.
-# Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = ''
 
 # Absolute path to the directory static files should be collected to.
 STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
@@ -115,6 +110,7 @@ TEMPLATE_DIRS = (
 # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
   # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_PATH, 'templates'),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -135,6 +131,15 @@ INSTALLED_APPS = (
    'south', #intelligent schema and data migrations
    'sekizai', #for javascript and css management
 
+
+#'cms.plugins.file'
+#'cms.plugins.flash'
+#'cms.plugins.googlemap'
+#'cms.plugins.link'
+#'cms.plugins.picture'
+#'cms.plugins.teaser'
+#'cms.plugins.text'
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -142,7 +147,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -172,5 +177,6 @@ LOGGING = {
 
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
-    ('template_2.html', 'Template Two'),
+    ('home.html', 'Home Template'),
+    #('template_2.html', 'Template Two'),
 )

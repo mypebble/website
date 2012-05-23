@@ -1,0 +1,41 @@
+/*!
+ * mypebble.co.uk
+ * Workarounds for IE7, IE8
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+/* Fix vertical padding between boxes */
+.row {
+    *margin-bottom: 20px; /* for IE7 only */
+}
+
+/* Adding rounded corners and shadows using http://css3pie.com/  */
+.box {
+	box-shadow: 3px 3px 3px #ccc; /* doesn't support rgba(0,0,0,0.2), hence solid colour */
+	behavior: url(js/PIE.htc);
+	}
+.header,
+.btn,
+.tabs,
+.callout {
+	behavior: url(js/PIE.htc);
+	}
+.nav a,
+.subnav a {
+	behavior: url(js/PIE.htc);
+	position: relative; /* required to work in IE8 */
+	}
+.nav .btn {
+    margin-left: 5px; /* restores margin and centers text in Log In button in IE7 */
+}
+
+/* Compensating for CSS3PIE side-effects */
+css3-container:first-child + .grid1,
+css3-container:first-child + .grid2,
+.box css3-container:first-child + .grid1,
+.box css3-container:first-child + .grid2 {
+	margin-left: 0; 
+	/* CSS3PIE causes grid1:first-child selector to no longer work, which breaks the layout. This uses the workaround on http://css3pie.com/forum/viewtopic.php?f=3&t=77 */
+	}
