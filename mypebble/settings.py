@@ -57,7 +57,7 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
 MEDIA_URL = "/media/"
 
 # Absolute path to the directory static files should be collected to.
-STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
+STATIC_ROOT = os.path.join(PROJECT_PATH, "another-static/")
 STATIC_URL = "/static/"
 ADMIN_MEDIA_PREFIX = "/static/admin/"
 
@@ -71,6 +71,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_PATH, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -131,15 +132,14 @@ INSTALLED_APPS = (
    'south', #intelligent schema and data migrations
    'sekizai', #for javascript and css management
 
-
-#'cms.plugins.file'
-#'cms.plugins.flash'
-#'cms.plugins.googlemap'
-#'cms.plugins.link'
-#'cms.plugins.picture'
-#'cms.plugins.teaser'
-#'cms.plugins.text'
-
+    'cms.plugins.file',
+    #'cms.plugin.flash',
+    'cms.plugins.googlemap',
+    'cms.plugins.link',
+    'cms.plugins.picture',
+    'cms.plugins.teaser',
+    
+    'cms.plugins.text',  #text plugin
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -178,5 +178,10 @@ LOGGING = {
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
     ('home.html', 'Home Template'),
-    #('template_2.html', 'Template Two'),
+    ('product.html', 'Product Template'),
+    ('support.html', 'Support Template'),
+	('support_document.html', 'Support document Template'),
+    ('contact.html', 'Contact Template'),
+    ('login.html', 'Login Template'),
+   
 )

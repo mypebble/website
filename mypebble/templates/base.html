@@ -1,19 +1,192 @@
 {% load cms_tags sekizai_tags %}
+{% load menu_tags %}
+<!DOCTYPE html>
 <html>
   <head>
 	{% render_block "css" %}
-       	<link href="{{ STATIC_URL }}css/mypebble.css" />
-  </head>
-  <body>
-	{% cms_toolbar %}
+       <meta name="description" content="Description"/>
+        <meta name="keywords" content="Keywords"/>
+        <meta name="author" content="Pebble"/>
+                
+        <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+            <script src="js/html5.js"></script>
+            <![endif]-->
 
-	{% block primary %}
+        <!-- Styles -->
+        <!--[if ! lte IE 6]><!-->
+        <link href="{{ STATIC_URL }}css/mypebble.css" rel="stylesheet"/>
+        <!--<link href="css/mypebble-print.css" rel="stylesheet" media="print"/> -->
+        <!--<![endif]-->
+        <!--[if lte IE 6]>
+            <link rel="stylesheet" href="css/ie6.1.1.css" media="screen, projection">
+            <![endif]-->
+        <!--[if (gt IE 6) & (lt IE 9)]>
+            <style type="text/css">@import "css/mypebble-ie.css";</style>
+            <![endif]-->
+
+       	
+	{# <link href="{{ STATIC_URL }}css/bootstrap-responsive.css" rel="stylesheet" /> #}
+
+  </head>
+
+<body>
+
+	{% cms_toolbar %}
+{# Header #}
+ <body class="home">
+
+        <nav id="skiplinks">
+            <ul>
+                <li><a href="#body">Jump to Content</a></li>
+                <li><a href="#nav">Jump to Navigation</a></li>
+                <li><a href="#login">Jump to Login</a></li>
+                <li><a href="#footer">Jump to Footer</a></li>
+                <li><a href="accessibility.html">Accessibility Statement</a></li>
+            </ul>
+            <hr class="visuallyhidden"/>
+        </nav>
+        <div class="header">
+            <div class="container">
+                <div class="brand"><ul>
+
+</ul>
+
+                    <a href="home.html"><img src="{{ STATIC_URL }}img/logo-pebble.gif" alt="Pebble"/></a>
+                </div>
+                <div class="nav" id="nav">
+{% load menu_tags %}
+<ul>
+    {% show_menu 0 100 100 100  %}
+<li class="login"><a href="login.html" class="btn" id="login">Log in</a></li>
+<!--<li class="login"><a href="login.html" class="btn" id="login">Log in</a></li>-->
+</ul>
+
+                   <!-- <ul>
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li class="fm"><a href="fm.html">Fund Manager</a></li>
+                        <li class="ft"><a href="ft.html">Fund Tracker</a></li>
+                        <li class="sff"><a href="sff.html">School Fund Finder</a></li>
+                        <li class="support"><a href="support.html">Support</a></li>
+                        <li class="enquiries"><a href="enquiries.html">Get in touch</a></li>
+                        <li class="login"><a href="login.html" class="btn" id="login">Log in</a></li>
+                    </ul>-->
+                </div>
+            </div><!--/.container-->
+        </div><!--/.header--> 
+
+
+{# BODY #}
+ <div class="body" id="body">
+            <div class="container">
+               
+        {% block primary %}    
+	 	
+  
 
 
 
 
 	{% endblock primary %}
-      
+                </div>
+</div>
+
+
+{# FOOTER #}
+<div class="footer" id="footer">
+            <div class="container">
+                <h2 class="visuallyhidden">Footer</h2>
+                <div class="column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="/fm">Fund Manager</a></li>
+                        <li><a href="/ft">Fund Tracker</a></li>
+                        <li><a href="/ff">School Fund Finder</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="/support/fm">Fund Manager</a></li>
+                        <li><a href="/support/fm7">School Fund Manager v7</a></li>
+                        <li><a href="/support/ft">Fund Tracker</a></li>
+                        <li><a href="/supprt/ff">School Fund Finder</a></li>
+                        <li><a href="/downloads">Downloadable resources</a></li>
+                        <li><a href="https://getsatisfaction.com/pebble" target="_blank">Pebble Support Community</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>About us</h3>
+                    <ul>
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">The Pebble story</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="/development">Developers</a></li>
+                        <li><a href="#">Blog</a></li>
+			<li><a href="/newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Contact us</h3>
+                    <div class="vcard">
+                        <div class="fn org visuallyhidden">Pebble Ltd</div>
+                        <address class="adr">
+                            <div class="street-address">Media Exchange Three</div>
+                            <div>Coquet Street</div>
+                            <div class="locality">Newcastle upon Tyne</div>
+                            <div class="postal-code">NE1 2QB</div>
+                            <div class="country-name visuallyhidden">United Kingdom</div>
+                        </address>
+                        <div>We're Available: Mon - Fri | 8:30am - 5.30pm</div>
+                        <div class="tel">
+                            <span class="type">Sales</span>: <span class="value">0845 310 1788</span>
+                        </div>
+                        <div class="tel">
+                            <span class="type">Support</span>: <span class="value">0845 310 1788</span>
+                        </div>
+                        <div class="tel">
+                            <span class="type">Fax</span>: <span class="value">0845 310 1777</span>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:info@talktopebble.co.uk">info@talktopebble.co.uk</a>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:support@talktopebble.co.uk">support@talktopebble.co.uk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3>Connect with us</h3>
+                    <ul>
+                        <li><a href="https://twitter.com/#!/PebbleSFF" target="_blank">Follow us on Twitter</a></li>
+                        <li><a href="https://www.facebook.com/pages/Pebble/217743878280547" target="_blank">Pebble on Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="nav-meta">
+                    <ul>
+                        <li>&copy; Pebble 2012</li>
+                        <li><a href="/security">Security</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
+                        <li><a href="/accessibility">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <p><a href="support.html">We&rsquo;re on hand to <em>help!</em></a></p>
+                </div>
+            </div><!--/.container--> 
 	{% render_block "js" %}
+        
+        <!-- Modals
+            ================================================== -->
+        
+        <!-- Javascript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="{{ STATIC_URL }}js/jquery-1.7.1.js" type="text/javascript"></script>
+        <script src="{{ STATIC_URL }}js/bootstrap.js" type="text/javascript"></script>
+        <script src="{{ STATIC_URL }}js/mypebble.js" type="text/javascript"></script>
+
+
   </body>
 </html>
