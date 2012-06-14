@@ -2,6 +2,7 @@ syntax: glob
 
 *.pyc
 *~
+*.orig
 
 lib
 bin
@@ -11,4 +12,3 @@ build
 
 mypebble/build
 mypebble/foobar/lib/*
-
