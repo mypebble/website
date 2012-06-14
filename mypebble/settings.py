@@ -139,7 +139,7 @@ INSTALLED_APPS = (
     'cms.plugins.link',
     'cms.plugins.picture',
     'cms.plugins.teaser',
-    
+
     'cms.plugins.text',  #text plugin
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -188,5 +188,5 @@ CMS_TEMPLATES = (
     ('login.html', 'Login Template'),
 
     ('misc.html', 'Misc Template')
-   
+
 )
