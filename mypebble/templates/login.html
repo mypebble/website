@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+
+{% block primary %}
+<div class="login">
+ <div class="body" id="body">
+
+                <div class="row titlerow">
+                    
+                </div>
+                <div class="row">
+                    <h1>Log in</h1>
+                    <p>Please select your product</p>
+                </div>
+                <div class="row productchoice">
+                    <div class="box grid1 fm">
+                        <div class="box-inner">
+                            <h2 class="title"><a href="content-support.html">Fund Manager</a></h2>
+                            <div class="description">
+                                <p>The latest browser-based version of our acclaimed accountancy package</p>
+                            </div>
+                            <div class="loginbox">
+                                <form action="/login/" method="post" id="login-form-fm">
+                                    <h3>Log in to Fund Manager</h3>
+                                    <label for="id_username">Email</label>
+                                    <div class="alert alert-warning errorlist hide">
+                                        <ul class="errorlist">
+                                            <li>This field is required</li>
+                                        </ul>
+                                    </div>
+                                    <input class="email" type="email" size="30" name="email" placeholder="Email address" id="id_email"/>
+                                    <label for="id_password">Password</label>
+                                    <div class="alert alert-warning errorlist hide">
+                                        <ul class="errorlist">
+                                            <li>This field is required</li>
+                                            <li>Another error</li>
+                                        </ul>
+                                    </div>
+                                    <input class="password" type="password" size="20" name="password" placeholder="Password" id="id_password"/>
+                                    <input type="submit" value="Log in" class="btn"/>
+                                    <input type="hidden" value="/" name="next"/>
+                                    <p class="form-help"><a href="#">Forgot your login?</a> &bull; <a href="#">Help</a></p>
+                                </form>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="box grid1 ft">
+                        <div class="box-inner">
+                            <h2 class="title"><a href="content-support.html">Fund Tracker</a></h2>
+                            <div class="description">
+                                <p>Online payments and fund tracking for parents and organisation members</p>
+                            </div>
+                            <div class="loginbox">
+                                <form action="/login/" method="post" id="login-form-fm">
+                                    <h3>Log in to Fund Tracker</h3>
+                                    <label for="id_username">Email</label>
+                                    <div class="alert alert-warning errorlist hide">
+                                        <ul class="errorlist">
+                                            <li>This field is required</li>
+                                        </ul>
+                                    </div>
+                                    <input class="email" type="email" size="30" name="email" placeholder="Email address" id="id_email"/>
+                                    <label for="id_password">Password</label>
+                                    <div class="alert alert-warning errorlist hide">
+                                        <ul class="errorlist">
+                                            <li>This field is required</li>
+                                            <li>Another error</li>
+                                        </ul>
+                                    </div>
+                                    <input class="password" type="password" size="20" name="password" placeholder="Password" id="id_password"/>
+                                    <input type="submit" value="Log in" class="btn"/>
+                                    <input type="hidden" value="/" name="next"/>
+                                    <p class="form-help"><a href="#">Forgot your login?</a> &bull; <a href="#">Help</a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box grid1 sff">
+                        <div class="box-inner">
+                            <h2 class="title"><a href="content-support.html">School Fund Finder</a></h2>
+                            <div class="description">
+                                <p>School Fund Finder is the superb grants and funding database.</p>
+                            </div>
+                            <div class="loginbox">
+                                <form action="/login/" method="post" id="login-form-fm">
+                                    <h3>Log in to School Fund Finder</h3>
+                                    <label for="id_username">Email</label>
+                                    <div class="alert alert-warning errorlist hide">
+                                        <ul class="errorlist">
+                                            <li>This field is required</li>
+                                        </ul>
+                                    </div>
+                                    <input class="email" type="email" size="30" name="email" placeholder="Email address" id="id_email"/>
+                                    <label for="id_password">Password</label>
+                                    <div class="alert alert-warning errorlist hide">
+                                        <ul class="errorlist">
+                                            <li>This field is required</li>
+                                            <li>Another error</li>
+                                        </ul>
+                                    </div>
+                                    <input class="password" type="password" size="20" name="password" placeholder="Password" id="id_password"/>
+                                    <input type="submit" value="Log in" class="btn"/>
+                                    <input type="hidden" value="/" name="next"/>
+                                    <p class="form-help"><a href="#">Forgot your login?</a> &bull; <a href="#">Help</a></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.container-->    
+        </div><!--/.body-->
+     </div>
+
+{% endblock %} 
+

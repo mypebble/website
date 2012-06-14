@@ -267,9 +267,7 @@ a:hover {
 .box.fm {
   background-color: #4cc5f4;
 }
-.box.ft {
-  background-color: #82cd65;
-}
+
 .box.sff {
   background-color: #f9a534;
 }
@@ -282,17 +280,14 @@ a:hover {
   line-height: 23px;
 }
 /* White Pebble logo in coloured boxes */.box.fm,
-.box.ft,
 .box.sff {
   background-image: url('../img/logo-white.png');
   background-position: 239px 20px;
   background-repeat: no-repeat;
 }
 .box.fm .title,
-.box.ft .title,
 .box.sff .title,
 .box.fm p,
-.box.ft p,
 .box.sff p {
   padding-right: 41px;
 }
@@ -300,13 +295,11 @@ a:hover {
 .home .box.ft,
 .home .box.sff {
   background-image: url('../img/logo-white-small.png');
-  background-position: 249px 20px;
+  background-position: 255px 15px;
 }
 .home .box.fm .title,
-.home .box.ft .title,
 .home .box.sff .title,
 .home .box.fm p,
-.home .box.ft p,
 .home .box.sff p {
   padding-right: 31px;
 }
@@ -315,10 +308,7 @@ a:hover {
 .fm .content h2 {
   color: #00aeed;
 }
-.ft .box .title,
-.ft .content h2 {
-  color: #4fb948;
-}
+
 .sff .box .title,
 .sff .content h2 {
   color: #f8a632;
@@ -390,13 +380,11 @@ a:hover {
   right: 0;
 }
 .fm .hero {
-  background-color: #4cc5f4;
+  background-color: #4cc5f4 !important;
 }
-.ft .hero {
-  background-color: #82cd65;
-}
+
 .sff .hero {
-  background-color: #f9a534;
+  background-color: #f9a534 !important;
 }
 /* Hero box on homepage has some different styles */
 .home .hero {
@@ -428,9 +416,7 @@ a:hover {
 .fm .box.calltoaction {
   background-color: #4cc5f4;
 }
-.ft .box.calltoaction {
-  background-color: #82cd65;
-}
+
 .sff .box.calltoaction {
   background-color: #f9a534;
 }
@@ -554,15 +540,7 @@ a:hover {
 .fm .tabs .callout {
   background: #4cc5f4;
 }
-.ft .tabs li {
-  width: 156px;
-}
-.ft .tabs .active-tab:before {
-  left: 71px;
-}
-.ft .tabs .callout {
-  background: #82cd65;
-}
+
 .sff .tabs li {
   width: 133px;
 }
@@ -585,8 +563,8 @@ a:hover {
 }
 .titlerow .loginbox .close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 2px;
+  right: 8px;
 }
 .titlerow .loginbox.box .title {
   margin-bottom: 18px;
@@ -648,10 +626,7 @@ a:hover {
 .fm .loggedinbox {
   background-color: #4cc5f4;
 }
-.ft .loginbox,
-.ft .loggedinbox {
-  background-color: #82cd65;
-}
+
 .sff .loginbox,
 .sff .loggedinbox {
   background-color: #f9a534;
@@ -752,10 +727,7 @@ a:hover {
 .subnav .active.fm a {
   background-color: #4cc5f4;
 }
-.nav .active.ft a,
-.subnav .active.ft a {
-  background-color: #82cd65;
-}
+
 .nav .active.sff a,
 .subnav .active.sff a {
   background-color: #f9a534;
@@ -2043,44 +2015,7 @@ table {
 .fm .titlerow .loginbtn:hover {
   background: #0ea9e5;
 }
-.ft .box.calltoaction-secondary .btn,
-.ft .titlerow .loginbtn {
-  background-color: #82cd65;
-  background-color: #75c856;
-  background-image: -moz-linear-gradient(top, #82cd65, #63c13f);
-  background-image: -ms-linear-gradient(top, #82cd65, #63c13f);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#82cd65), to(#63c13f));
-  background-image: -webkit-linear-gradient(top, #82cd65, #63c13f);
-  background-image: -o-linear-gradient(top, #82cd65, #63c13f);
-  background-image: linear-gradient(top, #82cd65, #63c13f);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#82cd65', endColorstr='#63c13f', GradientType=0);
-  border-color: #63c13f #63c13f #45872c;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-.ft .box.calltoaction-secondary .btn:hover,
-.ft .titlerow .loginbtn:hover,
-.ft .box.calltoaction-secondary .btn:active,
-.ft .titlerow .loginbtn:active,
-.ft .box.calltoaction-secondary .btn.active,
-.ft .titlerow .loginbtn.active,
-.ft .box.calltoaction-secondary .btn.disabled,
-.ft .titlerow .loginbtn.disabled,
-.ft .box.calltoaction-secondary .btn[disabled],
-.ft .titlerow .loginbtn[disabled] {
-  background-color: #63c13f;
-}
-.ft .box.calltoaction-secondary .btn:active,
-.ft .titlerow .loginbtn:active,
-.ft .box.calltoaction-secondary .btn.active,
-.ft .titlerow .loginbtn.active {
-  background-color: #4f9a32 \9;
-}
-.ft .box.calltoaction-secondary .btn:hover,
-.ft .titlerow .loginbtn:hover {
-  background: #59ad38;
-}
+
 .sff .box.calltoaction-secondary .btn,
 .sff .titlerow .loginbtn {
   background: #f9a534;

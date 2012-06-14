@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block primary %}
+ <div class="support">
+        
+        <div class="body" id="body">
+           
+                <div class="row titlerow">
+                    <div class="title"><a href="support.html"><img class="logo" src="{{ STATIC_URL }}img/logo/support_logo.png" alt="Support"/></a><div class="pull-right"{% placeholder "support_product" or %}{% endplaceholder %}</div></div>
+                </div>
+                
+                <div class="row">
+                    <h1>{% placeholder "support_title" or %}{% endplaceholder %}</h1>
+                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box grid2">
+                            <div class="box-inner">
+                                <h2>We're justifiably famous for our support</h2>
+                                <p>A license for any of our products entitles you to lifetime support from our friendly in-house team. Depending on your requirements and service level, this can be via telephone, email, or our online customer forum, or you can grant us access to your system to solve your problem while you are working.</p>
+                                <h2>Frequently asked questions</h2>
+
+                                <h3><a href="content-support2.html"><img class="pull-left" src="{{ STATIC_URL }}img/40x40.gif" alt=""/>
+{% placeholder "support_decriptin_1h" or %} {% endplaceholder %}</a></h3>
+
+                                <p>{% placeholder "support_description_1p" or %}{% endplaceholder %}</p>
+                                <h3><a href="content-support2.html"><img class="pull-left" src="{{ STATIC_URL }}img/40x40.gif" alt=""/>{% placeholder "support_decriptin_2h" or %} {% endplaceholder %}</a></h3>
+                                <p>{% placeholder "support_description_2p" or %}{% endplaceholder %}</p>
+                                <h3><a href="content-support2.html"><img class="pull-left" src="{{ STATIC_URL }}img/40x40.gif" alt=""/>{% placeholder "support_decriptin_3h" or %} {% endplaceholder %}</a></h3>
+                                <p>{% placeholder "support_description_3p" or %}{% endplaceholder %}</p>
+                                <h2>Other tutorials</h2>
+
+                                <ul>
+                                    {% placeholder "other_tutorials" or %} {% endplaceholder %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="support supportbox onlinesupportbox box grid1">
+                            <div class="box-inner">
+                                <h2 class="title">We're available</h2>
+                                <div class="description">
+                                    <p>
+                                        <i class="i icon-community-white"></i> <a href="#">Pebble support community</a><br/>
+                                        <i class="i icon-email-white"></i> <a href="mailto:support@talktopebble.co.uk">support@talktopebble.co.uk</a><br/>
+                                        <i class="i icon-twitter-white"></i> <a href="#">@PebbleSFM</a><br/>
+                                        <i class="i icon-phone-white"></i> 0845 310 1788<br/>
+                                        <i class="i icon-blank"></i><small>Mon – Fri 8:30am – 5.30pm</small>
+                                    </p>
+                                </div>
+                                <form action="https://secure.logmeinrescue.com/Customer/Code.aspx" method="post" id="logmein-form">
+                                    <h2 class="title">Online support 
+					<i class="i icon-help-white" title="Logmein remote support explanation" rel="tooltip"></i></h2>
+                                    <label for="pin">Enter your 6-digit PIN code:</label>
+                                    <div class="alert alert-warning errorlist hide">
+                                        <ul class="errorlist">
+                                            <li>This field is required</li>
+                                        </ul>
+                                    </div>
+                                    <input class="pin" type="text" size="20" name="Code" id="Code"/>
+                                    <input type="submit" value="Connect" class="btn"/>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="supportcommunitybox box grid1">
+                            <div class="box-inner">
+                                <h2 class="title">Pebble Support Community</h2>
+                                <div class="description">
+                                    <ul>
+                                        <li><a href="#">Manage year-end procedures painlessly</a></li>
+                                        <li><a href="#">Create a fully transparent audit trail</a></li>
+                                        <li><a href="#">Cloud-based software – nothing to install</a></li>
+                                    </ul>
+                                </div>
+                                <form action="/getsatisfaction/" method="post" id="getsatisfaction-form">
+                                    <label for="search_support" class="hide">Search support community</label>
+                                    <input class="search-support" type="search" size="20" name="search_support" id="search_support" placeholder="Search support community"/>
+                                    <input type="submit" value="Search" class="btn"/>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div><!--/.container-->    
+        
+
+ {% endblock %} 
+

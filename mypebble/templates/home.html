@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block primary %}
+
+
+<div class="home">
+                <div class="row titlerow ">
+                   <h1 class="title">{% placeholder "strapline" or %}{% endplaceholder %}</h1>
+                </div>
+                <div class="row">
+
+                    <div class="box grid3 hero ">
+                        <div class="box-inner">
+                            <div class="image">{% placeholder "hero_image" or %}
+                              {% endplaceholder %}
+                            </div>
+                            <div class="text" >
+                              <h2 class="title">{% placeholder "hero" or%} We specialise in smart accountancy software that help schools and other organisations save time and money.</h2>
+                                <div class="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>{% endplaceholder %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="row">
+                    <div class="box grid1 fm">
+                        <div class="box-inner">
+                            <h2 class="title"><a href="fm">Fund Manager</a>  - make keeping track of voluntary income simplicity itself</h2>
+                            <div class="description">
+                                <p>Our accountancy package dedicated to managing voluntary funds</p>
+                                <ul>
+                                    <li>Manage year-end procedures painlessly</li>
+                                    <li>Create a fully transparent audit trail</li>
+                                    <li>Pay using credit or debit card</li>
+				    <li>Create a fully transparent audit trail</li>
+                                </ul>
+                            </div>
+                            <div class="footerimage">
+
+                                <a href="fm"><img alt="Fund Manager" src="{{ STATIC_URL }}img/screens-in-illustration_web2_01.png"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box grid1 sff">
+                        <div class="box-inner">
+                            <h2 class="title"><a href="sff">School Fund Finder</a> - search for free grants for your school</h2>
+                            <div class="description">
+                                <p>Our accountancy package dedicated to managing voluntary funds</p>
+                                <ul>
+                                    <li>Manage year-end procedures painlessly</li>
+                                    <li>Create a fully transparent audit trail</li>
+                                    <li>Cloud-based software – nothing to install</li>
+				    <li>Create a fully transparent audit trail</li>
+				    
+                                </ul>
+                            </div>
+                            <div class="footerimage">
+                                <a href="fm"><img alt="Scholl Fund Finder" src="{{ STATIC_URL }}img/screens-in-illustration_web2_01.png"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid1">
+                        <div class="box support">
+                            <div class="box-inner">
+                                <h2 class="title">Underpinned by our unparalelled <a href="support">Support</a></h2>
+                                <div class="description">
+                                    <p>A license for any of our products entitles you to lifetime support from our friendly in-house team and lively user community</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+{% placeholder "Feedback" or %}
+                    <div class="box">
+                        <div class="grid2">
+                            <h2 class="title">From our satisfied customers</h2>
+                            <div class="row">
+                                <div class="grid1 testimonial">
+                                    <blockquote>
+                                        <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                        <small>Name, occupation, organisation</small>
+                                    </blockquote>
+                                </div>
+                                <div class="grid1 testimonial">
+                                    <blockquote>
+                                        <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                        <small>Name, occupation, organisation</small>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid1">
+                            <h2 class="title">Latest news</h2>
+                            <div class="description">
+                                <ul>
+                                    <li><a href="#">News item. Lorem ipsum dolor sit amet</a></li>
+                                    <li><a href="#">News item. Lorem ipsum dolor sit amet</a></li>
+                                    <li><a href="#">News item. Lorem ipsum dolor sit amet</a></li>
+                                </ul>
+                                <p><a href="#">Read more on our blog</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>{% endplaceholder %}
+
+                <div class="row">
+                    <div class="box grid3 team">
+                        <img class="team-image" alt="alt text" src="{{ STATIC_URL }}img/940x220.gif"/>
+                        <div class="text">
+                            <h2>Brought to you, and supported every day, by our dedicated team in the North</h2>
+                            <p><a href="#">The Pebble story</a></p>
+                        </div>
+                    </div>
+                </div>
+  </div>
+ {% endblock %} 
+

@@ -1,0 +1,14 @@
+syntax: glob
+
+*.pyc
+*~
+
+lib
+bin
+include
+local
+build
+
+mypebble/build
+mypebble/foobar/lib/*
+

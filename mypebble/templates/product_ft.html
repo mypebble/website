@@ -1,0 +1,267 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% page_attribute "meta_decription" %}
+{% page_attribute "meta_keywords" %}
+
+
+{% block primary %}
+   <div class="producthome ft"> 
+     <div class="body" id="body">
+                <div class="row titlerow">
+                    <h1 class="title"><img class="logo" src="{{ STATIC_URL}}img/logo/ft_logo.png" alt="Fund Tracker"/> Convenient online payments and fund tracking</h1>
+                    <a class="btn loginbtn" href="#">Log in</a>
+                    <div class="loginbox box grid1 hide" id="ft-loginbox">
+                        <a class="close">×</a>
+                        <form action="/login/" method="post" id="login-form-ft">
+                            <h2 class="title">Log in to Fund Tracker</h2>
+                            <label for="id_username">Email</label>
+                            <div class="alert alert-warning errorlist hide">
+                                <ul class="errorlist">
+                                    <li>This field is required</li>
+                                </ul>
+                            </div>
+                            <input class="email" type="email" size="30" name="email" placeholder="Email address" id="id_email"/>
+                            <label for="id_password">Password</label>
+                            <div class="alert alert-warning errorlist hide">
+                                <ul class="errorlist">
+                                    <li>This field is required</li>
+                                    <li>Another error</li>
+                                </ul>
+                            </div>
+                            <input class="password" type="password" size="20" name="password" placeholder="Password" id="id_password"/>
+                            <input type="submit" value="Log in" class="btn"/>
+                            <input type="hidden" value="/" name="next"/>
+                            <p class="form-help"><a href="#">Forgot your login?</a> &bull; <a href="#">Help</a></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box grid3 hero tabbed carousel slide" id="productCarousel">
+                        <div class="tabs">
+                            <ul>
+                                <li class="active-tab"><a href="#item1">Overview</a></li>
+                                <li><a href="#item2">Personalised Offers</a></li>
+                                <li><a href="#item3">Transaction History</a></li>
+                                <li><a href="#item4">Online Payments</a></li>
+                                <li><a href="#item5">Customer Support</a></li>
+                                <li><a href="#item6">User Community</a></li>
+                            </ul>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="active item" id="item1">
+                                <div class="image">
+                                    <img src="{{ STATIC_URL}}img/ft/ft_dashboard2.png" alt="Screenshot"/>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title">Track your voluntary payments online, for parents and organisation members</h2>
+                                    <div class="description">
+                                        <p>Pebble Fund Tracker lets parents and members of voluntary organisations such as PTAs, churches and clubs effortlessly pay online for school dinners, trips, uniforms, membership fees and much more.</p>
+                                        <h3>Key benefits</h3>
+                                        <ul>
+                                            <li>See your full transaction history, whether you pay cash or online</li>
+                                            <li>Pay online using credit or debit card</li>
+                                            <li>Receive personalised offers</li>
+                                            <li>Backed by <a href="fm.html">Fund Manager</a>, the proven accountancy package from Pebble</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="item2">
+                                <div class="image">
+                                    <img src="{{ STATIC_URL}}img/300x305.gif" alt="Screenshot"/>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title">Personalised Offers</h2>
+                                    <div class="description">
+                                        <p>Description</p>
+                                        <h3>Key benefits</h3>
+                                        <ul>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="item3">
+                                <div class="image">
+                                    <img src="{{ STATIC_URL}}img/ft/ft_reports.png" alt="Screenshot"/>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title">Transaction History</h2>
+                                    <div class="description">
+                                        <p>Description</p>
+                                        <h3>Key benefits</h3>
+                                        <ul>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="item4">
+                                <div class="image">
+                                    <img src="{{ STATIC_URL}}img/ft/ft_payment.png" alt="Screenshot"/>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title">Online Payments</h2>
+                                    <div class="description">
+                                        <p>Description</p>
+                                        <h3>Key benefits</h3>
+                                        <ul>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="item5">
+                                <div class="image">
+                                    <img src="{{ STATIC_URL}}img/300x305.gif" alt="Screenshot"/>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title">Customer Support</h2>
+                                    <div class="description">
+                                        <p>Description</p>
+                                        <h3>Key benefits</h3>
+                                        <ul>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" id="item6">
+                                <div class="image">
+                                    <img src="{{ STATIC_URL}}img/300x305.gif" alt="Screenshot"/>
+                                </div>
+                                <div class="text">
+                                    <h2 class="title">User Community</h2>
+                                    <div class="description">
+                                        <p>Description</p>
+                                        <h3>Key benefits</h3>
+                                        <ul>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                            <li>Benefits</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control left" href="#productCarousel" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box grid2 calltoaction">
+                            <div class="box-inner">
+                                <h2 class="title">Sign up now!</h2>
+                                <div class="description">
+                                    <p>If your school, PTA, church or other organisation is using Pebble, you can start using it to track your payments or pay online, today.</p>
+                                    <a class="btn btn-large btn-calltoaction">Register <i class="i icon-arrow-r-white"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box grid2 calltoaction-secondary">
+                            <div class="box-inner">
+                                <h2 class="title">Like to know more?</h2>
+                                <div class="description">
+                                    <p>Book a free online demo by calling <strong>0845 310 1788</strong> or contact us for more information</p>
+                                    <a class="btn btn-calltoaction">Talk to us <i class="i icon-arrow-r"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box grid1">
+                            <div class="box-inner">
+                                <h2 class="title">Advice and support</h2>
+                                <div class="description">
+                                    <p>Got a question or need help? Head over to <a href="#">Fund Tracker Support</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box grid1">
+                            <div class="box-inner">
+                                <a href="#"><img class="box-img" src="{{ STATIC_URL}}img/40x60.gif" alt=""/></a>
+                                <h2 class="title">Fund Tracker brochure</h2>
+                                <div class="description">
+                                    <p>Everything you need to know in a two page summary</p>
+                                    <p><a href="#">Download PDF</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box grid1">
+                            <div class="box-inner">
+                                <img class="box-img" src="{{ STATIC_URL}}img/40x40.gif" alt=""/>
+                                <h2 class="title">Fund Tracker on Twitter</h2>
+                                <div class="description">
+                                    <p>Follow <a href="#">@PebbleFT</a> for product offers, news and support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box grid3">
+                            <h2 class="title">Praise for Fund Tracker</h2>
+                            <div class="row">
+                                <div class="grid1 testimonial">
+                                    <blockquote>
+                                        <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                        <small>Name, occupation, organisation</small>
+                                    </blockquote>
+                                </div>
+                                <div class="grid1 testimonial">
+                                    <blockquote>
+                                        <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                        <small>Name, occupation, organisation</small>
+                                    </blockquote>
+                                </div>
+                                <div class="grid1 testimonial">
+                                    <blockquote>
+                                        <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                        <small>Name, occupation, organisation</small>
+                                    </blockquote>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box grid3 calltoaction-secondary recommend-promo">
+                        <div class="box-inner">
+                            <h2 class="title">Recommend Fund Tracker</h2>
+                            <div class="description">
+                                <p>Wish your child's school, or a voluntary organisation you belong to, used Fund Tracker? Let us help you make the case!</p>
+                                <form action="/recommend/" method="post" id="recommend-form-fm" class="form-inline">
+                                    <label for="target">Help me convince:</label>
+                                    <select id="target">
+                                        <option value="audience1" selected>My child's school</option>
+                                        <option value="audience2">Audience2</option>
+                                        <option value="audience3">Audience3</option>
+                                        <option value="audience4">Audience4</option>
+                                        <option value="audience5">Audience5</option>
+                                    </select>
+                                    <input type="submit" value="Make the case" class="btn"/>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div><!--/.container-->    
+        </div><!--/.body-->
+  
+      {% endblock %} 
+

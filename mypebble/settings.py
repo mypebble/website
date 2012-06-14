@@ -178,10 +178,14 @@ LOGGING = {
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
     ('home.html', 'Home Template'),
-    ('product.html', 'Product Template'),
+    ('product_fm.html', 'Product FM Template'),
+    ('product_ff.html', 'Product FF Template'),
     ('support.html', 'Support Template'),
-	('support_document.html', 'Support document Template'),
+	('support_product.html', 'Support Product Template'),
+	('support_document.html', 'Support Document Template'),
     ('contact.html', 'Contact Template'),
     ('login.html', 'Login Template'),
+
+    ('misc.html', 'Misc Template')
    
 )
