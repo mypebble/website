@@ -6,7 +6,7 @@ PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 # Django settings for mypebble project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -140,7 +140,7 @@ INSTALLED_APPS = (
     'cms.plugins.link',
     'cms.plugins.picture',
     'cms.plugins.teaser',
-    
+
     'cms.plugins.text',  #text plugin
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -189,5 +189,5 @@ CMS_TEMPLATES = (
     ('login.html', 'Login Template'),
 
     ('misc.html', 'Misc Template')
-   
+
 )
