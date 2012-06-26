@@ -188,5 +188,6 @@ CMS_TEMPLATES = (
     ('login.html', 'Login Template'),
 
     ('misc.html', 'Misc Template')
-
 )
+
+CMS_SEO_FIELDS = True

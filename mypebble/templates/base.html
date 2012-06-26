@@ -1,13 +1,13 @@
 {% load cms_tags sekizai_tags %}
 {% load menu_tags %}
-
+{% render_block "css" %}
 <!DOCTYPE html>
 <html>
   <head>
-	{% render_block "css" %}
-       <meta name="description" content="Description"/>
-        <meta name="keywords" content="Keywords"/>
-        <meta name="author" content="Pebble"/>
+
+    <title>{% page_attribute page_title %}</title>
+    <meta name="description" content="{% page_attribute meta_description %}"/>
+    <meta name="keywords" content="{% page_attribute meta_keywords %}"/>
         
         <!-- HTML5 shim, for IE6-8 support of HTML elements -->
         <!--[if lt IE 9]>
