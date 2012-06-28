@@ -187,7 +187,8 @@ CMS_TEMPLATES = (
     ('contact.html', 'Contact Template'),
     ('login.html', 'Login Template'),
 
-    ('misc.html', 'Misc Template')
+    ('misc.html', 'Misc Template'),
+    ('about.html', 'About Template')
 )
 
 CMS_SEO_FIELDS = True

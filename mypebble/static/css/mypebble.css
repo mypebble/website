@@ -698,16 +698,26 @@ a:hover {
   line-height: 1;
 }
 .nav UL,
-.subnav UL {
+.subnav UL,
+.team UL {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 .nav li,
-.subnav li {
+.subnav li,
+.team li {
   float: left;
   line-height: 1;
 }
+
+.team span {
+display:block;
+text-align: center;
+background-color:#CCC;}
+
+.team li{ margin:12px; margin-bottom:5px; line-height:25px;}
+
 .nav a,
 .subnav a {
   display: block;
