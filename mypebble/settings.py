@@ -139,7 +139,7 @@ INSTALLED_APPS = (
     'cms.plugins.link',
     'cms.plugins.picture',
     'cms.plugins.teaser',
-
+    
     'cms.plugins.text',  #text plugin
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -177,7 +177,6 @@ LOGGING = {
 }
 
 CMS_TEMPLATES = (
-    ('template_1.html', 'Template One'),
     ('home.html', 'Home Template'),
     ('product_fm.html', 'Product FM Template'),
     ('product_ff.html', 'Product FF Template'),
@@ -188,7 +187,10 @@ CMS_TEMPLATES = (
     ('login.html', 'Login Template'),
 
     ('misc.html', 'Misc Template'),
-    ('about.html', 'About Template')
+    ('about.html', 'About Template'),
+    ('upgrade.html', 'Upgrade Template'),
+    ('testpage.html', 'Test template'),
+    
 )
 
 CMS_SEO_FIELDS = True

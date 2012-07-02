@@ -7,9 +7,10 @@
 <html>
   <head>
   {% render_block "css" %}
-    <link rel="icon" href="favicon" />
+    <link rel="icon" href="{{ STATIC_URL }}img/favicon.png " />
 
     <title>{% page_attribute page_title %}</title>
+    
     <meta name="description" content="{% page_attribute meta_description %}"/>
     <meta name="keywords" content="
 pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 pebble, schoolfund, school fund, school fund finder, schoolfundfinder,fund, finder, fund school, fundschool, fund software,fund finder, school fund software, school fund finder, fundmanager, manager, fund manager, fund manager school, school fund manager, schoolfundmanager, software, school, schools, organisations, SFM, FM, FMv8, SFF, FF {% page_attribute meta_keywords %}"/>
@@ -133,13 +134,8 @@ $(function() {
 });
 </script>
 </head>
-
 <body>
-
-
- <div class="body" id="body">
-
-
+    <div class="body" id="body">
 {# Header #}
         <nav id="skiplinks">
             <ul>
@@ -155,36 +151,22 @@ $(function() {
             <div class="container">
                 <div class="brand">
                     <a href="/home/"><img src="{{ STATIC_URL }}img/logo/logo-pebble.gif" alt="Pebble"/></a>
-                    
-
                 </div>
                 <div class="nav" id="nav">
-			{% load menu_tags %}
-				<ul>
+				    <ul>
     					{% show_menu 0 100 100 100 %}
-				</ul>
+				    </ul>
                 </div>
             </div><!--/.container-->
         </div><!--/.header--> 
-
-
+        
 {# BODY #}
-
-
-            <div class="container">
-        {% block primary %}    
-	 	
-  
-
-
-
-
-	{% endblock primary %}
-                </div>
-</div>
+        <div class="container">{% block primary %}{% endblock primary %}
+        </div>
+    </div>
 
 {# FOOTER #}
-<div class="footer" id="footer">
+    <div class="footer" id="footer">
             <div class="container">
                 <h2 class="visuallyhidden">Footer</h2>
                 <div class="column">
@@ -210,7 +192,7 @@ $(function() {
                         <li><a href="/about/">The Pebble Story</a></li>
                         <li><a href="/development/">Developers</a></li>
                         <li><a href="http://talktopebble.wordpress.com/" target="_blank">Blog</a></li>
-			<li><a href="/newsletter/">Newsletter</a></li>
+			            <li><a href="/newsletter/">Newsletter</a></li>
                     </ul>
                 </div>
                 <div class="column">
@@ -261,9 +243,7 @@ $(function() {
                 <div class="help">
                     <p><a href="/support/">We&rsquo;re on hand to <em>help!</em></a></p>
                 </div>
-            </div><!--/.container--> 
-
-	{% render_block "js" %}
+         </div><!--/.container--> 
         
         <!-- Modals
             ================================================== -->
@@ -271,6 +251,7 @@ $(function() {
         <!-- Javascript
             ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
+          {% render_block "js" %}
         <script src="{{ STATIC_URL }}js/jquery-1.7.1.js" type="text/javascript"></script>
         <script src="{{ STATIC_URL }}js/bootstrap.js" type="text/javascript"></script>
         <script src="{{ STATIC_URL }}js/mypebble.js" type="text/javascript"></script>

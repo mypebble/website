@@ -4,12 +4,12 @@
 {% page_attribute "meta_decription" %}
 {% page_attribute "meta_keywords" %}
 
-
 {% block primary %}
-   <div class="producthome fm"> 
-                <div class="row titlerow">
-
-                    <h1 class="title "><img class="logo" src="{{ STATIC_URL }}img/logo/fm_logo.png" alt="Fund Manager"/>{% placeholder "strapline" or %} {% endplaceholder %}</h1>
+<div class="producthome fm"> 
+    <div class="body" id="body">
+        <div class="container"> 
+        <div class="row titlerow">
+            <h1 class="title "><img class="logo" src="{{ STATIC_URL }}img/logo/fm_logo.png" alt="Fund Manager"/>{% placeholder "strapline" or %} {% endplaceholder %}</h1> 
                     <a class="btn loginbtn" href="#">Log in</a>
                     <div class="loginbox box grid1 hide" id="fm-loginbox">
                         <a class="close">×</a>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="row">
-                   {% placeholder "features" or %}
+                    
                     <div class="box grid3 hero tabbed carousel slide" id="productCarousel">
                         <div class="tabs">
                             <ul>
@@ -53,7 +53,7 @@
                         <div class="carousel-inner">
                             <div class="active item" id="item1">
                                 <div class="image">
-                                    <img src="{{ STATIC_URL }}img/fm/fm_dashboard.png" alt="Screenshot"/>
+                                    <img src="{{ STATIC_URL }}img/fm/fm_dashboard.png" alt="Fund Manager Dashboard"/>
                                 </div>
                                 <div class="text">
                                     <h2 class="title">Make keeping track of voluntary funds simplicity itself</h2>
@@ -70,7 +70,7 @@
                             </div>
                             <div class="item" id="item2">
                                 <div class="image">
-                                    <img src="{{ STATIC_URL }}img/fm/fm_receipt.png" alt="Screenshot"/>
+                                    <img src="{{ STATIC_URL }}img/fm/fm_receipt.png" alt="Receipts and Payments"/>
                                 </div>
                                 <div class="text">
                                     <h2 class="title">Receipts & Payments</h2>
@@ -87,10 +87,10 @@
                             </div>
                             <div class="item" id="item3">
                                 <div class="image">
-                                    <img src="{{ STATIC_URL }}img/fm/fm_transaction.png" alt="Screenshot"/>
+                                    <img src="{{ STATIC_URL }}img/fm/fm_transaction.png" alt="View all transactions"/>
                                 </div>
                                 <div class="text">
-                                    <h2 class="title">Transaction History</h2>
+                                    <h2 class="title">Transactional History</h2>
                                     <div class="description">
                                         <p>Fund Manager is an accountancy package dedicated to managing voluntary funds. Used and trusted by over 00,000 schools and other organisations since 199x</p>
                                         <h3>Key benefits</h3>
@@ -104,7 +104,7 @@
                             </div>
                             <div class="item" id="item4">
                                 <div class="image">
-                                    <img src="{{ STATIC_URL }}img/300x305.gif" alt="Screenshot"/>
+                                    <img src="img/300x305.gif" alt="Screenshot"/>
                                 </div>
                                 <div class="text">
                                     <h2 class="title">Graphic Reports</h2>
@@ -121,7 +121,7 @@
                             </div>
                             <div class="item" id="item5">
                                 <div class="image">
-                                    <img src="{{ STATIC_URL }}img/300x305.gif" alt="Screenshot"/>
+                                    <img src="img/300x305.gif" alt="Screenshot"/>
                                 </div>
                                 <div class="text">
                                     <h2 class="title">Names Database</h2>
@@ -155,7 +155,7 @@
                             </div>
                             <div class="item" id="item7">
                                 <div class="image">
-                                    <img src="{{ STATIC_URL }}img/300x305.gif" alt="Screenshot"/>
+                                    <img src="img/300x305.gif" alt="Screenshot"/>
                                 </div>
                                 <div class="text">
                                     <h2 class="title">Pebble Offers</h2>
@@ -175,7 +175,6 @@
                         <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
                     </div>
                 </div>
-{% endplaceholder %}
                 <div class="row">
                     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid2 calltoaction">
@@ -202,7 +201,6 @@
                     </div>
                 </div>
                 <div class="row">
-{% placeholder "feedback_02" or %}
                     <div class="box grid3">
                             <h2 class="title">Fund Manager for&hellip;</h2>
                             <div class="row">
@@ -254,7 +252,6 @@
                         </div>
                     </div>
                 </div>
-{% endplaceholder %}
                 <div class="row">
                     <div class="box grid3 calltoaction-secondary recommend-promo">
                         <div class="box-inner">
@@ -278,6 +275,6 @@
                 </div>
                 
             </div><!--/.container-->    
-
+        </div><!--/.body-->   
       {% endblock %} 
 
