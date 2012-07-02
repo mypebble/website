@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block primary %}
+
+<div class="">
+    <div class="body" id="body">
+        <div class="row">
+            <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
+                <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                    <div class="box grid2 ">
+                        <div class="box-inner">
+                            {% placeholder "main_content" or %} {% endplaceholder %} 
+                        </div>
+                    </div> 
+                </div>
+                    <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="supportcommunitybox box grid1">
+                            <div class="box-inner">
+                                <h2 class="title">{% placeholder "side_secondary_h" or %}{% endplaceholder %}</h2>
+                                    <div class="description">
+                                        {% placeholder "side_secondary_p" or %} {% endplaceholder %}
+                                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row fm">
+        <div class="box grid3 calltoaction-secondary recommend-promo ">
+            <div class="box-inner">
+                <h2 class="title">Upgrade to Fund Manager</h2>
+                    <div class="description"> Let us help you make the case!</p>
+                            <form action="/recommend/" method="post" id="recommend-form-fm" class="form-inline">
+                                <label for="target">Help me convince:</label>
+                                    <select id="target">
+                                        <option value="audience1" selected>My bursar</option>
+                                        <option value="audience2">Audience2</option>
+                                        <option value="audience3">Audience3</option>
+                                        <option value="audience4">Audience4</option>
+                                        <option value="audience5">Audience5</option>
+                                    </select>
+                                        <input type="submit" value="Make the case" class="btn"/>
+                            </form>
+                    </div>
+           </div>
+         </div>
+     </div>
+    </div>        
+</div>
+{% endblock %} 

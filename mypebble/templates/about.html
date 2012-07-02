@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block primary %}
+
+<div class="enquiries">
+        <div class="body" id="body">
+                <div class="row">
+                    <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
+                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box grid2">
+                            <div class="box-inner">
+                                {% placeholder "main_content" or %} {% endplaceholder %} 
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="supportcommunitybox box grid1">
+                            <div class="box-inner">
+                                <h2 class="title">{% placeholder "side_secondary_h" or %}{% endplaceholder %}</h2>
+                                <div class="description">
+                            {% placeholder "side_secondary_p" or %} {% endplaceholder %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="box supportfocus carousel " id="supportCarousel">
+                        <h2 class="title">The Pebble team</h2>
+                            <div class="carousel-inner">
+                                <div class="active item">
+                                    <div class="support-portrait team">
+                                       <h4>Support</h4>
+                                            <ul>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                           </ul>                                     
+                                   </div>
+                                </div>
+                                <div class="item">
+                                    <div class="support-portrait team">
+                                       <h4>Development</h4>
+                                            <ul>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                           </ul>                         
+                                    </div>
+                                </div>
+                                 <div class="item">
+                                    <div class="support-portrait team">
+                                       <h4>Development</h4>
+                                            <ul>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                           </ul>                         
+                                    </div>
+                                </div> 
+                                <div class="item">
+                                    <div class="support-portrait team">
+                                       <h4>Development</h4>
+                                            <ul>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif" width="200"><span>Support Name</span></li>
+                                           </ul>                         
+                                    </div>
+                                </div>                                
+                        <a class="carousel-control left" href="#supportCarousel" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#supportCarousel" data-slide="next">&rsaquo;</a>
+                    </div>
+                </div>
+</div>
+ {% endblock %} 
+
