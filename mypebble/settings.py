@@ -191,6 +191,8 @@ CMS_TEMPLATES = (
     ('upgrade.html', 'Upgrade Template'),
     ('testpage.html', 'Test template'),
     
+    ('home_mob.html', 'Home Mob Template'),
+    
 )
 
 CMS_SEO_FIELDS = True
