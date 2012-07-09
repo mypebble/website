@@ -1,0 +1,76 @@
+/*!
+ * mypebble.co.uk
+ * Grid and box system
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+.box {
+	position: relative;
+    padding: 12px @gridPaddingWidth;
+    margin-bottom: @gridGutterWidth;
+    .border-radius(5px);
+    .box-shadow(3px 3px 3px rgba(0,0,0,0.2)); // semitransparent shadow
+    .clearfix();
+    background: #fff;
+/* More .box styles in .boxes.less */
+}
+
+.grid1,
+.grid2,
+.grid3 {
+    float: left; // grid modules always stack horizontally
+}
+.grid1 {
+	@width: @gridColumnWidth;
+    width: @width; // 300px
+    margin-left: @gridGutterWidth;
+    /*background: pink;*/
+    &.box {
+	    width: @width - (@gridPaddingWidth * 2); // box.gridx width compensates for padding // 260px
+	}
+}
+.grid2 {
+	@width: (@gridColumnWidth * 2) + @gridGutterWidth;
+    width: @width; // 620px
+    margin-left: @gridGutterWidth;
+    &.box {
+	    width: @width - (@gridPaddingWidth * 2); // box.gridx width compensates for padding // 580px
+	}
+}
+.grid3 {
+	@width: (@gridColumnWidth * 3) + @gridGutterWidth*2;
+    width: @width; // 940px
+    &.box {
+	    width: @width - (@gridPaddingWidth * 2); // box.gridx width compensates for padding // 900px
+	}
+}
+.grid2 .grid1.gridthird {
+	width: (((@gridColumnWidth * 2) - (@gridPaddingWidth * 2) + @gridGutterWidth) / 3) - @gridPaddingWidth;
+    margin-left: @gridGutterWidth;
+}
+/* Grid modules *inside* boxes need to compensate for the box's interior padding */
+.box {
+    .grid1 {
+	    width: @gridColumnWidth - (@gridPaddingWidth * 2); // 260px
+	    margin-left: @gridPaddingWidth + @gridGutterWidth + @gridPaddingWidth; // 60px
+	}
+	.grid2 {
+	    width: (@gridColumnWidth * 2) - (@gridPaddingWidth * 2) + @gridGutterWidth; // 580px
+	    margin-left: @gridPaddingWidth + @gridGutterWidth + @gridPaddingWidth; // 60px
+	}
+	.grid3 {
+	    width: (@gridColumnWidth * 3) - (@gridPaddingWidth * 2) + (@gridGutterWidth * 2); // 900px
+	}
+}
+.grid1:first-child,  /* first module in row */
+.grid2:first-child,
+.box .grid1:first-child,  /* first module in box */
+.box .grid2:first-child,
+.grid1 .grid1, /* stacked in column */
+.grid2 .grid2,  /* stacked in column */
+.grid2.content /* Content column is not always first-child; e.g. H1 comes first */ {
+    margin-left: 0; // turn off left margin for first module in row, also for modules in columns
+	/* Would be nicer to use :last-child and margin-right, but need to support IE7-8 */
+}

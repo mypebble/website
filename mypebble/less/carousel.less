@@ -1,0 +1,105 @@
+/*!
+ * mypebble.co.uk
+ * Carousel adapted from Twitter Bootstrap
+ * Using fade-in rather than slide
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+.carousel {
+  position: relative;
+  margin-bottom: @gridGutterWidth;
+  line-height: 1;
+}
+.carousel-inner {
+  position: relative;
+}
+.carousel {
+  .item {
+    display: none;
+    .opacity(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    .transition(opacity .3s linear); // mixin checks if transition is available first; not supported in IE. This transitions between opacity values (fade effect); declaration for position values is .transition(.6s ease-in-out left);
+  }
+  .image {
+	    top: -@gridPaddingWidth; // image starts from the top right corner of .box
+	    right: -@gridPaddingWidth;
+	}
+  .active,
+  .next,
+  .prev { 
+  	display: block; 
+  }
+  .active {
+    .opacity(100); // active carousel item transitions into 100% opacity
+  }
+  .next,
+  .prev,
+  .active.left,
+  .active.right {
+    .opacity(0);
+  }
+}
+.carousel .item {
+    filter: none; // this causes bad text rendering in IE7 and fade transition does not work anyway
+}
+.grid3.carousel .item {
+    width: @gridRowWidth - (@gridPaddingWidth * 2); // 900px
+}
+.grid2.carousel .item {
+    width: @gridRowWidth - (@gridPaddingWidth * 2) - @gridColumnWidth - @gridGutterWidth; // 580px
+}
+.supportfocus.carousel .item {
+    position: static; // cannot be absolute since height is variable
+}
+.supportfocus.carousel .item.next.left,
+.supportfocus.carousel .item.prev.right {
+    display: none; // necessary because not position absolute
+}
+
+// For Support carousel text elements see accordion.less
+
+
+
+
+// Left/right controls for nav
+// ---------------------------
+
+.carousel-control {
+  position: absolute;
+  z-index: @zindexPopover - 5;
+  top: 45%;
+  left: 0;
+  width: 12px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 35px;
+  color: @white;
+  text-align: center;
+  text-decoration: none;
+  background: @grayDarker;
+  border: 1px solid @white;
+  .border-radius(0 3px 3px 0);
+  border-left: 0;
+  .opacity(20);
+
+  // Reposition the right one
+  &.right {
+    left: auto;
+    right: 0;
+    .border-radius(3px 0 0 3px);
+    border-right: 0;
+  }
+
+  // Hover state
+  &:hover {
+    color: @white;
+    text-decoration: none;
+    .opacity(60);
+  }
+}

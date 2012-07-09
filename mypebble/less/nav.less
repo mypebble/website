@@ -1,0 +1,139 @@
+/*!
+ * mypebble.co.uk
+ * Navigation (header and section sub-nav menus)
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+.header {
+	position: relative; // puts shadow above body area
+    background: #fff;
+    border-bottom: 1px solid #ccc; // for when box-shadow is unsupported
+    .box-shadow(0 5px 5px #ccc);
+    .container {
+    	position: relative; // for positioning .nav
+		padding: 20px 0 15px 0;
+	}
+	.brand {
+	    margin-left: -50px; // logo overhangs to the left; grid lines up with 'pebble'
+	}
+}
+.nav,
+.subnav {
+    position: absolute;
+    right: 0;
+    top: 21px; // menu lines up with logo
+    font-size: @baseFontSize + 1px;
+    line-height: 1;
+    UL {
+		padding: 0;
+		margin: 0;
+	    list-style: none;
+	}
+	li {
+	    float: left;
+	    line-height: 1;
+	}
+	a {
+	    display: block;
+	    padding: 8px 15px;
+	    margin-left: 5px; // gap between menu items
+	    .border-radius(5px);
+	    color: @textColor;
+	    text-decoration: none;
+	}
+	.active {
+	    a {
+		    background-color: @grayLight;
+		}
+	    &.fm a {
+		    background-color: @pebbleCyanLighter;
+		}
+		&.ft a {
+		    background-color: @pebbleGreenLighter;
+		}
+		&.sff a {
+		    background-color: @pebbleOrangeLighter;
+		}
+		&.support a {
+		    background-color: @pebbleRedLighter;
+		}
+	}
+	a:focus,
+	a:hover {
+	    background-color: @grayLighter;
+	    text-decoration: none;
+	}
+}
+.subnav {
+    /* Navigation within section, e.g. School Fund Finder */ 
+    /* VERSION 1: ALONGSIDE PRODUCT LOGO [UNUSED] */
+    position: relative;
+    left: -8px; // compensate for link padding
+    top: auto;
+    right: auto;
+    font-size: @baseFontSize;
+    a {
+	    padding: 4px 10px;
+	    // margin: 0;
+	}
+	.active a {
+	    background-color: @pebbleOrangeLighter;
+	}
+	a:focus,
+	a:hover {
+	    background-color: @grayLight;
+	}
+}
+.sff .titlerow .subnav {
+    padding-left: 113px; // left padding equal to the SFF logo @ 101px wide + 12px right margin
+}
+.header.with-subnav {
+    padding-bottom: 5px; // make subnav less crowded
+}
+.header .subnav { /* VERSION 2: UNDER MAIN NAV IN HEADER */
+    position: absolute;
+    right: 81px; // width of Log In button
+    left: auto;
+    top: 55px;
+}
+
+/*  Title row: area just below header, used for product branding, strapline, sub-navigation, login button */
+.titlerow {
+	position: relative;
+	z-index: @zindexPopover; // so that IE7 can position .loginbox over rest of page
+	margin-bottom: @gridGutterWidth - 5px;
+	.logo {
+		float: left;
+	    margin-right: @gridGutterWidth;
+	    vertical-align: middle;
+	}
+	.title {
+		/* .title is sometimes an H1 (homepage and product homepages), and sometimes a DIV */
+	    height: 21px; // holds place for subnav below even if subtitle is absent
+		margin: 0;
+	    font-size: 15px;
+	    font-weight: bold;
+	    line-height: 41px;
+	}
+	/*&.with-nav .subnav {
+	    padding-right: 200px; // leave room for loggedinbox
+	}*/
+	&.with-nav .title {
+	    line-height: 21px;
+	}
+	.loginbtn {
+	    float: right;
+	    margin-top: -21px;
+        font-size: @baseFontSize + 1px;
+	}
+	/*&.with-nav .loginbtn {
+	    margin-top: -21px;
+	}*/
+}
+.home .titlerow .title {
+	margin: 0 0 @baseLineHeight 0;
+    font-size: 20px;
+    font-weight: normal;
+}

@@ -1,0 +1,449 @@
+/*!
+ * mypebble.co.uk
+ * Special boxes and modules
+ * Call-to-action boxes, hero box at top of page, tabbed box, etc.
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+.box {
+    .title {
+		margin-top: 0;
+		margin-bottom: 6px;
+	    font-size: @baseFontSize + 1;
+	    line-height: @baseLineHeight + 1;
+	}
+	.description p {
+	    margin: 6px 0;
+	}
+	.box-img {
+		/* E.g. brochure image */
+	    float: left;
+	    clear: left;
+	    max-width: 40px;
+	    margin: 0 20px 10px 0;
+	}
+    &.hero {
+	    .border-radius(10px);
+	}
+	/* Coloured boxes (on Home and Support) */
+	&.fm {
+	    background-color: @pebbleCyanLighter;
+	}
+	&.ft {
+	    background-color: @pebbleGreenLighter;
+	}
+	&.sff {
+	    background-color: @pebbleOrangeLighter;
+	}
+	&.support {
+	    background-color: @pebbleRedLighter;
+	}
+}
+
+.home .box .title,
+.productchoice .box .title {
+    font-size: @baseFontSize + 5; // 18px
+    line-height: @baseLineHeight + 5;
+}
+
+/* White Pebble logo in coloured boxes */ 
+.box.fm,
+.box.ft,
+.box.sff {
+    background-image: url('../img/logo-white.png'); // white logo without text (just 12 dots)
+    background-position: ((@gridColumnWidth - @gridPaddingWidth) - 41px) @gridPaddingWidth; // top right corner for grid1 size boxes
+    background-repeat: no-repeat;
+    .title,
+    p {
+	    padding-right: 41px; // width of logo
+	}
+}
+.home .box.fm,
+.home .box.ft,
+.home .box.sff {
+    background-image: url('../img/logo-white-small.png');
+    background-position: ((@gridColumnWidth - @gridPaddingWidth) - 31px) @gridPaddingWidth; // top right corner for grid1 size boxes
+    .title,
+    p {
+	    padding-right: 31px; // width of small logo
+	}
+}
+
+/* Product accent colours for headings inside boxes (using class on <body>) */
+.fm {
+	.box .title,
+	.content h2 {
+	    color: @pebbleCyan;
+	}
+}
+.ft {
+	.box .title,
+	.content h2 {
+	    color: @pebbleGreen;
+	}
+}
+.sff {
+	.box .title,
+	.content h2 {
+	    color: @pebbleOrange;
+	}
+}
+.support.box .title {
+    color: @textColor;
+}
+
+/* Image (e.g. screenshot) at the bottom of boxes. BORDER TREATMENT TO BE CONFIRMED  */
+.box .footerimage IMG {
+    position: relative;
+    bottom: -12px;
+    display: block;
+}
+.box .callout {
+	// used for Upgrade message
+    position: absolute;
+    right: -10px;
+    top: 5px;
+    z-index: @zindexTabs + 5;
+    .rotate(20deg);
+    .box-shadow(1px 1px 1px rgba(0,0,0,0.2)); // semitransparent shadow
+    padding: 2px 5px;
+    background: @warningBackground;
+    font-size: @baseFontSize;
+    text-transform: uppercase;
+    color: @white;
+    text-decoration: none;
+	&:hover {
+ 	   background: darken(@warningBackground, 20%);
+	}
+}
+
+/* Hero box, used on product homepages */
+.hero {
+	overflow: hidden; // keeps image inside box
+	padding-top: 20px;
+	.text {
+	    width: (@gridColumnWidth * 2) + @gridGutterWidth - (@gridPaddingWidth * 2);
+		.title {
+			font-size: 24px;
+			font-weight: normal;
+			line-height: 32px;
+		    color: @textColor;
+		}
+		.description {
+			h3,
+			p,
+			li {
+				    font-size: @baseFontSize + 1;
+				    line-height: @baseLineHeight + 1;
+				}
+			h3 {
+			    margin: @baseLineHeight 0 @baseLineHeight / 2;
+			}
+		}
+	}
+	.image {
+	    /* float: right; */ 
+	    /* image can simply be floated right, but absolute positioning lets you use the space up to the edges. It will be trimmed by the edges of .hero (overflow:hidden), and go over .tabs */
+	    position: absolute;
+	    z-index: @zindexTabs + 5; // image can overlap tabs
+	    top: 0;
+	    right: 0;
+	}
+/* For homepage slideshow styles, see carousel.less */
+}
+.fm .hero {
+    background-color: @pebbleCyanLighter;
+}
+.ft .hero {
+    background-color: @pebbleGreenLighter;
+}
+.sff .hero {
+    background-color: @pebbleOrangeLighter;
+}
+
+/* Hero box on homepage has some different styles */
+.home .hero {
+	padding-left: @gridPaddingWidth - 5px; // compensate for border
+	padding-right: @gridPaddingWidth - 5px; // compensate for border
+    border: 5px solid #fff; // homepage hero banner always has border
+    background-color: #c2e9fd; // light blue TO BE CONFIRMED IF THIS SHOULD BE CONTENT-MANAGED
+}
+
+/* Main call-to-action box on product pages */
+.box.calltoaction {
+    .title {
+		font-size: 22px;
+		font-weight: normal;
+	    color: @textColor;
+	}
+	.description p {
+	    margin-right: 150px;
+	}
+	.btn-calltoaction {
+	    float: right;
+	    margin-top: -34px; // move up by height of button
+	}
+	form {
+	    margin-bottom: 0;
+	}
+/* For button styles in call-to-action boxes, see buttons.less */
+}
+.fm .box.calltoaction {
+    background-color: @pebbleCyanLighter;
+}
+.ft .box.calltoaction {
+    background-color: @pebbleGreenLighter;
+}
+.sff .box.calltoaction {
+    background-color: @pebbleOrangeLighter;
+}
+
+/* Secondary call-to-action box on product pages */
+.box.calltoaction-secondary {
+	background-color: @gray;
+    .title {
+		font-size: 18px;
+		font-weight: normal;
+	    color: #fff;
+	}
+	.description,
+	.description label {
+	    color: #fff;
+	}
+	.description p {
+	    margin-right: 150px;
+	}
+	.btn-calltoaction {
+		float: right;
+		margin-top: -34px; // move up by height of button
+	}
+	form {
+	    margin-bottom: 0;
+	}
+/* For button styles in call-to-action boxes, see buttons.less */
+}
+
+/* Tabs underneath hero box */
+
+/* Hero box with tabs at the bottom, used on product homepages */
+.box.tabbed {
+    padding-bottom: 70px; // tabs are 50px high (46px + 2px border top & bottom)
+    min-height: 260px; // minimum area above tabs = 300px = the maximum image height before it overlaps the tabs
+/* For homepage slideshow styles, see carousel.less */
+}
+.tabs {
+    position: absolute;
+    z-index: @zindexTabs;
+    overflow: visible;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background: @gray;
+    .border-radius(0 0 8px 8px);
+    ul {
+		width: @gridRowWidth - 4px; // IE7 needs this to prevent tabs wrapping
+	    border-top: 2px solid #fff; // here for IE7
+	    background: @gray;          // here for IE7
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	    font-size: @baseFontSize;
+	}
+    li {
+	    float: left;
+	    position: relative;
+	    line-height: @baseFontSize + 2;
+	}
+	a { // the tab itself
+	    display: block;
+	    min-height: 30px; // totals to 46px for 2 lines high
+	    border-left: 1px solid #fff;
+	    padding: 7px 20px 9px 20px; // padding compensates for line-height
+	    color: #fff;
+	    text-decoration: none;
+	    .transition(background-color .3s linear); // subtle fade-in effect on tab as it changes
+	}
+	li:first-child a {
+	    border: none;
+	    .border-radius(0 0 0 8px);
+	}
+	li:last-child a {
+	    .border-radius(0 0 8px 0); // IE9+ only
+	}
+	a:hover {
+	    background-color: @grayLight;
+	    text-decoration: none;
+	    color: @textColor;
+	}
+	.active-tab:before {
+	    content: url('../img/arrow.png'); // highlight arrow (absent in IE7)
+	    position: absolute;
+	    top: -14px; // horizontal position dependent on no. of tabs; see below
+	}
+	.active-tab a {
+	    background-color: #fff;
+	    color: @textColor;
+	}
+	.callout {
+	    right: -10px;
+	    bottom: 5px;
+	    top: auto;
+	    .rotate(-20deg);
+	    padding: 2px 5px;
+	    font-size: @baseFontSize - 2;
+	    color: @textColor;
+	}
+}
+/* Adjust the variable for the number of tabs for each product in variables.less */
+.fm .tabs {
+	@tabWidth: floor((@gridRowWidth - 4px) / @numberFMTabs);
+    li {
+	    width: @tabWidth;
+	}
+	.active-tab:before {
+	    left: (@tabWidth / 2) - 7px; // center highlight arrow above tab
+	}
+	.callout {
+	    background: @pebbleCyanLighter;	
+	}
+}
+.ft .tabs {
+	@tabWidth: floor((@gridRowWidth - 4px) / @numberFTTabs);
+    li {
+	    width: @tabWidth;
+	}
+	.active-tab:before {
+	    left: (@tabWidth / 2) - 7px; // center highlight arrow above tab
+	}
+	.callout {
+	    background: @pebbleGreenLighter;	
+	}
+}
+.sff .tabs {
+	@tabWidth: floor((@gridRowWidth - 4px) / @numberSFFTabs);
+    li {
+	    width: @tabWidth;
+	}
+	.active-tab:before {
+	    left: (@tabWidth / 2) - 7px; // center highlight arrow above tab
+	}
+	.callout {
+	    background: @pebbleOrangeLighter;	
+	}
+}
+
+/* Login box, and logged-in box */
+/* .loginbox is used in .titlerow, as a popup, but also inside the boxes on the Login page */
+.titlerow .loginbox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: @zindexPopover;
+    border:  1px solid #fff;
+    padding-left: @gridPaddingWidth - 1px; // compensate for border
+    padding-right: @gridPaddingWidth - 1px; // compensate for border
+    .close {
+	    position: absolute;
+	    top: 10px;
+	    right: 10px;
+	}
+	&.box .title {
+		margin-bottom: @baseLineHeight;
+	    color: @textColor;
+	}
+}
+.loginbox,
+.onlinesupportbox,
+.supportcommunitybox {
+	form {
+	    margin-bottom: 0;
+	}
+	.email {
+	    width: 250px;
+	}
+	.password,
+	.pin,
+	.search-support {
+	    width: 162px;
+	}
+	.btn {
+		float: right;
+		margin-top: -3px;
+		*margin-top: -37px; // for IE7
+	}
+}
+/*LOGGED IN BOX NOW ONLY APPEARS IN RH COLUMN, NOT .TITLEROW*/
+/*.titlerow .loggedinbox {
+	float: right;
+    width: 150px;
+    margin-bottom: 0;
+    .loginstatus {
+	    font-size: @baseFontSize - 1;
+	}
+    .logoutbtn {
+	    float: right;
+	}
+}*/
+.loggedinbox {
+    .loginstatus {
+		padding-right: 85px; // space for Log Out button
+	    font-size: @baseFontSize - 1;
+	}
+    .logoutbtn {
+	    float: right;
+	    margin-top: -34px; // move up by height of button
+	}
+/* For more login button styles, see buttons.less */
+}
+.fm .loginbox,
+.fm .loggedinbox {
+    background-color: @pebbleCyanLighter;
+}
+.ft .loginbox,
+.ft .loggedinbox {
+    background-color: @pebbleGreenLighter;
+}
+.sff .loginbox,
+.sff .loggedinbox {
+    background-color: @pebbleOrangeLighter;
+}
+
+/* Homepage team box */
+.box.team {
+    width: @gridRowWidth; // height is equal to image height
+    padding: 0; // allows image to go up to edges
+    overflow: hidden; // keeps image inside rounded corners
+    img {
+	    display: block; // gets rid of any space below
+	    line-height: 1;
+	}
+	.text {
+	    position: absolute;
+	    left: @gridPaddingWidth;
+	    bottom: @gridPaddingWidth;
+	    width: @gridColumnWidth - @gridPaddingWidth - 10px;
+	    padding: 10px;
+	    .border-radius(5px);
+	    background: @grayDark;
+	    h2,
+	    a {
+		    color: @white;
+		}
+		h2 {
+		    font-size: @baseFontSize + 1;
+		    line-height: @baseLineHeight + 1;
+		}
+	}
+}
+
+/* Makes contact box on Enquiries page gray as designed: */ 
+/*.enquiries .box.support {
+    background-color: @gray;
+    color: @white;
+    .title,
+    a {
+	    color: @white;
+	}
+}*/

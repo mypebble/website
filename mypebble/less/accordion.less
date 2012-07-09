@@ -1,0 +1,36 @@
+/*!
+ * mypebble.co.uk
+ * Accordion adapted from Twitter Bootstrap
+ * Uses collapse.js plugin
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+.accordion-heading .accordion-toggle {
+  display: block;
+  padding: 4px 0;
+  &:hover {
+	    text-decoration: underline;
+	}
+}
+.collapse {
+	.transition(.6s ease-in-out);    
+}
+// Inner needs the styles because you can't animate properly with any styles on the element
+.accordion-inner {
+  padding: 4px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+// Styles for Support team focus carousel only
+.supportfocus .description {
+    width: @gridColumnWidth - (2 * @gridPaddingWidth); // 260px
+    float: right;
+    h4 {
+	    font-size: @baseFontSize;
+	}
+    a {
+	    text-decoration: none;
+	}
+}

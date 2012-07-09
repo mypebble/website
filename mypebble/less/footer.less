@@ -1,0 +1,71 @@
+/*!
+ * mypebble.co.uk
+ * Footer
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+.footer {
+	clear: both;
+    background: #fff;
+    border-top: 1px solid @pebbleCyan;
+    font-size: @baseFontSize - 1px;
+    .container {
+		position: relative;
+	    padding: 15px 0 50px 0;
+	    background: #fff url('../img/pebbles.gif') 790px 24px no-repeat;
+	}
+	.column {
+	    float: left;
+	    margin: 0 @gridGutterWidth 10px 0;
+	}
+	h3 {
+	    font-size: @baseFontSize;
+	}
+    ul {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	}
+
+	.help {
+	/* Help balloon above footer */
+	    position: absolute;
+	    right: -8px;
+	    top: -90px;
+		width: 168px;
+		padding-bottom: 28px;
+	    background: url('../img/help-balloon-btm.png') bottom no-repeat;
+	    p {
+			padding: 5px 13px 0 5px;
+			margin: 0;
+		    background: url('../img/help-balloon-top.png') top no-repeat;
+			font-size: 24px;
+			line-height: 24px;
+		}
+	    a {
+			display: block;
+			padding: 7px 50px 7px 7px; // room for icon at right-hand side
+			background: #343434 url('../img/questionmark.gif') 106px 12px no-repeat;
+			color: @white;
+			text-decoration: none;
+		}
+		a:hover {
+		    background-color: #000;
+		}
+		em {
+			font-style: normal;
+		    color: #f79f9b; // pink
+		}
+	}
+}
+.nav-meta {
+	/* Privacy, Terms, etc */
+    clear: both;
+    font-size: @baseFontSize - 2px;
+	li {
+	    float: left;
+	    margin-right: 10px;
+	}
+}

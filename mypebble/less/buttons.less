@@ -1,0 +1,177 @@
+/*!
+ * mypebble.co.uk
+ * Button styles [based on Twitter Bootstrap]
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+	position: relative;
+    display: inline-block;
+    padding: 8px 15px;
+    .border-radius(5px);
+    border: 1px solid #666;
+    background: @defaultButtonBackground;
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    text-align: center;
+    text-shadow: 0 -1px 1px rgba(0,0,0,.75); // dark shadow at top for light text on dark background
+    .buttonBackground(@gray, darken(@gray, 10%)); // .buttonBackground removes the gradient for IE<=9
+    color: @white;
+    text-decoration: none;
+    cursor: pointer;
+
+  // Bootstrap IE7 fix
+  .ie7-restore-left-whitespace();
+}
+// Hover state
+.btn:hover {
+    background: darken(@defaultButtonBackground, 15%); // overrides .buttonBackground
+    border-color: #666;
+    color: @white;
+    text-decoration: none;
+}
+// Focus state for keyboard and accessibility
+.btn:focus {
+  .tab-focus();
+}
+// Active state
+.btn.active,
+.btn:active {
+	top: 1px;
+	background: darken(@defaultButtonBackground, 20%);
+	outline: 0;
+}
+// Disabled state
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  .opacity(65);
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+// Large
+.btn-large {
+  padding: 9px 16px;
+  .border-radius(6px);
+  font-size: @baseFontSize + 5px; // 18px
+//  font-weight: bold;
+  line-height: normal;
+}
+.btn-large .i {
+  margin-top: 2px; // icon positioning
+}
+// btn-primary is not currently used (not specced)
+/*.btn-primary {
+	font-size: @baseFontSize + 1px;
+    font-weight: bold;
+}*/
+// Small
+.btn-small {
+  padding: 5px 9px;
+  font-size: @baseFontSize - 2px;
+  line-height: @baseLineHeight - 2px;
+}
+.btn-small .i {
+  margin-top: -1px;
+}
+
+
+// Alternate buttons
+// --------------------------------------------------
+
+// Background and text colors for non-standard buttons
+
+.btn-primary {
+    background-color: @primaryButtonBackground;
+}
+
+/* Log In button in top nav */
+.nav .btn {
+    padding: 8px 15px;
+	border-color: #fff;
+    background-color: @grayLighter;
+    .buttonBackground(@grayLighter, @grayLighter); // subtle, flat colour button in navbar...
+    color: @textColor;
+    text-shadow: none;
+    font-size: @baseFontSize + 1px;
+    line-height: 1;
+}
+.nav .btn:hover,
+.home .nav .btn {
+	border-color: #666;
+    background-color: @gray;
+    .buttonBackground(@gray, darken(@gray, 10%)); // ...except on homepage, where it has the standard dark gradient
+    color: @white;
+}
+
+/* Coloured buttons */
+.box.calltoaction-secondary .btn,
+.box.calltoaction-secondary .btn:hover,
+.titlerow .loginbtn,
+.titlerow .loginbtn:hover {
+    color: @textColor;
+    text-shadow: 0 1px 1px rgba(255,255,255,.75); // light highlight at bottom for dark text on light background
+}
+.box.calltoaction-secondary .btn {
+	border-color: #333;
+}
+.loginbtn {
+    font-weight: bold;
+}
+.fm .box.calltoaction-secondary .btn,
+.fm .titlerow .loginbtn {
+    background-color: @pebbleCyanLighter;
+    .buttonBackground(@pebbleCyanLighter, darken(@pebbleCyanLighter, 10%));
+}
+.fm .box.calltoaction-secondary .btn:hover,
+.fm .titlerow .loginbtn:hover {
+    background: darken(@pebbleCyanLighter, 15%);
+}
+.ft .box.calltoaction-secondary .btn,
+.ft .titlerow .loginbtn {
+    background-color: @pebbleGreenLighter;
+    .buttonBackground(@pebbleGreenLighter, darken(@pebbleGreenLighter, 10%));
+}
+.ft .box.calltoaction-secondary .btn:hover,
+.ft .titlerow .loginbtn:hover {
+    background: darken(@pebbleGreenLighter, 15%);
+}
+.sff .box.calltoaction-secondary .btn,
+.sff .titlerow .loginbtn {
+    background: @pebbleOrangeLighter;
+    .buttonBackground(@pebbleOrangeLighter, darken(@pebbleOrangeLighter, 10%));
+}
+.sff .box.calltoaction-secondary .btn:hover,
+.sff .titlerow .loginbtn:hover {
+    background: darken(@pebbleOrangeLighter, 15%);
+}
+
+// Cross-browser workarounds from Bootstrap
+// --------------------------------------------------
+
+button.btn,
+input[type="submit"].btn {
+  &::-moz-focus-inner {
+  padding: 0;
+    border: 0;
+  }
+
+  // IE7 has some default padding on button controls
+  *padding-top: 2px;
+  *padding-bottom: 2px;
+  &.large {
+    *padding-top: 7px;
+    *padding-bottom: 7px;
+  }
+  &.small {
+    *padding-top: 3px;
+    *padding-bottom: 3px;
+  }
+}

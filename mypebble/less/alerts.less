@@ -1,0 +1,99 @@
+// ALERT STYLES
+// ------------
+
+// Base alert styles
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: @baseLineHeight;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  background-color: @warningBackground;
+  border: 1px solid darken(@warningBorder, 10%);
+  .border-radius(4px);
+}
+.alert,
+.alert-heading {
+  color: @warningText;
+}
+
+// Adjust close link position
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+
+// Alternate styles
+// ----------------
+
+.alert-success {
+  background-color: @successBackground;
+  border-color: @successBorder;  
+}
+.alert-success,
+.alert-success .alert-heading {
+  color: @successText;
+}
+.alert-danger,
+.alert-error {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+}
+.alert-danger,
+.alert-error,
+.alert-danger .alert-heading,
+.alert-error .alert-heading {
+  color: @errorText;
+}
+.alert-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+}
+.alert-info,
+.alert-info .alert-heading {
+  color: @infoText;
+}
+
+
+// Block alerts
+// ------------------------
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}
+
+// Block alerts with icons
+// ------------------------
+.alert-iconblock {
+	position: relative;
+	padding-left: 62px;
+    /*background-position: 15px 15px;
+    background-repeat: no-repeat;*/
+    /* Icon no longer a background image, but generated content in order to print */ 
+}
+.alert-iconblock > *:first-child:before {
+    position: absolute;
+    left: 15px;
+}
+.alert-iconblock.alert-info > *:first-child:before {
+    content: url('../img/info_32.png');
+}
+.alert-iconblock.alert-success > *:first-child:before {
+    content: url('../img/tick_32.png');
+}
+.alert-iconblock.alert-warning > *:first-child:before {
+    content: url('../img/warning_32.png');
+}
+.alert-iconblock.alert-error > *:first-child:before {
+    content: url('../img/block_32.png');
+}
+.alert-iconblock.alert-processing > *:first-child:before {
+    content: url('../img/ajax-loader_32.gif');
+}
