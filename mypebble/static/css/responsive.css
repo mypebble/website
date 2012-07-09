@@ -18,7 +18,7 @@
 }
  
   .row {
-    width:480px;
+    width:470px;
 
   }
   .row:before,
@@ -41,13 +41,18 @@
   .grid2{
    width:100px;
    }
+   
+   .grid2.box {
+  width: 400px;
+}
+
   .grid1{
    width:400px !important;
    display:block;
    margin-left:0px;
    } 
    
-   .hero .image, .blog, .team, .phone, .footerimage{
+   .hero .image, .blog, .team, .phone, .footerimage, .carosel, .quote, .partners{
    display:none;
    visibility:hidden;
    }  
@@ -61,17 +66,20 @@
   .device{
   width:450px !important;
   } 
+  
+    .input-grid1{
+  width:200px;}
+
+  .input-grid2{
+  width:300px;}
 }
 
 /* SMARTPHONE AND TABLET */
 @media (min-width: 481px) and (max-width: 767px) {
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
-  /*background: #00aced !important; */
+  /*background: #00aced !important;*/
 }
-
-
-  
   .row {
     width:480px;
     *zoom: 1;
@@ -96,27 +104,43 @@
   .grid2{
    width:100px;
    }
+   
+   .grid2.box {
+  width: 480px;
+}
+
   .grid1{
    width:190px !important;
    margin-left:20px;
    }   
    
+       .input-grid1{
+  width:200px;}
+
+  .input-grid2{
+  width:300px;}
+  
    .device{
    margin-left:0px;
    width:480px !important;
    }
    
-   .hero .image, .blog, .team {
+   .hero .image, .blog, .partners, .teambanner {
    display:none;
    visibility:hidden;
    }
+   
+   .supportcommunitybox{
+   margin-left:20px !important;}
+   
+   
 }
 
 /* PORTABLE TABLET */
 @media (min-width: 768px) and (max-width: 940px) {
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
-  /*background: #87746b !important;*/
+  background: #87746b !important;
 }
   .row {
     width:640px;
@@ -131,68 +155,39 @@
   .row:after {
     clear: both;
   }
-  .container
-  {
+  .container{
     width: 640px !important;
   }
   
+  .team{
+   width:660px !important;
+   }
+   
+   .team ul{margin:0px;}
+   .team li{ margin:1px; margin-bottom:2px; line-height:22px;}   
   .grid3{
    width:640px ;
    
    }
   .grid2{
-   width:430px;
+   width:620px !important;
    }
   .grid1{
    width:200px;
    margin-left:20px !important;
    }   
    
+   
 
    .device{
-   width:630px !important;
+   width:620px !important;
    }
-   .hero .image, .blog, .team{
+   .hero .image, .blog, .teambanner, .partners{
    display:none;
    visibility:hidden;
    }
+   
+   .onlinesupportbox, .supportcommunitybox{width:215px !important; margin-left:20px;}
 }
  
 
-
-@media (min-width: 940px) {
-
-  .body {
-  /* the area between .header and .footer, not to be confused with <body> */
-  /*background: #ED4034 !important;*/
-}
-
-  .row {
-    width:960px;
-    margin-left:-20px !important;
-        *zoom: 1;
-  }
-  .row:before,
-  .row:after {
-    display: table;
-    content: "";
-  }
-  .row:after {
-    clear: both;
-  }
-  .container
-  {
-    width: 940px;
-  }
-  
-  .grid3{
-   width:940px;
-   }
-  .grid2{
-   width:620px;
-   }
-  .grid1{
-   width:300px;
-   margin-left:20px !important;
-   }
-}
