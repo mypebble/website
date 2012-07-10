@@ -14,7 +14,7 @@
   .body {
 
   /* the area between .header and .footer, not to be confused with <body> */
-  background: #f8a433 !important;
+  /*background: #f8a433 !important;*/
 }
  
   .row {
@@ -58,7 +58,7 @@
   .input-grid2{
   width:300px;}
   
-   .hero .image, .blog, .team, .phone, .footerimage, .carousel, .quote, .partners, .logmein {
+   .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein,  .image {
    display:none;
    visibility:hidden;
    }  
@@ -75,7 +75,26 @@
   background-image: url('../img/logo-white-small.png');
   background-position: 390px 15px;
 }
+   .carousel{width:400px !important;} 
+   
+.grid3.carousel .item {
+  width: 100% !important;
+}
     
+    .hero .text .title {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #333333;
+}
+
+.hero .text .description p,
+.hero .text .description li {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+
   .device{
   width:450px !important;
   } 
@@ -138,7 +157,7 @@
    width:480px !important;
    }
    
-   .hero .image, .blog, .partners, .teambanner, .carousel, .logmein {
+   .hero .image, .blog, .partners, .teambanner, .logmein, .extras {
    display:none;
    visibility:hidden;
    }
@@ -146,6 +165,25 @@
    .supportcommunitybox{
    margin-left:20px !important;}
    
+ .carousel{width:480px !important;} 
+   
+.grid3.carousel .item {
+  width: 100% !important;
+}
+    
+    .hero .text .title {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #333333;
+}
+
+.hero .text .description p,
+.hero .text .description li {
+  font-size: 13px;
+  line-height: 17px;
+}
+
    
 }
 
@@ -193,11 +231,12 @@
   .device{
    width:620px !important;
    }
-   .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein {
+   .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras {
    display:none;
    visibility:hidden;
    }
    
+    .carousel{width:620px !important;} 
    
    .onlinesupportbox, .supportcommunitybox{width:215px !important; margin-left:20px;}
 }

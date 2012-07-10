@@ -5,6 +5,7 @@
     <div class="body" id="body">
         <div class="row titlerow">
             <h1 class="title "><img class="logo" src="{{ STATIC_URL }}img/logo/sff_logo.png" alt="School Fund Finder"/>{% placeholder "strapline" or %} {% endplaceholder %}</h1> 
+           <div class="logmein">
                 <a class="btn loginbtn" href="#">Log in</a>
                     <div class="loginbox box grid1 hide" id="sff-loginbox">
                         <a class="close">×</a>
@@ -30,9 +31,9 @@
                                                             <p class="form-help"><a href="#">Forgot your login?</a> &bull; <a href="#">Help</a></p>
                             </form>
                     </div>
-        </div>
+        </div></div>
             <div class="row">
-                <div class="box grid3 hero tabbed carousel slide" id="productCarousel">
+                <div class="box grid3 hero tabbed carousel slide " id="productCarousel">
                     <div class="tabs">
                         <ul>
                             <li class="active-tab"><a href="#item1">Overview</a></li>
@@ -191,7 +192,7 @@
                          </div>
                     </div>
                </div>
-                    <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
+                    <div class="grid1 sidebar extras"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid1">
                             <div class="box-inner">
                                 <a href="#"><img class="box-img" src="{{ STATIC_URL }}img/ff_40x60.png" alt="School Fund Finder brochure "/></a>
@@ -201,7 +202,7 @@
                                         </div>
                             </div>
               </div>
-                   <div class="box grid1">
+                   <div class="box grid1 extras">
                         <div class="box-inner">
                             <a href="https://twitter.com/#!/PebbleSFF" target="_blank"><img class="box-img" src="{{ STATIC_URL }}img/ff_twitter.png" alt="Follow us on twitter PebbleSFF"/></a>
                                 <h2 class="title">Follow on Twitter</h2>
@@ -212,31 +213,45 @@
                         </div>
                     </div>
                 </div>
-            <div class="row">
-                    <div class="box grid3">
-                            <h2 class="title">Success stories</h2>
-                            <div class="row">
-                                <div class="grid1 testimonial">
-                                    <blockquote>
-                                        <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-                                        <small>Name, occupation, organisation</small>
-                                    </blockquote>
-                                </div>
-                                    <div class="grid1 testimonial">
-                                        <blockquote>
-                                            <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-                                            <small>Name, occupation, organisation</small>
-                                        </blockquote>
-                                    </div>
-                                        <div class="grid1 testimonial">
-                                            <blockquote>
-                                                <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-                                                <small>Name, occupation, organisation</small>
-                                            </blockquote>
-                                        </div>
-                                    </div>
-                    </div>
-            </div>
+                </div>
+                
+                       <div class="row ">
+        {% placeholder "Feedback" or %}
+        <div class="box">
+            <div class="grid3">
+                <h2 class="title">Success Stories</h2>
+                    <div class="row">
+                        <div class="grid1 testimonial">
+                            <blockquote>
+                                <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                    <small>Name, occupation, organisation</small>
+                            </blockquote>
+                       </div>
+                       <div class="grid1 testimonial quote">
+                           <blockquote>
+                                <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                    <small>Name, occupation, organisation</small>
+                            </blockquote>
+                       </div>
+                           <div class="grid1 testimonial blog">
+                           <blockquote>
+                                <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                    <small>Name, occupation, organisation</small>
+                            </blockquote>
+                       </div>
+                </div>
+        </div>
+
+    </div>
+  </div>{% endplaceholder %}
+
+  </div>
+                
+                
+                
+                
+                
+    
         </div><!--/.container-->    
 </div><!--/.body-->
       {% endblock %} 
