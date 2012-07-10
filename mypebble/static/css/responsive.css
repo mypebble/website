@@ -186,7 +186,7 @@
   .device{
    width:620px !important;
    }
-   .hero .image, .blog, .teambanner, .partners, .carousel-control, {
+   .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein {
    display:none;
    visibility:hidden;
    }
