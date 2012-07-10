@@ -110,7 +110,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
-  background: #00aced !important;
+  /*background: #00aced !important;*/
 }
   .row {
     width:480px;
@@ -191,7 +191,7 @@
 @media (min-width: 768px) and (max-width: 940px) {
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
-  background: #87746b !important;
+  /*background: #87746b !important;*/
 }
   .row {
     width:640px;
