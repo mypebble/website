@@ -52,7 +52,13 @@
    margin-left:0px;
    } 
    
-   .hero .image, .blog, .team, .phone, .footerimage, .carosel, .quote, .partners{
+       .input-grid1{
+  width:200px;}
+
+  .input-grid2{
+  width:300px;}
+  
+   .hero .image, .blog, .team, .phone, .footerimage, .carousel, .quote, .partners, .logmein {
    display:none;
    visibility:hidden;
    }  
@@ -67,11 +73,11 @@
   width:450px !important;
   } 
   
-    .input-grid1{
-  width:200px;}
+  onlinesupportbox{
+     display:none;
+   visibility:hidden;
+  }
 
-  .input-grid2{
-  width:300px;}
 }
 
 /* SMARTPHONE AND TABLET */
@@ -125,7 +131,7 @@
    width:480px !important;
    }
    
-   .hero .image, .blog, .partners, .teambanner {
+   .hero .image, .blog, .partners, .teambanner, .carousel, .logmein {
    display:none;
    visibility:hidden;
    }
@@ -167,7 +173,6 @@
    .team li{ margin:1px; margin-bottom:2px; line-height:22px;}   
   .grid3{
    width:640px ;
-   
    }
   .grid2{
    width:620px !important;
@@ -178,14 +183,14 @@
    }   
    
    
-
-   .device{
+  .device{
    width:620px !important;
    }
-   .hero .image, .blog, .teambanner, .partners{
+   .hero .image, .blog, .teambanner, .partners, .carousel-control, {
    display:none;
    visibility:hidden;
    }
+   
    
    .onlinesupportbox, .supportcommunitybox{width:215px !important; margin-left:20px;}
 }
