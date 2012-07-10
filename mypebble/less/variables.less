@@ -1,0 +1,100 @@
+// Variables.less
+// Variables to customize the look and feel of myPebble
+// -----------------------------------------------------
+
+
+
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Links
+@linkColor:             @textColor; // #08c = Bootstrap blue
+@linkColorHover:        @black;
+
+// Grays
+@black:                 #000;
+@grayDarker:            #1f1f1f; // Bootstrap #222
+@grayDark:              #333;
+@gray:                  #666;    // Bootstrap #555
+@grayLight:             #d7d7d7; // Bootstrap #ddd
+@grayLighter:           #f0f1f0; // Bootstrap #eee
+@white:                 #fff;
+@formBackground:        #f5f5f5;
+
+// Accent colors
+@pebbleCyan:            #00aeed;
+@pebbleCyanLighter:     #4cc5f4;
+@pebbleGreen:           #4fb948;
+@pebbleGreenLighter:    #82cd65; // #76c679 on homepage design
+@pebbleRed:             #f04038;
+@pebbleRedLighter:      #f79f9b;
+@pebbleOrange:          #f8a632;
+@pebbleOrangeLighter:   #f9a534;
+@pebbleYellow:          #ffdd00;
+@pebbleYellowLighter:   #ffdd00;
+
+// Typography
+@baseFontSize:          13px;
+@baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@baseLineHeight:        18px;
+@textColor:             @grayDark;
+
+// Buttons
+@primaryButtonBackground:    @gray; // .btn-primary unused so far
+@defaultButtonBackground:    @gray;
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Z-index master list
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+@zindexTabs:            990;
+@zindexDropdown:        1000;
+@zindexPopover:         1010;
+@zindexTooltip:         1020;
+@zindexFixedNavbar:     1030;
+@zindexModalBackdrop:   1040;
+@zindexModal:           1050;
+
+// Input placeholder text color
+@placeholderText:       @gray;
+
+// Form states and alerts
+// Currently unused
+@warningText:             #c09853;
+@warningBackground:       #f5463e;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #b94a48;
+@errorBackground:         #f2dede;
+@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+
+@successText:             #468847;
+@successBackground:       #dff0d8;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                #3a87ad;
+@infoBackground:          #d9edf7;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+
+
+// GRID
+// --------------------------------------------------
+
+// Default 940px grid
+@gridColumns:             3;
+@gridColumnWidth:         300px; // width of a column
+@gridGutterWidth:         20px;  // space between columns
+@gridPaddingWidth:        20px;  // padding inside a column or box
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1)); // 940px
+
+// CONTENT-SPECIFIC
+// --------------------------------------------------
+
+// Number of tabs on product homepage hero carousel
+@numberFMTabs:  7;
+@numberFTTabs:  6;
+@numberSFFTabs: 7;

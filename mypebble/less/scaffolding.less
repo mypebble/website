@@ -1,0 +1,49 @@
+/*!
+ * mypebble.co.uk
+ * Scaffolding
+ * Basic and global styles
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+
+// STRUCTURAL LAYOUT
+// -----------------
+
+body {
+	margin: 0;
+	font-family: @baseFontFamily;
+	font-size: @baseFontSize;
+	line-height: @baseLineHeight;
+	color: @textColor;
+    background-color: @white;
+}
+.body { /* the area between .header and .footer, not to be confused with <body> */
+    background: @grayLighter;
+    .container {
+	    padding: 15px 0 100px 0; // base vertical padding inside body area (includes 100px for help balloon at bottom)
+	    // background: url('../img/_grid.gif') repeat-y; // debugging style to show columns
+	}
+}
+.container {
+    width: @gridRowWidth; // 940px = best width for grid subdivisions (864px in designs)
+    margin: 0 auto; // center in window
+}
+.row {
+    clear: both;
+    .clearfix();
+}
+
+
+// LINKS
+// -----
+
+a {
+  color: @linkColor;
+  text-decoration: underline;
+}
+a:hover {
+  color: @linkColorHover;
+  text-decoration: underline;
+}

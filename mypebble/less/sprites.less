@@ -1,0 +1,60 @@
+/*!
+ * mypebble.co.uk
+ * Sprites [based on Twitter Bootstrap (but using different icons)]
+ * Glyphs and icons for buttons, nav, and more
+ *
+ * Copyright 2012 Pebble Ltd
+ * 
+ */
+
+// All icons receive the styles of the <i> tag with a base class 
+// of .i and are then given a unique class to add width, height, 
+// and background-position. Your resulting HTML will look like
+// <i class="i icon-inbox"></i>.
+
+// For the white version of the  icons, just add -white to the class:
+// <i class="i icon-inbox-white"></i>
+
+.i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  background-image: url(../img/sprites.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  .ie7-restore-right-whitespace();
+}
+.support.box .i {
+    margin-right: 5px;
+}
+.support.box .description .i:first-child {
+    float: left; // fixes annoying IE7 bug
+}
+
+.icon-arrow-r              { background-position: 0      0; }
+.icon-arrow-l              { background-position: -24px  0; }
+.icon-circlearrow-r        { background-position: -48px  0; }
+.icon-circlearrow-l        { background-position: -72px 0;  }
+.icon-openquote            { background-position: -96px 0;  }
+.icon-closequote           { background-position: -120px 0; }
+.icon-twitter              { background-position: -144px 0; }
+.icon-phone                { background-position: -168px 0; }
+.icon-email                { background-position: -192px 0; }
+.icon-community            { background-position: -216px 0; }
+.icon-help                 { background-position: -240px 0; }
+.icon-alert                { background-position: -264px 0; }
+
+.icon-arrow-r-white        { background-position: 0      -24px; }
+.icon-arrow-l-white        { background-position: -24px  -24px; }
+.icon-twitter-white        { background-position: -144px -24px; }
+.icon-phone-white          { background-position: -168px -24px; }
+.icon-email-white          { background-position: -192px -22px; } // 2px down
+.icon-community-white      { background-position: -216px -24px; }
+.icon-help-white           { background-position: -240px -24px; }
+
+.icon-blank             { background-position: -48px -24px; } // used to indent a line without an icon
