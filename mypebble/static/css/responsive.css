@@ -16,7 +16,10 @@
   /* the area between .header and .footer, not to be confused with <body> */
   /*background: #f8a433 !important;*/
 }
- 
+   .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  
   .row {
     width:470px;
 
@@ -58,7 +61,7 @@
   .input-grid2{
   width:300px;}
   
-   .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein,  .image {
+   .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein,  .image, .tabs {
    display:none;
    visibility:hidden;
    }  
@@ -80,8 +83,12 @@
 .grid3.carousel .item {
   width: 100% !important;
 }
-    
-    .hero .text .title {
+  
+.hero .text {
+  width: 100%;
+}
+  
+  .hero .text .title {
   font-size: 20px;
   font-weight: normal;
   line-height: 22px;
@@ -99,10 +106,37 @@
   width:450px !important;
   } 
   
-  onlinesupportbox{
+  .onlinesupportbox{
      display:none;
    visibility:hidden;
   }
+
+  select {width:150px !important;}
+  
+  
+  .nav {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  font-size: 12px;
+  line-height: 1;
+}
+.nav a {
+  display: block;
+  padding: 15px 15px;
+  margin-left: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #333333;
+  text-decoration: none;
+}
+.header .container {
+  position: relative;
+  padding: 15px 0 25px 0;
+}
+
+
 
 }
 
@@ -170,7 +204,8 @@
 .grid3.carousel .item {
   width: 100% !important;
 }
-    
+
+
     .hero .text .title {
   font-size: 20px;
   font-weight: normal;
@@ -184,7 +219,32 @@
   line-height: 17px;
 }
 
+
+  .nav {
+  position: absolute;
+  right: 0;
+  top: 50px;
+
+  line-height: 1;
+}
+.nav a {
+  display: block;
+  padding: 15px 15px;
+  margin-left: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #333333;
+  text-decoration: none;
+}
+.header .container {
+  position: relative;
+  padding: 15px 0 25px 0;
+}
    
+.hero .text {
+  width: 100% !important;
+}
 }
 
 /* PORTABLE TABLET */
@@ -231,7 +291,7 @@
   .device{
    width:620px !important;
    }
-   .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras {
+   .hero .image, .blog, .teambanner, .partners, .logmein, .extras {
    display:none;
    visibility:hidden;
    }
@@ -239,6 +299,32 @@
     .carousel{width:620px !important;} 
    
    .onlinesupportbox, .supportcommunitybox{width:215px !important; margin-left:20px;}
-}
+   
  
+  .nav {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  line-height: 1;
+}
+.nav a {
+  display: block;
+  padding: 15px 15px;
+  margin-left: 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #333333;
+  text-decoration: none;
+}
+.header .container {
+  position: relative;
+  padding: 35px 0 25px 0;
+}
+.hero .text {
+  width: 100% !important;
+}
+}
+
+
 

@@ -189,9 +189,7 @@ CMS_TEMPLATES = (
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
-    ('testpage.html', 'Test template'),
-    
-    ('home_mob.html', 'Home Mob Template'),
+   
     
 )
 

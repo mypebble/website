@@ -688,6 +688,8 @@ a:hover {
 }
 .header .brand {
   margin-left: 5px;
+  display:block;
+ 
 }
 .nav,
 .subnav {
@@ -808,12 +810,10 @@ background-color:#CCC;}
 }
 .titlerow .title {
   /* .title is sometimes an H1 (homepage and product homepages), and sometimes a DIV */
-
-  height: 21px;
   margin: 0;
   font-size: 15px;
   font-weight: bold;
-  line-height: 41px;
+  line-height: 35px;
 }
 .titlerow.with-nav .title {
   line-height: 21px;
@@ -824,7 +824,8 @@ background-color:#CCC;}
   font-size: 14px;
 }
 .home .titlerow .title {
-  margin: 0 0 18px 0;
+margin:10px;
+  line-height:25px;
   font-size: 20px;
   font-weight: normal;
 }
@@ -2643,4 +2644,25 @@ input[type="submit"].btn.small {
 }
 .invisible {
   visibility: hidden;
+}
+
+/*test*/
+
+.nav-collapse.collapse {
+  height: auto;
+}
+
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+     -moz-transition: height 0.35s ease;
+      -ms-transition: height 0.35s ease;
+       -o-transition: height 0.35s ease;
+          transition: height 0.35s ease;
+}
+
+.collapse.in {
+  height: auto;
 }

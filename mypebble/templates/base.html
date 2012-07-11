@@ -49,12 +49,28 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
 	</script>
 
 {# FEEDBACK #}
+
+<script>
+
+  if ((screen.width>1200)) {
+    alert('Message 1');
+  }
+  else if ((screen.width<=1200))  {
+    alert('Message 2')
+  }
+
+</script>
+
 		<script type="text/javascript" charset="utf-8">
+		
 			var is_ssl = ("https:" == document.location.protocol);
 			var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
 			document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+						
 		</script>
+		
 		<script type="text/javascript" charset="utf-8">
+		
 			var feedback_widget_options = {};
 			feedback_widget_options.display = "overlay";
 			feedback_widget_options.company = "pebble";
@@ -62,80 +78,10 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
 			feedback_widget_options.color = "#555555";
 			feedback_widget_options.style = "idea";
 			var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+			
 		</script>
-<script type="text/javascript">
-$(function() {
 
-    function retrieve_api_items(url, context, content) {
-        $.ajax({
-            url: url,
-            context: context,
-            beforeSend: function() {
-                $('.block-contents', this)
-                .html(content['retrieving'] + '<span />');
-                elipses_loader($('.block-contents span', this));
-            },
-            success: function(data) {
-                $('.block-contents', this).text('');
-                var items = $(data['items']);
-                if(items.length) {
-                    $('.block-contents', this).append($('<ul />').hide());
-                    var ul = $('.block-contents ul', this);
-
-                    $(items).each(function() {
-                        ul.append(
-                            $('<li />').append(
-                                $('<a />', { href: this.link })
-                                .text(this.title)
-                            )
-                        );
-                    });
-
-                    ul.fadeIn();
-
-                    $('.block-footer', this).append(
-                        $('<a />', { href: data.site_url })
-                        .text(content['site_link_text'])
-                        .hide()
-                        .fadeIn()
-                    );
-                }
-                else {
-                    $('.block-contents', this).text(content['empty']);
-                }
-            },
-            error: function() {
-                $('.block-contents', this).text(content['error']);
-            },
-            global: false
-        });
-    }
-
-    // retrieve FAQs
-    retrieve_api_items(
-        '/faq/',
-        $('#faq-block'),
-        {
-            'retrieving': 'Retrieving questions',
-            'site_link_text': 'See all Frequently Asked Questions',
-            'empty': 'There are currently no questions.',
-            'error': 'There was a problem retrieving the questions.'
-        }
-    );
-    // retrieve blog posts
-    retrieve_api_items(
-        '/blog/',
-        $('#news-block'),
-        {
-            'retrieving': 'Retrieving news stories',
-            'site_link_text': 'See all News Stories',
-            'empty': 'There are currently no news stories.',
-            'error': 'There was a problem retrieving the news stories.'
-        }
-    );
-
-});
-</script>
+	
 </head>
 <body>
     <div class="body" id="body">
