@@ -6,31 +6,7 @@
         <div class="row titlerow">
             <h1 class="title "><img class="logo" src="{{ STATIC_URL }}img/logo/sff_logo.png" alt="School Fund Finder"/>{% placeholder "strapline" or %} {% endplaceholder %}</h1> 
            <div class="logmein">
-                <a class="btn loginbtn" href="#">Log in</a>
-                    <div class="loginbox box grid1 hide" id="sff-loginbox">
-                        <a class="close">×</a>
-                            <form action="/login/" method="post" id="login-form-fm">
-                                <h2 class="title">Log in to School Fund Finder</h2>
-                                    <label for="id_username">Email</label>
-                                        <div class="alert alert-warning errorlist hide">
-                                            <ul class="errorlist">
-                                                <li>This field is required</li>
-                                            </ul>
-                                        </div>
-                                            <input class="email" type="email" size="30" name="email" placeholder="Email address" id="id_email"/>
-                                                <label for="id_password">Password</label>
-                                                    <div class="alert alert-warning errorlist hide">
-                                                        <ul class="errorlist">
-                                                            <li>This field is required</li>
-                                                            <li>Another error</li>
-                                                       </ul>
-                                                    </div>
-                                                        <input class="password" type="password" size="20" name="password" placeholder="Password" id="id_password"/>
-                                                        <input type="submit" value="Log in" class="btn"/>
-                                                        <input type="hidden" value="/" name="next"/>
-                                                            <p class="form-help"><a href="#">Forgot your login?</a> &bull; <a href="#">Help</a></p>
-                            </form>
-                    </div>
+                <a class="btn loginbtn" href="http://www.schoolfundfinder.co.uk/home" target="_blank">Log in</a>                     
         </div></div>
             <div class="row">
                 <div class="box grid3 hero tabbed carousel slide " id="productCarousel">
