@@ -58,7 +58,7 @@
   .input-grid2{
   width:300px;}
   
-   .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein,  .image {
+   .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs {
    display:none;
    visibility:hidden;
    }  
@@ -123,6 +123,9 @@
 
 .home .titlerow .title{
 margin:0px 10px 5px 0;}
+
+
+.hero .text {width:100%;}
 
 }
 
