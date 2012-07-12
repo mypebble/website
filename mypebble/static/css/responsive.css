@@ -104,6 +104,26 @@
    visibility:hidden;
   }
 
+ .header .container{
+ padding:10px 0 20px 0;
+ }
+ 
+ .nav{
+ top:45px;
+ font-size:12px;
+ }
+ 
+ .nav a,
+.subnav a {
+  display: block;
+  padding: 10px 10px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.home .titlerow .title{
+margin:0px 10px 5px 0;}
+
 }
 
 /* SMARTPHONE AND TABLET */
@@ -182,6 +202,19 @@
 .hero .text .description li {
   font-size: 13px;
   line-height: 17px;
+}
+
+ .nav{
+ top:45px;
+ font-size:14px;
+ }
+ 
+ .nav a,
+.subnav a {
+  display: block;
+  padding: 15px 15px;
+  margin-left: 2px;
+  text-decoration: none;
 }
 
    

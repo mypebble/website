@@ -791,7 +791,6 @@ background-color:#CCC;}
 .titlerow {
   position: relative;
   z-index: 1010;
-  margin-bottom: 15px;
   /*&.with-nav .subnav {
 	    padding-right: 200px; // leave room for loggedinbox
 	}*/
@@ -809,11 +808,10 @@ background-color:#CCC;}
 .titlerow .title {
   /* .title is sometimes an H1 (homepage and product homepages), and sometimes a DIV */
 
-  height: 21px;
-  margin: 0;
+  margin: 10px;
   font-size: 15px;
   font-weight: bold;
-  line-height: 41px;
+  line-height: 25px;
 }
 .titlerow.with-nav .title {
   line-height: 21px;
