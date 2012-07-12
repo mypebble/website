@@ -2,7 +2,6 @@
 {% load menu_tags %}
 {% cms_toolbar %}
 {% load cms_tags %}
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,7 +19,6 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
         <!--[if lt IE 9]-->
             <script src="js/html5.js"></script>
             <![endif]-->
-
         <!-- Styles -->
          <!--[if ! lte IE 6]-->
         <link href="{{ STATIC_URL }}css/mypebble.css" rel="stylesheet"/>
@@ -33,8 +31,6 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
          <!--[if (gt IE 6) & (lt IE 9)]-->
             <style type="text/css">@import "css/mypebble-ie.css";</style>
             <![endif]-->
-
-
 {# Google Analysis #}
 	<script type="text/javascript">
 		  var _gaq = _gaq || [];
@@ -63,79 +59,6 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
 			feedback_widget_options.style = "idea";
 			var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
 		</script>
-<script type="text/javascript">
-$(function() {
-
-    function retrieve_api_items(url, context, content) {
-        $.ajax({
-            url: url,
-            context: context,
-            beforeSend: function() {
-                $('.block-contents', this)
-                .html(content['retrieving'] + '<span />');
-                elipses_loader($('.block-contents span', this));
-            },
-            success: function(data) {
-                $('.block-contents', this).text('');
-                var items = $(data['items']);
-                if(items.length) {
-                    $('.block-contents', this).append($('<ul />').hide());
-                    var ul = $('.block-contents ul', this);
-
-                    $(items).each(function() {
-                        ul.append(
-                            $('<li />').append(
-                                $('<a />', { href: this.link })
-                                .text(this.title)
-                            )
-                        );
-                    });
-
-                    ul.fadeIn();
-
-                    $('.block-footer', this).append(
-                        $('<a />', { href: data.site_url })
-                        .text(content['site_link_text'])
-                        .hide()
-                        .fadeIn()
-                    );
-                }
-                else {
-                    $('.block-contents', this).text(content['empty']);
-                }
-            },
-            error: function() {
-                $('.block-contents', this).text(content['error']);
-            },
-            global: false
-        });
-    }
-
-    // retrieve FAQs
-    retrieve_api_items(
-        '/faq/',
-        $('#faq-block'),
-        {
-            'retrieving': 'Retrieving questions',
-            'site_link_text': 'See all Frequently Asked Questions',
-            'empty': 'There are currently no questions.',
-            'error': 'There was a problem retrieving the questions.'
-        }
-    );
-    // retrieve blog posts
-    retrieve_api_items(
-        '/blog/',
-        $('#news-block'),
-        {
-            'retrieving': 'Retrieving news stories',
-            'site_link_text': 'See all News Stories',
-            'empty': 'There are currently no news stories.',
-            'error': 'There was a problem retrieving the news stories.'
-        }
-    );
-
-});
-</script>
 </head>
 <body>
     <div class="body" id="body">

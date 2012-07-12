@@ -1,11 +1,8 @@
 {% extends "base.html" %}
 {% load cms_tags %}
-
 {% block primary %}
-
 <div class="support">
 <div class="body" id="body">
-
                 <div class="row titlerow">
                     <div class="title"><a href="support.html"><img class="logo" src="{{ STATIC_URL}}img/logo/support_logo.png"" alt="Support"/></a> 
 <div class="pull-right"{% placeholder "support_product" or %}{% endplaceholder %}</div></div>
@@ -75,12 +72,9 @@
                                     <p>Block quotation. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec in diam. Integer fringilla faucibus arcu. Donec tempus. Sed ac diam nec nulla nonummy aliquam. Phasellus justo pede, dictum pulvinar, sagittis a, tincidunt vitae, enim. Vestibulum sed libero. Aliquam consectetuer malesuada justo. Phasellus ut lacus ac elit ullamcorper consequat.</p>
                                     <small>Optional source and citation</small>
                                 </blockquote>
-                                
-
                             </div>
                         </div>
                     </div>{% endplaceholder %}
-         
                     <div class="grid1 sidebar device"> <!-- Column. Modules inside will stack vertically -->
                         <div class="support supportbox onlinesupportbox box grid1">
                             <div class="box-inner">
@@ -127,9 +121,5 @@
                         </div>
                     </div>
                 </div>
-                
             </div><!--/.container-->    
-                  
-
  {% endblock %} 
-

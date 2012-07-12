@@ -1,12 +1,10 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 {% block primary %}
-
 <div class="home">
     <div class="row titlerow">
         <h1 class="title">{% placeholder "strapline" or %}{% endplaceholder %}</h1>
     </div>
-    
     <div class="row ">
         <div class="grid3">
         <div class="box hero">
@@ -21,8 +19,6 @@
             </div>
         </div>
     </div>
-    
-    
     <div class="row">
         <div class="box grid1 fm">
             <div class="box-inner">
@@ -103,7 +99,6 @@
         </div>
     </div>
   </div>{% endplaceholder %}
-
                 <div class="row">
                     <div class="box grid3 team teambanner">
                         <img class="team-image" alt="alt text" src="{{ STATIC_URL }}img/940x220.gif"/>
@@ -115,4 +110,3 @@
                 </div>
   </div>
  {% endblock %} 
-
