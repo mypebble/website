@@ -14,10 +14,7 @@
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
   /*background: #f8a433 !important;*/
-}
-
-
-    
+}  
    .device{
    width:450px !important;
    } 
@@ -105,7 +102,6 @@
   display:none;
   visibility:hidden;
   } 
-  
   
   .postcode{margin-left:0px !important;}
 }
