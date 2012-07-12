@@ -15,6 +15,9 @@
   /* the area between .header and .footer, not to be confused with <body> */
   /*background: #f8a433 !important;*/
 }
+
+
+    
    .device{
    width:450px !important;
    } 
@@ -47,10 +50,10 @@
    margin-left:0px;
    }    
   .input-grid2{
-  width:300px;
+  width:400px;
   }  
   .input-grid1{
-  width:200px;
+  width:300px;
   }  
   .grid2.box {
   width: 400px;
@@ -89,10 +92,9 @@
   top:45px;
   font-size:12px;
   }
-  .nav a,
-. subnav a {
+  .nav a{
   display: block;
-  padding: 10px 10px;
+  padding: 10px 8px;
   margin-left: 5px;
   text-decoration: none;
   }
@@ -103,6 +105,9 @@
   display:none;
   visibility:hidden;
   } 
+  
+  
+  .postcode{margin-left:0px !important;}
 }
 
 /* SMARTPHONE AND TABLET */
@@ -261,7 +266,7 @@
   line-height:22px;
   }   
   .onlinesupportbox, .supportcommunitybox{
-  width:215px !important; 
+  width:230px !important; 
   margin-left:20px;
   }
   .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras {

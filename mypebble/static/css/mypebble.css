@@ -280,7 +280,7 @@ a:hover {
   line-height: 23px;
 }
 /* White Pebble logo in coloured boxes */.box.fm,
-.box.sff {
+.box.sff{
   background-image: url('../img/logo-white.png');
   background-position: 239px 20px;
   background-repeat: no-repeat;
@@ -838,7 +838,7 @@ p {
   margin: 0 0 9px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 20px;
 }
 p small {
   font-size: 12px;
@@ -1131,7 +1131,7 @@ select,
 .uneditable-input {
   display: inline-block;
   width: 210px;
-  height: 18px;
+  height: 24px;
   padding: 4px;
   margin-bottom: 9px;
   font-size: 13px;
