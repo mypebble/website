@@ -15,10 +15,11 @@
   /* the area between .header and .footer, not to be confused with <body> */
   /*background: #f8a433 !important;*/
 }
- 
+   .device{
+   width:450px !important;
+   } 
   .row {
     width:470px;
-
   }
   .row:before,
   .row:after {
@@ -28,104 +29,80 @@
   .row:after {
     clear: both;
   }
-  .container
-  {
+  .container  {
     width: 460px;
-  }
-  
+  }  
+  .header .container{
+   padding:10px 0 20px 0;
+   }
   .grid3{
-   width:450px;
-   
+   width:450px;   
    }
   .grid2{
    width:100px;
-   }
-   
-   .grid2.box {
-  width: 400px;
-}
-
+   }   
   .grid1{
    width:400px !important;
    display:block;
    margin-left:0px;
-   } 
-   
-       .input-grid1{
-  width:200px;}
-
+   }    
   .input-grid2{
-  width:300px;}
-  
-   .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs {
-   display:none;
-   visibility:hidden;
-   }  
-   
-.home .box.fm,
-.home .box.ft,
-.home .box.sff {
+  width:300px;
+  }  
+  .input-grid1{
+  width:200px;
+  }  
+  .grid2.box {
+  width: 400px;
+  }
+  .home .box.fm,
+  .home .box.ft,
+  .home .box.sff {
   background-image: url('../img/logo-white-small.png');
   background-position: 390px 15px;
-}
-.box.fm,
-.box.ft,
-.box.sff {
+  }
+  .box.fm,
+  .box.ft,
+  .box.sff {
   background-image: url('../img/logo-white-small.png');
   background-position: 390px 15px;
-}
-   .carousel{width:400px !important;} 
-   
-.grid3.carousel .item {
+  }
+  .carousel{width:400px !important;
+  } 
+  .grid3.carousel .item {
   width: 100% !important;
-}
-    
-    .hero .text .title {
+  }
+  .hero .text {width:100%;
+  }
+  .hero .text .title {
   font-size: 20px;
   font-weight: normal;
   line-height: 22px;
   color: #333333;
-}
-
-.hero .text .description p,
-.hero .text .description li {
+  } 
+  .hero .text .description p,
+  .hero .text .description li {
   font-size: 13px;
   line-height: 17px;
-}
-
-
-  .device{
-  width:450px !important;
-  } 
-  
-  onlinesupportbox{
-     display:none;
-   visibility:hidden;
   }
-
- .header .container{
- padding:10px 0 20px 0;
- }
- 
- .nav{
- top:45px;
- font-size:12px;
- }
- 
- .nav a,
-.subnav a {
+  .nav{
+  top:45px;
+  font-size:12px;
+  }
+  .nav a,
+. subnav a {
   display: block;
   padding: 10px 10px;
   margin-left: 5px;
   text-decoration: none;
-}
-
-.home .titlerow .title{
-margin:0px 10px 5px 0;}
-
-
-.hero .text {width:100%;}
-
+  }
+  .home .titlerow .title{
+  margin:0px 10px 5px 0;
+  }
+  .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs, .onlinesupportbox {
+  display:none;
+  visibility:hidden;
+  } 
 }
 
 /* SMARTPHONE AND TABLET */
@@ -134,6 +111,10 @@ margin:0px 10px 5px 0;}
   /* the area between .header and .footer, not to be confused with <body> */
   /*background: #00aced !important;*/
 }
+   .device{
+   margin-left:0px;
+   width:480px !important;
+   }
   .row {
     width:480px;
     *zoom: 1;
@@ -146,112 +127,94 @@ margin:0px 10px 5px 0;}
   .row:after {
     clear: both;
   }
-  .container
-  {
+  .container {
     width: 480px !important;
-  }
-  
+  }  
   .grid3{
-   width:480px;
-   
+   width:480px;   
    }
   .grid2{
    width:100px;
-   }
-   
-   .grid2.box {
-  width: 480px;
-}
-
+   }   
   .grid1{
    width:190px !important;
    margin-left:20px;
    }   
-   
-       .input-grid1{
-  width:200px;}
-
   .input-grid2{
-  width:300px;}
-  
-   .device{
-   margin-left:0px;
-   width:480px !important;
-   }
-   
-   .hero .image, .blog, .partners, .teambanner, .logmein, .extras, .carousel-control, .tabs {
-   display:none;
-   visibility:hidden;
-   }
-   
-   .supportcommunitybox{
-   margin-left:20px !important;}
-   
- .carousel{width:480px !important;} 
- .carousel-inner .text{width:100%;
-}
-   
-.grid3.carousel .item {
+  width:300px;
+  }   
+  .input-grid1{
+  width:200px;
+  }
+ .grid2.box {
+  width: 480px;
+  }
+  .carousel{
+  width:480px !important;
+  } 
+ .carousel-inner .text{
+  width:100%;
+  }
+  .grid3.carousel .item {
   width: 100% !important;
-}
-    
-    .hero .text .title {
+  }
+  .hero .text .title {
   font-size: 20px;
   font-weight: normal;
   line-height: 22px;
   color: #333333;
-}
-
-.hero .text .description p,
-.hero .text .description li {
+  }
+ .hero .text .description p,
+ .hero .text .description li {
   font-size: 13px;
   line-height: 17px;
-}
-
+  }  
+  .supportcommunitybox{
+  margin-left:20px !important;
+  }
  .nav{
  top:45px;
  font-size:14px;
- }
- 
+ } 
  .nav a,
 .subnav a {
   display: block;
   padding: 15px 15px;
   margin-left: 2px;
   text-decoration: none;
-}  
+  }  
+  .hero .image, .blog, .partners, .teambanner, .logmein, .extras, .carousel-control, .tabs {
+  display:none;
+  visibility:hidden;
+  }
 }
 
 /* PORTABLE TABLET */
 @media (min-width: 768px) and (max-width: 940px) {
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
-  background: #87746b !important;
-}
+  /*background: #87746b !important;*/
+  } 
+  .device{
+   width:620px !important;
+   }
   .row {
-    width:640px;
-    *zoom: 1; 
-        margin-left:-10px;
-  }
+   width:640px;
+   *zoom: 1; 
+   margin-left:-10px;
+   }
   .row:before,
   .row:after {
-    display: table;
-    content: "";
-  }
-  .row:after {
-    clear: both;
-  }
-  .container{
-    width: 640px !important;
-  }
-  
-  .team{
-   width:660px !important;
+   display: table;
+   content: "";
    }
-   
-   .team ul{margin:0px;}
-   .team li{ margin:1px; margin-bottom:2px; line-height:22px;}   
-  .grid3{
+  .row:after {
+   clear: both;
+   }
+  .container{
+   width: 640px !important;
+   }
+   .grid3{
    width:640px ;
    }
   .grid2{
@@ -260,48 +223,49 @@ margin:0px 10px 5px 0;}
   .grid1{
    width:200px;
    margin-left:20px !important;
-   }   
-   
-   
-  .device{
+   }     
+   .carousel{
    width:620px !important;
+   }   
+   .carousel-inner .text{
+   width:100%;
    }
-   .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras {
-   display:none;
-   visibility:hidden;
-   }
-   
-   
-   .carousel-inner .text{width:100%;
-}
-  
-   
-    .carousel{width:620px !important;} 
-   
-   .onlinesupportbox, .supportcommunitybox{width:215px !important; margin-left:20px;}
-   
-    .nav{
- top:45px;
- font-size:14px;
- }
- 
- .nav a,
-.subnav a {
+   .nav{
+   top:45px;
+   font-size:14px;
+   } 
+ .nav a {
   display: block;
   padding: 15px 15px;
   margin-left: 2px;
   text-decoration: none;
+  }
+  .tabs ul {
+  width:100%;
+  }
+  .fm .tabs li {
+   width:93px;
+  }
+  .sff .tabs li {
+   width:93px;
+  } 
+  .team{
+  width:660px !important;
+  }   
+  .team ul{
+  margin:0px;
+  }
+  .team li{
+  margin:1px; 
+  margin-bottom:2px; 
+  line-height:22px;
+  }   
+  .onlinesupportbox, .supportcommunitybox{
+  width:215px !important; 
+  margin-left:20px;
+  }
+  .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras {
+  display:none;
+  visibility:hidden;
+  }
 }
-
- .tabs ul {width:100%;}
- 
-.fm .tabs li {
-  width:93px;
-}
-
-.sff .tabs li {
-  width:93px;
-}
-}
- 
-
