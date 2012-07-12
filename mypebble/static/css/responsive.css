@@ -98,8 +98,8 @@
   .home .titlerow .title{
   margin:0px 10px 5px 0;
   }
-  .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs, .onlinesupportbox {
-  display:none;
+  .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs, .onlinesupportbox, .extras {
+  display:none ;
   visibility:hidden;
   } 
   
