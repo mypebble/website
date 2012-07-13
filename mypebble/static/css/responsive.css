@@ -103,7 +103,7 @@
   visibility:hidden;
   } 
   
-   .box.grid2 {
+   .box .grid2 {
   width: 200px !important;
   }
   
@@ -193,7 +193,9 @@
   visibility:hidden;
   }
   .sidebar{
-  width:480px !important;}
+  width:480px !important;
+  }
+    .supportbanner {margin:0px; width:480px !important;}
 }
 
 /* PORTABLE TABLET */
