@@ -102,12 +102,11 @@
   display:none ;
   visibility:hidden;
   } 
-  
-   .box .grid2 {
-  width: 200px !important;
+  .postcode{margin-left:0px !important;
   }
-  
-  .postcode{margin-left:0px !important;}
+  .onlinesupportbox .pin, .supportcommunitybox .search-support{
+  width:310px;
+  }  
 }
 
 /* SMARTPHONE AND TABLET */
@@ -196,6 +195,10 @@
   width:480px !important;
   }
     .supportbanner {margin:0px; width:480px !important;}
+    
+  .onlinesupportbox .pin, .supportcommunitybox .search-support{
+  width:110px;
+  }  
 }
 
 /* PORTABLE TABLET */
@@ -232,7 +235,7 @@
   .grid1{
    width:200px;
    margin-left:20px !important;
-   }     
+   }
    .carousel{
    width:620px !important;
    }   
@@ -273,6 +276,9 @@
   width:230px !important; 
   margin-left:20px;
   }
+  .onlinesupportbox .pin, .supportcommunitybox .search-support{
+  width:150px;
+  }  
   .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras {
   display:none;
   visibility:hidden;
