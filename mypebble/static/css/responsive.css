@@ -145,7 +145,7 @@
    margin-left:20px;
    }   
   .input-grid2{
-  width:300px;
+  width:440px;
   }   
   .input-grid1{
   width:200px;
@@ -198,7 +198,9 @@
     
   .onlinesupportbox .pin, .supportcommunitybox .search-support{
   width:110px;
-  }  
+  } 
+      .postcode{margin-left:50px !important;
+  } 
 }
 
 /* PORTABLE TABLET */
@@ -282,5 +284,9 @@
   .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras {
   display:none;
   visibility:hidden;
+  }
+    .postcode{margin-left:60px !important;
+  }
+      .org{margin-left:10px !important;
   }
 }
