@@ -98,7 +98,7 @@
   .home .titlerow .title{
   margin:0px 10px 5px 0;
   }
-  .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs, .onlinesupportbox, .extras {
+  .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs, .onlinesupportbox, .extras, .upgrade {
   display:none ;
   visibility:hidden;
   } 
@@ -188,7 +188,7 @@
   margin-left: 2px;
   text-decoration: none;
   }  
-  .hero .image, .blog, .partners, .teambanner, .logmein, .extras, .carousel-control, .tabs, .sff .footerimage {
+  .hero .image, .blog, .partners, .teambanner, .logmein, .extras, .carousel-control, .tabs, .sff .footerimage, .upgrade {
   display:none;
   visibility:hidden;
   }
@@ -288,7 +288,7 @@
   .onlinesupportbox .pin, .supportcommunitybox .search-support{
   width:150px;
   }  
-  .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras {
+  .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras, .upgrade {
   display:none;
   visibility:hidden;
   }
@@ -296,4 +296,5 @@
   }
       .org{margin-left:10px !important;
   }
+  
 }
