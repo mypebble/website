@@ -114,7 +114,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
-  /*background: #00aced !important;*/
+  background: #00aced !important;
 }
    .device{
    margin-left:0px;
@@ -181,11 +181,11 @@
  top:45px;
  font-size:14px;
  } 
- .nav a,
-.subnav a {
+ .nav a {
   display: block;
-  padding: 15px 15px;
+  padding: 5px 10px;
   margin-left: 2px;
+  margin-top:10px;
   text-decoration: none;
   }  
   .hero .image, .blog, .partners, .teambanner, .logmein, .extras, .carousel-control, .tabs, .sff .footerimage, .upgrade {
@@ -199,7 +199,7 @@
     
   .onlinesupportbox .pin, .supportcommunitybox .search-support{
   width:110px;
-  } 
+  }  
       .postcode{margin-left:50px !important;
   } 
 }
@@ -257,7 +257,7 @@
    } 
  .nav a {
   display: block;
-  padding: 15px 15px;
+  padding: 10px 10px;
   margin-left: 2px;
   text-decoration: none;
   }
