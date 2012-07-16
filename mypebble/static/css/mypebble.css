@@ -890,7 +890,7 @@ h3 small {
 h4,
 h5,
 h6 {
-  line-height: 18px;
+  line-height: 18px !important;
 }
 h4 {
   font-size: 14px;
@@ -2645,3 +2645,4 @@ input[type="submit"].btn.small {
 .invisible {
   visibility: hidden;
 }
+.powered_by { margin-top: 8px; padding-top: 8px; border-top: 1px solid #DDD; }
