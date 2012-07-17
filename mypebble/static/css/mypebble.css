@@ -373,7 +373,7 @@ a:hover {
 .hero .image {
   /* float: right; */
   /* image can simply be floated right, but absolute positioning lets you use the space up to the edges. It will be trimmed by the edges of .hero (overflow:hidden), and go over .tabs */
-
+  display:block;
   position: absolute;
   z-index: 995;
   top: 0;
@@ -822,7 +822,7 @@ background-color:#CCC;}
   font-size: 14px;
 }
 .home .titlerow .title {
-  margin: -20px 0 18px 0;
+  margin: 10px 0 18px 0;
   font-size: 20px;
   font-weight: normal;
 
