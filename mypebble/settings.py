@@ -132,6 +132,7 @@ INSTALLED_APPS = (
    'menus', #helper for model independent hierarchical website navigation
    'south', #intelligent schema and data migrations
    'sekizai', #for javascript and css management
+   'activelink',
 
     'cms.plugins.file',
     #'cms.plugin.flash',
