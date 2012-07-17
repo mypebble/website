@@ -114,7 +114,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
-  background: #00aced !important;
+  /*background: #00aced !important;*/
 }
    .device{
    margin-left:0px;
@@ -208,7 +208,7 @@
 @media (min-width: 768px) and (max-width: 940px) {
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
-  background: #87746b !important;
+  /*background: #87746b !important;*/
   } 
   .device{
    width:620px !important;
