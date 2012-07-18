@@ -190,7 +190,6 @@ CMS_TEMPLATES = (
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
-    
 )
 
 CMS_SEO_FIELDS = True

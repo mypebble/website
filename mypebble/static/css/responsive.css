@@ -86,12 +86,12 @@
   line-height: 17px;
   }
   .nav{
-  top:45px;
+  top:52px;
   font-size:12px;
   }
   .nav a{
   display: block;
-  padding: 10px 8px;
+  padding: 4px 8px;
   margin-left: 5px;
   text-decoration: none;
   }
@@ -118,10 +118,10 @@
 }
    .device{
    margin-left:0px;
-   width:480px !important;
+   width:500px !important;
    }
   .row {
-    width:480px;
+    width:520px;
     *zoom: 1;
   }
   .row:before,
@@ -133,7 +133,7 @@
     clear: both;
   }
   .container {
-    width: 480px !important;
+    width: 490px !important;
   }  
   .grid3{
    width:480px;   
@@ -178,7 +178,7 @@
   margin-left:20px !important;
   }
  .nav{
- top:45px;
+ top:52px;
  font-size:14px;
  } 
  .nav a {
@@ -198,10 +198,11 @@
     .supportbanner {margin:0px; width:480px !important;}
     
   .onlinesupportbox .pin, .supportcommunitybox .search-support{
-  width:110px;
+  width:95px;
   }  
       .postcode{margin-left:50px !important;
   } 
+  .header{padding-bottom:10px;}
 }
 
 /* PORTABLE TABLET */
@@ -296,5 +297,5 @@
   }
       .org{margin-left:10px !important;
   }
-  
+    .header{padding-bottom:5px;}
 }
