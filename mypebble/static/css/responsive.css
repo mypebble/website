@@ -102,12 +102,15 @@
   display:none ;
   visibility:hidden;
   } 
-  .postcode{margin-left:0px !important;
+  .postcode{
+  margin-left:0px !important;
   }
   .onlinesupportbox .pin, .supportcommunitybox .search-support{
   width:310px;
   }  
-  .supportbanner{width:440px !important;}
+  .supportbanner{
+  width:440px !important;
+  }
 }
 
 /* SMARTPHONE AND TABLET */
@@ -136,17 +139,17 @@
     width: 490px !important;
   }  
   .grid3{
-   width:480px;   
+   width:520px;   
    }
   .grid2{
    width:100px;
    }   
   .grid1{
-   width:190px !important;
+   width:210px !important;
    margin-left:20px;
    }   
   .input-grid2{
-  width:440px;
+  width:460px;
   }   
   .input-grid1{
   width:200px;
@@ -163,6 +166,13 @@
   .grid3.carousel .item {
   width: 100% !important;
   }
+  .home .box.fm, .home .box.ft, .home .box.sff {
+  background-image: url('');
+  }
+  .box.fm, .box.ft, .box.sff {
+  background-image: url('');
+  }
+  .hero .text{width:100%;}
   .hero .text .title {
   font-size: 20px;
   font-weight: normal;
@@ -174,6 +184,7 @@
   font-size: 13px;
   line-height: 17px;
   }  
+  
   .supportcommunitybox{
   margin-left:20px !important;
   }
@@ -193,16 +204,24 @@
   visibility:hidden;
   }
   .sidebar{
-  width:480px !important;
+  width:520px !important;
   }
-    .supportbanner {margin:0px; width:480px !important;}
-    
+  .supportbanner {
+  margin:0px;
+  width:520px !important;
+  }    
   .onlinesupportbox .pin, .supportcommunitybox .search-support{
   width:95px;
   }  
-      .postcode{margin-left:50px !important;
+  .postcode{
+  margin-left:50px !important;
   } 
-  .header{padding-bottom:10px;}
+  .header{
+  padding-bottom:10px;
+  }
+  .sidebar {
+  margin-left:0px !important;
+  }
 }
 
 /* PORTABLE TABLET */
@@ -212,10 +231,10 @@
   /*background: #87746b !important;*/
   } 
   .device{
-   width:620px !important;
+   width:660px !important;
    }
   .row {
-   width:640px;
+   width:660px;
    *zoom: 1; 
    margin-left:-10px;
    }
@@ -240,11 +259,14 @@
    width:200px;
    margin-left:20px !important;
    }
+   .box .grid1{
+   width:290px;
+   }
   .input-grid2{
-  width:620px;
+  width:600px;
   }   
   .input-grid1{
-  width:300px;
+  width:250px;
   }
    .carousel{
    width:620px !important;
@@ -253,12 +275,12 @@
    width:100%;
    }
    .nav{
-   top:45px;
+   top:55px;
    font-size:14px;
    } 
  .nav a {
   display: block;
-  padding: 10px 10px;
+  padding: 5px 10px;
   margin-left: 2px;
   text-decoration: none;
   }
@@ -283,19 +305,32 @@
   line-height:22px;
   }   
   .onlinesupportbox, .supportcommunitybox{
-  width:250px !important; 
-  margin-left:20px;
+  width:270px !important; 
   }
   .onlinesupportbox .pin, .supportcommunitybox .search-support{
   width:150px;
+  }
+  .hero .text{
+  width:100%;
   }  
   .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras, .upgrade {
   display:none;
   visibility:hidden;
   }
-    .postcode{margin-left:60px !important;
+  .postcode{
+  margin-left:57px !important;
   }
-      .org{margin-left:10px !important;
+  .org{
+  margin-left:10px !important;
   }
-    .header{padding-bottom:5px;}
+  .header{
+  padding-bottom:5px;
+  }
+  .sidebar{
+  margin-left:0px !important;
+  }
+  .supportbanner{
+  margin:0px; 
+  width:620px !important;
+  }
 }
