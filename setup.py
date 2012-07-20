@@ -20,7 +20,7 @@ setup(
         'Django==1.4',
         'South==0.7.5',
 
-        'django-cms==2.2',
+        'django-cms',
         'django-mptt==0.5.1',
 
         'django-mptt==0.5.1',
