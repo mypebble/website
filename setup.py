@@ -21,14 +21,20 @@ setup(
         'South==0.7.5',
 
         'django-cms==2.2',
+        'django-mptt==0.5.1',
 
         'django-mptt==0.5.1',
-        'django-picklfield==0.2.1',
+        'django-picklefield==0.2.1',
         'django-activelink==0.3',
         'django-classy-tags==0.3.4.1',
         'django-reversion==1.6.1',
         'django-coverage==1.2.2',
         'django_email_auth==0.1.3',
         'django_logtail==0.0.2',
+
+        'django_form_designer==0.7.0',
     ],
+    dependency_links = [
+        'https://github.com/philomat/django-form-designer/zipball/master#egg=django_form_designer-0.7.0',
+    ]
 )

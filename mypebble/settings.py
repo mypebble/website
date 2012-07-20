@@ -16,12 +16,12 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',# Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'mypebble_cms',                            # Or path to database file if using sqlite3.
-        'USER': 'pebble',                     	           # Not used with sqlite3.
-        'PASSWORD': 'pebble',                              # Not used with sqlite3.
-        'HOST': 'localhost',                               # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                                        # Set to empty string for default. Not used with sqlite3.
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'mypebble_cms',
+        'USER': 'pebble',
+        'PASSWORD': 'pebble',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -139,7 +139,7 @@ INSTALLED_APPS = (
     'cms.plugins.link',
     'cms.plugins.picture',
     'cms.plugins.teaser',
-    
+
     'cms.plugins.text',  #text plugin
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -190,9 +190,9 @@ CMS_TEMPLATES = (
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
     ('testpage.html', 'Test template'),
-    
+
     ('home_mob.html', 'Home Mob Template'),
-    
+
 )
 
 CMS_SEO_FIELDS = True
