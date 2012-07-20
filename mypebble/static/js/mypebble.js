@@ -4,6 +4,7 @@ $ = jQuery;
 
 $(function(){
 
+    /*
     // Login box in .titlerow
     $('.loginbtn').click(function(){
         $(this).siblings('.loginbox').slideDown();
@@ -12,7 +13,7 @@ $(function(){
     $('.loginbox .close').click(function(){
         $(this).parents('.loginbox').slideUp();
         return false;
-    });
+    });*/
     
     // Slideshow on product homepages
     $('#productCarousel').carousel({

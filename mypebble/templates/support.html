@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% load cms_tags %}
-
 {% block primary %}
-
 <div class="support">
                 <div class="row titlerow">{% placeholder "Strapline" or %}
                     <h1 class="title"><img class="logo" src="{{ STATIC_URL}}img/logo/support_logo.png" alt="Support"/> Support strapline</h1>
@@ -55,22 +53,21 @@
                                     <p>The latest browser-based version of our acclaimed accountancy package</p>
                                 </div>
                                 <div class="footerimage">
-                                    <a href="fm"><img alt="alt text" src="{{ STATIC_URL }}img/screens-in-illustration_web2_01.png"/></a>
+                                    <a href="/support/fm/"><img alt="alt text" src="{{ STATIC_URL }}img/fm/fm_screen.png"/></a>
                                 </div>
                             </div>
                         </div>
                    <div class="box grid1 fm">
                         <div class="box-inner">
-                            <h3 class="title"><a href="fm7">School Fund Manager v7</a></h3>
+                            <h3 class="title"><a href="sfm7">School Fund Manager v7</a></h3>
                             <div class="description">
-                                <p>Older versions of our accountancy package, installed on your desktop <a class="callout" href="#">Upgrade now</a></p>
+                                <p>Older versions of our accountancy package, installed on your desktop <a class="callout" href="/fm/upgrade/">Upgrade now</a></p>
                             </div>
                             <div class="footerimage">
-                                <a href="fm7"><img alt="alt text" src="{{ STATIC_URL }}img/screens-in-illustration_web2_04.png"/></a>
+                                <a href="/support/m7/"><img alt="alt text" src="{{ STATIC_URL }}img/fm7_screen.png"/></a>
                             </div>
                         </div>
                     </div>
-                    
                     <div class="box grid1 sff">
                         <div class="box-inner">
                             <h3 class="title"><a href="ff">School Fund Finder</a></h3>
@@ -78,17 +75,14 @@
                                 <p>School Fund Finder is the superb grants and funding database.</p>
                             </div>
                             <div class="footerimage">
-                                <a href="ff"><img alt="alt text" src="{{ STATIC_URL }}img/260x120.gif"/></a>
+                                <a href="/support/ff/"><img alt="alt text" src="{{ STATIC_URL }}img/ff/ff_screen.png"/></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                
-                
-                    </div>
                 </div>
+                </div>
+            </div>
         </div>
 </div>
  {% endblock %} 
-

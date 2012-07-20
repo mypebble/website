@@ -589,7 +589,7 @@ a:hover {
 .loginbox .search-support,
 .onlinesupportbox .search-support,
 .supportcommunitybox .search-support {
-  width: 162px;
+  width: 172px;
 }
 .loginbox .btn,
 .onlinesupportbox .btn,
@@ -688,8 +688,6 @@ a:hover {
 }
 .header .brand {
   margin-left: 5px;
-  display:block;
- 
 }
 .nav,
 .subnav {
@@ -793,7 +791,6 @@ background-color:#CCC;}
 .titlerow {
   position: relative;
   z-index: 1010;
-  margin-bottom: 15px;
   /*&.with-nav .subnav {
 	    padding-right: 200px; // leave room for loggedinbox
 	}*/
@@ -810,22 +807,22 @@ background-color:#CCC;}
 }
 .titlerow .title {
   /* .title is sometimes an H1 (homepage and product homepages), and sometimes a DIV */
-  margin: 0;
+
+  margin: 10px;
   font-size: 15px;
   font-weight: bold;
-  line-height: 35px;
+  line-height: 25px;
 }
 .titlerow.with-nav .title {
   line-height: 21px;
 }
 .titlerow .loginbtn {
   float: right;
-  margin-top: -21px;
+  margin:-21px 0 20px 0;
   font-size: 14px;
 }
 .home .titlerow .title {
-margin:10px;
-  line-height:25px;
+  margin: 10px 0 18px 0;
   font-size: 20px;
   font-weight: normal;
 }
@@ -841,7 +838,7 @@ p {
   margin: 0 0 9px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 20px;
 }
 p small {
   font-size: 12px;
@@ -922,6 +919,7 @@ ol ul {
 }
 ul {
   list-style: disc;
+    list-style: none;
 }
 ol {
   list-style: decimal;
@@ -1134,7 +1132,6 @@ select,
 .uneditable-input {
   display: inline-block;
   width: 210px;
-  height: 18px;
   padding: 4px;
   margin-bottom: 9px;
   font-size: 13px;
@@ -2496,6 +2493,9 @@ input[type="submit"].btn.small {
 .carousel-inner {
   position: relative;
 }
+
+.carousel-inner .text{width:60%;
+}
 .carousel .item {
   display: none;
   opacity: 0;
@@ -2533,7 +2533,7 @@ input[type="submit"].btn.small {
   filter: none;
 }
 .grid3.carousel .item {
-  width: 900px;
+  width: 100%;
 }
 .grid2.carousel .item {
   width: 580px;
@@ -2645,24 +2645,6 @@ input[type="submit"].btn.small {
 .invisible {
   visibility: hidden;
 }
-
-/*test*/
-
-.nav-collapse.collapse {
-  height: auto;
-}
-
-.collapse {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-     -moz-transition: height 0.35s ease;
-      -ms-transition: height 0.35s ease;
-       -o-transition: height 0.35s ease;
-          transition: height 0.35s ease;
-}
-
-.collapse.in {
-  height: auto;
-}
+.powered_by { margin-top: 8px; padding-top: 8px; border-top: 1px solid #DDD; }
+.partners ul{padding:5px;}
+.partners li{ text-align:center; padding:5px;}

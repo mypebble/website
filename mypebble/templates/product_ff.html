@@ -6,43 +6,19 @@
         <div class="row titlerow">
             <h1 class="title "><img class="logo" src="{{ STATIC_URL }}img/logo/sff_logo.png" alt="School Fund Finder"/>{% placeholder "strapline" or %} {% endplaceholder %}</h1> 
            <div class="logmein">
-                <a class="btn loginbtn" href="#">Log in</a>
-                    <div class="loginbox box grid1 hide" id="sff-loginbox">
-                        <a class="close">×</a>
-                            <form action="/login/" method="post" id="login-form-fm">
-                                <h2 class="title">Log in to School Fund Finder</h2>
-                                    <label for="id_username">Email</label>
-                                        <div class="alert alert-warning errorlist hide">
-                                            <ul class="errorlist">
-                                                <li>This field is required</li>
-                                            </ul>
-                                        </div>
-                                            <input class="email" type="email" size="30" name="email" placeholder="Email address" id="id_email"/>
-                                                <label for="id_password">Password</label>
-                                                    <div class="alert alert-warning errorlist hide">
-                                                        <ul class="errorlist">
-                                                            <li>This field is required</li>
-                                                            <li>Another error</li>
-                                                       </ul>
-                                                    </div>
-                                                        <input class="password" type="password" size="20" name="password" placeholder="Password" id="id_password"/>
-                                                        <input type="submit" value="Log in" class="btn"/>
-                                                        <input type="hidden" value="/" name="next"/>
-                                                            <p class="form-help"><a href="#">Forgot your login?</a> &bull; <a href="#">Help</a></p>
-                            </form>
-                    </div>
+                <a class="btn loginbtn" href="http://www.schoolfundfinder.co.uk/home" target="_blank">Log in</a>                     
         </div></div>
             <div class="row">
                 <div class="box grid3 hero tabbed carousel slide " id="productCarousel">
                     <div class="tabs">
                         <ul>
                             <li class="active-tab"><a href="#item1">Overview</a></li>
-                            <li><a href="#item2">Grants and Funding Search</a></li>
+                            <li><a href="#item2">Grants &amp; Funding</a></li>
                             <li><a href="#item3">Automated Updates</a></li>
                             <li><a href="#item4">Document Templates</a></li>
-                            <li><a href="#item5">Telephone Advice Line</a></li>
+                            <li><a href="#item5">Advice Line</a></li>
                             <li><a href="#item6">Monthly Newsletters</a></li>
-                            <li><a href="#item7">Custom Email Updates</a></li>
+                            <li><a href="#item7">Custom Updates</a></li>
                         </ul>
                     </div>
                         <div class="carousel-inner">
@@ -195,7 +171,7 @@
                     <div class="grid1 sidebar extras"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid1">
                             <div class="box-inner">
-                                <a href="#"><img class="box-img" src="{{ STATIC_URL }}img/ff_40x60.png" alt="School Fund Finder brochure "/></a>
+                                <a href="#"><img class="box-img" src="{{ STATIC_URL }}img/ff/ff_40x60.png" alt="School Fund Finder brochure "/></a>
                                     <h2 class="title">Fund Finder brochure</h2>
                                         <div class="description">
                                             <p>Everything you need to know in a two page summary <a href="#">Download PDF</a></p>
@@ -204,7 +180,7 @@
               </div>
                    <div class="box grid1 extras">
                         <div class="box-inner">
-                            <a href="https://twitter.com/#!/PebbleSFF" target="_blank"><img class="box-img" src="{{ STATIC_URL }}img/ff_twitter.png" alt="Follow us on twitter PebbleSFF"/></a>
+                            <a href="https://twitter.com/#!/PebbleSFF" target="_blank"><img class="box-img" src="{{ STATIC_URL }}img/ff/ff_twitter.png" alt="Follow us on twitter PebbleSFF"/></a>
                                 <h2 class="title">Follow on Twitter</h2>
                                     <div class="description">
                                         <p>Follow <a href="https://twitter.com/#!/PebbleSFF" target="_blank">@PebbleSFF</a> for product offers, news and support</p>
@@ -214,12 +190,10 @@
                     </div>
                 </div>
                 </div>
-                
                        <div class="row ">
         {% placeholder "Feedback" or %}
         <div class="box">
-            <div class="grid3">
-                <h2 class="title">Success Stories</h2>
+                   <h2 class="title">Success Stories</h2>
                     <div class="row">
                         <div class="grid1 testimonial">
                             <blockquote>
@@ -241,18 +215,8 @@
                        </div>
                 </div>
         </div>
-
-    </div>
   </div>{% endplaceholder %}
-
   </div>
-                
-                
-                
-                
-                
-    
-        </div><!--/.container-->    
+       </div><!--/.container-->    
 </div><!--/.body-->
       {% endblock %} 
-
