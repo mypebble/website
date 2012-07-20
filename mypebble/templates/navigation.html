@@ -1,0 +1,8 @@
+{% load activelink %}
+<ul>
+    <li class="{% ifactive "/home/" %}active{% else %}off{% endifactive %}" ><a href="/home/" >Home</a></li>
+    <li class="{% ifstartswith "/fm/" %}fm active{% else %}off{% endifstartswith %}"><a href="/fm/">Fund Manager </a></li>
+    <li class="{% ifstartswith "/ff/" %}sff active{% else %}off{% endifstartswith %}"><a href="/ff/" >School Fund Finder</a></li>
+    <li class="{% ifstartswith "/support/"  %}support active{% else %}off{% endifstartswith %}"><a href="/support/" >Support</a></li>
+    <li class="{% ifactive "/enquiries/" %}active{% else %}off{% endifactive %}"><a href="/enquiries/" >Enquiries </a></li>
+</ul>

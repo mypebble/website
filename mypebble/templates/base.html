@@ -7,7 +7,7 @@
 <html>
   <head>
   {% render_block "css" %}
-    <link rel="icon" href="{{ STATIC_URL }}img/favicon.png " />
+    <link rel="icon" href="{{ STATIC_URL }}img/favicon/pebble.ico" />
 
     <title>{% page_attribute page_title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,8 +20,7 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
         <!--[if lt IE 9]-->
             <script src="js/html5.js"></script>
             <![endif]-->
-
-        <!-- Styles -->
+         <!-- Styles -->
          <!--[if ! lte IE 6]-->
         <link href="{{ STATIC_URL }}css/mypebble.css" rel="stylesheet"/>
         <link href="{{ STATIC_URL }}css/responsive.css" rel="stylesheet"/>
@@ -54,88 +53,16 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
 			var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
 			document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
 		</script>
+		
 		<script type="text/javascript" charset="utf-8">
 			var feedback_widget_options = {};
 			feedback_widget_options.display = "overlay";
 			feedback_widget_options.company = "pebble";
 			feedback_widget_options.placement = "right";
-			feedback_widget_options.color = "#555555";
+			feedback_widget_options.color = "#2577AA";
 			feedback_widget_options.style = "idea";
 			var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
 		</script>
-<script type="text/javascript">
-$(function() {
-
-    function retrieve_api_items(url, context, content) {
-        $.ajax({
-            url: url,
-            context: context,
-            beforeSend: function() {
-                $('.block-contents', this)
-                .html(content['retrieving'] + '<span />');
-                elipses_loader($('.block-contents span', this));
-            },
-            success: function(data) {
-                $('.block-contents', this).text('');
-                var items = $(data['items']);
-                if(items.length) {
-                    $('.block-contents', this).append($('<ul />').hide());
-                    var ul = $('.block-contents ul', this);
-
-                    $(items).each(function() {
-                        ul.append(
-                            $('<li />').append(
-                                $('<a />', { href: this.link })
-                                .text(this.title)
-                            )
-                        );
-                    });
-
-                    ul.fadeIn();
-
-                    $('.block-footer', this).append(
-                        $('<a />', { href: data.site_url })
-                        .text(content['site_link_text'])
-                        .hide()
-                        .fadeIn()
-                    );
-                }
-                else {
-                    $('.block-contents', this).text(content['empty']);
-                }
-            },
-            error: function() {
-                $('.block-contents', this).text(content['error']);
-            },
-            global: false
-        });
-    }
-
-    // retrieve FAQs
-    retrieve_api_items(
-        '/faq/',
-        $('#faq-block'),
-        {
-            'retrieving': 'Retrieving questions',
-            'site_link_text': 'See all Frequently Asked Questions',
-            'empty': 'There are currently no questions.',
-            'error': 'There was a problem retrieving the questions.'
-        }
-    );
-    // retrieve blog posts
-    retrieve_api_items(
-        '/blog/',
-        $('#news-block'),
-        {
-            'retrieving': 'Retrieving news stories',
-            'site_link_text': 'See all News Stories',
-            'empty': 'There are currently no news stories.',
-            'error': 'There was a problem retrieving the news stories.'
-        }
-    );
-
-});
-</script>
 </head>
 <body>
     <div class="body" id="body">
@@ -153,14 +80,12 @@ $(function() {
         <div class="header">
             <div class="container">
                 <div class="brand">
-                    <a href="/home/"><img src="{{ STATIC_URL }}img/logo/logo-pebble.gif" alt="Pebble"/></a>
+                <a href="/home/"><img src="{{ STATIC_URL }}img/logo/logo-pebble.gif" alt="Pebble"/></a>
+                </div>
+                <div class="nav" id="nav">
+                {% include "navigation.html" %}
                 </div>
          
-   <div class="nav" id="nav">
-				    <ul>
-    					{% show_menu 0 100 100 100 %}
-				    </ul>
-                </div>
             </div><!--/.container-->
         </div><!--/.header--> 
         
@@ -185,7 +110,7 @@ $(function() {
                     <h3>Support</h3>
                     <ul>
                         <li><a href="/support/fm/">Fund Manager</a></li>
-                        <li><a href="/support/fm7/">School Fund Manager v7</a></li>
+                        <li><a href="/support/sfm7/">School Fund Manager v7</a></li>
                         <li><a href="/support/ff/">School Fund Finder</a></li>
                         <!--<li><a href="/downloads">Downloadable resources</a></li>-->
                         <li><a href="https://getsatisfaction.com/pebble" target="_blank">Pebble Support Community</a></li>

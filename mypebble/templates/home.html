@@ -6,27 +6,22 @@
     <div class="row titlerow">
         <h1 class="title">{% placeholder "strapline" or %}{% endplaceholder %}</h1>
     </div>
-    
     <div class="row ">
         <div class="grid3">
         <div class="box hero">
-            <div class="#">
+            <div class="text">
                 <div class="image">{% placeholder "hero_image" or %}{% endplaceholder %}
                 </div>
-            <div class="#" >
-                <h2 class="#">{% placeholder "hero" or%} We specialise in smart accountancy software that help schools and other organisations save time and money.</h2>
-                <div class="#">
+                <h2 class="title">{% placeholder "hero" or%} We specialise in smart accountancy software that help schools and other organisations save time and money.</h2>
+                <div class="decription">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>{% endplaceholder %}
                 </div>
-            </div>
         </div>
     </div>
-    
-    
     <div class="row">
         <div class="box grid1 fm">
             <div class="box-inner">
-                <h2 class="title"><a href="fm">Fund Manager</a>  - make keeping track of voluntary income simplicity itself</h2>
+                <h2 class="title"><a href="/fm/">Fund Manager</a>  - make keeping track of voluntary income simplicity itself</h2>
                     <div class="description">
                         <p>Our accountancy package dedicated to managing voluntary funds</p>
                             <ul>
@@ -37,13 +32,13 @@
                             </ul>
                     </div>
                     <div class="footerimage">
-                        <a href="fm"><img alt="Fund Manager" src="{{ STATIC_URL }}img/screens-in-illustration_web2_01.png"/></a>
+                        <a href="/fm/"><img alt="Fund Manager" src="{{ STATIC_URL }}img/fm/fm_screen.png"/></a>
                      </div>
             </div>
         </div>
         <div class="box grid1 sff">
             <div class="box-inner">
-                <h2 class="title"><a href="sff">School Fund Finder</a> - search for free grants for your school</h2>
+                <h2 class="title"><a href="/ff/">School Fund Finder</a> - search for free grants for your school</h2>
                     <div class="description">
                         <p>Our accountancy package dedicated to managing voluntary funds</p>
                             <ul>
@@ -54,14 +49,14 @@
 				            </ul>
                     </div>
                         <div class="footerimage">
-                            <a href="fm"><img alt="Scholl Fund Finder" src="{{ STATIC_URL }}img/screens-in-illustration_web2_01.png"/></a>
+                            <a href="/ff/"><img alt="Scholl Fund Finder" src="{{ STATIC_URL }}img/ff/ff_screen.png"/></a>
                         </div>
                    </div>
             </div>
-        <div class="grid1 device">
+        <div class="grid1 device supportbanner">
             <div class="box support">
                 <div class="box-inner">
-                    <h2 class="title">Underpinned by our unparalelled <a href="support">Support</a></h2>
+                    <h2 class="title">Underpinned by our unparalelled <a href="/support/">Support</a></h2>
                         <div class="description">
                             <p>A license for any of our products entitles you to lifetime support from our friendly in-house team and lively user community</p>
                         </div>
@@ -70,7 +65,7 @@
         </div>
     </div>
     </div>
-    <div class="row grid3">
+    <div class="row extras">
         {% placeholder "Feedback" or %}
         <div class="box">
             <div class="grid2">
@@ -103,16 +98,15 @@
         </div>
     </div>
   </div>{% endplaceholder %}
-
                 <div class="row">
                     <div class="box grid3 team teambanner">
                         <img class="team-image" alt="alt text" src="{{ STATIC_URL }}img/940x220.gif"/>
                         <div class="text">
                             <h2>Brought to you, and supported every day, by our dedicated team in the North</h2>
-                            <p><a href="#">The Pebble story</a></p>
+                            <p><a href="/about/">The Pebble story</a></p>
                         </div>
                     </div>
                 </div>
   </div>
- {% endblock %} 
 
+ {% endblock %} 

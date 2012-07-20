@@ -1,53 +1,27 @@
 {% extends "base.html" %}
 {% load cms_tags %}
-
 {% page_attribute "meta_decription" %}
 {% page_attribute "meta_keywords" %}
-
 {% block primary %}
 <div class="producthome fm"> 
     <div class="body" id="body">
-        <div class="container"> 
         <div class="row titlerow">
             <h1 class="title "><img class="logo" src="{{ STATIC_URL }}img/logo/fm_logo.png" alt="Fund Manager"/>{% placeholder "strapline" or %} {% endplaceholder %}</h1> 
-                    <a class="btn loginbtn" href="#">Log in</a>
-                    <div class="loginbox box grid1 hide" id="fm-loginbox">
-                        <a class="close">×</a>
-                        <form action="/login/" method="post" id="login-form-fm">
-                            <h2 class="title">Log in to Fund Manager</h2>
-                            <label for="id_username">Email</label>
-                            <div class="alert alert-warning errorlist hide">
-                                <ul class="errorlist">
-                                    <li>This field is required</li>
-                                </ul>
-                            </div>
-                            <input class="email" type="email" size="30" name="email" placeholder="Email address" id="id_email"/>
-                            <label for="id_password">Password</label>
-                            <div class="alert alert-warning errorlist hide">
-                                <ul class="errorlist">
-                                    <li>This field is required</li>
-                                    <li>Another error</li>
-                                </ul>
-                            </div>
-                            <input class="password" type="password" size="20" name="password" placeholder="Password" id="id_password"/>
-                            <input type="submit" value="Log in" class="btn"/>
-                            <input type="hidden" value="/" name="next"/>
-                            <p class="form-help"><a href="#">Forgot your login?</a> &bull; <a href="#">Help</a></p>
-                        </form>
-                    </div>
+          <div class="logmein">
+                    <a class="btn loginbtn" href="https://apps.talktopebble.co.uk/login/?next=/" target="_blank">Log in</a>
+                </div>
                 </div>
                 <div class="row">
-                    
                     <div class="box grid3 hero tabbed carousel slide" id="productCarousel">
                         <div class="tabs">
                             <ul>
                                 <li class="active-tab"><a href="#item1">Overview</a></li>
-                                <li><a href="#item2">Receipts &amp; Payments</a></li>
+                                <li><a href="#item2">Receipts Payments</a></li>
                                 <li><a href="#item3">Transaction History</a></li>
                                 <li><a href="#item4">Graphic Reports</a></li>
                                 <li><a href="#item5">Names Database</a></li>
-                                <li><a href="#item6">Pebble Register <span class="callout">Catering</span></a></li>
-                                <li><a href="#item7">Pebble Offers <span class="callout">Parents</span></a></li>
+                                <li><a href="#item6">Pebble Register <span class="callout extras">Catering</span></a></li>
+                                <li><a href="#item7">Pebble Offers <span class="callout extras">Parents</span></a></li>
                             </ul>
                         </div>
                         <div class="carousel-inner">
@@ -73,7 +47,7 @@
                                     <img src="{{ STATIC_URL }}img/fm/fm_receipt.png" alt="Receipts and Payments"/>
                                 </div>
                                 <div class="text">
-                                    <h2 class="title">Receipts & Payments</h2>
+                                    <h2 class="title">Receipts  Payments</h2>
                                     <div class="description">
                                         <p>Fund Manager is an accountancy package dedicated to managing voluntary funds. Used and trusted by over 00,000 schools and other organisations since 199x</p>
                                         <h3>Key benefits</h3>
@@ -188,38 +162,39 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
+                    <div class="grid1 sidebar extras"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid1">
                             <div class="box-inner">
                                 <h2 class="title">Advice and support</h2>
                                 <div class="description">
                                     <p>Got a question or need help? Our <a href="/support/">Support</a> section has got you covered</p>
-                                    <p><small><strong>Using an older version of Fund Manager?</strong> <a href="#">Upgrade now to get all the benefits</a> <a class="callout" href="#">Upgrade now</a></small></p>
+                                    <p><small><strong>Using an older version of Fund Manager?</strong> <a href="/fm/upgrade/">Upgrade now to get all the benefits</a> <a class="callout" href="/fm/upgrade/">Upgrade now</a></small></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="box grid3">
+                    <div class="box">
+                       
                             <h2 class="title">Fund Manager for&hellip;</h2>
                             <div class="row">
                                 <div class="grid1 testimonial">
                                     <h3 class="testimonialtitle">Primary schools</h3>
                                     <blockquote>
-                                        <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                        <p>TEST Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
                                         <small>Name, occupation, organisation</small>
                                     </blockquote>
                                     <p><a href="#">Read the case study</a></p>
                                 </div>
-                                <div class="grid1 testimonial">
+                                <div class="grid1 testimonial quote">
                                     <h3 class="testimonialtitle">Secondary schools</h3>
                                     <blockquote>
-                                        <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                        <p>TEST2 Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
                                         <small>Name, occupation, organisation</small>
                                     </blockquote>
                                 </div>
-                                <div class="grid1 testimonial">
+                                <div class="grid1 testimonial blog">
                                     <h3 class="testimonialtitle">Parents</h3>
                                     <blockquote>
                                         <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
@@ -227,8 +202,8 @@
                                     </blockquote>
                                 </div>
                             </div>
-                        <div class="row">
-                            <div class="grid1 testimonial">
+                        <div class="row blog">
+                            <div class="grid1 testimonial ">
                                 <h3 class="testimonialtitle">PTAs</h3>
                                 <blockquote>
                                     <p>Testimonial. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
@@ -253,11 +228,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="box grid3 calltoaction-secondary recommend-promo">
+                    <div class="box calltoaction-secondary recommend-promo">
                         <div class="box-inner">
                             <h2 class="title">Recommend Fund Manager</h2>
                             <div class="description">
+                                <div class="blog">
                                 <p>Wish your school, your child's school, or a voluntary organisation you belong to, used Fund Manager? Let us help you make the case!</p>
+                                </div>
                                 <form action="/recommend/" method="post" id="recommend-form-fm" class="form-inline">
                                     <label for="target">Help me convince:</label>
                                     <select id="target">
@@ -272,9 +249,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
             </div><!--/.container-->    
         </div><!--/.body-->   
       {% endblock %} 
-
+      </div>

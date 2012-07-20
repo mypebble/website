@@ -30,11 +30,11 @@
                                         <input class="input-grid2" type="email" size="20" name="email" id="email" required/>
                                         
                                         <div class="row">
-                                            <div class="grid1">
+                                            <div class="grid1 org">
                                                 <label for="org">School or organisation</label>
                                                 <input class="input-grid1" type="text" size="20" name="org" id="org"/>
                                             </div>
-                                            <div class="grid1">
+                                            <div class="grid1 postcode">
                                                 <label for="postcode">Postcode</label>
                                                 <input class="input-grid1" type="text" size="20" name="postcode" id="postcode"/>
                                             </div>
@@ -63,17 +63,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="grid1 gridthird">
-                                                <div class="controls">
-                                                    <label class="checkbox">
-                                                        <input type="checkbox" value="option1" id="optionsCheckbox">
-                                                            Fund Tracker
-                                                            <div class="muted">Online fund tracking &amp; payments for parents &amp; members</div>
-                                                    </label>
-                                                </div>
-                                            </div>
                                         </div>
-                                        
                                         <p class="label">I would like</p>
                                         <div class="row form-inline">
                                             <label class="checkbox">
@@ -88,12 +78,9 @@
                                             <label class="checkbox">
                                                 <input type="checkbox" id="enquiry-other"/> Other enquiry
                                             </label>
-                                                
                                         </div>
-                                        
                                         <label for="message">Add a message?</label>
                                         <textarea class="input-grid2" type="text" size="20" rows="5" name="message" id="message"></textarea>
-                                        
                                         <div class="buttons">
                                             <input type="submit" value="Send" class="btn"/>
                                         </div>
@@ -111,7 +98,7 @@
                                     <p>
                                         <i class="i icon-email-white"></i> <a href="mailto:info@talktopebble.co.uk">info@talktopebble.co.uk</a><br/>
                                         <i class="i icon-email-white"></i> <a href="mailto:support@talktopebble.co.uk">support@talktopebble.co.uk</a><br/>
-                                        <i class="i icon-twitter-white"></i> <a href="#">@talktopebble</a><br/>
+                                        <i class="i icon-twitter-white"></i> <a href="https://twitter.com/pebblesff" target="_blank">@PebbleSFF</a><br/>
                                         <i class="i icon-phone-white"></i> Tel: 0845 310 1788<br/>
                                         <i class="i icon-blank"></i> <small>Mon – Fri 8:30am – 5.30pm</small><br/>
                                         <i class="i icon-phone-white"></i> Fax: 0845 310 1777
@@ -127,7 +114,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                         <div class="supportcommunitybox box grid1">
@@ -135,23 +121,17 @@
                                 <h2 class="title">Download a brochure</h2>
                                 <div class="description">
                                     <p>Everything you need to know in a two page summary</p>
-                                    <img class="box-img" src="img/40x40.gif" alt=""/>
+                                    <img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x40.png" alt=""/>
                                     <h3>Fund Manager</h3>
                                     <p><a href="#">Download PDF</a></p>
-                                    <img class="box-img" src="img/40x40.gif" alt=""/>
-                                    <h3>Fund Tracker</h3>
-                                    <p><a href="#">Download PDF</a></p>
-                                    <img class="box-img" src="img/40x40.gif" alt=""/>
+                                    <img class="box-img" src="{{ STATIC_URL }}img/ff/ff_40x40.png" alt=""/>
                                     <h3>School Fund Finder</h3>
                                     <p><a href="#">Download PDF</a></p>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div><!--/.container-->    
         </div><!--/.body-->
  {% endblock %} 
-

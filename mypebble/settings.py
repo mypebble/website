@@ -132,6 +132,7 @@ INSTALLED_APPS = (
    'menus', #helper for model independent hierarchical website navigation
    'south', #intelligent schema and data migrations
    'sekizai', #for javascript and css management
+   'activelink',
 
     'cms.plugins.file',
     #'cms.plugin.flash',
@@ -139,7 +140,7 @@ INSTALLED_APPS = (
     'cms.plugins.link',
     'cms.plugins.picture',
     'cms.plugins.teaser',
-
+    
     'cms.plugins.text',  #text plugin
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -189,10 +190,6 @@ CMS_TEMPLATES = (
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
-    ('testpage.html', 'Test template'),
-
-    ('home_mob.html', 'Home Mob Template'),
-
 )
 
 CMS_SEO_FIELDS = True

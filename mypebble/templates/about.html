@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% load cms_tags %}
-
 {% block primary %}
-
 <div class="enquiries">
         <div class="body" id="body">
                 <div class="row">
@@ -17,9 +15,19 @@
                     <div class="grid1 sidebar partners"> <!-- Column. Modules inside will stack vertically -->
                         <div class="supportcommunitybox box grid1">
                             <div class="box-inner">
-                                <h2 class="title">{% placeholder "side_secondary_h" or %}{% endplaceholder %}</h2>
-                                <div class="description">
-                            {% placeholder "side_secondary_p" or %} {% endplaceholder %}
+                                <h2 class="title">Partners</h2>
+                                    <p>we can work with the following companies</p>
+                                
+                                <div class="partners">
+                                    <ul>
+                                        <li><a href="http://www.squidcard.com/" target="_blank" title="#"><img alt="sQid" src="{{ STATIC_URL }}img/partner/squid_logo.jpg"></a></li>
+                                        <li><a href="http://www.1st4schoolsinsurance.co.uk/pebble/" target="_blank" title="#"><img alt="Genesis" src="{{ STATIC_URL }}img/partner/genesis_logo.png"></a></li>
+                                        <li><a href="http://www.cardsave.net/" target="_blank" title="#"><img alt="CardSave" src="{{ STATIC_URL }}img/partner/csave_logo.png"></a></li>
+                                        <li><a href="http://www.the-contactgroup.com/products/call-parents/" target="_blank" title="#"><img alt="CallParents" src="{{ STATIC_URL }}img/partner/cparent_logo.png"></a></li>
+                                        <li><a href="http://schoolcomms.com/" target="_blank" title="#"><img alt="Schoolcomms" src="{{ STATIC_URL }}img/partner/scoms_logo.png"></a></li>
+                                        <li><a href="https://www.parentmail.co.uk/index.html" target="_blank" title="#"><img alt="ParentMail" src="{{ STATIC_URL }}img/partner/Pmail_logo.png"></a></li>
+                                        <li><a href="http://www.civica.co.uk/education" target="_blank" title="#"><img alt="Civica" src="{{ STATIC_URL }}img/partner/civica_logo.png"></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -27,7 +35,7 @@
                 </div> 
                 
                 
-                <div class="row">
+                <div class="row extras">
                     <div class="box supportfocus carousel" id="supportCarousel">
                         <div class="team">
                         <h2 class="title">The Pebble team</h2>
@@ -79,7 +87,7 @@
                                 </div>                                
 
                     </div>
-                                                                                <a class="carousel-control left" href="#supportCarousel" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control left" href="#supportCarousel" data-slide="prev">&lsaquo;</a>
                         <a class="carousel-control right" href="#supportCarousel" data-slide="next">&rsaquo;</a>
                 </div>
 </div></div>
