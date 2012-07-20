@@ -12,3 +12,5 @@ build
 
 mypebble/build
 mypebble/foobar/lib/*
+
+mypebble.egg-info/*
