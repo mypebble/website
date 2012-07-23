@@ -25,6 +25,7 @@ DATABASES = {
     }
 }
 
+
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
@@ -133,13 +134,16 @@ INSTALLED_APPS = (
    'south', #intelligent schema and data migrations
    'sekizai', #for javascript and css management
    'activelink',
-
+   'forms_builder.forms',
+   #'cmsplugin_contact',
+   
     'cms.plugins.file',
     #'cms.plugin.flash',
     'cms.plugins.googlemap',
     'cms.plugins.link',
     'cms.plugins.picture',
     'cms.plugins.teaser',
+    
     
     'cms.plugins.text',  #text plugin
     'django.contrib.auth',
@@ -190,6 +194,8 @@ CMS_TEMPLATES = (
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
+    ('test.html', 'Test Template'),
+
 )
 
 CMS_SEO_FIELDS = True

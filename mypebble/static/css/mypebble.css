@@ -2648,3 +2648,9 @@ input[type="submit"].btn.small {
 .powered_by { margin-top: 8px; padding-top: 8px; border-top: 1px solid #DDD; }
 .partners ul{padding:5px;}
 .partners li{ text-align:center; padding:5px;}
+
+
+#id_name, #id_email_address, #id_school_or_organisation, #id_add_a_message {width:570px;}
+
+#id_postcode, #id_telephone{width:250px;}
+
