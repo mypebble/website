@@ -1498,6 +1498,7 @@ select:focus:required:invalid:focus {
 .label {
   font-weight: bold;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 .enquiries-form label {
   font-weight: bold;

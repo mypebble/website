@@ -9,7 +9,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+     ('AH', 'ah@talktopebble.co.uk'),
 )
 
 MANAGERS = ADMINS
@@ -24,6 +24,11 @@ DATABASES = {
         'PORT': '',
     }
 }
+
+#fix this for production 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
 
 
 # Local time zone for this installation. Choices can be found here:
