@@ -25,7 +25,7 @@ DATABASES = {
     }
 }
 
-#fix this for production 
+#fix this for production
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
@@ -110,7 +110,7 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
-    
+
     'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
 )
 
@@ -133,7 +133,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
-    
+
      #'zinnia.context_processors.version', # Optional
 )
 
@@ -150,15 +150,15 @@ INSTALLED_APPS = (
    'cmsplugin_blog',
    'tagging',
    #'cmsplugin_contact',
-   
+
     'cms.plugins.file',
     #'cms.plugin.flash',
     'cms.plugins.googlemap',
     'cms.plugins.link',
     'cms.plugins.picture',
     'cms.plugins.teaser',
-    
-    
+
+
     'cms.plugins.text',  #text plugin
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -209,7 +209,7 @@ CMS_TEMPLATES = (
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
     ('test.html', 'Test Template'),
-    ('blog.html', 'blog Template'),
+    #('blog.html', 'blog Template'),
     #('cmsplugin_blog_base.html','cmsplugin_blog'),
 
 

@@ -22,6 +22,7 @@ setup(
 
         'django-cms==2.3',
         'django-mptt==0.5.1',
+        'django-forms-builder==0.7.10',
 
         'django-mptt==0.5.1',
         'django-picklefield==0.2.1',
@@ -32,9 +33,6 @@ setup(
         'django_email_auth==0.1.3',
         'django_logtail==0.0.2',
 
-        'django_form_designer==0.7.0',
+        'cmsplugin_blog==1.1.2',
     ],
-    dependency_links = [
-        'https://github.com/philomat/django-form-designer/zipball/master#egg=django_form_designer-0.7.0',
-    ]
 )
