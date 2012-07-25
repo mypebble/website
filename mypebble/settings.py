@@ -110,7 +110,11 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
+    
+    'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
 )
+
+CMSPLUGIN_BLOG_PLACEHOLDERS = ('first', 'second', 'third')
 
 ROOT_URLCONF = 'mypebble.urls'
 
@@ -129,6 +133,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
+    
+     #'zinnia.context_processors.version', # Optional
 )
 
 
@@ -140,6 +146,9 @@ INSTALLED_APPS = (
    'sekizai', #for javascript and css management
    'activelink',
    'forms_builder.forms',
+   #'#zinnia',
+   'cmsplugin_blog',
+   'tagging',
    #'cmsplugin_contact',
    
     'cms.plugins.file',
@@ -200,7 +209,14 @@ CMS_TEMPLATES = (
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
     ('test.html', 'Test Template'),
+    ('blog.html', 'blog Template'),
+    #('cmsplugin_blog_base.html','cmsplugin_blog'),
+
 
 )
+
+JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
+JQUERY_UI_JS = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js'
+JQUERY_UI_CSS = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css'
 
 CMS_SEO_FIELDS = True
