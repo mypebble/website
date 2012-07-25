@@ -180,10 +180,39 @@
               </div>
                    <div class="box grid1 extras">
                         <div class="box-inner">
-                            <a href="https://twitter.com/#!/PebbleSFF" target="_blank"><img class="box-img" src="{{ STATIC_URL }}img/ff/ff_twitter.png" alt="Follow us on twitter PebbleSFF"/></a>
+                        <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 1,
+  interval: 30000,
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#ffffff',
+      color: '#2e2e2e'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#292929',
+      links: '#f8a233'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: false,
+    behavior: 'default'
+  }
+}).render().setUser('PebbleSFF').start();
+</script>
+
+                            <!--<a href="https://twitter.com/#!/PebbleSFF" target="_blank"><img class="box-img" src="{{ STATIC_URL }}img/ff/ff_twitter.png" alt="Follow us on twitter PebbleSFF"/></a>
                                 <h2 class="title">Follow on Twitter</h2>
                                     <div class="description">
-                                        <p>Follow <a href="https://twitter.com/#!/PebbleSFF" target="_blank">@PebbleSFF</a> for product offers, news and support</p>
+                                        <p>Follow <a href="https://twitter.com/#!/PebbleSFF" target="_blank">@PebbleSFF</a> for product offers, news and support</p>-->
                                         </div>
                             </div>
                         </div>
