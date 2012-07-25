@@ -209,7 +209,7 @@ CMS_TEMPLATES = (
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
     ('test.html', 'Test Template'),
-    ('blog.html', 'blog Template'),
+    #('blog.html', 'blog Template'),
     #('cmsplugin_blog_base.html','cmsplugin_blog'),
 
 
