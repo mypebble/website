@@ -8,73 +8,17 @@
 <div class="pull-right"{% placeholder "support_product" or %}{% endplaceholder %}</div></div>
                 </div>
                 
-                <div class="row">{% placeholder "support_document" or %}
+                <div class="row">
 
-                    <h1>On-site detailed help article with screenshots and/or video</h1>
+                    <h1>{% placeholder "support_title" or %}{% endplaceholder %}</h1>
                     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid2">
                             <div class="box-inner">
-                                <p><strong>Main content area is inside this <code>.box.grid2</code>.</strong> Paragraph. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <h2>H2 Heading 2</h2>
-                                <p><code>p</code> Paragraph. <strong>Strong.</strong> <em>Emphasis.</em> <a href="#">Hyperlink.</a> Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <p>Paragraph. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <h3>H3 Heading 3</h3>
-                                <p class="pull-quote pull-right"><code>p.pull-quote</code> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec in diam.</p>
-                                <p>Paragraph with a pull-quote. Donec ipsum. Suspendisse potenti. Morbi vitae nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porta orci eget urna. Donec nec massa. Ut pharetra interdum felis. Phasellus eget nibh. Mauris nunc elit, consectetuer ac, sodales et, malesuada quis, nibh. Aenean feugiat purus id orci. Fusce pede purus, vestibulum porttitor, scelerisque ut, dapibus eget, lorem.</p>
-                                <p><img class="pull-right" alt="alt text" src="{{ STATIC_URL}}img/260x120.gif"/>Paragraph with an <code>img.pull-right</code>. Donec ipsum. Suspendisse potenti. Morbi vitae nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porta orci eget urna. Donec nec massa. Ut pharetra interdum felis. Phasellus eget nibh. Mauris nunc elit, consectetuer ac, sodales et, malesuada quis, nibh. Aenean feugiat purus id orci. Fusce pede purus, vestibulum porttitor, scelerisque ut, dapibus eget, lorem.</p>
+                                <p>{% placeholder "support_document" or %}{% endplaceholder %}</p>
                                 
-                                <h2>Buttons and icons</h2>
-                                <p>Button styles <code>a.btn</code>, <code>button.btn</code> or, <code>input.btn</code>: <a href="#" class="btn">.btn</a> <a href="#" class="btn btn-large">.btn.btn-large</a></p>
-                                <p>Icons <code>i.i.icon-name</code>, e.g. <i class="i icon-arrow-r"></i>icon-arrow-r</p>
-                                
-                                <h2>Tooltips, popovers and modals</h2>
-                                <p><span rel="tooltip" title="Tooltip contents">Hover over me for <strong>tooltip</strong>.</span> Add attributes <code>rel="tooltip" title="foo"</code> to any element. See <a href="http://twitter.github.com/bootstrap/javascript.html#tooltips" target="_blank">Bootstrap docs</a> for more options.</p>
-                                <p><span rel="popover" data-original-title="Popover title" data-content="Popover contents">Hover over me for <strong>popover</strong>.</span> Add attributes <code>rel="popover" data-original-title="foo" data-content="bar"</code> to any element. See <a href="http://twitter.github.com/bootstrap/javascript.html#popovers" target="_blank">Bootstrap docs</a> for more options.</p>
-                                <p><a href="#myModal" data-toggle="modal">Click me for <strong>modal dialog</strong>.</a> Add attributes <code>data-toggle="modal" href="#myModal"</code> to any element, and <code>div.modal#myModal</code> at the end of the markup. See <a href="http://twitter.github.com/bootstrap/javascript.html#modals" target="_blank">Bootstrap docs</a> for more options.</p>
-                                
-                                <h2>Bullet lists</h2>                                
-                                <p>Paragraph. Donec ipsum. Suspendisse potenti. Morbi vitae nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <ul>
-                                    <li>Bullet list first item</li>
-                                    <li>
-                                        <h3>Subheading H3 in a bullet list</h3>
-                                        <p>Paragraph inside bullet list. Suspendisse potenti. Morbi vitae nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porta orci eget urna. Donec nec massa. Ut pharetra interdum felis. Phasellus eget nibh. Mauris nunc elit, consectetuer ac, sodales et, malesuada quis, nibh. Aenean feugiat purus id orci. Fusce pede purus, vestibulum porttitor, scelerisque ut, dapibus eget, lorem.</p>
-                                    </li>
-                                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vitae nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</li>
-                                    <li>Bullet list embedded in another bullet list<ul>
-                                        <li>Phasellus justo pede, dictum pulvinar, sagittis a, tincidunt vitae, enim. Vestibulum sed libero</li>
-                                        <li>Aliquam consectetuer malesuada justo</li>
-                                        <li>Phasellus ut lacus ac elit ullamcorper consequat</li>
-                                    </ul></li>
-                                    <li>Phasellus justo pede, dictum pulvinar, sagittis a, tincidunt vitae, enim. Vestibulum sed libero</li>
-                                    <li>Aliquam consectetuer malesuada justo</li>
-                                    <li>Phasellus ut lacus ac elit ullamcorper consequat</li>
-                                </ul>
-                                <p>Paragraph. Donec ipsum. Suspendisse potenti. Morbi vitae nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <h2>Numbered lists</h2>
-                                <ol>
-                                    <li>Numbered list. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus justo pede, dictum pulvinar, sagittis a, tincidunt vitae, enim. Vestibulum sed libero</li>
-                                    <li>Phasellus justo pede, dictum pulvinar, sagittis a, tincidunt vitae, enim. Vestibulum sed libero
-                                        <ol>
-                                            <li>Nested numbered list. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus justo pede, dictum pulvinar, sagittis a, tincidunt vitae, enim. Vestibulum sed libero</li>
-                                            <li>Phasellus justo pede, dictum pulvinar, sagittis a, tincidunt vitae, enim. Vestibulum sed libero</li>
-                                            <li>Aliquam consectetuer malesuada justo</li>
-                                            <li>Phasellus ut lacus ac elit ullamcorper consequat</li>
-                                        </ol>
-                                    </li>
-                                    <li>Aliquam consectetuer malesuada justo</li>
-                                    <li>Phasellus ut lacus ac elit ullamcorper consequat</li>
-                                </ol>
-                                
-                                <h2>Block quotations</h2>
-                                <p>Paragraph. Donec ipsum. Suspendisse potenti. Morbi vitae nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <blockquote>
-                                    <p>Block quotation. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec in diam. Integer fringilla faucibus arcu. Donec tempus. Sed ac diam nec nulla nonummy aliquam. Phasellus justo pede, dictum pulvinar, sagittis a, tincidunt vitae, enim. Vestibulum sed libero. Aliquam consectetuer malesuada justo. Phasellus ut lacus ac elit ullamcorper consequat.</p>
-                                    <small>Optional source and citation</small>
-                                </blockquote>
                             </div>
                         </div>
-                    </div>{% endplaceholder %}
+                    </div>
                     <div class="grid1 sidebar device"> <!-- Column. Modules inside will stack vertically -->
                         <div class="support supportbox onlinesupportbox box grid1">
                             <div class="box-inner">
