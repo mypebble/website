@@ -204,6 +204,7 @@ CMS_TEMPLATES = (
 	('support_product.html', 'Support Product Template'),
 	('support_document.html', 'Support Document Template'),
     ('contact.html', 'Contact Template'),
+    ('contact2.html', 'Contact Template'),
     ('login.html', 'Login Template'),
 
     ('misc.html', 'Misc Template'),

@@ -46,12 +46,23 @@
    display:block;
    margin-left:0px;
    }    
-  .input-grid2{
-  width:400px;
-  }  
-  .input-grid1{
-  width:300px;
-  }  
+   .charfield, .charfield.required, .emailfield.required{
+   width:400px;
+   }
+   .multiplechoicefield{display:inline;width:100px;}
+   .enquiries-form li label{
+   font-size:11px;
+   width:150px; 
+   display:inline-block; 
+   margin-left:5px; 
+   font-weight:normal;
+   }
+   .enquiries-form li{
+   display:inline;
+   }
+   #id_postcode, .floatfield {
+   width:300px;
+   }
   .grid2.box {
   width: 400px;
   }
@@ -147,13 +158,28 @@
   .grid1{
    width:210px !important;
    margin-left:20px;
-   }   
-  .input-grid2{
+   } 
+  .charfield, .charfield.required, .emailfield.required{
   width:460px;
-  }   
-  .input-grid1{
+  }
+  .multiplechoicefield{
+  display:inline;
+  width:100px;
+  }
+  .enquiries-form li label{
+  font-size:11px;
+   width:150px; 
+   display:inline; 
+   margin-left:5px; 
+   font-weight:normal;
+   }
+  .enquiries-form li{
+  display:inline;
+  }
+  #id_postcode, .floatfield {
   width:200px;
   }
+
  .grid2.box {
   width: 480px;
   }
@@ -262,12 +288,25 @@
    .box .grid1{
    width:290px;
    }
-  .input-grid2{
-  width:600px;
-  }   
-  .input-grid1{
-  width:250px;
-  }
+   .charfield, .charfield.required, .emailfield.required{
+   width:570px;
+   }
+   .multiplechoicefield{
+   display:inline;
+   width:100px;
+   }
+   .enquiries-form li label{
+   width:177px; 
+   display:inline; 
+   margin-left:10px; 
+   font-weight:normal;
+   }
+   .enquiries-form li{
+   display:inline;}
+   #id_postcode, .floatfield {
+   width:300px;
+   }
+
    .carousel{
    width:620px !important;
    }   
