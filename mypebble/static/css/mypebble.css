@@ -2650,8 +2650,17 @@ input[type="submit"].btn.small {
 .partners ul{padding:5px;}
 .partners li{ text-align:center; padding:5px;}
 
+.charfield.required{width:570px;}
+.emailfield.required{width:570px;}
+.charfield{width:570px;}
+.multiplechoicefield{display:inline;width:100px;}
 
-#id_name, #id_email_address, #id_school_or_organisation, #id_add_a_message {width:570px;}
+.enquiries-form li label{
+width:177px; display:inline; margin-left:20px; font-weight:normal;}
+.enquiries-form li{
+display:inline;}
+.enquiries-form li{
+display:inline;}
+#id_postcode {width:210px;}
 
-#id_postcode, #id_telephone{width:250px;}
 

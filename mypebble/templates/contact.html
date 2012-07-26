@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 {% block primary %}
-{% load forms_builder_tags %}
 <div class="enquiries">
         <div class="body" id="body">{% placeholder "Welcome" %} 
                               <div class="row">
@@ -12,87 +11,10 @@
                                 <p>As well as software we also provide real people on hand to offer all the Advice and support you need. No automated telephone lines - just a dedicated team of people who know the products inside out.</p>
                                 <div class="form enquiries-form">
                                     <p>Use this form to request more information or just send us a message. We'll be in touch shortly.</p>
+{% include "form_detail.html" %}
 
-    {# render_build_form form_instance #}
-    {# render_build_form form=form_instance #}
-    {# render_build_form id=form_instance.id #}
-    {# render_build_form slug=form_instance.slug #}
-    
-                                    <form action="/contact/" method="post" id="enquiries-form" class="contact-form">
-                                        
-                                        <label for="name">Name <span class="muted">(required)</span></label>
-                                        <div class="alert alert-warning errorlist hide">
-                                            <ul class="errorlist">
-                                                <li>This field is required</li>
-                                            </ul>
-                                        </div>
-                                        <input class="input-grid2" type="text" size="20" name="name" id="name" required/>
-                                        
-                                        <label for="email">Email address <span class="muted">(required)</span></label>
-                                        <div class="alert alert-warning errorlist hide">
-                                            <ul class="errorlist">
-                                                <li>This field is required</li>
-                                            </ul>
-                                        </div>
-                                        <input class="input-grid2" type="email" size="20" name="email" id="email" required/>
-                                        
-                                        <div class="row">
-                                            <div class="grid1 org">
-                                                <label for="org">School or organisation</label>
-                                                <input class="input-grid1" type="text" size="20" name="org" id="org"/>
-                                            </div>
-                                            <div class="grid1 postcode">
-                                                <label for="postcode">Postcode</label>
-                                                <input class="input-grid1" type="text" size="20" name="postcode" id="postcode"/>
-                                            </div>
-                                        </div>
-                                        
-                                        <label for="phone">Telephone <span class="muted">If you would like us to call you back</span></label>
-                                        <input class="input-grid1" type="text" size="20" name="phone" id="phone"/>
-                                        
-                                        <p class="label">I'm interested in</p>
-                                        <div class="row control-group">
-                                            <div class="grid1 gridthird">
-                                                <div class="controls">
-                                                    <label class="checkbox">
-                                                        <input type="checkbox" value="option1" id="optionsCheckbox">
-                                                            Fund Manager
-                                                            <div class="muted">Accounting &amp; Reports</div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="grid1 gridthird">
-                                                <div class="controls">
-                                                    <label class="checkbox">
-                                                        <input type="checkbox" value="option1" id="optionsCheckbox">
-                                                            School Fund Finder
-                                                            <div class="muted">Fundraising &amp; Grants</div>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="label">I would like</p>
-                                        <div class="row form-inline">
-                                            <label class="checkbox">
-                                                <input type="checkbox" id="enquiry-info"/> Information pack
-                                            </label>
-                                            <label class="checkbox">
-                                                <input type="checkbox" id="enquiry-demo"/> Online demo
-                                            </label>
-                                            <label class="checkbox">
-                                                <input type="checkbox" id="enquiry-training"/> On-site or online training
-                                            </label>
-                                            <label class="checkbox">
-                                                <input type="checkbox" id="enquiry-other"/> Other enquiry
-                                            </label>
-                                        </div>
-                                        <label for="message">Add a message?</label>
-                                        <textarea class="input-grid2" type="text" size="20" rows="5" name="message" id="message"></textarea>
-                                        <div class="buttons">
-                                            <input type="submit" value="Send" class="btn"/>
-                                        </div>
                                         <p>We only use your details to provide the information you requested. <a href="#">Privacy policy</a></p>
-                                    </form>
+                                    
                                 </div>
                             </div>
                         </div>
