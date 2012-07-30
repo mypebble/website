@@ -124,6 +124,7 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(PROJECT_PATH, 'templates'),
     os.path.join(PROJECT_PATH, 'templates/forms'),
+    #os.path.join(PROJECT_PATH, 'templates/blog'),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
