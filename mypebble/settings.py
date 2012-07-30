@@ -154,6 +154,7 @@ INSTALLED_APPS = (
    #'cmsplugin_contact',
 
     'cms.plugins.file',
+    'cms.plugins.video',
     #'cms.plugin.flash',
     'cms.plugins.googlemap',
     'cms.plugins.link',
@@ -212,14 +213,17 @@ CMS_TEMPLATES = (
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
     ('test.html', 'Test Template'),
+    ('newsletter.html', 'Newsletter'),
     #('blog.html', 'blog Template'),
     #('cmsplugin_blog_base.html','cmsplugin_blog'),
 
 
 )
 
+#for blog
 JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
 JQUERY_UI_JS = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js'
 JQUERY_UI_CSS = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css'
 
+#SEO
 CMS_SEO_FIELDS = True

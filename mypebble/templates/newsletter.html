@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block primary %}
+<div class="enquiries">
+    <div class="body" id="body">
+        <div class="row">
+            <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
+                <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                    <div class="box grid2">
+                        <div class="box-inner">
+                            {% placeholder "main_content" or %} {% endplaceholder %} 
+  <!-- Newsletter -->
+  
+<div id="mc_embed_signup">
+<form action="http://talktopebble.us5.list-manage2.com/subscribe/post?u=1c8b9f93d89b4f1e6ddd27ff2&amp;id=8e37535111" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	<label for="pin">Subscribe to our mailing list</label>
+	<input type="email" value="" name="EMAIL" class="charfield pin" id="mce-EMAIL" placeholder="email address" required>
+	
+	<input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="btn">
+</form>
+  
+  </div>
+                        </div>
+                    </div> 
+                </div>
+                    <div class="grid1 sidebar partners"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="supportcommunitybox box grid1">
+                            <div class="box-inner">
+                                <h2 class="title">{% placeholder "side_secondary_h" or %}{% endplaceholder %}</h2>
+                                    <div class="description">
+{% placeholder "side_secondary_p" or %}{% endplaceholder %}
+                                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+</div>
+{% endblock %} 

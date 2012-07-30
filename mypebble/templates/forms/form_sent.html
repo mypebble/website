@@ -1,17 +1,52 @@
-<!doctype html>
-<head>
-    <meta charset="utf-8">
-    <title>{{ form.title }}</title>
-    <style>
-        body {font-family:sans-serif; padding:1em 2em;}
-        p {width:50em;}
-        label {display:block; float:left; width:10em;}
-        .errorlist {color:#f00;}
-    </style>
-</head>
-<body>
-    <h1>{{ form.title }}</h1>
-    {% if form.response %}
-    <p>{{ form.response }}</p>
-    {% endif %}
-</body>
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block primary %}
+<div class="enquiries">
+        <div class="body" id="body">{% placeholder "Welcome" %} 
+                              <div class="row">
+                    <h1>Message Sent</h1>
+                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box grid2">
+                            <div class="box-inner">
+                                <div class="form enquiries-form">
+                                    <h2>{{ form.title }}</h2>
+                                        {% if form.response %}
+                                            <p>{{ form.response }}</p>
+                                        {% endif %}
+   <img alt="Fund Manager" class="pull-right" src="{{ STATIC_URL }}img/fm/fm_screen.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid1 sidebar device"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="support supportbox onlinesupportbox box grid1">
+                            <div class="box-inner">
+                                <h2 class="title">We're available</h2>
+                                <div class="description">
+                                    <p>
+                                        <i class="i icon-email-white"></i> <a href="mailto:info@talktopebble.co.uk">info@talktopebble.co.uk</a><br/>
+                                        <i class="i icon-email-white"></i> <a href="mailto:support@talktopebble.co.uk">support@talktopebble.co.uk</a><br/>
+                                        <i class="i icon-twitter-white"></i> <a href="https://twitter.com/pebblesff" target="_blank">@PebbleSFF</a><br/>
+                                        <i class="i icon-phone-white"></i> Tel: 0845 310 1788<br/>
+                                        <i class="i icon-blank"></i> <small>Mon – Fri 8:30am – 5.30pm</small><br/>
+                                        <i class="i icon-phone-white"></i> Fax: 0845 310 1777
+                                    </p>
+                                    <div class="vcard">
+                                        <div class="fn org"><strong>Pebble Ltd</strong></div>
+                                        <div class="adr">
+                                            <div class="street-address">Media Exchange Three</div>
+                                            <div>Coquet Street</div>
+                                            <div class="locality">Newcastle upon Tyne</div>
+                                            <div class="postal-code">NE1 2QB</div>
+                                            <div class="country-name visuallyhidden">United Kingdom</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.container-->    
+        </div><!--/.body-->
+ {% endblock %} 
+
