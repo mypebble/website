@@ -216,8 +216,6 @@ CMS_TEMPLATES = (
     ('newsletter.html', 'Newsletter'),
     #('blog.html', 'blog Template'),
     #('cmsplugin_blog_base.html','cmsplugin_blog'),
-
-
 )
 
 #for blog
