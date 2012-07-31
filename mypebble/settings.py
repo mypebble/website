@@ -148,10 +148,9 @@ INSTALLED_APPS = (
    'sekizai', #for javascript and css management
    'activelink',
    'forms_builder.forms',
-   #'#zinnia',
-   'cmsplugin_blog',
-   'tagging',
-   #'cmsplugin_contact',
+   #blog stuff
+   #'cmsplugin_blog', 
+   #'tagging',
 
     'cms.plugins.file',
     'cms.plugins.video',
