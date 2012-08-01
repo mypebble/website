@@ -35,6 +35,7 @@ setup(
 
         'cmsplugin_blog==1.1.2',
 
+        'ssh',
         'fabric',
     ],
 )
