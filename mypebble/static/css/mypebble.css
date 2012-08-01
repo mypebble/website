@@ -2055,6 +2055,7 @@ table {
 .sff .titlerow .loginbtn:hover {
   background: #da8006;
 }
+.titlerow{margin-bottom:10px;}
 button.btn,
 input[type="submit"].btn {
   *padding-top: 2px;

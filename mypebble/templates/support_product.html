@@ -2,7 +2,6 @@
 {% load cms_tags %}
 {% block primary %}
  <div class="support">
-        <div class="body" id="body">
                 <div class="row titlerow">
                     <div class="title">
                         <a href="/support/">
@@ -31,9 +30,7 @@
                                 <h3><img class="pull-left" src="{{ STATIC_URL }}img/s_40x60.png" alt=""/>{% placeholder "support_decriptin_3h" or %} {% endplaceholder %}</h3>
                                 <p>{% placeholder "support_description_3p" or %}{% endplaceholder %}</p>
                                 <h2>Other tutorials</h2>
-                                <ul>
-                                    {% placeholder "other_tutorials" or %} {% endplaceholder %}
-                                </ul>
+                               {% placeholder "other_tutorials" or %} {% endplaceholder %}
                             </div>
                         </div>
                     </div>
@@ -95,7 +92,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div><!--/.container-->    
  {% endblock %} 

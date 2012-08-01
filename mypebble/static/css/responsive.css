@@ -225,7 +225,7 @@
   margin-top:10px;
   text-decoration: none;
   }  
-  .hero .image, .blog, .partners, .teambanner, .logmein, .extras, .carousel-control, .tabs, .sff .footerimage, .upgrade, .gscommunity {
+  .hero .image, .blog, .partners, .teambanner, .logmein, .extras, .carousel-control, .tabs, .upgrade, .gscommunity, .video {
   display:none;
   visibility:hidden;
   }
@@ -236,6 +236,10 @@
   margin:0px;
   width:520px !important;
   }    
+  .sffbanner {
+  margin:0px;
+  width:480px !important;
+  } 
   .onlinesupportbox .pin, .supportcommunitybox .search-support{
   width:120px;
   }  
@@ -352,7 +356,7 @@
   .hero .text{
   width:100%;
   }  
-  .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras, .upgrade {
+  .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras, .upgrade, .video {
   display:none;
   visibility:hidden;
   }

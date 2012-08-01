@@ -124,7 +124,7 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(PROJECT_PATH, 'templates'),
     os.path.join(PROJECT_PATH, 'templates/forms'),
-    #os.path.join(PROJECT_PATH, 'templates/blog'),
+    os.path.join(PROJECT_PATH, 'templates/cmsplugin_blog'),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -136,7 +136,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
 
-     #'zinnia.context_processors.version', # Optional
 )
 
 
@@ -149,9 +148,11 @@ INSTALLED_APPS = (
    'activelink',
    'forms_builder.forms',
    #blog stuff
-   #'cmsplugin_blog', 
-   #'tagging',
-
+   'simple_translation',
+   'cmsplugin_blog', 
+   'tagging',
+   'missing',
+    'staticfiles',
     'cms.plugins.file',
     'cms.plugins.video',
     #'cms.plugin.flash',
@@ -213,8 +214,8 @@ CMS_TEMPLATES = (
     ('upgrade.html', 'Upgrade Template'),
     ('test.html', 'Test Template'),
     ('newsletter.html', 'Newsletter'),
-    #('blog.html', 'blog Template'),
-    #('cmsplugin_blog_base.html','cmsplugin_blog'),
+    ('blog.html', 'blog Template'),
+    ('cmsplugin_blog_base.html', 'cmsplugin_blog'),
 )
 
 #for blog
