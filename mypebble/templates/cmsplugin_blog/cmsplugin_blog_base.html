@@ -1,0 +1,35 @@
+{% extends "base.html"%}
+{% block extrahead %}
+{% endblock extrahead %}
+{% block primary %}
+
+<h1>Test blog</h1>
+
+{% load i18n cmsplugin_blog_tags %}
+
+{{ block.super }}
+
+
+{% block left-col %}
+{{ block.super }}
+
+<h1>{% trans "Entries tagged" %} "{{ tag }}"</h1>
+
+{% if object_list %}
+   {% include "cmsplugin_blog/entry_list_include.html" %}
+{% else %}
+	<p>{% trans "No entries tagged" %} "{{ tag }}"</p>
+{% endif %}
+
+{% endblock %}
+
+{% block right-col %}
+
+{% render_author_links %}
+
+{% render_month_links %}
+
+{% render_tag_links %}
+
+{% endblock %}
+{% endblock %}
