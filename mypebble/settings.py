@@ -111,7 +111,7 @@ MIDDLEWARE_CLASSES = (
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
 
-    'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
+    #'cmsplugin_blog.middleware.MultilingualBlogEntriesMiddleware',
 )
 
 CMSPLUGIN_BLOG_PLACEHOLDERS = ('first', 'second', 'third')
@@ -124,7 +124,7 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(PROJECT_PATH, 'templates'),
     os.path.join(PROJECT_PATH, 'templates/forms'),
-    os.path.join(PROJECT_PATH, 'templates/cmsplugin_blog'),
+    #os.path.join(PROJECT_PATH, 'templates/cmsplugin_blog'),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -135,7 +135,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
-
 )
 
 
