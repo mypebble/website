@@ -148,11 +148,12 @@ INSTALLED_APPS = (
    'activelink',
    'forms_builder.forms',
    #blog stuff
-   'simple_translation',
-   'cmsplugin_blog', 
-   'tagging',
-   'missing',
-    'staticfiles',
+   #'simple_translation',
+   #'cmsplugin_blog', 
+   #'tagging',
+   #'missing',
+   # 'staticfiles',
+    
     'cms.plugins.file',
     'cms.plugins.video',
     #'cms.plugin.flash',
@@ -215,13 +216,13 @@ CMS_TEMPLATES = (
     ('test.html', 'Test Template'),
     ('newsletter.html', 'Newsletter'),
     ('blog.html', 'blog Template'),
-    ('cmsplugin_blog_base.html', 'cmsplugin_blog'),
+    #('cmsplugin_blog_base.html', 'cmsplugin_blog'),
 )
 
 #for blog
-JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
-JQUERY_UI_JS = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js'
-JQUERY_UI_CSS = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css'
+#JQUERY_JS = 'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'
+#JQUERY_UI_JS = 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js'
+#JQUERY_UI_CSS = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/themes/smoothness/jquery-ui.css'
 
 #SEO
 CMS_SEO_FIELDS = True
