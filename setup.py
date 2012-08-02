@@ -34,5 +34,8 @@ setup(
         'django_logtail==0.0.2',
 
         'cmsplugin_blog==1.1.2',
+
+        'ssh',
+        'fabric',
     ],
 )
