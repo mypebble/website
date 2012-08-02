@@ -1,4 +1,6 @@
 base:
     '*':
-        - webserver
+        - database
+        - supervisor
         - mypebble
+        - webserver
