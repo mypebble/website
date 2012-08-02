@@ -9,16 +9,15 @@
                         <div class="box grid2">
                             <div class="box-inner">
                                 <div class="form enquiries-form">
-                                    <h2>{{ form.title }}</h2>
                                         {% if form.response %}
                                             <p>{{ form.response }}</p>
                                         {% endif %}
-   <img alt="Fund Manager" class="pull-right" src="{{ STATIC_URL }}img/fm/fm_screen.png"/>
+   <img alt="Fund Manager" class="pull-right" src="{{ STATIC_URL }}img/pebble_stone.png"/>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="grid1 sidebar device"> <!-- Column. Modules inside will stack vertically -->
+                                       <div class="grid1 sidebar device"> <!-- Column. Modules inside will stack vertically -->
                         <div class="support supportbox onlinesupportbox box grid1">
                             <div class="box-inner">
                                 <h2 class="title">We're available</h2>
@@ -44,7 +43,20 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="supportcommunitybox box grid1">
+                            <div class="box-inner">
+                                <h2 class="title">Download a brochure</h2>
+                                <div class="description">
+                                    <p>Everything you need to know in a two page summary</p>
+                                    <img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x40.png" alt=""/>
+                                    <h3>Fund Manager</h3>
+                                    <p><a href="#">Download PDF</a></p>
+                                    <img class="box-img" src="{{ STATIC_URL }}img/sff/sff_40x40.png" alt=""/>
+                                    <h3>School Fund Finder</h3>
+                                    <p><a href="#">Download PDF</a></p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div><!--/.container-->    
         </div><!--/.body-->

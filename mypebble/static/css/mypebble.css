@@ -1283,7 +1283,8 @@ font-weight:normal;
 }
 .enquiries-form li{
 display:inline;}
-#id_postcode, .floatfield {
+
+#id_postcode, #id_telephone, #id_best_time {
 width:210px;
 }
 

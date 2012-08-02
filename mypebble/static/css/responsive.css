@@ -60,7 +60,7 @@
    .enquiries-form li{
    display:inline;
    }
-   #id_postcode, .floatfield {
+   #id_postcode, #id_telephone, #id_best_time {
    width:300px;
    }
   .grid2.box {
@@ -176,7 +176,7 @@
   .enquiries-form li{
   display:inline;
   }
-  #id_postcode, .floatfield {
+  #id_postcode, #id_telephone, #id_best_time {
   width:200px;
   }
 
@@ -307,10 +307,9 @@
    }
    .enquiries-form li{
    display:inline;}
-   #id_postcode, .floatfield {
+   #id_postcode, #id_telephone, #id_best_time {
    width:300px;
    }
-
    .carousel{
    width:620px !important;
    }   
