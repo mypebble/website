@@ -3,6 +3,7 @@ syntax: glob
 *.pyc
 *~
 *.orig
+*.swp
 
 src/*
 lib

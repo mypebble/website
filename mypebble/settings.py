@@ -148,11 +148,11 @@ INSTALLED_APPS = (
    'forms_builder.forms',
    #blog stuff
    #'simple_translation',
-   #'cmsplugin_blog', 
+   #'cmsplugin_blog',
    #'tagging',
    #'missing',
    # 'staticfiles',
-    
+
     'cms.plugins.file',
     'cms.plugins.video',
     #'cms.plugin.flash',
@@ -173,6 +173,7 @@ INSTALLED_APPS = (
      'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'mypebble.core',
 )
 
 # A sample logging configuration. The only tangible logging
