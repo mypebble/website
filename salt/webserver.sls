@@ -28,6 +28,9 @@ enabled:
         - group: nginx
         - mode: 755
         - makedirs: True
+        - require:
+            - pkg: nginx
+            - file: /srv/www/mypebble
 
 /srv/www/schoolfund/log:
     file.directory:
@@ -35,7 +38,11 @@ enabled:
         - group: nginx
         - mode: 755
         - makedirs: True
+        - require:
+            - pkg: nginx
 
 /srv/www/mypebble:
     file.symlink:
         - target: /home/www/mypebble
+        - require:
+            - user: www_group

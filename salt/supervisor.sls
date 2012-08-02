@@ -5,6 +5,7 @@ supervisor:
         - running
         - require:
             - pkg: supervisor
+            - user: www_user
 
 /etc/supervisor/conf.d/mypebble.conf:
     file:
