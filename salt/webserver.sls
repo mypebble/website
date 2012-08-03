@@ -45,4 +45,4 @@ enabled:
     file.symlink:
         - target: /home/www/mypebble
         - require:
-            - user: www_group
+            - user: www_user
