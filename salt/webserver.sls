@@ -5,6 +5,8 @@ nginx:
         - running
         - require:
             - pkg: nginx
+            - file: /srv/www/mypebble
+            - user: www_user
 
 available:
     file:
@@ -13,6 +15,7 @@ available:
         - source: salt://nginx.conf
         - require:
             - pkg: nginx
+            - user: www_user
 
 enabled:
     file:
@@ -21,28 +24,39 @@ enabled:
         - source: salt://nginx.conf
         - require:
             - pkg: nginx
+            - user: www_user
 
 /srv/www/talktopebble/log:
     file.directory:
-        - user: nginx
-        - group: nginx
+        - user: www
+        - group: www
         - mode: 755
         - makedirs: True
         - require:
             - pkg: nginx
-            - file: /srv/www/mypebble
+            - user: www_user
 
 /srv/www/schoolfund/log:
     file.directory:
-        - user: nginx
-        - group: nginx
+        - user: www
+        - group: www
         - mode: 755
         - makedirs: True
         - require:
             - pkg: nginx
+            - user: www_user
 
 /srv/www/mypebble:
     file.symlink:
         - target: /home/www/mypebble
         - require:
+            - user: www_user
+
+/srv/www/mypebble/log:
+    file.directory:
+        - user: www
+        - group: www
+        - mode: 755
+        - require:
+            - file: /srv/www/mypebble
             - user: www_user
