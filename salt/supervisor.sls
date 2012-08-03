@@ -13,3 +13,4 @@ supervisor:
         - require:
             - pkg: supervisor
             - user: www_user
+            - file: /srv/www/mypebble/log
