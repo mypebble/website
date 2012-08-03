@@ -4,16 +4,6 @@ $ = jQuery;
 
 $(function(){
 
-    // Login box in .titlerow
-    $('.loginbtn').click(function(){
-        $(this).siblings('.loginbox').slideDown();
-        return false;
-    });
-    $('.loginbox .close').click(function(){
-        $(this).parents('.loginbox').slideUp();
-        return false;
-    });
-    
     // Slideshow on product homepages
     $('#productCarousel').carousel({
         interval: 5000
