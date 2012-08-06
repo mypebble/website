@@ -2,12 +2,21 @@ $ = jQuery;
 
 // Temp jQuery -- devs to review and remove this comment when done
 
+
+
+
 $(function(){
 
-    // Slideshow on product homepages
+    var test = 5000;
+    if ($(window).width() <= 600){
+        test = 17000;
+    }
+
+    // Slideshow on product homepages     
     $('#productCarousel').carousel({
-        interval: 5000
+        interval: test
     });
+        
     $('#productCarousel .tabs a').click(function(){
         $('#productCarousel').carousel($(this).closest('li').index());
         $('#productCarousel .tabs li').removeClass('active-tab');
