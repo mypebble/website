@@ -362,6 +362,7 @@ a:hover {
 .hero .text .description li {
   font-size: 14px;
   line-height: 19px;
+  padding-bottom:4px;
 }
 .hero .text .description h3 {
   margin: 18px 0 9px;
@@ -912,11 +913,11 @@ ul ol,
 ol ol,
 ol ul {
   margin-bottom: 0;
-}
+}/*
 ul {
   list-style: disc;
     list-style: none;
-}
+}*/
 ol {
   list-style: decimal;
 }
