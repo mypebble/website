@@ -1,10 +1,4 @@
 $ = jQuery;
-
-// Temp jQuery -- devs to review and remove this comment when done
-
-
-
-
 $(function(){
 
     var test = 5000;

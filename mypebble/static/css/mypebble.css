@@ -364,6 +364,10 @@ a:hover {
   line-height: 19px;
   padding-bottom:4px;
 }
+.hero ul{
+  list-style-type:disc;
+}
+
 .hero .text .description h3 {
   margin: 18px 0 9px;
 }
@@ -913,11 +917,11 @@ ul ol,
 ol ol,
 ol ul {
   margin-bottom: 0;
-}/*
+}
 ul {
   list-style: disc;
     list-style: none;
-}*/
+}
 ol {
   list-style: decimal;
 }
@@ -2443,8 +2447,6 @@ input[type="submit"].btn.small {
  * Copyright 2012 Pebble Ltd
  * 
  */
- .test{}
- 
 .accordion-heading .accordion-toggle {
   display: block;
   padding: 4px 0;
