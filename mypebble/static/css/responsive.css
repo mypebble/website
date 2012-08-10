@@ -29,7 +29,7 @@
     clear: both;
   }
   .container  {
-    width: 460px;
+    width: 100%;
   }  
   .header .container{
    padding:10px 0 20px 0;
