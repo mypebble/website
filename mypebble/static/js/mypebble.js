@@ -1,7 +1,7 @@
 $ = jQuery;
 $(function(){
 
-    var test = 5000;
+    var test = 9000;
     if ($(window).width() <= 600){
         test = 17000;
     }

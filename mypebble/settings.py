@@ -206,6 +206,7 @@ CMS_TEMPLATES = (
     ('support.html', 'Support Template'),
 	('support_product.html', 'Support Product Template'),
 	('support_productSFF.html', 'Support Product SFF Template'),
+	('support_productSFM.html', 'Support Product SFM Template'),
 	('support_document.html', 'Support Document Template'),
     ('contact.html', 'Contact Template'),
     ('contact2.html', 'Contact Template'),

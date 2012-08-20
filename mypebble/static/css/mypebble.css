@@ -1041,6 +1041,8 @@ IMG.pull-right {
 IMG.pull-left {
   margin: 0 20px 10px 0;
 }
+.img-sff{margin-bottom:70px !important;}
+
 .box.support .phonenumber {
   display: block;
   font-size: 24px;
