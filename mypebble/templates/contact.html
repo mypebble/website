@@ -48,14 +48,17 @@
                             <div class="box-inner">
                                 <h2 class="title">Download a brochure</h2>
                                 <div class="description">
-                                    <a href="#"><img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager brochure"/></a>
+                                    <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" title="Fund Manager brochure">
+                                        <img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager brochure"/></a>
                                     <h3>Fund Manager</h3>
                                     <p>The essential information for you to take away.
-                                    <a href="#">Download PDF</a></p>
-                                    <a href="#"><img class="box-img" src="{{ STATIC_URL }}img/sff/sff_40x60.png" alt="School Fund Manager brochure"/></a>
+                                    <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" title="Fund Manager brochure">Download PDF</a></p>
+                                    
+                                    <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" title="School Fund Finder brochure">
+                                        <img class="box-img" src="{{ STATIC_URL }}img/sff/sff_40x60.png" alt="School Fund Manager brochure"/></a>
                                     <h3>School Fund Finder</h3>
                                         <p>The essential information for you to take away.
-                                    <a href="#">Download PDF</a></p>
+                                    <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" title="School Fund Finder brochure">Download PDF</a></p>
                                 </div>
                             </div>
                         </div>
