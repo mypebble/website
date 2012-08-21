@@ -1,9 +1,9 @@
 $ = jQuery;
 $(function(){
 
-    var test = 9000;
+    var test = 18000;
     if ($(window).width() <= 600){
-        test = 17000;
+        test = 20000;
     }
 
     // Slideshow on product homepages     

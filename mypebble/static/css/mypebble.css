@@ -409,7 +409,7 @@ a:hover {
 }
 .box.calltoaction .btn-calltoaction {
   float: right;
-  margin-top: -34px;
+  margin-top: 5px;
 }
 .box.calltoaction form {
   margin-bottom: 0;
@@ -2657,5 +2657,7 @@ input[type="submit"].btn.small {
   text-align:center; 
   padding:5px;
   }
-.bullet{list-style-type:disc;}
 
+/*extras- from sales updates*/
+.bullet{list-style-type:disc; }
+.tutorial h3{line-height:45px;}
