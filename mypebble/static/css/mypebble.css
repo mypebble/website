@@ -409,7 +409,7 @@ a:hover {
 }
 .box.calltoaction .btn-calltoaction {
   float: right;
-  margin-top: 5px;
+ margin-top: 5px;
 }
 .box.calltoaction form {
   margin-bottom: 0;
@@ -700,14 +700,16 @@ a:hover {
 }
 .nav UL,
 .subnav UL,
-.team UL {
+.team UL,
+.social UL {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 .nav li,
 .subnav li,
-.team li {
+.team li,
+.social li {
   float: left;
   line-height: 1;
 }
@@ -2661,3 +2663,10 @@ input[type="submit"].btn.small {
 /*extras- from sales updates*/
 .bullet{list-style-type:disc; }
 .tutorial h3{line-height:45px;}
+.hp{background-color:#C0C0C0;}
+.hpform{width:190px;}
+
+.social {text-align:center;}
+.social UL{margin:auto; width:150px;}
+.social li{margin-left:20px;}
+.social img{height:26px;}

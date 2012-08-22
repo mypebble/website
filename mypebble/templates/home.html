@@ -97,21 +97,19 @@
     </div>
   </div>{% endplaceholder %}
                 <div class="row">
-                <div class="grid2 box hp"><style>.hp{background-color:#C0C0C0;}</style>
+             <div class="grid2 box hp">
                 <h2>Read all about Pebble</h2>
-                        <p>more text about finding out about pebble</p>
-                     <div class="image">
-                        <img src="" alt="#">
-                     </div>
+               
+                        <img src="{{ STATIC_URL }}img/fm7_screen.png" alt="#">
+                     
                 </div>
+               
                 
-                
-                <div class="grid1 box supportbanner">
+                <div class="grid1 box">
                     <div id="mc_embed_signup">
                         <h3>Newsletter</h3>
                             <form action="http://talktopebble.us5.list-manage2.com/subscribe/post?u=1c8b9f93d89b4f1e6ddd27ff2&amp;id=8e37535111" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 	                                <label for="pin">Sign up for the latest finance & fundraising new delivered to your inbox every month.</label>
-	                                <style>.hpform{width:190px;}</style>
 	                                <input type="email" value="" name="EMAIL" class="hpform charfield pin" id="mce-EMAIL" placeholder="email address" required>
 	
 	                                <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="btn">
@@ -119,6 +117,16 @@
                            </div>
                            
                 </div>
+    <div class="social grid1 box">
+        <h3>Social Networking</h3>
+            <ul>
+                <li><a href="https://twitter.com/pebblesff" target="_blank"><img src="{{ STATIC_URL }}img/tw.png" alt="Pebble on Twitter @PebbleSFF"></a></li>
+                <li><a href="https://www.facebook.com/pages/Pebble/217743878280547" target="_blank"><img src="{{ STATIC_URL }}img/fb.png" alt="Pebble on Facebook"></a></li>
+                <li><a href="http://talktopebble.wordpress.com/" taget="_blank"><img src="{{ STATIC_URL }}img/wp.png" alt="Pebble on Wordpress"></a></li>
+            </ul>  
+      
+    </div>
   </div>
+ 
 </div>
  {% endblock %}
