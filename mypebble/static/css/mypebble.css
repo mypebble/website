@@ -263,7 +263,6 @@ a:hover {
 .box.fm {
   background-color: #4cc5f4;
 }
-
 .box.sff {
   background-color: #f9a534;
 }
@@ -280,8 +279,8 @@ background-color:#C0C0C0;
 }
 /* White Pebble logo in coloured boxes */.box.fm,
 .box.sff {
-  background-image: url('../img/logo-white.png');
-  background-position: 239px 20px;
+  background-image: url('../img/logo-white-small.png');
+  background-position: 250px 20px;
   background-repeat: no-repeat;
 }
 .box.fm .title,
@@ -433,7 +432,6 @@ width:70% !important;
 .fm .box.calltoaction {
   background-color: #4cc5f4;
 }
-
 .sff .box.calltoaction {
   background-color: #f9a534;
 }
