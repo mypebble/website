@@ -118,6 +118,10 @@
   .supportbanner{
   width:100% !important;
   }
+    .box.hp {
+  background-image: url('');
+  height:auto;
+}
 }
 
 /* SMARTPHONE AND TABLET */
