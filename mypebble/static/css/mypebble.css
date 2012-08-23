@@ -270,6 +270,9 @@ a:hover {
 .box.support {
   background-color: #f79f9b;
 }
+.hp{
+background-color:#C0C0C0;
+}
 .home .box .title,
 .productchoice .box .title {
   font-size: 18px;
@@ -341,6 +344,16 @@ a:hover {
 .box .callout:hover {
   background: #c3120a;
 }
+.box.hp {
+  background-image: url('../img/book.png');
+  background-position: 95% 10%;
+  background-repeat: no-repeat;
+  height:132px;
+}
+.social img{height:26px;}
+
+.img-brochure{margin-bottom:45px !important;}
+
 /* Hero box, used on product homepages */
 .hero {
   overflow: hidden;
@@ -413,6 +426,9 @@ a:hover {
 }
 .box.calltoaction form {
   margin-bottom: 0;
+}
+.hpform{
+width:70% !important;
 }
 .fm .box.calltoaction {
   background-color: #4cc5f4;
@@ -713,6 +729,8 @@ a:hover {
   float: left;
   line-height: 1;
 }
+.social UL{margin:auto; width:150px;}
+.social li{margin-left:20px;}
 
 .team span {
 display:block;
@@ -930,6 +948,9 @@ ol {
 li {
   line-height: 18px;
 }
+.bullet{
+  list-style-type:disc; 
+}
 ul.unstyled {
   margin-left: 0;
   list-style: none;
@@ -1089,6 +1110,10 @@ pre code {
   padding: 0;
   background-color: transparent;
 }
+/*misc text*/
+.tutorial h3{line-height:45px;}
+.social {text-align:center;}
+
 /*!
  * mypebble.co.uk
  * Forms.less [based on Twitter Bootstrap]
@@ -2659,14 +2684,3 @@ input[type="submit"].btn.small {
   text-align:center; 
   padding:5px;
   }
-
-/*extras- from sales updates*/
-.bullet{list-style-type:disc; }
-.tutorial h3{line-height:45px;}
-.hp{background-color:#C0C0C0;}
-.hpform{width:190px;}
-
-.social {text-align:center;}
-.social UL{margin:auto; width:150px;}
-.social li{margin-left:20px;}
-.social img{height:26px;}

@@ -29,19 +29,19 @@
     clear: both;
   }
   .container  {
-    width: 99%;
+    width: 98%;
   }  
   .header .container{
    padding:10px 0 20px 0;
    }
   .grid3{
-   width:99%;   
+   width:96%;   
    }
   .grid2{
-   width:100%;
+   width:98%;
    }   
   .grid1 {
-   width:85% !important;
+   width:89% !important;
    display:block;
    margin-left:0px;
    }    
