@@ -21,16 +21,12 @@
                             <div class="box-inner">
                                 {% placeholder "support_intro" or %}{% endplaceholder %}
                                 <h2>Frequently asked questions</h2>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/s_40x60.png" alt=""/>
-{% placeholder "support_decriptin_1h" or %} {% endplaceholder %}</h3>
+                                <h3><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Manual.pdf"><img class="pull-left" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager User Manual"/>
+Fund Manager User Manual</a></h3>
 
                                 <p>{% placeholder "support_description_1p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/s_40x60.png" alt=""/>{% placeholder "support_decriptin_2h" or %} {% endplaceholder %}</h3>
+                                <h3><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Quick Start Guide.pdf"><img class="pull-left" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt=""/>Fund Manager Quick Start Guide</a></h3>
                                 <p>{% placeholder "support_description_2p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/s_40x60.png" alt=""/>{% placeholder "support_decriptin_3h" or %} {% endplaceholder %}</h3>
-                                <p>{% placeholder "support_description_3p" or %}{% endplaceholder %}</p>
-                                <h2>Other tutorials</h2>
-                               {% placeholder "other_tutorials" or %} {% endplaceholder %}
                             </div>
                         </div>
                     </div>
