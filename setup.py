@@ -37,5 +37,6 @@ setup(
 
         'ssh',
         'fabric',
+        'cmsplugin-randomquote==0.1.3',
     ],
 )
