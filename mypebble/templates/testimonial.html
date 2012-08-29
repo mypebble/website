@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block primary %}
+<div class="box hero testimonial quote">
+    <blockquote>
+        <p>{{ testimonial.quote_text }}</p>
+        <small>{{ testimonial.author }}</small>
+    </blockquote>
+</div>
+{% endblock %}

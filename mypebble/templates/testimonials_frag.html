@@ -7,6 +7,7 @@
                     <blockquote>
                         <p>{{ q.quote_text }}</p>
                         <small>{{ q.author }}</small>
+                        <a href="{% url testimonial-view q.pk %}">Read more</a>
                     </blockquote>
                 </div>
             {% endfor %}
