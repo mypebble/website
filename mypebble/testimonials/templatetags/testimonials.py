@@ -5,6 +5,7 @@ from django import template
 
 register = template.Library()
 
+
 class Testimonials(template.Node):
     def render(self, context):
         try:
@@ -16,6 +17,7 @@ class Testimonials(template.Node):
         doc = template.loader.get_template('testimonials_frag.html')
 
         return doc.render(context)
+
 
 @register.tag
 def testimonials(*args, **kwargs):
