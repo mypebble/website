@@ -9,7 +9,6 @@ import forms_builder.forms.urls # add this import
 from cms.sitemaps import CMSSitemap
 from cmsplugin_blog.sitemaps import BlogSitemap
 
-
 from django.contrib import admin
 admin.autodiscover()
 

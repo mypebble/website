@@ -1,0 +1,17 @@
+    <div class="box">
+        <h2 class="title">Here’s what our customers have to say…</h2>
+        <div class="row">
+            <div class="row">
+            {% for q in quotes %}
+                <div class="grid1 testimonial quote">
+                    <blockquote>
+                        <p>{{ q.quote_text }}</p>
+                        <small>{{ q.author }}</small>
+                    </blockquote>
+                </div>
+            {% endfor %}
+            </div>
+            </div>
+        </div>
+    </div>
+

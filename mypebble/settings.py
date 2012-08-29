@@ -97,6 +97,7 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -152,7 +153,8 @@ INSTALLED_APPS = (
    #'tagging',
    #'missing',
    # 'staticfiles',
-
+   # MK 29-Aug-2012: random quotes for testimonials
+    'cmsplugin_randomquote',
     'cms.plugins.file',
     'cms.plugins.video',
     #'cms.plugin.flash',
@@ -174,6 +176,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'mypebble.core',
+    'mypebble.testimonials',
 )
 
 # A sample logging configuration. The only tangible logging

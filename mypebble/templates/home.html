@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load cms_tags %}
+{% load testimonials %}
 {% block primary %}
 
 <div class="home">
@@ -69,33 +70,7 @@
     </div>
     </div>
     <div class="row extras">
-        {% placeholder "Feedback" or %}
-        <div class="box">
-                <h2 class="title">Here’s what our customers have to say…</h2>
-                    <div class="row">
-                                                    <div class="row">
-                                <div class="grid1 testimonial">
-                                    <blockquote>
-                                        <p>Whenever I call, Pebble are always very helpful and friendly. Any issue is also always resolved first time.</p>
-                                        <small>Shelley Pointon, Financial Administrator, St Joseph’s Catholic Primary School</small>
-                                    </blockquote>
-                                </div>
-                                <div class="grid1 testimonial quote">
-                                    <blockquote>
-                                        <p>Pebble software is straightforward to use and the online help is excellent. All in all I consider myself a satisfied customer.</p>
-                                        <small>Beryl, Windsor Boy's School</small>
-                                    </blockquote>
-                                </div>
-                                <div class="grid1 testimonial blog">
-                                    <blockquote>
-                                        <p>Pebble is my security blanket and always what I turn to when I feel the need to have achieved something in the course of a frantic day.</p>
-                                        <small>Sheila Cooper, School Business Manager, Holy Cross Catholic High School</small>
-                                    </blockquote>
-                                </div>
-                            </div>
-        </div>
-    </div>
-  </div>{% endplaceholder %}
+    {% testimonials %}
                 <div class="row">
              <div class="grid2 box hp">
                             <div class="box-inner">
