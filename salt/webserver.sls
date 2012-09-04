@@ -7,6 +7,8 @@ nginx:
             - pkg: nginx
             - file: /srv/www/mypebble
             - user: www_user
+        - watch:
+            - file: enabled
 
 available:
     file:
@@ -51,6 +53,7 @@ enabled:
         - target: /home/www/mypebble
         - require:
             - user: www_user
+            - hg: mypebble
 
 /srv/www/mypebble/log:
     file.directory:

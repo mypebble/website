@@ -4,3 +4,4 @@ base:
         - database
         - supervisor
         - webserver
+        - mypebble
