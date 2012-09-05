@@ -147,6 +147,7 @@ INSTALLED_APPS = (
    'sekizai', #for javascript and css management
    'activelink',
    'forms_builder.forms',
+   'gunicorn',
    #blog stuff
    #'simple_translation',
    #'cmsplugin_blog',
