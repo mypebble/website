@@ -4,9 +4,13 @@ import os
 gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
+try:
+    from mypebble.local_settings import *
+except ImportError:
 # Django settings for mypebble project.
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+    DEBUG = True
+    TEMPLATE_DEBUG = DEBUG
+
 
 ADMINS = (
      ('AH', 'ah@talktopebble.co.uk'),
