@@ -5,7 +5,7 @@ gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 # Django settings for mypebble project.
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
