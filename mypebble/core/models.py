@@ -2,7 +2,7 @@ from django.core.mail import send_mail
 from django.dispatch import receiver
 from django.template import Context, loader
 
-from forms_build.forms.signals import form_valid
+from forms_builder.forms.signals import form_valid
 
 
 EMAIL_SENDERS = {
