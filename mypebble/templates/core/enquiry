@@ -1,0 +1,25 @@
+{% load i18n %}
+{% blocktrans %}
+F.A.O. Sales
+
+We have a new enquiry from {{ name }} from {{ organisation }} {{ postcode }}.
+
+They are interested in:
+{% endblocktrans %}
+{% for c in checked %}
+* {{ c }}
+{% endfor %}
+{% if extra %}
+{% blocktrans %}
+They left the following message:
+{{ message }}
+{% endblocktrans %}
+{% endif %}
+
+{% blocktrans %}
+Please contact {{ name }} on {{ telephone }} or at {{ email_address }}.
+
+Regards,
+
+My Pebble Website
+{% endblocktrans %}
