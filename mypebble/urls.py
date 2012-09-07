@@ -21,6 +21,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
 
+    url(r'^forms/', include('forms_builder.forms.urls')),
+
     url(r'^testimonial/(?P<pk>\d+)/$', TestimonialView.as_view(),
         name='testimonial-view'),
     url(r'^', include('cms.urls')),
@@ -33,12 +35,11 @@ if settings.DEBUG:
 
 
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^forms/', include('forms_builder.forms.urls')),
 
 
     #url(r'^weblog/', include('zinnia.urls')),
     #url(r'^comments/', include('django.contrib.comments.urls')),
-        
+
 #        url(r'', include('django.contrib.staticfiles.urls')),
     ) + urlpatterns
 
