@@ -1,8 +1,14 @@
+import logging
+import smtplib
+
 from django.core.mail import send_mail
 from django.dispatch import receiver
 from django.template import Context, loader
 
 from forms_builder.forms.signals import form_valid
+
+
+log = logging.getLogger(__name__)
 
 
 EMAIL_SENDERS = {
@@ -63,4 +69,10 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
 
     message = message_template.render(context)
 
-    send_mail(subject, message, from_, to)
+    try:
+        send_mail(subject, message, from_, to)
+    except smtplib.SMTPException:
+        log.info(
+            u'Email could not send.\nContext={context}'.format(context=context)
+        )
+        raise
