@@ -19,6 +19,7 @@ def get_checked(entry):
         yield d
 
 
+"""
 @receiver(form_valid)
 def send_email(sender=None, form=None, entry=None, **kwargs):
     if entry is None:
@@ -50,3 +51,4 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
     message = message_template.render(context)
 
     send_mail(subject, message, from_, to)
+"""

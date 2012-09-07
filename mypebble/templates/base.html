@@ -9,14 +9,14 @@
   {% render_block "css" %}
     <link rel="icon" href="{{ STATIC_URL }}img/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico" type="image/x-icon" />
-    
+
     <title>{% page_attribute page_title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <meta name="description" content="{% page_attribute meta_description %}"/>
     <meta name="keywords" content="
 pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 pebble, schoolfund, school fund, school fund finder, schoolfundfinder,fund, finder, fund school, fundschool, fund software,fund finder, school fund software, school fund finder, fundmanager, manager, fund manager, fund manager school, school fund manager, schoolfundmanager, software, school, schools, organisations, SFM, FM, FMv8, SFF, FF {% page_attribute meta_keywords %}"/>
-        
+
         <!-- HTML5 shim, for IE6-8 support of HTML elements -->
         <!--[if lt IE 9]>
             <script src="{{ STATIC_URL }}js/html5.js"></script>
@@ -26,7 +26,7 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
         <!--[if ! lte IE 6]><!-->
         <link href="{{ STATIC_URL }}css/mypebble.css" rel="stylesheet"/>
         <link href="{{ STATIC_URL }}css/responsive.css" rel="stylesheet"/>
-        <link href="css/mypebble-print.css" rel="stylesheet" media="print"/>
+        <link href="{{ STATIC_URL }}css/mypebble-print.css" rel="stylesheet" media="print"/>
         <!--<![endif]-->
         <!--[if lte IE 6]>
             <link rel="stylesheet" href="{{ STATIC_URL }}css/ie6.1.1.css" media="screen, projection">
@@ -55,7 +55,7 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
 			var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
 			document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
 		</script>
-		
+
 		<script type="text/javascript" charset="utf-8">
 			var feedback_widget_options = {};
 			feedback_widget_options.display = "overlay";
@@ -87,10 +87,10 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
                 <div class="nav" id="nav">
                 {% include "navigation.html" %}
                 </div>
-         
+
             </div><!--/.container-->
-        </div><!--/.header--> 
-        
+        </div><!--/.header-->
+
 {# BODY #}
         <div class="container">
         {% block primary %}{% endblock primary %}
@@ -150,7 +150,7 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
                         </div>
                         <div class="email">
                             <a href="mailto:support@mypebble.co.uk">support@mypebble.co.uk</a>
-                        </div>                        
+                        </div>
                         <div class="tel">
                             <span class="type">Fax</span>: <span class="value">0845 310 1777</span>
                         </div>
@@ -178,11 +178,11 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
                     <p><a href="/support/">We&rsquo;re on hand to <em>help!</em></a></p>
                 </div>
                 </div>
-         </div><!--/.container--> 
-        
+         </div><!--/.container-->
+
         <!-- Modals
             ================================================== -->
-        
+
         <!-- Javascript
             ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
