@@ -4,16 +4,21 @@ import os
 gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+
+# Django settings for mypebble project.
 try:
     from mypebble.local_settings import *
 except ImportError:
-# Django settings for mypebble project.
-    DEBUG = True
-    TEMPLATE_DEBUG = DEBUG
-
+    pass
 
 ADMINS = (
      ('AH', 'ah@talktopebble.co.uk'),
+     ('ENQ', 'www+enquiries@mypebble.co.uk'),
 )
 
 MANAGERS = ADMINS
@@ -29,10 +34,6 @@ DATABASES = {
     }
 }
 
-#fix this for production
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 1025
 
 
 # Local time zone for this installation. Choices can be found here:
