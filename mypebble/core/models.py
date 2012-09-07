@@ -35,7 +35,7 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
 
     subject = u'New Enquiry'
     from_ = EMAIL_SENDERS['enquiries']
-    to = (u'info@mypebble.co.uk', u'scw@talktopebble.co.uk')
+    to = (u'info@mypebble.co.uk', )
 
     message_template = loader.get_template('core/enquiry')
 
