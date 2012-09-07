@@ -11,15 +11,17 @@ EMAIL_SENDERS = {
 
 
 def get_checked(entry):
-    interested = entry.fields.get(field__label="I'm interested in").value
-    documentation = entry.fields.get(field__label='I would like').value
-    for i in interested:
-        yield i
-    for d in documentation:
-        yield d
+    interested_field = entry.form.fields.get(slug='im_interseted_in')
+    interested = entry.fields.get(field_id=interested_field.pk).value
+
+    yield interested
+
+    documentation_field = entry.form.fields.get(slug='i_would_like')
+    documentation = entry.fields.get(field_id=documentation_field.pk).value
+
+    yield documentation
 
 
-"""
 @receiver(form_valid)
 def send_email(sender=None, form=None, entry=None, **kwargs):
     if entry is None:
@@ -31,17 +33,28 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
 
     message_template = loader.get_template('core/enquiry')
 
-    name = entry.fields.get(field__label='Name').value
-    email_address = entry.fields.get(field__label='Email Address').value
-    organisation = entry.fields.get(field__label='School or Organisation').value
-    postcode = entry.fields.get(field__label='Postcode').value
-    telephone = entry.fields.get(field__label='Telephone').value
-    extra = entry.fields.get(field__label='Add a message').value
+    name_field = entry.form.fields.get(slug='name')
+    name = entry.fields.get(field_id=name_field.pk).value
+
+    email_field = entry.form.fields.get(slug='email_address')
+    email_address = entry.fields.get(field_id=email_field.pk).value
+
+    org_field = entry.form.fields.get(slug='school_or_organisation')
+    org = entry.fields.get(field_id=org_field.pk).value
+
+    postcode_field = entry.form.fields.get(label='Postcode')
+    postcode = entry.fields.get(field_id=postcode_field.pk).value
+
+    telephone_field = entry.form.fields.get(slug='telephone')
+    telephone = entry.fields.get(field_id=telephone_field.pk).value
+
+    extra_field = entry.form.fields.get(slug='add_a_message')
+    extra = entry.fields.get(field_id=extra_field.pk).value
 
     context = Context({
         'name': name,
         'email_address': email_address,
-        'organisation': organisation,
+        'organisation': org,
         'postcode': postcode,
         'telephone': telephone,
         'checked': [c for c in get_checked(entry)],
@@ -51,4 +64,3 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
     message = message_template.render(context)
 
     send_mail(subject, message, from_, to)
-"""

@@ -12,10 +12,7 @@ They are interested in:
 {% if extra %}
 {% blocktrans %}
 They left the following message:
-{{ message }}
-{% endblocktrans %}
-{% endif %}
-
+{{ extra }}{% endblocktrans %}{% endif %}
 {% blocktrans %}
 Please contact {{ name }} on {{ telephone }} or at {{ email_address }}.
 
