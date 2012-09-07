@@ -9,6 +9,7 @@ TEMPLATE_DEBUG = DEBUG
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 25
+LOG_FILE = os.path.join(PROJECT_PATH, 'mypebble.log')
 
 # Django settings for mypebble project.
 try:
@@ -194,19 +195,34 @@ INSTALLED_APPS = (
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(message)s',
+        }
+    },
     'handlers': {
         'mail_admins': {
             'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler'
-        }
+            'class': 'django.utils.log.AdminEmailHandler',
+        },
+        'log_file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.WatchedFileHandler',
+            'filename': LOG_FILE,
+            'formatter': 'verbose',
+        },
     },
     'loggers': {
         'django.request': {
-            'handlers': ['mail_admins'],
+            'handlers': ['log_file', ],
             'level': 'ERROR',
-            'propagate': True,
+            'propagate': False,
         },
-    }
+        'mypebble': {
+            'handlers': ['log_file', ],
+            'level': 'INFO',
+        },
+    },
 }
 
 CMS_TEMPLATES = (
