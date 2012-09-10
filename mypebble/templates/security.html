@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% block primary %}
+<div class="enquiries">
+    <div class="body" id="body">
+        <div class="row">
+            <h1>Security</h1>
+                <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                    <div class="box grid2">
+                        <div class="box-inner">
+                            <h3>Security</h3>
+                                <p>All information provided to SF Software Ltd is transmitted using SSL (Secure Socket Layer)
+                                encryption. SSL is a proven coding system that lets your browser automatically encrypt, or scramble,
+                                data before you send it to us. We also protect account information by placing it on a secure portion of
+                                our Site that is only accessible by certain qualified employees of SF Software Ltd. Unfortunately,
+                                however, no data transmission over the Internet is 100% secure. While we strive to protect your
+                                information, we cannot ensure or warrant the security of such information.</p>
+                            <h3>Internet Protocol Address</h3>
+                              <p>We collect an IP address from all visitors to our Site. An IP address is a number that is automatically assigned to your computer when you use the Internet. We use IP addresses to help diagnose problems with our server, administer our Site, analyze trends, track users' movement, gather broad demographic information for aggregate use in order for us to improve the Site, and deliver customized, personalized content. IP addresses are not linked to personally identifiable information.</p>
+
+<p><strong>Information from Children</strong></p>
+<p>Our Site is for adults and usage by children is not intended. We make efforts to verify the age of our
+users in order to avoid collecting personal information from children, and do not seek to collect
+personal information about children through our Site. If a child submits information to us through
+any part of our Site, and we know that the user submitting the information is a child, we delete the
+information as soon as we discover it and do not use it for any purpose, nor do we disclose it to third
+parties.</p>
+
+<h3>Use of Cookies</h3>
+<p>Our Site may use cookies to enhance your experience while using our Site. Cookies are pieces of
+information that some websites transfer to the computer that is browsing that website and are used
+for record-keeping purposes at many websites. Use of cookies makes web surfing easier by
+performing certain functions such as saving your passwords, your personal preferences regarding
+your use of the particular website and to make sure you don't see the same ad repeatedly. Many
+consider the use of cookies to be an industry standard.</p>
+<p>Your browser is probably set to accept cookies. However, if you would prefer not to receive cookies,
+you can alter the configuration of your browser to refuse cookies. If you choose to have your browser
+refuse cookies, it is possible that some areas of our Site will not function properly when you view
+them.</p>
+
+                        </div>
+                    </div> 
+                </div>
+                    <div class="grid1 sidebar partners"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="supportcommunitybox grid1">
+                            <div class="box-inner">
+                                <img src="{{ STATIC_URL }}img/security.png" alt="myPebble security policy">
+                                    
+                </div>
+            </div>
+        </div>
+    </div>        
+</div>
+{% endblock %} 

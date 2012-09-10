@@ -1,24 +1,22 @@
-{% extends "error_base.html" %}
+{% extends "base.html" %}
 {% load cms_tags %}
 {% block primary %}
 <div class="enquiries">
     <div class="body" id="body">
         <div class="row">
-            <h1>OOPs... An Error has occured</h1>
+            <h1>Terms and Conditions</h1>
                 <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
                     <div class="box grid2">
                         <div class="box-inner">
-                                <p>The server encountered an internal error or misconfiguration and was unable to complete your request.</p>
-                                <p> We are working to fix this issue.</p>
+                            <h2>{% placeholder "main_title" or %} {% endplaceholder %} </h2>
+                            {% placeholder "main_content" or %} {% endplaceholder %} 
                         </div>
                     </div> 
                 </div>
                     <div class="grid1 sidebar partners"> <!-- Column. Modules inside will stack vertically -->
                         <div class="supportcommunitybox grid1">
                             <div class="box-inner">
-                                    <div class="description">
-                                        <img src="{{ STATIC_URL }}img/500.png" alt="Page could not be found">
-                                    </div>
+                                <img src="{{ STATIC_URL }}img/tandc.png" alt="myPebble Terms and Conditions">
                 </div>
             </div>
         </div>
