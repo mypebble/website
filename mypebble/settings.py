@@ -166,13 +166,13 @@ INSTALLED_APPS = (
     'cms.plugins.file',
     'cms.plugins.video',
     #'cms.plugin.flash',
-    'cms.plugins.googlemap',
-    'cms.plugins.link',
-    'cms.plugins.picture',
-    'cms.plugins.teaser',
+    #'cms.plugins.googlemap',
+    #'cms.plugins.link',
+    #'cms.plugins.picture',
+    #'cms.plugins.teaser',
 
 
-    'cms.plugins.text',  #text plugin
+    #'cms.plugins.text',  #text plugin
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -239,6 +239,11 @@ CMS_TEMPLATES = (
     ('login.html', 'Login Template'),
     ('404.html', 'Error 404'),
     ('500.html', 'Error 500'),
+    
+    ('privacy.html','Privacy Template'),
+    ('tnadc.html','T&C Template'),
+    ('accessibility.html','Accessibility Template'),
+    ('security.html','Security Template'),
 
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),
