@@ -4,10 +4,10 @@
 #from django.views.generic import TemplateView
 from django.views.generic import DetailView
 
-from cmsplugin_randomquote.models import Quote
+from mypebble.testimonials.models import Testimonial
 
 
 class TestimonialView(DetailView):
     template_name = "testimonial.html"
-    model = Quote
+    model = Testimonial
     context_object_name = 'testimonial'

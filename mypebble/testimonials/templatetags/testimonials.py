@@ -1,6 +1,7 @@
 # Custom template tags
 
-from cmsplugin_randomquote.models import Quote
+#from cmsplugin_randomquote.models import Quote
+from mypebble.testimonials.models import Testimonial
 from django import template
 
 register = template.Library()
@@ -9,8 +10,9 @@ register = template.Library()
 class Testimonials(template.Node):
     def render(self, context):
         try:
-            t_obj = Quote.objects.order_by('?')[0:3]
-            context['quotes'] = t_obj
+            quotes = Testimonial.objects.order_by('?')[0:3]
+            context['quotes'] = quotes
+            
         except IndexError:
             pass
 
