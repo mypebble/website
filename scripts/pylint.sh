@@ -1,1 +1,3 @@
-pylint --rcfile=./pylintrc
+#!/bin/bash
+
+pylint --rcfile=./pylintrc ./mypebble
