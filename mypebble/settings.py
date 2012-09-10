@@ -241,7 +241,7 @@ CMS_TEMPLATES = (
     ('500.html', 'Error 500'),
     
     ('privacy.html','Privacy Template'),
-    ('tnadc.html','T&C Template'),
+    ('tandc.html','T&C Template'),
     ('accessibility.html','Accessibility Template'),
     ('security.html','Security Template'),
 
