@@ -8,11 +8,13 @@ register = template.Library()
 
 
 class Testimonials(template.Node):
+    """Renders three testimonials at random from model."""
+
     def render(self, context):
         try:
             quotes = Testimonial.objects.order_by('?')[0:3]
             context['quotes'] = quotes
-            
+
         except IndexError:
             pass
 
