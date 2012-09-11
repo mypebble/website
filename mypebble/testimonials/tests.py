@@ -10,7 +10,7 @@ from mypebble.testimonials.models import Testimonial
 
 
 class TestimonialTestCase(TestCase):
-    """Confirms that testimonials are correctly displayed."""
+    """Confirms that testimonials are correctly displayed in extended form."""
 
     fixtures = [
         'test_data/testimonials.json',
@@ -23,3 +23,17 @@ class TestimonialTestCase(TestCase):
             reverse('testimonial-view', kwargs={'pk': 1}))
 
         self.assertEqual(response.status_code, 200)
+
+    def test_testimonial(self):
+        """Check that a testimonial is displayed with correct data."""
+
+        response = self.client.get(
+            reverse('testimonial-view', kwargs={'pk': 1}))
+
+        testimonial = response.context['testimonial']
+
+        self.assertEquals(testimonial.pk, 1)
+        self.assertEquals(
+                testimonial.quote_text, "Testimonial Quote 1")
+        self.assertEquals(
+                testimonial.quote_text_full, "Full Testimonial Text 1")
