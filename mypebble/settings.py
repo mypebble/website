@@ -167,12 +167,12 @@ INSTALLED_APPS = (
     'cms.plugins.video',
     #'cms.plugin.flash',
     #'cms.plugins.googlemap',
-    #'cms.plugins.link',
-    #'cms.plugins.picture',
+    'cms.plugins.link',
+    'cms.plugins.picture',
     #'cms.plugins.teaser',
 
 
-    #'cms.plugins.text',  #text plugin
+    'cms.plugins.text',  #text plugin
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
