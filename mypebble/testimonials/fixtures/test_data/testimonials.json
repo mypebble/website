@@ -1,0 +1,50 @@
+[
+    {
+        "pk": 1,
+        "model": "cmsplugin_randomquote.quote",
+        "fields": {
+            "quote_text": "Testimonial Quote 1",
+            "author_url": "",
+            "author": "Author 1"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "cmsplugin_randomquote.quote",
+        "fields": {
+            "quote_text": "Testimonial Quote 2",
+            "author_url": "",
+            "author": "Author 2"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "cmsplugin_randomquote.quote",
+        "fields": {
+            "quote_text": "Testimonial Quote 3",
+            "author_url": "",
+            "author": "Author 3"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "testimonials.testimonial",
+        "fields": {
+            "quote_text_full": "Full Testimonial Text 1"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "testimonials.testimonial",
+        "fields": {
+            "quote_text_full": "Full Testimonial Text 2"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "testimonials.testimonial",
+        "fields": {
+            "quote_text_full": "Full Testimonial Text 3"
+        }
+    }
+]

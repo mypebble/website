@@ -8,6 +8,6 @@ from mypebble.testimonials.models import Testimonial
 
 
 class TestimonialView(DetailView):
-    template_name = "testimonial.html"
+    template_name = 'testimonial.html'
     model = Testimonial
     context_object_name = 'testimonial'

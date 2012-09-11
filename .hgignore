@@ -4,6 +4,7 @@ syntax: glob
 *~
 *.orig
 *.swp
+*.log
 
 src/*
 lib
