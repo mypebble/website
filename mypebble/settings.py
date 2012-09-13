@@ -249,7 +249,7 @@ CMS_TEMPLATES = (
     ('support_document_ul.html','User Login Template'),
     ('support_document_al.html','Apply Licence Template'),
     ('support_document_sl.html','SFM location Template'),
-    ('support_document_rb.html','Reconcile Bank Template'),
+    ('support_document_rb.html','Receipts to Bank Template'),
     ('support_document_rp.html','Record Payments Template'),
     ('support_document_rec.html','Reconcile Bank Template'),
     ('support_document_pe1.html','PeriodEnd 1 Template'),
