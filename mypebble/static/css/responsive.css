@@ -223,7 +223,7 @@
   margin-top:10px;
   text-decoration: none;
   }  
-  .hero .image, .blog, .partners, .teambanner, .logmein, .extras, .carousel-control, .tabs, .upgrade, .gscommunity, .video {
+  .hero .image, .blog, .partners, .teambanner, .extras, .carousel-control, .tabs, .upgrade, .gscommunity, .video {
   display:none;
   visibility:hidden;
   }
@@ -345,7 +345,7 @@
   line-height:22px;
   }   
   .onlinesupportbox, .supportcommunitybox{
-  width:270px !important; 
+  width:570px !important; 
   }
   .onlinesupportbox .pin, .supportcommunitybox .search-support{
   width:180px;
@@ -353,7 +353,7 @@
   .hero .text{
   width:100%;
   }  
-  .hero .image, .blog, .teambanner, .partners, .carousel-control, .logmein, .extras, .upgrade, .video {
+  .hero .image, .blog, .teambanner, .partners, .carousel-control, .extras, .upgrade, .video {
   display:none;
   visibility:hidden;
   }
