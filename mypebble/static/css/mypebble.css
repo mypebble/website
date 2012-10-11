@@ -2682,3 +2682,7 @@ input[type="submit"].btn.small {
   text-align:center; 
   padding:5px;
   }
+  .bname{
+  font-size:14px;
+  text-align:center;
+  padding:10px;}
