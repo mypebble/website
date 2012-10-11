@@ -8,12 +8,13 @@
 <script type="text/javascript">
    $(document).ready(function(){
      $('span.browser').html(browserName + ' ' + fullVersion);
-     if (!$.browser.chrome) {
+     if (browserName.indexOf('Chrome') == -1) {
         download = 'https://www.google.com/intl/en_uk/chrome/browser/index.html#eula';
         $('p.browser').parent().append(
             '<p><a href=' + download + ' title="Download Chrome">' +
             'Google Chrome</a> is our recommended browser.</p>');
      }
+     
     });
 </script>
 {% endaddtoblock %}
