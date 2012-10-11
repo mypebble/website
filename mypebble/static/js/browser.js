@@ -56,10 +56,3 @@ if (isNaN(majorVersion)) {
  majorVersion = parseInt(navigator.appVersion,10);
 }
 
-function browser(){
-document.write(''
- +'Browser name  = '+browserName+'<br>'
- +'Full version  = '+fullVersion+'<br>'
- +'Major version = '+majorVersion+'<br>'
-);
-}

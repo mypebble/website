@@ -7,7 +7,13 @@
 <script src="{{ STATIC_URL }}js/browser.js" type="text/javascript"></script>
 <script type="text/javascript">
    $(document).ready(function(){
-     $('p.browser').html(browserName + ' ' + fullVersion);
+     $('span.browser').html(browserName + ' ' + fullVersion);
+     if (!$.browser.chrome) {
+        download = 'https://www.google.com/intl/en_uk/chrome/browser/index.html#eula';
+        $('p.browser').parent().append(
+            '<p><a href=' + download + ' title="Download Chrome">' +
+            'Google Chrome</a> is our recommended browser.</p>');
+     }
     });
 </script>
 {% endaddtoblock %}
@@ -52,8 +58,9 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="grid1 box extras">
-                            <h3>Your browser</h3>
+                       <style>.test {text-align:center; float:right; color:#ed4034;}</style>
+                        <div class="grid1 box extras browser">
+                            <h3>Your browser<span class="browser test"></span></h3>
                             <p class="browser"></p>
                         </div>
                     </div>
