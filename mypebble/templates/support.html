@@ -1,21 +1,32 @@
 {% extends "base.html" %}
-{% load cms_tags %}
+{% load cms_tags sekizai_tags %}
+
 {% block primary %}
+
+{% addtoblock "js" %}
+<script src="{{ STATIC_URL }}js/browser.js" type="text/javascript"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+     $('p.browser').html(browserName + ' ' + fullVersion);
+    });
+</script>
+{% endaddtoblock %}
+
 <div class="support">
                 <div class="row titlerow">{% placeholder "Strapline" or %}
                     <h1 class="title"><img class="logo" src="{{ STATIC_URL}}img/logo/support_logo.png" alt="Support"/> </h1>
 {% endplaceholder %}
                 </div>
                 <div class="row">
-                    <!--<h1>Support</h1>-->
-                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+
+         <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid2">
                             <div class="box-inner">
                                 {% placeholder "support_welcome" or %}{% endplaceholder %}
                             </div>
                         </div>
                     </div>
-                    <div class="grid1 sidebar logmein"> <!-- Column. Modules inside will stack vertically -->
+                    <div class="grid1 sidebar logmein "> <!-- Column. Modules inside will stack vertically -->
                         <div class="support onlinesupportbox box grid1 ">
                             <div class="box-inner">
                                 <h2 class="title">Existing Customers</h2>
@@ -40,6 +51,10 @@
                                     <input type="submit" value="Connect" class="btn"/>
                                 </form>
                             </div>
+                        </div>
+                        <div class="grid1 box extras">
+                            <h3>Your browser</h3>
+                            <p class="browser"></p>
                         </div>
                     </div>
                 </div>
