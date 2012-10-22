@@ -58,7 +58,20 @@
         </div>
 
         <!-- Online training session -->
-       <!-- <div class="grid1 device extras">
+<!--      <p>Date: {% now "22" %}</p>-->
+      
+date {% now "SHORT_DATE_FORMAT" %}
+
+{% now "" %}
+{% if now %}
+<p></p>
+{% else %}
+<p></p>
+{% endif %}
+
+      
+      
+       <div class="grid1 device extras">
             <div class="box">
                 <div class="box-inner">
                         <h2 class="title"><a href="#" target="_blank">Join</a> our LIVE training session</h2>
@@ -70,7 +83,7 @@
                 </div>
             </div>
         </div>
-        -->
+
     </div>
     </div>
     <div class="row extras">
