@@ -245,6 +245,8 @@ CMS_TEMPLATES = (
     ('accessibility.html','Accessibility Template'),
     ('security.html','Security Template'),
     
+    ('blog.html','Blog Template'),
+    
     #support video templates
     ('support_document_ul.html','User Login Template'),
     ('support_document_al.html','Apply Licence Template'),

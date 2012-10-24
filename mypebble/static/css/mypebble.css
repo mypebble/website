@@ -1553,17 +1553,19 @@ table {
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  font-size:13px;
 }
 .table {
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 .table th,
 .table td {
-  padding: 8px;
-  line-height: 18px;
+  padding: 5px;
+  line-height: 15px;
   text-align: left;
   border-top: 1px solid #ddd;
+  
 }
 .table th {
   font-weight: bold;
@@ -2674,19 +2676,33 @@ input[type="submit"].btn.small {
   margin-top: 8px; 
   padding-top: 8px; 
   border-top: 1px solid #DDD;
-  }
+}
 .partners ul
   {padding:5px;
-  }
+}
 .partners li{ 
   text-align:center; 
   padding:5px;
-  }
+}
   .bname{
   font-size:14px;
   text-align:center;
-  padding:10px;}
-  
-  .bhelp{
+  padding:10px;
+}  
+.bhelp{
   text-align:center;
-  }
+}
+.blog_name{
+  width:85%; 
+  float:left;
+}
+.blog_date{
+  font-size:15px;
+  width:15%; 
+  float:left; 
+  color:#87746B;
+}
+.blog_creator{
+  line-height:13px;
+  color:#87746B;
+}

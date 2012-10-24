@@ -1,6 +1,271 @@
 {% extends "base.html" %}
-
-{% block body %}
-    {% block left-col %}{% endblock %}
-    {% block right-col %}{% endblock %}
-{% endblock %}
+{% load cms_tags %}
+{% block primary %}
+<div class="enquiries">
+               <div class="row">
+                   <h1>Blog</h1>
+                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box grid2">
+                            <div class="box-inner">
+                                <h3 class="title blog_name">Release Notes</h3>
+                                    <p class="blog_date">16/10/12</p>
+                                    <p class="blog_creator">Pebble Team</p>
+                                    <p>Please see below the October release notes for all the development and bug fixes done since the last release in September. For those of you who experienced a delay on Search Account Balances, please give it a try ….and don’t blink it is very fast.</p>
+                                    <p>Lots of other improvements and additions including Sortable columns on Date, Account and Name on the Search Transactions report, separate number ranges for cash and cheque payments, transfers between names and/or accounts and lots of Period End reports.
+                                    <p>Please keep your suggestions and comments coming in via the Feedback Tab in Fund Manager.</p>
+                                                                    <table class="table table-bordered">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <th>Key</th>
+                                                                                    <th>Summary</th>
+                                                                                    <th>Description</th>
+                                                                                    <th>Issue Type</th>
+                                                                                    <th>Resolution</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1155</td>
+                                                                                    <td>Import ePayment Registrations</td>
+                                                                                    <td>As a member of the support team, I can import ePayment Account IDs using the Contact Import routine, which will add the ePayment Registration Number to pupils who match.</td>
+                                                                                    <td>Story</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-691</td>
+                                                                                    <td>Unify transactions</td>
+                                                                                    <td></td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1137</td>
+                                                                                    <td>Filter on period end Transaction report fails to return anything</td>
+                                                                                    <td>A Draft Period End has been created and a user wants to view transactions &#8211; they can see ALL of them and need filters working</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-924</td>
+                                                                                    <td>Fix potential  issue in cancel transactions</td>
+                                                                                    <td>The CancelTransactionView needs to be rewritten to use an UpdateView, and ModelForm which will set the cancellation_date attribute on save().</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1170</td>
+                                                                                    <td>Period End zero value bank rec appears to cause the system to &#8216;think&#8217; it is out of balance</td>
+                                                                                    <td>As a user I may need to record a &#8216;blank&#8217; reconciliation to enable period end to proceed.</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1171</td>
+                                                                                    <td>As a user I should not be able to edit the CURR code of the Current Account</td>
+                                                                                    <td>As a user I must not edit the default bank account code or enter the code CURR into any new Bank Accounts.</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1180</td>
+                                                                                    <td>No balance figures appear in the print out of the Cash History</td>
+                                                                                    <td>When you print the Cash History the print report does not display the transaction values.</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-774</td>
+                                                                                    <td>Sort on Column Headers</td>
+                                                                                    <td>As a bookkeeper, I can sort reports by their column headers, either ascending or descending.</td>
+                                                                                    <td>Story</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1172</td>
+                                                                                    <td>Sort Banking Screens</td>
+                                                                                    <td>Add sorting to the transactions on the bank statement screens.* Cancel Statement<br />
+                                                                                    * View Statement<br />
+                                                                                    * Cancel Transaction<br />
+                                                                                    * List Cancelled Transactions</td>
+                                                                                    <td>Technical task</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1175</td>
+                                                                                    <td>Search on keyword is not working</td>
+                                                                                    <td>In the Search transaction screen the keyword search fixed</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Won&#8217;t Fix</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1178</td>
+                                                                                    <td>Remove out of balance warning</td>
+                                                                                    <td>Remove the Out of Balance warning. It is generating too many support calls, and users don&#8217;t action it until Period End.</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1145</td>
+                                                                                    <td>Bank Transaction View</td>
+                                                                                    <td>Construct an SQL VIEW to merge BankTransactions into a single table for simpler querying. We will use this to simplify some of the Period End logic as well.</td>
+                                                                                    <td>Technical task</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1136</td>
+                                                                                    <td>Current Account can be marked Out of Use but must NOT</td>
+                                                                                    <td>Current Accounts can currently be marked out of use. This must be prevented.</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1135</td>
+                                                                                    <td>Search Transactions Page loads too slowly</td>
+                                                                                    <td>Replaced the quick response to the Search Transactions screen</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1134</td>
+                                                                                    <td>Print multiple receipts</td>
+                                                                                    <td>Print multiple receipts, over any number of pages and correct the page breaks</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1138</td>
+                                                                                    <td>Search Transactions sorting</td>
+                                                                                    <td>Add sorting to the Search Transactions report.This will likely involve creating a SQL View for Postgres, then modifying the TransactionReportView to query against the SQL View as opposed to the separate tables.</td>
+                                                                                    <td>Technical task</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1141</td>
+                                                                                    <td>Period End Balance Report</td>
+                                                                                    <td>As an auditor, I can view a Balance Report showing the Opening and Closing balances for all CostCentres. This will provide part of the supporting evidence of the Period End Balance sheet.This involves simply adding a Period restriction to the balance report, and a link to the report on the Period End page.</td>
+                                                                                    <td>Story</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1142</td>
+                                                                                    <td>Period End Bank Transaction Report</td>
+                                                                                    <td>As an auditor, I can view a list of all bank transactions, across all bank accounts, for a given period. This provides supporting evidence for the Period End Balance Sheet.This will resemble the Bank History.</td>
+                                                                                    <td>Story</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1144</td>
+                                                                                    <td>Cash Transaction Period Report</td>
+                                                                                    <td>As an auditor, I can view a list of all Cash Transactions made within a given period. This will form the evidence for the period end balance sheet.This is just the Cash History filtered on the given period.</td>
+                                                                                    <td>Story</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1059</td>
+                                                                                    <td>Draft Period End Report</td>
+                                                                                    <td>As a bookkeeper, I can view a Draft Period End report, that resembles the final Period End Report.Draft PE allows the User to hold receipts, payments, cancels &amp; open bals prior to the proposed close down date. Reports will be generated for that period to include Summary of Account, Search Account Balances, Account Transactions &amp; List of Cancellation.</td>
+                                                                                    <td>Story</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1143</td>
+                                                                                    <td>Bank Balance Report</td>
+                                                                                    <td>As an auditor, I can view a report of all Bank Account opening and closing balances for a given period. This forms part of the evidence for the Period End Balance Sheet.The closing balances should not break out the amounts owing/owed. These are already broken out in the balance sheet.</td>
+                                                                                    <td>Story</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1130</td>
+                                                                                    <td>Reverse the date order on Bank and cash history reports</td>
+                                                                                    <td>This is going to become more important as users enter more transactions</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                    <tr>
+                                                                                    <td>FM-1128</td>
+                                                                                    <td>Transfers and the way in which they are reported</td>
+                                                                                    <td>Transfer &#8211; are NOT true income or expenditure, but DO affect the balance of the accounts. Hence the reason for the separate columns on the Search Account Balances screen.<br />
+                                                                                    So an account may have an opening balance &#8211; based on the balance of the account at closing (including any transfers In and Out). It may have transfers In &amp;/or Out during a period, BUT they do NOT effect the opening balance during a financial period. ONLY an Opening Balance adjustment should have an effect on the balance on the View Opening Balances screen.<br />
+                                                                                    The option to Exclude transfers from balances is necessary for audit reporting but is seldom the preferred option for the user who will always want to see the transfer value included in the running balance.</td>
+                                                                                    <td>Issue</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1127</td>
+                                                                                    <td>Transfers and the effect on Account Balances &#8211; corrected</td>
+                                                                                    <td>The Search Account Balances report  updates correctly when Account Transfers are involved.</td>
+                                                                                    <td>Issue</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-834</td>
+                                                                                    <td>GS welcome email</td>
+                                                                                    <td>Welcome email content to changeContributed by support</td>
+                                                                                    <td>Improvement</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-852</td>
+                                                                                    <td>List receipts by number corrected</td>
+                                                                                    <td>Need a sort order on list receipts by number which is appropriate, done.</td>
+                                                                                    <td>Improvement</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>FM-1114</td>
+                                                                                    <td>Increase the size of the ePayment Registration field when manually editing</td>
+                                                                                    <td>Increase the width on the ePayment Registration number field so all 16 characters are clearly visible.Also please add constraints on the fields so that the ePayment Registration must contain 16 numbers or nothing and the CVV must contain 3 numbers or nothing</td>
+                                                                                    <td>Bug</td>
+                                                                                    <td>Fixed</td>
+                                                                                </tr>
+                                                                            </tbody>                                    
+                                </table>
+                                    <hr>
+                                                                <!-- template for blog -->
+                                                               <!-- <h3 class="title blog_name">Release Notes</h3>
+                                                                        <p class="blog_date">16/10/12</p>
+                                                                        <p class="blog_creator">Pebble Team</p>
+                                                                        <p>Please see below the October release notes for all the development and bug fixes done since the last release in September. For those of you who experienced a delay on Search Account Balances, please give it a try ….and don’t blink it is very fast.</p>
+                                                                        <p>Lots of other improvements and additions including Sortable columns on Date, Account and Name on the Search Transactions report, separate number ranges for cash and cheque payments, transfers between names and/or accounts and lots of Period End reports.
+                                                                        <p>Please keep your suggestions and comments coming in via the Feedback Tab in Fund Manager.</p>
+                                                                            <table class="table table-bordered">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <th>Key</th>
+                                                                                            <th>Summary</th>
+                                                                                            <th>Description</th>
+                                                                                            <th>Issue Type</th>
+                                                                                            <th>Resolution</th>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>FM-1155</td>
+                                                                                            <td>Import ePayment Registrations</td>
+                                                                                            <td>As a member of the support team, I can import ePayment Account IDs using the Contact Import routine, which will add the ePayment Registration Number to pupils who match.</td>
+                                                                                            <td>Story</td>
+                                                                                            <td>Fixed</td>
+                                                                                        <tr>
+                                                                                            <td>FM-1175</td>
+                                                                                            <td>Search on keyword is not working</td>
+                                                                                            <td>In the Search transaction screen the keyword search fixed</td>
+                                                                                            <td>Bug</td>
+                                                                                            <td>Won&#8217;t Fix</td>
+                                                                                        </tr>
+                                                                                    </tbody>                                    
+                                                                            </table>
+                                    <hr>    -->
+                            </div>
+                        </div>
+                    </div>
+                        <div class="grid1 sidebar blog box">
+                            <div class="supportcommunitybox grid1 ">
+                                <div class="box-inner">
+                                    <h2 class="title">Archived </h2>
+                                        <div class="descripton">
+                                            <p>Reach our previous release notes on <a href="http://talktopebble.wordpress.com/" target="_blank">Wordpresss</a>.</p>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div><!--/.container-->    
+        </div><!--/.body-->
+ {% endblock %} 
