@@ -417,7 +417,7 @@ background-color:#C0C0C0;
   color: #333333;
 }
 .box.calltoaction .description p {
-  margin-right: 150px;
+  /*margin-right: 150px;*/
 }
 .box.calltoaction .btn-calltoaction {
   float: right;
@@ -819,6 +819,7 @@ background-color:#CCC;}
 	}*/
 
 }
+
 .titlerow .logo {
   float: left;
   margin-right: 20px;
@@ -844,6 +845,11 @@ background-color:#CCC;}
   margin: 10px 0 18px 0;
   font-size: 20px;
   font-weight: normal;
+}
+.strapline{
+text-align:center;
+font-size:16px;
+margin:2px;
 }
 /*!
  * mypebble.co.uk
@@ -2691,6 +2697,9 @@ input[type="submit"].btn.small {
 }  
 .bhelp{
   text-align:center;
+}
+.sff_cta{
+  margin-bottom:40px;
 }
 .blog_name{
   width:85%; 
