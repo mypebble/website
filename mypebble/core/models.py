@@ -69,7 +69,7 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
         extra_field = extra_field.get()
         extra = entry.fields.get(field_id=extra_field.pk).value
     else:
-        extra_field = None
+        extra = None
 
     available = entry.form.fields.filter(slug='next_available_date')
     if available.exists():
