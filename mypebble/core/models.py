@@ -27,11 +27,11 @@ def get_checked(entry):
 
     training_field = entry.form.fields.filter(slug='training')
     if training_field.exists():
-        training_field = training_field.get()
         yield 'Training'
 
     documentation_field = entry.form.fields.filter(slug='i_would_like')
     if documentation_field.exists():
+        documentation_field = documentation_field.get()
         documentation = entry.fields.get(field_id=documentation_field.pk).value
         yield documentation
 
