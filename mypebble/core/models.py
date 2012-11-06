@@ -65,7 +65,7 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
     telephone = entry.fields.get(field_id=telephone_field.pk).value
 
     extra_field = entry.form.fields.filter(slug='add_a_message')
-    if extra_field.exists:
+    if extra_field.exists():
         extra_field = extra_field.get()
         extra = entry.fields.get(field_id=extra_field.pk).value
     else:
