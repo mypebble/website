@@ -15,7 +15,7 @@ They left the following message:
 {{ extra }}{% endblocktrans %}{% endif %}
 {% if available $}
 {% blocktrans %}
-They will next be available at: {{ available }}{% endif %}{% endblocktrans %}
+They will next be available at: {{ available }}{% endblocktrans %}{% endif %}
 
 {% blocktrans %}
 Please contact {{ name }} on {{ telephone }} or at {{ email_address }}.
