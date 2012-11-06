@@ -13,6 +13,10 @@ They are interested in:
 {% blocktrans %}
 They left the following message:
 {{ extra }}{% endblocktrans %}{% endif %}
+{% if available $}
+{% blocktrans %}
+They will next be available at: {{ available }}{% endif %}{% endblocktrans %}
+
 {% blocktrans %}
 Please contact {{ name }} on {{ telephone }} or at {{ email_address }}.
 

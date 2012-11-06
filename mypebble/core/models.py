@@ -17,15 +17,24 @@ EMAIL_SENDERS = {
 
 
 def get_checked(entry):
-    interested_field = entry.form.fields.get(slug='im_interseted_in')
-    interested = entry.fields.get(field_id=interested_field.pk).value
+    """Get the checked fields from the form(s).
+    """
+    interested_field = entry.form.fields.filter(slug='im_interseted_in')
+    if interested_field.exists():
+        interested_field = interested_field.get()
+        interested = entry.fields.get(field_id=interested_field.pk).value
+        yield interested
 
-    yield interested
+    training_field = entry.form.fields.filter(slug='training')
+    if training_field.exists():
+        training_field = training_field.get()
+        training = entry.fields.get(field_id=training_field.pk).value
+        yield training
 
-    documentation_field = entry.form.fields.get(slug='i_would_like')
-    documentation = entry.fields.get(field_id=documentation_field.pk).value
-
-    yield documentation
+    documentation_field = entry.form.fields.exists(slug='i_would_like')
+    if documentation_field.exists():
+        documentation = entry.fields.get(field_id=documentation_field.pk).value
+        yield documentation
 
 
 @receiver(form_valid)
@@ -45,7 +54,9 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
     email_field = entry.form.fields.get(slug='email_address')
     email_address = entry.fields.get(field_id=email_field.pk).value
 
-    org_field = entry.form.fields.get(slug='school_or_organisation')
+    org_field = entry.form.fields.filter(slug='school_or_organisation')
+    if not org_field.exists():
+        org_field = entry.form.fields.get(slug='school')
     org = entry.fields.get(field_id=org_field.pk).value
 
     postcode_field = entry.form.fields.get(label='Postcode')
@@ -54,8 +65,18 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
     telephone_field = entry.form.fields.get(slug='telephone')
     telephone = entry.fields.get(field_id=telephone_field.pk).value
 
-    extra_field = entry.form.fields.get(slug='add_a_message')
-    extra = entry.fields.get(field_id=extra_field.pk).value
+    extra_field = entry.form.fields.filter(slug='add_a_message')
+    if extra_field.exists:
+        extra_field = entry.form.fields.get()
+        extra = entry.fields.get(field_id=extra_field.pk).value
+    else:
+        extra_field = None
+
+    available = entry.form.fields.filter(slug='next_available_date')
+    if available.exists():
+        available = available.get()
+    else:
+        available = None
 
     context = Context({
         'name': name,
@@ -65,6 +86,7 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
         'telephone': telephone,
         'checked': [c for c in get_checked(entry)],
         'extra': extra,
+        'available': available,
     })
 
     message = message_template.render(context)
@@ -72,7 +94,7 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
     try:
         send_mail(subject, message, from_, to)
     except smtplib.SMTPException:
-        log.info(
+        log.error(
             u'Email could not send.\nContext={context}'.format(context=context)
         )
         raise
