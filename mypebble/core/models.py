@@ -28,8 +28,7 @@ def get_checked(entry):
     training_field = entry.form.fields.filter(slug='training')
     if training_field.exists():
         training_field = training_field.get()
-        training = entry.fields.get(field_id=training_field.pk).value
-        yield training
+        yield 'Training'
 
     documentation_field = entry.form.fields.exists(slug='i_would_like')
     if documentation_field.exists():
