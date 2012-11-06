@@ -56,6 +56,8 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
     org_field = entry.form.fields.filter(slug='school_or_organisation')
     if not org_field.exists():
         org_field = entry.form.fields.get(slug='school')
+    else:
+        org_field = org_field.get()
     org = entry.fields.get(field_id=org_field.pk).value
 
     postcode_field = entry.form.fields.get(label='Postcode')
