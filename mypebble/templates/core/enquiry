@@ -13,7 +13,7 @@ They are interested in:
 {% blocktrans %}
 They left the following message:
 {{ extra }}{% endblocktrans %}{% endif %}
-{% if available $}
+{% if available %}
 {% blocktrans %}
 They will next be available at: {{ available }}{% endblocktrans %}{% endif %}
 
