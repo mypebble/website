@@ -70,9 +70,8 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
 MEDIA_URL = "/media/"
 
 # Absolute path to the directory static files should be collected to.
-STATIC_ROOT = os.path.join(PROJECT_PATH, "another-static/")
+STATIC_ROOT = os.path.join(PROJECT_PATH, "static/")
 STATIC_URL = "/static/"
-ADMIN_MEDIA_PREFIX = "/static/admin/"
 
 # URL prefix for admin static files -- CSS, JavaScript and images.
 # Make sure to use a trailing slash.
@@ -84,7 +83,6 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(PROJECT_PATH, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -240,14 +238,14 @@ CMS_TEMPLATES = (
     ('login.html', 'Login Template'),
     ('404.html', 'Error 404'),
     ('500.html', 'Error 500'),
-    
+
     ('privacy.html','Privacy Template'),
     ('tandc.html','T&C Template'),
     ('accessibility.html','Accessibility Template'),
     ('security.html','Security Template'),
-    
+
     ('blog.html','Blog Template'),
-    
+
     #support video templates
     ('support_document_ul.html','User Login Template'),
     ('support_document_al.html','Apply Licence Template'),
@@ -257,7 +255,7 @@ CMS_TEMPLATES = (
     ('support_document_rec.html','Reconcile Bank Template'),
     ('support_document_pe1.html','PeriodEnd 1 Template'),
     ('support_document_pe2.html','PeriodEnd 2 Template'),
-    
+
 
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),
