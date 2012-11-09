@@ -5,6 +5,7 @@ gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
+TESTING = True
 TEMPLATE_DEBUG = DEBUG
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'localhost'
