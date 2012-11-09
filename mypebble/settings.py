@@ -5,6 +5,7 @@ gettext = lambda s: s
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
 DEBUG = True
+TESTING = True
 TEMPLATE_DEBUG = DEBUG
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'localhost'
@@ -70,14 +71,8 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH, "media")
 MEDIA_URL = "/media/"
 
 # Absolute path to the directory static files should be collected to.
-STATIC_ROOT = os.path.join(PROJECT_PATH, "another-static/")
+STATIC_ROOT = os.path.join(PROJECT_PATH, "collected-static/")
 STATIC_URL = "/static/"
-ADMIN_MEDIA_PREFIX = "/static/admin/"
-
-# URL prefix for admin static files -- CSS, JavaScript and images.
-# Make sure to use a trailing slash.
-# Examples: "http://foo.com/static/admin/", "/static/admin/".
-ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -240,14 +235,14 @@ CMS_TEMPLATES = (
     ('login.html', 'Login Template'),
     ('404.html', 'Error 404'),
     ('500.html', 'Error 500'),
-    
+
     ('privacy.html','Privacy Template'),
     ('tandc.html','T&C Template'),
     ('accessibility.html','Accessibility Template'),
     ('security.html','Security Template'),
-    
+
     ('blog.html','Blog Template'),
-    
+
     #support video templates
     ('support_document_ul.html','User Login Template'),
     ('support_document_al.html','Apply Licence Template'),
@@ -257,7 +252,7 @@ CMS_TEMPLATES = (
     ('support_document_rec.html','Reconcile Bank Template'),
     ('support_document_pe1.html','PeriodEnd 1 Template'),
     ('support_document_pe2.html','PeriodEnd 2 Template'),
-    
+
 
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),

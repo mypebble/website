@@ -7,14 +7,10 @@ import forms_builder.forms.urls # add this import
 
 
 from cms.sitemaps import CMSSitemap
-from cmsplugin_blog.sitemaps import BlogSitemap
 
-from django.contrib import admin
 admin.autodiscover()
 
 from mypebble.testimonials.views import TestimonialView
-
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 admin.autodiscover()
 
@@ -33,7 +29,7 @@ if settings.DEBUG:
         url(r'^media/(?P<path>.*)$', 'django.views.static.serve',
             {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
         url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
-            {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
+            {'document_root': settings.STATIC_ROOT, 'show_indexes': True}),
 
     url(r'^admin/', include(admin.site.urls)),
 
@@ -44,6 +40,6 @@ if settings.DEBUG:
 #        url(r'', include('django.contrib.staticfiles.urls')),
     ) + urlpatterns
 
-urlpatterns += staticfiles_urlpatterns()
+#urlpatterns += staticfiles_urlpatterns()
 
 
