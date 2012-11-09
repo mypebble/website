@@ -12,8 +12,6 @@ admin.autodiscover()
 
 from mypebble.testimonials.views import TestimonialView
 
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -42,6 +40,6 @@ if settings.DEBUG:
 #        url(r'', include('django.contrib.staticfiles.urls')),
     ) + urlpatterns
 
-urlpatterns += staticfiles_urlpatterns()
+#urlpatterns += staticfiles_urlpatterns()
 
 
