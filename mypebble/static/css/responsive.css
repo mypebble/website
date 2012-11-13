@@ -126,6 +126,16 @@
 table{
   font-size:10px;
 }
+
+.bett p{
+  text-align:center;
+  margin:2px !important;
+  width:35%;
+}
+.bettbox{
+  margin-top:5px !important;
+}
+
 }
 
 /* SMARTPHONE AND TABLET */

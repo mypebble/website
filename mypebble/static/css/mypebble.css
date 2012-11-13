@@ -2715,3 +2715,21 @@ input[type="submit"].btn.small {
   line-height:13px;
   color:#87746B;
 }
+
+/*BETT*/
+.bett p{
+  text-align:center;
+  font-size:18px;
+  margin-top:-30px !important;
+}
+.bett strong{
+  color:#94408E;
+  font-size:24px;
+}  
+.bettbox{
+  margin-top:45px;
+  background:#94408E !important;
+}
+.bettbox:hover {
+  background:rgb(64,64,64) !important;
+}
