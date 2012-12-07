@@ -253,7 +253,14 @@ CMS_TEMPLATES = (
     ('support_document_pe1.html','PeriodEnd 1 Template'),
     ('support_document_pe2.html','PeriodEnd 2 Template'),
 
-
+    #support videos fm
+    ('support_document_ma.html','Manage Accounts Template'),
+    ('support_document_mn.html','Manage Names Template'),
+    ('support_document_st.html','Search Transaction Template'),
+    ('support_document_wnp.html','Whos not paid Template'),
+    ('support_document_gs.html','Get Satisfaction Template'),
+    
+    #misc
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),

@@ -1,42 +1,38 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 {% block primary %}
- <div class="support">
+<div class="support">
                 <div class="row titlerow">
-                    <div class="title">
-                        <a href="/support/">
-                            <img class="logo" alt="Support"
-                                src="{{ STATIC_URL }}img/logo/support_logo.png"/>
-                        </a>
-                        <div class="pull-right">
-                            {% placeholder "support_product" or %}{% endplaceholder %}
-                        </div>
-                    </div>
+                    <div class="title"><a href="support.html"><img class="logo" src="{{ STATIC_URL}}img/logo/support_logo.png" alt="Support"/></a> 
+<div class="pull-right"><img src="{{ MEDIA_URL }}cms_page_media/49/sfm_logo.png" alt="School Fund Manager support"/></div></div>
                 </div>
+                
                 <div class="row">
-                    <h1>{% placeholder "support_title" or %}{% endplaceholder %}</h1>
-                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid2 tutorial">
 
+                    <h1>{% placeholder "support_description_h1" or %}{% endplaceholder %}</h1>
+                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box grid2">
                             <div class="box-inner">
-                                {% placeholder "support_intro" or %}{% endplaceholder %}
-                                <h2>{% placeholder "faq title" or %}Frequently asked questions{% endplaceholder %}</h2>
-                                                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Manage Accounts"/>
-                                    <a href="/support/fm/manage-accounts/">Manage Accounts</a></h3>
-                                        <p>{% placeholder "support_description_1p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Manage Names and Creating Groups"/>
-                                    <a href="/support/fm/manage-names/">Manage Names and Creating Groups</a></h3>
-                                        <p>{% placeholder "support_description_2p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Search Transactions and Export Data"/>
-                                    <a href="/support/fm/search-transactions/">Search Transactions and Export Data</a></h3>
-                                        <p>{% placeholder "support_description_3p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Who's Not Paid"/>
-                                    <a href="/support/fm/whos-not-paid/">Who's Not Paid</a></h3>
-                                    
-                                        <p>{% placeholder "support_description_4p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Get Satisfaction"/>
-                                    <a href="/support/fm/get-satisfaction/">Get Satisfaction</a></h3>
-                                        <p>{% placeholder "support_description_5p" or %}{% endplaceholder %}</p>
+                               <p>{% placeholder "support_description_p" or %}{% endplaceholder %}</p>
+<video  controls="controls" width="500" height="300">
+<source src="https://s3-eu-west-1.amazonaws.com/mypebble/RG+Approved-+Who%27s+Not+Paid.webm" type="video/webm" />
+<source src="https://s3-eu-west-1.amazonaws.com/mypebble/RG+Approved-+Who%27s+Not+Paid.ogg" type="video/ogg" />
+</video>
+
+<!--[if IE 9]>
+<h4>Can’t see the video? Are you trying to watch in Internet Explorer 9?</h4>
+<p>You can download the following plugin - <a href="https://tools.google.com/dlpage/webmmf" target="_blank">WebM-Video plugin</a></p>
+<![endif]-->
+<!--[if lte IE 8 ]>
+<h4>Can't see the video? Are you trying to watch in Internet Explorer? </h4>
+<p>Your browser does not support this video type. Please upgrade your browser or try a different browser.</p>
+<h5>Recommended Browsers</h5>
+<ol>
+    <li><a href="http://www.mozilla.org/en-US/firefox/fx/#desktop" target="_blank">Mozilla Firefox</a></li>
+    <li><a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Google Chrome</a></li>
+</ol>
+
+<![endif]-->
                             </div>
                         </div>
                     </div>
@@ -52,8 +48,7 @@
                                         <i class="i icon-email-white"></i><a href="mailto:support@mypebble.co.uk">support@mypebble.co.uk</a>
                                     </p>
                                 </div>
-                                
-                                <form action="https://secure.logmeinrescue.com/Customer/Code.aspx" method="post" id="logmein-form" class="contact">
+                                <form action="https://secure.logmeinrescue.com/Customer/Code.aspx" method="post" id="logmein-form"  class="logmein">
                                     <h2 class="title">Online support 
 					<i class="i icon-help-white"></i></h2>
                                     <label for="pin">Enter your 6-digit PIN code:</label>
@@ -67,35 +62,11 @@
                                 </form>
                             </div>
                         </div>
-                        
-                                                <div class="supportcommunitybox box grid1">
-                            <div class="box-inner">
-                                <h2 class="title">User Guides</h2>
-                                <div class="description">
-                                <ul>
-                                    <li><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Manual.pdf">
-Fund Manager User Manual</a></li>
-                                    <li><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Quick Start Guide.pdf">Quick Start Guide</a></li>
-                                    <li><a href="{{ MEDIA_URL }}supportdoc/Importing Parent Pay Transactions into FM.pdf">Import Parent Pay Transactions</a></li>
-                                </ul>
-                                <hr/>
-                                <h3>Useful Resources</h3>
-                                 <ul>
-                                    <li><a href="http://support.google.com/chrome/bin/answer.py?hl=en&answer=95472" target="_blank">Google Chrome - Manage pop-ups</a></li>
-                                    <li><a href="http://support.mozilla.org/en-US/kb/pop-blocker-settings-exceptions-troubleshooting" target="_blank">Mozilla Firefox - Manage pop-ups</a></li>
-                                </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        
-                        
                         <div class="supportcommunitybox box grid1">
                             <div class="box-inner">
                                 <h2 class="title">Pebble Support Community</h2>
                                 <div class="description">
+                                
                                 <div id='gsfn_search_widget'>
                                         <form accept-charset='utf-8' action='https://getsatisfaction.com/pebble' id='gsfn_search_form' method='get' onsubmit='gsfn_search(this); return false;'>
                                             <input name='style' type='hidden' value='' />
@@ -119,9 +90,9 @@ Fund Manager User Manual</a></li>
                                         <script type="text/javascript">
                                         if (typeof GSFN !== "undefined") { GSFN.loadWidget(809,{"containerId":"getsat-widget-809"}); }
                                         </script>
-                                </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div><!--/.container-->    
  {% endblock %} 
