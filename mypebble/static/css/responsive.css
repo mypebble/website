@@ -271,6 +271,7 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
   
     .box .footerimage IMG {
   bottom: -12px !important;
+  display: block;
 }
 }
 

@@ -2719,6 +2719,10 @@ input[type="submit"].btn.small {
   line-height:13px;
   color:#87746B;
 }
+/*support banner*/
+.supportbanner{margin-bottom:5px;
+}
+
 
 /*BETT*/
 .bett p{
