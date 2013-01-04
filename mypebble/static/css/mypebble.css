@@ -317,7 +317,7 @@ background-color:#C0C0C0;
 /* Image (e.g. screenshot) at the bottom of boxes. BORDER TREATMENT TO BE CONFIRMED  */
 .box .footerimage IMG {
   position: relative;
-  bottom: -8px;
+  bottom: -12px;
   display: block;
 }
 .box .callout {
@@ -355,7 +355,7 @@ background-color:#C0C0C0;
 
 /*home page product alignments*/
 .fm_spacer{margin-top:27px;} 
-.boxh{max-height:231px;}
+.boxh{max-height:235px;}
 
 /* Hero box, used on product homepages */
 .hero {
