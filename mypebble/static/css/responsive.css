@@ -136,6 +136,8 @@ table{
   margin-top:5px !important;
 }
 
+a#fdbk_tab{display:none !important; visibility:hidden !important;}
+
 }
 
 /* SMARTPHONE AND TABLET */
@@ -264,6 +266,8 @@ table{
   .sidebar {
   margin-left:0px !important;
   }
+  
+  a#fdbk_tab{display:none !important; visibility:hidden !important;}
 }
 
 /* PORTABLE TABLET */
