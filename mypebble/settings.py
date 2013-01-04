@@ -259,6 +259,8 @@ CMS_TEMPLATES = (
     ('support_document_st.html','Search Transaction Template'),
     ('support_document_wnp.html','Whos not paid Template'),
     ('support_document_gs.html','Get Satisfaction Template'),
+    ('support_document_pa.html','Offers Template'),
+    ('support_document_bh.html','Bank History Template'),
     
     #misc
     ('misc.html', 'Misc Template'),
