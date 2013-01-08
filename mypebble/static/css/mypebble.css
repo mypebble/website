@@ -355,7 +355,7 @@ background-color:#C0C0C0;
 
 /*home page product alignments*/
 .fm_spacer{margin-top:27px;} 
-.boxh{max-height:235px;}
+.boxh{min-height:235px;}
 
 /* Hero box, used on product homepages */
 .hero {
