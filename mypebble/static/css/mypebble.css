@@ -2096,6 +2096,10 @@ table {
 .sff .titlerow .loginbtn.active {
   background-color: #c17106 \9;
 }
+/*so boxes align in sff page*/
+.sffbox{margin-bottom:12px;}
+
+
 .sff .box.calltoaction-secondary .btn:hover,
 .sff .titlerow .loginbtn:hover {
   background: #da8006;
