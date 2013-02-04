@@ -2727,7 +2727,10 @@ input[type="submit"].btn.small {
 .supportbanner{margin-bottom:5px;
 }
 
-
+.filler{
+  background:#f1f1f1;
+  box-shadow:none;
+}
 /*BETT*/
 .bett p{
   text-align:center;
