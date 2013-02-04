@@ -5,20 +5,40 @@
         <div class="body" id="body">
                 <div class="row">
                     <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
-                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                    <div class="gri2 content"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid2">
                             <div class="box-inner">
                                 {% placeholder "main_content" or %} {% endplaceholder %} 
+                                
+                                <video controls="controls" width="570">
+                                        <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.webm" type="video/webm" />
+                                        <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.ogg" type="video/ogg" />
+                                    </video>
+                                        <!--[if IE 9]>
+                                        <h4>Can’t see the video? Are you trying to watch in Internet Explorer 9?</h4>
+                                        <p>You can download the following plugin - <a href="https://tools.google.com/dlpage/webmmf" target="_blank">WebM-Video plugin</a></p>
+                                        <![endif]-->
+                                        <!--[if lte IE 8 ]>
+                                        <h4>Can't see the video? Are you trying to watch in Internet Explorer? </h4>
+                                        <p>Your browser does not support this video type. Please upgrade your browser or try a different browser.</p>
+                                        <h5>Recommended Browsers</h5>
+                                        <ol>
+                                            <li><a href="http://www.mozilla.org/en-US/firefox/fx/#desktop" target="_blank">Mozilla Firefox</a></li>
+                                            <li><a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Google Chrome</a></li>
+                                        </ol>
+
+                                        <![endif]-->
                             </div>
                         </div> 
                     </div>
                     <div class="grid1 sidebar partners"> <!-- Column. Modules inside will stack vertically -->
                         <div class="supportcommunitybox box grid1">
                             <div class="box-inner">
-                                <h2 class="title">Partners</h2>
-                                    <p>We are proud to work with the following companies:</p>
-                                
-                                <div class="partners">
+                                <h2 class="title">Charity</h2>
+                                    <p>something about our charity of year</p>
+                                    
+                                        
+                                <!--<div class="partners">
                                     <ul>
                                         <li><a href="http://www.squidcard.com/" target="_blank" title="#"><img alt="sQid" src="{{ STATIC_URL }}img/partner/squid_logo.jpg"></a></li>
                                         <li><a href="http://www.1st4schoolsinsurance.co.uk/pebble/" target="_blank" title="#"><img alt="Genesis" src="{{ STATIC_URL }}img/partner/genesis_logo.png"></a></li>
@@ -27,11 +47,23 @@
                                         <li><a href="https://www.parentmail.co.uk/index.html" target="_blank" title="#"><img alt="ParentMail" src="{{ STATIC_URL }}img/partner/Pmail_logo.png"></a></li>
                                         <li><a href="http://www.civica.co.uk/education" target="_blank" title="#"><img alt="Civica" src="{{ STATIC_URL }}img/partner/civica_logo.png"></a></li>
                                     </ul>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>
                 </div> 
+                <div class="row box grid3"><style>.test li{display:inline;} .test img{width:140px;}</style>
+                    <h2 class="title">Partners</h2>
+                    <p>We are proud to work with the following companies:</p>
+                           <ul class="test">
+                                        <li><a href="http://www.squidcard.com/" target="_blank" title="#"><img alt="sQid" src="{{ STATIC_URL }}img/partner/squid_logo.jpg"></a></li>
+                                        <li><a href="http://www.1st4schoolsinsurance.co.uk/pebble/" target="_blank" title="#"><img alt="Genesis" src="{{ STATIC_URL }}img/partner/genesis_logo.png"></a></li>
+                                        <li><a href="http://www.the-contactgroup.com/products/call-parents/" target="_blank" title="#"><img alt="CallParents" src="{{ STATIC_URL }}img/partner/cparent_logo.png"></a></li>
+                                        <li><a href="http://schoolcomms.com/" target="_blank" title="#"><img alt="Schoolcomms" src="{{ STATIC_URL }}img/partner/scoms_logo.png"></a></li>
+                                        <li><a href="https://www.parentmail.co.uk/index.html" target="_blank" title="#"><img alt="ParentMail" src="{{ STATIC_URL }}img/partner/Pmail_logo.png"></a></li>
+                                        <li><a href="http://www.civica.co.uk/education" target="_blank" title="#"><img alt="Civica" src="{{ STATIC_URL }}img/partner/civica_logo.png"></a></li>
+                                    </ul>
+                </div>
                 <div class="row extras">
                     <div class="box supportfocus carousel" id="supportCarousel">
                         <div class="team">
