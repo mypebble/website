@@ -9,7 +9,7 @@
                         <div class="box grid2">
                             <div class="box-inner">
                                 {% placeholder "main_content" or %} {% endplaceholder %} 
-                                <h3>Introducing Pebble video</h3>
+                                <div class="extras"><h3>Introducing Pebble video</h3>
                                 <video controls="controls" width="580">
                                     <img src="{{ STATIC_URL }}img/hotair.png">
                                         <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.webm" type="video/webm" />
@@ -30,9 +30,10 @@
 
                                         <![endif]-->
                             </div>
+                            </div>
                         </div> 
                     </div>
-                    <div class="grid1 sidebar partners "> 
+                    <div class="grid1 sidebar "> 
                         <div class="supportcommunitybox box grid1 ">
                             <div class="box-inner">
                                 <h2 class="title">2012 Miles for Charity</h2>
@@ -46,10 +47,11 @@
                         </div>
                     </div>
                 </div> 
-                <div class="row box grid3"><style>.test li{display:inline;} .test img{width:140px;}</style>
+                <div class="row extras">
+                    <div class=" box grid3">
                     <h2 class="title">Partners</h2>
                     <p>We are proud to work with the following companies:</p>
-                           <ul class="test">
+                           <ul class="staff">
                                         <li><a href="http://www.squidcard.com/" target="_blank" title="#"><img alt="sQid" src="{{ STATIC_URL }}img/partner/squid_logo.jpg"></a></li>
                                         <li><a href="http://www.1st4schoolsinsurance.co.uk/pebble/" target="_blank" title="#"><img alt="Genesis" src="{{ STATIC_URL }}img/partner/genesis_logo.png"></a></li>
                                         <li><a href="http://www.the-contactgroup.com/products/call-parents/" target="_blank" title="#"><img alt="CallParents" src="{{ STATIC_URL }}img/partner/cparent_logo.png"></a></li>
@@ -57,7 +59,7 @@
                                         <li><a href="https://www.parentmail.co.uk/index.html" target="_blank" title="#"><img alt="ParentMail" src="{{ STATIC_URL }}img/partner/Pmail_logo.png"></a></li>
                                         <li><a href="http://www.civica.co.uk/education" target="_blank" title="#"><img alt="Civica" src="{{ STATIC_URL }}img/partner/civica_logo.png"></a></li>
                                     </ul>
-                </div>
+                </div></div>
                 <div class="row extras">
                     <div class="box supportfocus carousel" id="supportCarousel">
                         <div class="team">

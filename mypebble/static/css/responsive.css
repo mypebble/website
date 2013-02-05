@@ -105,7 +105,7 @@
   .home .titlerow .title{
   margin:0px 10px 5px 0;
   }
-  .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs, .onlinesupportbox, .extras, .upgrade, .gscommunity {
+  .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs, .onlinesupportbox, .extras, .upgrade, .gscommunity, video, .video, .partners{
   display:none ;
   visibility:hidden;
   } 
@@ -116,7 +116,7 @@
   width:60%;
   }  
   .supportbanner{
-  width:100% !important;
+  width:98% !important;
   }
     .box.hp {
   background-image: url('');
@@ -248,7 +248,7 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
   }
   .supportbanner {
   margin:0px;
-  width:98% !important;
+  width:96% !important;
   }    
   .sffbanner {
   margin:0px;

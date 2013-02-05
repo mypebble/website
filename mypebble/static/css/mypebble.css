@@ -2748,3 +2748,6 @@ input[type="submit"].btn.small {
 .bettbox:hover {
   background:rgb(64,64,64) !important;
 }
+
+.staff li{display:inline;} 
+.staff img{width:140px;}
