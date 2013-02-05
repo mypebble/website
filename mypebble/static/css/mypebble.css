@@ -359,7 +359,7 @@ background-color:#C0C0C0;
 
 /* Hero box, used on product homepages */
 .hero {
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding-top: 20px;
   /* For homepage slideshow styles, see carousel.less */
 
@@ -393,8 +393,8 @@ background-color:#C0C0C0;
 
   position: absolute;
   z-index: 995;
-  top: 0;
-  right: 0;
+  top: -10;
+  right: -10;
 }
 .fm .hero {
   background-color: #4cc5f4 !important;
@@ -407,8 +407,8 @@ background-color:#C0C0C0;
 .home .hero {
   padding-left: 15px;
   padding-right: 15px;
-  border: 5px solid #fff;
-  background-color: #c2e9fd;
+  background-color: #f0f1f0;
+  box-shadow:none;
 }
 /* Main call-to-action box on product pages */
 .box.calltoaction {
