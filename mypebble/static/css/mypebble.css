@@ -393,8 +393,10 @@ background-color:#C0C0C0;
 
   position: absolute;
   z-index: 995;
-  top: -10;
-  right: -10;
+  top: 0;
+  right: 0;
+  
+  overflow:hidden;
 }
 .fm .hero {
   background-color: #4cc5f4 !important;
