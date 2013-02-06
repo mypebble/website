@@ -232,6 +232,8 @@ CMS_TEMPLATES = (
     ('contact.html', 'Contact Template'),
     ('contact2.html', 'Contact Demo Template'),
     ('contact3.html', 'Contact Training Template'),
+    ('contact4.html', 'Webinar Training Template'),
+    
     ('login.html', 'Login Template'),
     ('404.html', 'Error 404'),
     ('500.html', 'Error 500'),
