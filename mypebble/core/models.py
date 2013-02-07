@@ -2,7 +2,7 @@ import logging
 import smtplib
 
 from django.core.mail import send_mail
-from django.core.exceptions import DoesNotExist
+from django.core.exceptions import ObjectDoesNotExist
 from django.dispatch import receiver
 from django.template import Context, loader
 
@@ -63,14 +63,14 @@ def send_email(sender=None, form=None, entry=None, **kwargs):
 
     try:
         postcode_field = entry.form.fields.get(label='Postcode')
-    except DoesNotExist:
+    except ObjectDoesNotExist:
         postcode = ''
     else:
         postcode = entry.fields.get(field_id=postcode_field.pk).value
 
     try:
         telephone_field = entry.form.fields.get(label='Telephone')
-    except DoesNotExist:
+    except ObjectDoesNotExist:
         telephone = ''
     else:
         telephone = entry.fields.get(field_id=telephone_field.pk).value
