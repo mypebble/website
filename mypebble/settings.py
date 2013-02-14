@@ -263,6 +263,8 @@ CMS_TEMPLATES = (
     ('support_document_gs.html','Get Satisfaction Template'),
     ('support_document_pa.html','Offers Template'),
     ('support_document_bh.html','Bank History Template'),
+    ('support_document_ct.html','Cancel Transaction Template'),
+    ('support_document_sq.html','Squid Template'),
     
     #misc
     ('misc.html', 'Misc Template'),
