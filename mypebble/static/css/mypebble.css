@@ -1649,7 +1649,7 @@ table {
 .footer {
   clear: both;
   background: #fff;
-  border-top: 1px solid #00aeed;
+  border-top: 1px solid #ccc;
   font-size: 12px;
 }
 .footer .container {
