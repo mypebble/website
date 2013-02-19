@@ -256,15 +256,20 @@ CMS_TEMPLATES = (
     ('support_document_pe2.html','PeriodEnd 2 Template'),
 
     #support videos fm
-    ('support_document_ma.html','Manage Accounts Template'),
-    ('support_document_mn.html','Manage Names Template'),
-    ('support_document_st.html','Search Transaction Template'),
-    ('support_document_wnp.html','Whos not paid Template'),
-    ('support_document_gs.html','Get Satisfaction Template'),
-    ('support_document_pa.html','Offers Template'),
-    ('support_document_bh.html','Bank History Template'),
-    ('support_document_ct.html','Cancel Transaction Template'),
-    ('support_document_sq.html','Squid Template'),
+    ('support_document_ma.html','Manage Accounts FM Template'),
+    ('support_document_mn.html','Manage Names FM Template'),
+    ('support_document_st.html','Search Transaction FM Template'),
+    ('support_document_wnp.html','Whos not paid FM Template'),
+    ('support_document_gs.html','Get Satisfaction FM Template'),
+    ('support_document_pa.html','Offers FM Template'),
+    ('support_document_bh.html','Bank History FM Template'),
+    ('support_document_ct.html','Cancel Transaction FM Template'),
+    ('support_document_sq.html','Squid FM Template'),
+    
+    ('support_document_rpfm.html','Receipts and Record a Payment FM Template'),
+    ('support_document_ar.html','Account Report Create Acc FM Template'),
+    ('support_document_rbfm.html','Receipt to Bank FM Template'),
+    ('support_document_brfm.html','Reconcile Bank FM Template'),
     
     #misc
     ('misc.html', 'Misc Template'),

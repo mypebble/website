@@ -17,42 +17,77 @@
                     <h1>{% placeholder "support_title" or %}{% endplaceholder %}</h1>
                     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid2 tutorial">
-
                             <div class="box-inner">
                                 {% placeholder "support_intro" or %}{% endplaceholder %}
                                 <h2>{% placeholder "faq title" or %}Frequently asked questions{% endplaceholder %}</h2>
-                                                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Manage Accounts"/>
-                                    <a href="/support/fm/manage-accounts/">How to manage accounts</a></h3>
-                                        <p>{% placeholder "support_description_1p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Manage Names and Creating Groups"/>
-                                    <a href="/support/fm/manage-names/">How to manage names and create groups</a></h3>
-                                        <p>{% placeholder "support_description_2p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Search Transactions and Export Data"/>
-                                    <a href="/support/fm/search-transactions/">How to search transactions and export data</a></h3>
-                                        <p>{% placeholder "support_description_3p" or %}{% endplaceholder %}</p>
-                                <!---updated videos-->       
-                               <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Bank History, Cash History, and Reconciled Statements"/>
-                                    <a href="/support/fm/bank-history/">Bank history, cash history, and reconciled statements</a></h3>
-                                        <p>{% placeholder "support_description_4p" or %}{% endplaceholder %}</p>
-                                        
-                              <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Posting, Amending, And Cancelling Offers"/>
-                                    <a href="/support/fm/offers/">Posting, amending, and cancelling offers</a></h3>
-                                        <p>{% placeholder "support_description_5p" or %}{% endplaceholder %}</p>
-                                                  
-                                <!--End updated videos change -->
-                              <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Who's Not Paid"/>
-                                    <a href="/support/fm/whos-not-paid/">Find out who's not paid</a></h3>
-                                        <p>{% placeholder "support_description_6p" or %}{% endplaceholder %}</p>
-                              <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Get Satisfaction"/>
-                                    <a href="/support/fm/get-satisfaction/">How to use the feedback tab</a></h3>
-                                        <p>{% placeholder "support_description_7p" or %}{% endplaceholder %}</p>
-                                        
-                              <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Import Squid Sales"/>
-                                    <a href="/support/fm/import-squid/">Import sQuid Sales</a></h3>
-                                        <p>{% placeholder "support_description_7p" or %}{% endplaceholder %}</p>
-                              <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Get Satisfaction"/>
-                                    <a href="/support/fm/cancel-receipts/">Cancelling Receipts and Payments</a></h3>
-                                        <p>{% placeholder "support_description_7p" or %}{% endplaceholder %}</p>  
+                                    <ul class="video unstyled">
+                                      <h3>Transactions</h3>
+                                      <li>
+                                          <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Enter a Receipt and Record a Payment"/>
+                                          <a href="/support/fm/record-payment/">Enter a Receipt and Record a Payment</a></span>
+                                      </li>
+                                      <li>
+                                          <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Cancel Receipt"/>
+                                          <a href="/support/fm/cancel-receipts/">Cancelling Receipts and Payments</a></span>
+                                      </li>
+                                    </ul>
+                                    <ul class="video unstyled">
+                                      <h3>Reports</h3>
+                                      <li>
+                                          <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Account Reports and Create Account Groups"/>
+                                         <a href="/support/fm/account-report/">Account Reports and Create Account Groups</a></span>  
+                                      </li>
+                                      <li>
+                                         <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Search Transactions and Export Data"/>
+                                         <a href="/support/fm/search-transactions/">How to Search Transactions and Export Data</a></span>
+                                      </li>
+                                      <li>
+                                           <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Who's Not Paid"/>
+                                           <a href="/support/fm/whos-not-paid/">Find out Who's Not Paid</a></span>
+                                      </li>
+                                    </ul>
+                                    <ul class="video unstyled">
+                                      <h3>Banks & Cash</h3>
+                                      <li>
+                                          <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Bank History, Cash History, and Reconciled Statements"/>
+                                          <a href="/support/fm/bank-history/">Bank History, Cash History, and Reconciled Statements</a></span>
+                                      </li>
+                                      <li>
+                                          <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Paying Receipts To Bank"/>
+                                          <a href="/support/fm/receipt-bank/">Paying Receipts To Bank</a></span>
+                                      </li>
+                                      <li>
+                                          <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Reconciling a Bank Statement"/>
+                                          <a href="/support/fm/bank-reconcile/">Reconciling a Bank Statement</a></span>
+                                      </li>
+                                    </ul>
+                                    <ul class="video unstyled">
+                                      <h3>sQuid</h3>
+                                      <li>
+                                          <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Posting, Amending, And Cancelling Offers"/>
+                                          <a href="/support/fm/offers/">Posting, Amending, and Cancelling Offers</a></span>
+                                      </li>
+                                      <li>
+                                          <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Import Squid Sales"/>
+                                          <a href="/support/fm/import-squid/">Import sQuid Sales</a></span>
+                                      </li>
+                                    </ul>
+                                    <ul class="video unstyled">
+                                      <h3>Administration</h3>
+                                      <li>
+                                          <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Manage Names and Creating Groups"/>
+                                          <a href="/support/fm/manage-names/">How to Manage Names and Create Groups</a></span>
+                                      </li>
+                                      <li>
+                                          <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Manage Accounts"/>
+                                          <a href="/support/fm/manage-accounts/">How to Manage Accounts</a></span>
+                                      </li>
+                                      <li>
+                                        <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png"
+                                                       alt="Get Satisfaction"/>
+                                          <a href="/support/fm/get-satisfaction/">How to use the Feedback Tab</a></span>
+                                      </li>
+                                    </ul>
                             </div><hr/>
                               <h2>Frequently Asked Questions</h2>
                                 {% placeholder "FAQ_fm" or %} {% endplaceholder %}
@@ -105,8 +140,8 @@
                                     <li><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Manual.pdf">
 Fund Manager User Manual</a></li>
                                     <li><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Quick Start Guide.pdf">Quick Start Guide</a></li>
-                                    <li><a href="{{ MEDIA_URL }}supportdoc/Importing Parent Pay Transactions.pdf">Import Parent Pay Transactions</a></li>
-                                    <li><a href="{{ MEDIA_URL }}supportdoc/Importing Parent Mail +Pay Transactions.pdf">Import Parent Mail +Pay Transactions</a></li>
+                                    <!--<li><a href="{{ MEDIA_URL }}supportdoc/Importing Parent Pay Transactions.pdf">Import Parent Pay Transactions</a></li>
+                                    <li><a href="{{ MEDIA_URL }}supportdoc/Importing Parent Mail +Pay Transactions.pdf">Import Parent Mail +Pay Transactions</a></li>-->
                                 </ul>
                                 <hr/>
                                 <h3>Useful Resources</h3>
