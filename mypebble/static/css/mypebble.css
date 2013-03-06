@@ -1121,14 +1121,21 @@ pre code {
   background-color: transparent;
 }
 /*misc text*/
-.tutorial h3, .tutorial span{line-height:50px; }
+.tutorial h3, .tutorial span{
+  line-height:50px; 
+}
 .tutorial span{
   font-size: 16px;
   font-weight:bold;
 }
 
-.social {text-align:center;}
+.social {
+  text-align:center;
+}
 
+video{
+  margin-bottom:10px;
+}
 /*!
  * mypebble.co.uk
  * Forms.less [based on Twitter Bootstrap]
