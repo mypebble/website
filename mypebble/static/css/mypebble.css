@@ -2746,23 +2746,15 @@ input[type="submit"].btn.small {
   background:#f1f1f1;
   box-shadow:none;
 }
-/*BETT*/
-.bett p{
-  text-align:center;
-  font-size:18px;
-  margin-top:-30px !important;
-}
-.bett strong{
-  color:#94408E;
-  font-size:24px;
-}  
-.bettbox{
-  margin-top:45px;
-  background:#94408E !important;
-}
-.bettbox:hover {
-  background:rgb(64,64,64) !important;
-}
-
 .staff li{display:inline;} 
 .staff img{width:140px;}
+
+.story p{
+  float:left;
+  width:60%;
+}
+.story img{
+  float:right;
+  width:90px;
+  height:90px;
+}
