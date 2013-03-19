@@ -163,10 +163,13 @@ Group discounts are available.
                     <div class="grid1 sidebar extras"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid1 sffbox">
                             <div class="box-inner">
-                                <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"><img class="box-img img-brochure" src="{{ STATIC_URL }}img/sff/sff_40x60.png" alt="School Fund Finder brochure "/></a>
+                                <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
+                                onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);"
+                                ><img class="box-img img-brochure" src="{{ STATIC_URL }}img/sff/sff_40x60.png" alt="School Fund Finder brochure "/></a>
                                    <h2 class="title">School Fund Finder brochure</h2>
                                         <div class="description">
-                                           <p>The essential information for you to take away. <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure">Download PDF</a></p>
+                                           <p>The essential information for you to take away. <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
+                                           onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">Download PDF</a></p>
                                         </div>
                             </div>
               </div>
