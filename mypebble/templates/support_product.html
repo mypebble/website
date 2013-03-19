@@ -137,9 +137,12 @@
                                 <h2 class="title">User Guides</h2>
                                 <div class="description">
                                 <ul>
-                                    <li><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Manual.pdf">
+                                    <li><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Manual.pdf"
+                                     onClick="_gaq.push(['_trackEvent', 'Support',  'Download', 'User Guide']);">
 Fund Manager User Manual</a></li>
-                                    <li><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Quick Start Guide.pdf">Quick Start Guide</a></li>
+                                    <li><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Quick Start Guide.pdf"
+                                    onClick="_gaq.push(['_trackEvent', 'Support',  'Download', 'User Guide']);">
+                                    Quick Start Guide</a></li>
                                     <!--<li><a href="{{ MEDIA_URL }}supportdoc/Importing Parent Pay Transactions.pdf">Import Parent Pay Transactions</a></li>
                                     <li><a href="{{ MEDIA_URL }}supportdoc/Importing Parent Mail +Pay Transactions.pdf">Import Parent Mail +Pay Transactions</a></li>-->
                                 </ul>
