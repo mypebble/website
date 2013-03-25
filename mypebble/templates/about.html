@@ -10,7 +10,7 @@
                             <div class="box-inner">
                                 {% placeholder "main_content" or %} {% endplaceholder %} 
                                 <div class="extras"><h3>Introducing Pebble video</h3>
-                                <video controls="controls" width="580">
+                                <video controls="controls" width="580"  onClick="_gaq.push(['_trackEvent', 'Video',  'Play', 'Pebble Story']);">
                                         <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.webm" type="video/webm" />
                                         <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.ogg" type="video/ogg" />
                                     </video>
