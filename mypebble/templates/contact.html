@@ -1,16 +1,48 @@
 {% extends "base.html" %}
+
 {% load cms_tags %}
+{% load i18n %}
+
 {% block primary %}
 <div class="enquiries">
                <div class="row">
                    <h1>Contact Us</h1>
-                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                    <div class="grid2 content">
+                    <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid2">
                             <div class="box-inner">
-                                <p>As well as software, we also provide real people on hand to offer all the advice and support you need. No automated telephone lines - just a dedicated team of people who know the products inside out.</p>
-                                <p>Please complete the form below. We'll be in touch shortly.</p>
+                                <p>
+                                {% blocktrans %}
+                                As well as software, we also provide real people
+                                on hand to offer all the advice and support you
+                                need. No automated telephone lines - just a
+                                dedicated team of people who know the products
+                                inside out.
+                                {% endblocktrans %}
+                                </p>
+                                <p>
+                                {% blocktrans %}
+                                Please complete the form below. We'll be in touch shortly.
+                                {% endblocktrans %}
+                                </p>
                                 <div class="form enquiries-form">
-{% include "form_detail.html" %}
+
+                                <form action="" method="POST" class="form-horizontal contact-form">
+                                  {% csrf_token %}
+                                  
+                                  {% for field in form %}
+                                      {{ field.label_tag }}
+                                      {{ field }}
+                                      <div class="errors">
+                                        {{ field.errors }}
+                                      </div>
+                                  {% endfor %}
+                                  <button type="submit" class="btn"/>
+                                    {% trans "Submit" %}
+                                  </button>
+                                </form>
+                                
+                                
 
                                         <p>We only use your details to provide the information you requested. <a href="/privacy/">Privacy policy</a></p>
                                     

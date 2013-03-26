@@ -11,6 +11,7 @@ from cms.sitemaps import CMSSitemap
 admin.autodiscover()
 
 from mypebble.testimonials.views import TestimonialView
+from mypebble.core.views import contact
 
 admin.autodiscover()
 
@@ -21,6 +22,8 @@ urlpatterns = patterns('',
 
     url(r'^testimonial/(?P<pk>\d+)/$', TestimonialView.as_view(),
         name='testimonial-view'),
+    url(r'^enquiries/$', contact,
+        name='contact-form-view'),
     url(r'^', include('cms.urls')),
 )
 

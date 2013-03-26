@@ -229,7 +229,7 @@ CMS_TEMPLATES = (
 	  ('support_productSFF.html', 'Support Product SFF Template'),
 	  ('support_productSFM.html', 'Support Product SFM Template'),
 	  ('support_document.html', 'Support Document Template'),
-    ('contact.html', 'Contact Template'),
+    #('contact.html', 'Contact Template'),
     ('contact2.html', 'Contact Demo Template'),
     ('contact3.html', 'Contact Training Template'),
     ('contact4.html', 'Webinar Training Template'),

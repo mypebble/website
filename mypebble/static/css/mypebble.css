@@ -1183,7 +1183,7 @@ textarea,
 select,
 .uneditable-input {
   display: inline-block;
-  width: 210px;
+  width: 100%;
   padding: 4px;
   margin-bottom: 9px;
   font-size: 13px;
@@ -1497,7 +1497,6 @@ select:focus:required:invalid:focus {
 .form-inline .uneditable-input,
 .form-horizontal .uneditable-input {
   display: inline-block;
-  margin-bottom: 0;
 }
 .form-search label,
 .form-inline label,
@@ -2142,7 +2141,7 @@ input[type="submit"].btn.small {
 }
 .alert {
   padding: 8px 35px 8px 14px;
-  margin-bottom: 18px;
+ /* margin-bottom: 18px;*/
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: #f5463e;
   border: 1px solid #e50c27;
@@ -2150,6 +2149,8 @@ input[type="submit"].btn.small {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+
+
 .alert,
 .alert-heading {
   color: #c09853;
@@ -2757,4 +2758,11 @@ input[type="submit"].btn.small {
   float:right;
   width:90px;
   height:90px;
+}
+
+.errorlist{
+background:#f79f9b;
+margin:-5px 0px 0px 0px;
+padding:5px;
+
 }
