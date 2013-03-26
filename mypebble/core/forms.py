@@ -14,8 +14,7 @@ WOULD_LIKE = (
   ('other', _('Other Enquiry')),
 )
 
-TRAINING = (
-  ('', _('')),
+TRAINING_PERIOD_END = (
   ('Tue09', _('Tuesday 9th April at 9.30am')),
   ('Wed10', _('Wednesday 10th April at 9.30am')),
   ('Tue16', _('Tuesday 16th April at 9.30am')),
@@ -25,13 +24,28 @@ TRAINING = (
   ('other', _('I cant do any of the above, please send me the End of Year information')),
 )
 
+TRAINING_GROUP = (
+  ('Wed01', _('Wednesday 1st May at 9.30am')),
+  ('Wed22', _('Wednesday 22nd May at 9.30am')),
+  ('Wed05', _('Wednesday 5th June at 9.30am')),
+  ('other', _('I cant do any of the above, please send me the Group information')),
+)
+
+TRAINING_NOT_PAID = (
+  ('Wed01', _('Wednesday 8th May at 9.30am')),
+  ('Wed22', _('Wednesday 29th May at 9.30am')),
+  ('Wed05', _('Wednesday 12th June at 9.30am')),
+  ('other', _('I cant do any of the above, please send me the Whos Not Paid information')),
+)
+
+
 class ContactForm(forms.Form):
 
     name = forms.CharField(
       label=_("Name"), max_length=255, required = True,
     )
     email = forms.EmailField(
-      label=_("Email address"), required = True,
+      label=_("Email Address"), required = True,
     )
     organisation = forms.CharField(
       label=_("Organisation"), max_length=300, required = False,
@@ -54,8 +68,12 @@ class ContactForm(forms.Form):
       widget=forms.Textarea,
       label=_("Message"), max_length=300, required = False,
     )
+    
+    def save(self):
+      """Send out the email.
+      """
 
-class ContactTraining(forms.Form):
+class ContactTraining_PeriodEnd(forms.Form):
     name = forms.CharField(
       label=_("Name"), max_length=255, required = True,
     )
@@ -66,11 +84,45 @@ class ContactTraining(forms.Form):
       label=_("Organisation"), max_length=300, required = False,
     )    
     telephone = forms.CharField(
-      label=_("Telephone"), max_length=15, required = False,
+      label=_("Telephone"), max_length=15, required=False,
     )
     training = forms.MultipleChoiceField(
-      label=_("Training Date"), choices=TRAINING, required = False,
+      label=_("Training Date"), choices=TRAINING_PERIOD_END, required=False,
+      widget=CheckboxSelectMultiple,
+    )
+
+class ContactTraining_Group(forms.Form):
+    name = forms.CharField(
+      label=_("Name"), max_length=255, required = True,
+    )
+    email = forms.EmailField(
+      label=_("Email address"), required = True,
+    )
+    organisation = forms.CharField(
+      label=_("Organisation"), max_length=300, required = False,
+    )    
+    telephone = forms.CharField(
+      label=_("Telephone"), max_length=15, required=False,
+    )
+    training = forms.MultipleChoiceField(
+      label=_("Training Date"), choices=TRAINING_GROUP, required=False,
+      widget=CheckboxSelectMultiple,
     )
     
-
-
+class ContactTraining_Not_Paid(forms.Form):
+    name = forms.CharField(
+      label=_("Name"), max_length=255, required = True,
+    )
+    email = forms.EmailField(
+      label=_("Email address"), required = True,
+    )
+    organisation = forms.CharField(
+      label=_("Organisation"), max_length=300, required = False,
+    )    
+    telephone = forms.CharField(
+      label=_("Telephone"), max_length=15, required=False,
+    )
+    training = forms.MultipleChoiceField(
+      label=_("Training Date"), choices=TRAINING_NOT_PAID, required=False,
+      widget=CheckboxSelectMultiple,
+    )

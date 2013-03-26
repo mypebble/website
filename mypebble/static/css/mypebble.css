@@ -1331,10 +1331,12 @@ width:570px;
 display:inline;
 width:100px;
 }
+.enquiries-form ul{
+margin:5px;
+}
 .enquiries-form li label{
-width:177px; 
-display:inline;
-margin-left:10px; 
+width:100%; 
+display:block;
 font-weight:normal;
 }
 .enquiries-form li{
@@ -2764,5 +2766,5 @@ input[type="submit"].btn.small {
 background:#f79f9b;
 margin:-5px 0px 0px 0px;
 padding:5px;
-
 }
+

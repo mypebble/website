@@ -23,7 +23,9 @@ urlpatterns = patterns('',
     url(r'^testimonial/(?P<pk>\d+)/$', TestimonialView.as_view(),
         name='testimonial-view'),
     url(r'^enquiries/$', contact,
-        name='contact-form-view'),
+        name='enquiry-form-general'),
+    url(r'^enquiries/(?P<form_type>\w+)/$', contact,
+        name='enquiry-form-specific'),
     url(r'^', include('cms.urls')),
 )
 
