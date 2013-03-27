@@ -22,7 +22,7 @@ class GeneralEnquiryTestCase(TestCase):
             'name': 'a name',
             'email': 'ah@talktopebble.co.uk',
             'organisation': 'a organisation',
-            'postcode': 'a postcode',
+            'postcode': 'aa1-11a',
             'telephone': '0123456',
             'message': 'a message',
             'interested': [
