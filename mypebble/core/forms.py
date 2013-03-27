@@ -151,16 +151,20 @@ class ContactTraining_PeriodEnd(forms.Form):
       
       training = self.cleaned_data['training']
       
+      session = "Period End"
+      
       send_mail(
-      'Training - Period End',
+      'Training - Webinar',
       get_template('core/training').render(
       Context({
+      
       'name': name,
       'email': email,
       'organisation': organisation,
       'telephone': telephone,
       
       'training': training,
+      'session' : session,
       })
       ),
       'mypebble',
@@ -220,6 +224,33 @@ class ContactTraining_Group(forms.Form):
     def save(self):
       """Send out the email.
       """
+      name = self.cleaned_data['name']
+      email = self.cleaned_data['email']
+      organisation = self.cleaned_data['organisation']
+      telephone = self.cleaned_data['telephone']
+      
+      training = self.cleaned_data['training']
+      
+      session = "Groups"
+      
+      
+      send_mail(
+      'Training - Webinar',
+      get_template('core/training').render(
+      Context({
+      'name': name,
+      'email': email,
+      'organisation': organisation,
+      'telephone': telephone,
+      
+      'training': training,
+      'session' : session,
+      })
+      ),
+      'mypebble',
+      ['toemail_address'],
+      fail_silently = True
+    )
       
     def form_title(self):
       """Title of form
@@ -272,6 +303,31 @@ class ContactTraining_Not_Paid(forms.Form):
     def save(self):
       """Send out the email.
       """
+      name = self.cleaned_data['name']
+      email = self.cleaned_data['email']
+      organisation = self.cleaned_data['organisation']
+      telephone = self.cleaned_data['telephone']
+      
+      training = self.cleaned_data['training']
+      session = "Who\'s not Paid"
+      
+      send_mail(
+      'Training - Webinar',
+      get_template('core/training').render(
+      Context({
+      'name': name,
+      'email': email,
+      'organisation': organisation,
+      'telephone': telephone,
+      
+      'training': training,
+      'session' : session,
+      })
+      ),
+      'mypebble',
+      ['toemail_address'],
+      fail_silently = True
+    )
       
     def form_title(self):
       """Title of form
