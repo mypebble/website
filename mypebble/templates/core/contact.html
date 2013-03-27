@@ -6,19 +6,15 @@
 {% block primary %}
 <div class="enquiries">
                <div class="row">
-                   <h1>Contact Us</h1>
+                   <h1>
+                   {{ form.form_title }}
+                   </h1>
                     <div class="grid2 content">
                     <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid2">
                             <div class="box-inner">
                                 <p>
-                                {% blocktrans %}
-                                As well as software, we also provide real people
-                                on hand to offer all the advice and support you
-                                need. No automated telephone lines - just a
-                                dedicated team of people who know the products
-                                inside out.
-                                {% endblocktrans %}
+                                {{ form.form_text }}
                                 </p>
                                 <p>
                                 {% blocktrans %}
@@ -41,10 +37,10 @@
                                     {% trans "Submit" %}
                                   </button>
                                 </form>
-                                
-                                
-
-                                        <p>We only use your details to provide the information you requested. <a href="/privacy/">Privacy policy</a></p>
+                                <p>
+                                  {{ form.form_text_details }}
+                                </p>
+                                <p>We only use your details to provide the information you requested. <a href="/privacy/">Privacy policy</a></p>
                                     
                                 </div>
                             </div>

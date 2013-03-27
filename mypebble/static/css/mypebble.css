@@ -1342,7 +1342,7 @@ font-weight:normal;
 .enquiries-form li{
 display:inline;}
 
-#id_postcode, #id_telephone, #id_best_time {
+#id_postcode, #id_telephone, #id_best_time, #id_pupils {
 width:210px;
 }
 
