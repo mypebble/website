@@ -145,7 +145,7 @@ class ContactTraining_PeriodEnd(forms.Form):
     )
     
     EMAIL_RECIPIENTS = (
-      'training@mypebble.co.uk',
+      'training@talktopebble.co.uk',
     )    
     def save(self):
       """Send out the email.
@@ -226,7 +226,7 @@ class ContactTraining_Group(forms.Form):
       widget=CheckboxSelectMultiple,
     )
     EMAIL_RECIPIENTS = (
-      'training@mypebble.co.uk',
+      'training@talktopebble.co.uk',
     )  
     def save(self):
       """Send out the email.
@@ -307,7 +307,7 @@ class ContactTraining_Not_Paid(forms.Form):
       widget=CheckboxSelectMultiple,
     )
     EMAIL_RECIPIENTS = (
-      'training@mypebble.co.uk',
+      'training@talktopebble.co.uk',
     )  
     def save(self):
       """Send out the email.
