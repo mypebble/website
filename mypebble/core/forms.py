@@ -89,24 +89,24 @@ class ContactForm(forms.Form):
       message = self.cleaned_data['message']
       
       send_mail(
-      'Website Contact Form',
-      get_template('core/enquiry').render(
-      Context({
-      'name': name,
-      'email': email,
-      'organisation': organisation,
-      'postcode': postcode,
-      'telephone': telephone,
-      
-      'interested': interested,
-      'wouldlike': wouldlike,
-      'message': message,
-      })
-      ),
-      'mypebble',
-      ['toemail_address'],
-      fail_silently = True
-    )
+        'Website Contact Form',
+       get_template('core/enquiry').render(
+          Context({
+            'name': name,
+            'email': email,
+            'organisation': organisation,
+            'postcode': postcode,
+            'telephone': telephone,
+            
+            'interested': interested,
+            'wouldlike': wouldlike,
+            'message': message,
+            })
+        ),
+        'mypebble',
+        ['toemail_address'],
+        fail_silently = True
+      )
               
 
     def form_title(self):
@@ -154,23 +154,22 @@ class ContactTraining_PeriodEnd(forms.Form):
       session = "Period End"
       
       send_mail(
-      'Training - Webinar',
-      get_template('core/training').render(
-      Context({
+        'Training - Webinar',
+        get_template('core/training').render(
+          Context({
       
-      'name': name,
-      'email': email,
-      'organisation': organisation,
-      'telephone': telephone,
-      
-      'training': training,
-      'session' : session,
-      })
-      ),
-      'mypebble',
-      ['toemail_address'],
-      fail_silently = True
-    )
+            'name': name,
+            'email': email,
+            'organisation': organisation,
+            'telephone': telephone,      
+            'training': training,
+            'session' : session,
+          })
+        ),
+        'mypebble',
+        ['toemail_address'],
+        fail_silently = True
+      ) 
     
     def form_title(self):
       """Title of form

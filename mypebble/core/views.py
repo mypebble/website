@@ -23,7 +23,9 @@ def contact(request, form_type='general'):
         if form.is_valid(): # All validation rules pass
             form.save()
             
-            return render(request, 'core/form_sent.html') # Redirect after POST
+            return render(request, 'core/form_sent.html',
+              {'form': form}
+            )
     else:
         form = form_class() # An unbound form
 
