@@ -3,8 +3,6 @@ from django import forms
 
 from django.forms.widgets import RadioSelect, CheckboxSelectMultiple
 
-
-#email stuff
 from django.core.mail import send_mail
 from django.template.loader import get_template
 from django.template import Context
