@@ -238,7 +238,7 @@ CMS_TEMPLATES = (
     ('tandc.html','T&C Template'),
     ('accessibility.html','Accessibility Template'),
     ('security.html','Security Template'),
-
+    ('training.html', 'Webinar Training Template'),
     ('blog.html','Blog Template'),
 
     #support video templates
