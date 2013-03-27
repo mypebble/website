@@ -1,0 +1,19 @@
+{% load i18n %}
+{% blocktrans %}
+F.A.O. Training - Period End
+
+We have a new enquiry from {{ name }} from {{ organisation }}.
+
+They are interested in:
+{% endblocktrans %}
+{% for c in training %}
+* {{ c }}
+{% endfor %}
+
+{% blocktrans %}
+Please contact {{ name }} on {{ telephone }} or at {{ email }}.
+
+Regards,
+
+My Pebble Website
+{% endblocktrans %}

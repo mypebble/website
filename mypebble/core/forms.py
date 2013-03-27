@@ -3,6 +3,12 @@ from django import forms
 
 from django.forms.widgets import RadioSelect, CheckboxSelectMultiple
 
+
+#email stuff
+from django.core.mail import send_mail
+from django.template.loader import get_template
+from django.template import Context
+
 INTERESTED = (
   ('FM', _('Fund Manager')),
   ('SFF', _('School Fund Finder')),
@@ -15,27 +21,27 @@ WOULD_LIKE = (
 )
 
 TRAINING_PERIOD_END = (
-  ('Tue09', _('Tuesday 9th April at 9.30am')),
-  ('Wed10', _('Wednesday 10th April at 9.30am')),
-  ('Tue16', _('Tuesday 16th April at 9.30am')),
-  ('Wed17', _('Wednesday 17th April at 9.30am')),
-  ('Tue23', _('Tuesday 23rd April at 9.30am')),
-  ('Wed24', _('Wednesday 24th April at 9.30am')),
-  ('other', _('I can\'t do any of the above, please send me the End of Year information')),
+  ('Tue 09 April', _('Tuesday 9th April at 9.30am')),
+  ('Wed 10 April', _('Wednesday 10th April at 9.30am')),
+  ('Tue 16 April', _('Tuesday 16th April at 9.30am')),
+  ('Wed 17 April', _('Wednesday 17th April at 9.30am')),
+  ('Tue 23 April', _('Tuesday 23rd April at 9.30am')),
+  ('Wed 24 April', _('Wednesday 24th April at 9.30am')),
+  ('Keep Updated', _('I can\'t do any of the above, please send me the End of Year information')),
 )
 
 TRAINING_GROUP = (
-  ('Wed01', _('Wednesday 1st May at 9.30am')),
-  ('Wed22', _('Wednesday 22nd May at 9.30am')),
-  ('Wed05', _('Wednesday 5th June at 9.30am')),
-  ('other', _('I can\'t do any of the above, please send me the Group information')),
+  ('Wed 01 May', _('Wednesday 1st May at 9.30am')),
+  ('Wed 22 May', _('Wednesday 22nd May at 9.30am')),
+  ('Wed 05 June', _('Wednesday 5th June at 9.30am')),
+  ('Keep Updated', _('I can\'t do any of the above, please send me the Group information')),
 )
 
 TRAINING_NOT_PAID = (
-  ('Wed01', _('Wednesday 8th May at 9.30am')),
-  ('Wed22', _('Wednesday 29th May at 9.30am')),
-  ('Wed05', _('Wednesday 12th June at 9.30am')),
-  ('other', _('I can\'t do any of the above, please send me the Whos Not Paid information')),
+  ('Wed 01 May', _('Wednesday 8th May at 9.30am')),
+  ('Wed 22 May', _('Wednesday 29th May at 9.30am')),
+  ('Wed 05 June', _('Wednesday 12th June at 9.30am')),
+  ('Keep Updated', _('I can\'t do any of the above, please send me the Whos Not Paid information')),
 )
 
 
@@ -72,7 +78,37 @@ class ContactForm(forms.Form):
     def save(self):
       """Send out the email.
       """
-    
+      name = self.cleaned_data['name']
+      email = self.cleaned_data['email']
+      organisation = self.cleaned_data['organisation']
+      postcode = self.cleaned_data['postcode']
+      telephone = self.cleaned_data['telephone']
+      
+      interested = self.cleaned_data['interested']
+      wouldlike = self.cleaned_data['wouldlike']
+      message = self.cleaned_data['message']
+      
+      send_mail(
+      'Website Contact Form',
+      get_template('core/enquiry').render(
+      Context({
+      'name': name,
+      'email': email,
+      'organisation': organisation,
+      'postcode': postcode,
+      'telephone': telephone,
+      
+      'interested': interested,
+      'wouldlike': wouldlike,
+      'message': message,
+      })
+      ),
+      'mypebble',
+      ['toemail_address'],
+      fail_silently = True
+    )
+              
+
     def form_title(self):
       """Title of form
       """
@@ -108,6 +144,29 @@ class ContactTraining_PeriodEnd(forms.Form):
     def save(self):
       """Send out the email.
       """
+      name = self.cleaned_data['name']
+      email = self.cleaned_data['email']
+      organisation = self.cleaned_data['organisation']
+      telephone = self.cleaned_data['telephone']
+      
+      training = self.cleaned_data['training']
+      
+      send_mail(
+      'Training - Period End',
+      get_template('core/training').render(
+      Context({
+      'name': name,
+      'email': email,
+      'organisation': organisation,
+      'telephone': telephone,
+      
+      'training': training,
+      })
+      ),
+      'mypebble',
+      ['toemail_address'],
+      fail_silently = True
+    )
     
     def form_title(self):
       """Title of form
