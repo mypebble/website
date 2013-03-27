@@ -75,6 +75,9 @@ class ContactForm(forms.Form):
       label=_("Message"), max_length=300, required = False,
     )
     
+    EMAIL_RECIPIENTS = (
+      'info@mypebble.co.uk',
+    )
     def save(self):
       """Send out the email.
       """
@@ -104,7 +107,7 @@ class ContactForm(forms.Form):
             })
         ),
         'mypebble',
-        ['toemail_address'],
+        self.EMAIL_RECIPIENTS,
         fail_silently = True
       )
               
@@ -141,6 +144,9 @@ class ContactTraining_PeriodEnd(forms.Form):
       widget=CheckboxSelectMultiple,
     )
     
+    EMAIL_RECIPIENTS = (
+      'training@mypebble.co.uk',
+    )    
     def save(self):
       """Send out the email.
       """
@@ -167,7 +173,7 @@ class ContactTraining_PeriodEnd(forms.Form):
           })
         ),
         'mypebble',
-        ['toemail_address'],
+        self.EMAIL_RECIPIENTS,
         fail_silently = True
       ) 
     
@@ -219,7 +225,9 @@ class ContactTraining_Group(forms.Form):
       label=_("Training Date"), choices=TRAINING_GROUP, required=False,
       widget=CheckboxSelectMultiple,
     )
-    
+    EMAIL_RECIPIENTS = (
+      'training@mypebble.co.uk',
+    )  
     def save(self):
       """Send out the email.
       """
@@ -247,7 +255,7 @@ class ContactTraining_Group(forms.Form):
       })
       ),
       'mypebble',
-      ['toemail_address'],
+      self.EMAIL_RECIPIENTS,
       fail_silently = True
     )
       
@@ -298,7 +306,9 @@ class ContactTraining_Not_Paid(forms.Form):
       label=_("Training Date"), choices=TRAINING_NOT_PAID, required=False,
       widget=CheckboxSelectMultiple,
     )
-    
+    EMAIL_RECIPIENTS = (
+      'training@mypebble.co.uk',
+    )  
     def save(self):
       """Send out the email.
       """
@@ -324,7 +334,7 @@ class ContactTraining_Not_Paid(forms.Form):
       })
       ),
       'mypebble',
-      ['toemail_address'],
+      self.EMAIL_RECIPIENTS,
       fail_silently = True
     )
       

@@ -31,9 +31,7 @@
                                   {% for field in form %}
                                       {{ field.label_tag }}
                                       {{ field }}
-                                      <div class="errors">
                                         {{ field.errors }}
-                                      </div>
                                   {% endfor %}
                                   <button type="submit" class="btn"/>
                                     {% trans "Submit" %}

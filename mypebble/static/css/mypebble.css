@@ -2762,9 +2762,24 @@ input[type="submit"].btn.small {
   height:90px;
 }
 
-.errorlist{
-background:#f79f9b;
-margin:-5px 0px 0px 0px;
+ul.errorlist{
+background:#EFCACA;
+margin:4px 0px;
 padding:5px;
+width:100%;
+border-radius: 5px;
+}
+
+.contact-form input{
+  margin-bottom:2px;
+}
+
+.form-sent p{
+  font-size:13px;
+}
+.form-sent span{
+  font-weight:bold;
+  display:block;
+  font-size:16px;
 }
 

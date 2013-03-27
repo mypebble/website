@@ -4,7 +4,7 @@ F.A.O. Training - {{ session }}
 
 We have a new enquiry from {{ name }} from {{ organisation }}.
 
-They are interested in:
+I would like to attend the following sessions:
 {% endblocktrans %}
 {% for c in training %}
 * {{ c }}
