@@ -1,28 +1,60 @@
 {% extends "base.html" %}
-{% load cms_tags %}
+{% load cms_tags sekizai_tags %}
+
 {% block primary %}
-<div class="enquiries">
-    <div class="body" id="body">
-        <div class="row">
-            <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
-                <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                    <div class="box grid2">
-                        <div class="box-inner">
-                            <h2>{% placeholder "main_title" or %} {% endplaceholder %} </h2>
-                            {% placeholder "main_content" or %} {% endplaceholder %} 
-                        </div>
-                    </div> 
+
+<div class="support">
+                <div class="row">
+                    <h1 class="#">
+                    Fund Manager - FREE Webinar
+                    </h1>
                 </div>
-                    <div class="grid1 sidebar partners"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="supportcommunitybox grid1">
+                <div class="row">
+           <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box grid2">
                             <div class="box-inner">
-                                <h2 class="title">{% placeholder "side_secondary_h" or %}{% endplaceholder %}</h2>
-                                    <div class="description">
-                                        {% placeholder "side_secondary_p" or %} {% endplaceholder %}
-                                    </div>
+                                <p>
+                                text to go here about training webinar in general.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>        
+                <h2>For online tutorials and user guides, please select your current product:</h2>
+                <div class="row productchoice ">
+                       <div class="box grid1 fm">
+                            <div class="box-inner">
+                                <h4 class="title"><a href="fm">End of Year Overview</a></h4>
+                                <div class="description">
+                                    <p>Watch how to correctly run our "End of Year" reports ready for the next financial year.</p>
+                                </div>
+                                <a href="/enquiries/training_period_end/" class="btn pull-right">
+                                  Register
+                                </a>
+                            </div>
+                        </div>
+                   <div class="box grid1 fm">
+                        <div class="box-inner">
+                            <h3 class="title"><a href="sfm">Groups Overview</a></h3>
+                            <div class="description">
+                                <p>Learn how to use Groups within Fund Manager to save you time and effort on a daily basis.</p>
+                            </div>
+                            <a href="/enquiries/training_group/" class="btn pull-right">
+                                  Register
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box grid1 fm">
+                        <div class="box-inner">
+                            <h3 class="title"><a href="sff">Who's Not Paid Overview </a></h3>
+                            <div class="description">
+                                <p>Learn how to efficiently use the "The Who's Not Paid" report in Fund Manager.</p>
+                            </div>
+                            <a href="/enquiries/training_not_paid/" class="btn pull-right">
+                                  Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
 </div>
-{% endblock %} 
+ {% endblock %} 

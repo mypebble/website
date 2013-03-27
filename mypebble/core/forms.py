@@ -120,11 +120,11 @@ class ContactForm(forms.Form):
     def form_text(self):
       """Prints out the custom text to be displayed on the form.
       """
-      return _( 'As well as software, we also provide real people'
+      return [_( 'As well as software, we also provide real people'
                 'on hand to offer all the advice and support you'
                 'need. No automated telephone lines - just a'
                 'dedicated team of people who know the products'
-                'inside out.')
+                'inside out.')]
 
 class ContactTraining_PeriodEnd(forms.Form):
     name = forms.CharField(
@@ -185,15 +185,14 @@ class ContactTraining_PeriodEnd(forms.Form):
     def form_text(self):
       """Prints out the custom text to be displayed on the form.
       """
-      return _( 
+      return [_( 
                 'This FREE online training session is specifically for an overview of your End'
                 ' of Year Procedures, more FREE online training sessions will be scheduled for'
-                ' schools with Period Ends later in the year.'
-                 '\n'
-                'Which date(s) would you be able to JOIN the FREE 10 minute online Webinar?'
+                ' schools with Period Ends later in the year.'),
+                _('Which date(s) would you be able to JOIN the FREE 10 minute online Webinar? '
                 'Places are limited to 8 schools on each online session so you might like to' 
                 'choose more than one date.If you would prefer an individual training session'
-                ' then please contact us')
+                ' then please contact us')]
                 
     def form_text_details(self):
       """Prints out the custom text to be displayed on the form.
@@ -267,15 +266,14 @@ class ContactTraining_Group(forms.Form):
     def form_text(self):
       """Prints out the custom text to be displayed on the form.
       """
-      return _( 
+      return [_( 
                 'This FREE online training session is specifically for an overview of Groups'
                 ', more FREE online training sessions will be scheduled for'
-                ' schools with Period Ends later in the year.'
-                '\n'
-                'Which date(s) would you be able to JOIN the FREE 10 minute online Webinar?'
+                ' schools with Period Ends later in the year.'),
+                _('Which date(s) would you be able to JOIN the FREE 10 minute online Webinar? '
                 'Places are limited to 8 schools on each online session so you might like to' 
                 'choose more than one date.If you would prefer an individual training session'
-                ' then please contact us')
+                ' then please contact us')]
                 
     def form_text_details(self):
       """Prints out the custom text to be displayed on the form.
@@ -346,15 +344,14 @@ class ContactTraining_Not_Paid(forms.Form):
     def form_text(self):
       """Prints out the custom text to be displayed on the form.
       """
-      return _( 
+      return [_( 
                 'This FREE online training session is specifically for an overview of Who\'s Not Paid'
                 ', more FREE online training sessions will be scheduled for'
-                ' schools with Period Ends later in the year.'
-                '\n'
-                'Which date(s) would you be able to JOIN the FREE 10 minute online Webinar?'
+                ' schools with Period Ends later in the year.'),
+                _('Which date(s) would you be able to JOIN the FREE 10 minute online Webinar? '
                 'Places are limited to 8 schools on each online session so you might like to' 
                 'choose more than one date.If you would prefer an individual training session'
-                ' then please contact us')
+                ' then please contact us')]
                 
     def form_text_details(self):
       """Prints out the custom text to be displayed on the form.

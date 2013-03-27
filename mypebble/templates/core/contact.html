@@ -15,9 +15,11 @@
                     <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid2">
                             <div class="box-inner">
+                                {% for text in form.form_text %}
                                 <p>
-                                {{ form.form_text }}
+                                {{ text }}
                                 </p>
+                                {% endfor %}
                                 <p>
                                 {% blocktrans %}
                                 Please complete the form below. We'll be in touch shortly.
