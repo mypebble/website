@@ -2,23 +2,25 @@
 {% blocktrans %}
 F.A.O. Sales
 
-We have a new enquiry from {{ name }} from {{ organisation }} {{ postcode }}.
+We have a new enquiry from {{ name }} from {{ organisation }} - {{ postcode }}.
 
 They are interested in:
 {% endblocktrans %}
-{% for c in checked %}
+{% for c in interested %}
 * {{ c }}
 {% endfor %}
-{% if extra %}
-{% blocktrans %}
-They left the following message:
-{{ extra }}{% endblocktrans %}{% endif %}
-{% if available %}
-{% blocktrans %}
-They will next be available at: {{ available }}{% endblocktrans %}{% endif %}
+
+and would like the following information:
+{% for c in wouldlike %}
+* {{ c }}
+{% endfor %}
+
+They also left the following message:
+{{ message }}
+
 
 {% blocktrans %}
-Please contact {{ name }} on {{ telephone }} or at {{ email_address }}.
+Please contact {{ name }} on {{ telephone }} or at {{ email }}.
 
 Regards,
 

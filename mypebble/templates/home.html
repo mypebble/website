@@ -44,31 +44,35 @@
 </p>
                     </div>
                         <div class="footerimage">
-                            <a href="/sff/"><img alt="Scholl Fund Finder Dashboard" src="{{ STATIC_URL }}img/sff/sff_screen.png"/></a>
+                            <a href="/sff/"><img alt="School Fund Finder Dashboard" src="{{ STATIC_URL }}img/sff/sff_screen.png"/></a>
                         </div>
                    </div>
             </div>
 
-            <!--support -->
+            <!--support/training -->
         <div class="grid1 device supportbanner">
             <div class="box support">
                 <div class="box-inner">
-                    <h2 class="title"> <a href="/en/support/">Support</a></h2>
+                    <h2 class="title"> <a href="/training/">Online Training</a></h2>
                         <div class="description">
-                            <p>Always here to help, we are proud of our unrivalled customer  <strong>support.</strong></p>
+                          <p>Join our FREE online training sessions for <strong>Fund Manager.</strong></p>
+                           <!-- <p>Always here to help, we are proud of our unrivalled customer  <strong>support.</strong></p>-->
                         </div>
                 </div>
             </div>
         </div>
 
 <!-- Online training session placeholder-->
-       <div class="grid1 device supportbanner ">
+       <div class="grid1 device supportbanner extras ">
             <div class="box">
                 <div class="box-inner">
                         <h2 class="title"><a href="/about/">The Pebble Story</a></h2>
-                        <div class="description">
+                        <div class="description story">
                             <p>Find out more about Pebble and meet the team</p>
-                            <a class="btn pull-right extras" href="/about/">About us</a>
+                            <a href="/about/">
+                               <img alt="Read the Pebble story" src="{{ STATIC_URL }}img/video_thumb.jpg"/>
+                            </a>
+                          
                             
                         </div>
                 </div>
@@ -82,7 +86,7 @@
     {% testimonials %}
     </div>
     
-               <div class="row extras">
+             <!--  <div class="row extras">
                 <div class="grid2 box support calltoaction">
                       <div class="box-inner">
                    
@@ -117,8 +121,8 @@
                 <li><a href="http://talktopebble.wordpress.com/" target="_blank"><img src="{{ STATIC_URL }}img/wp.png" alt="Pebble on Wordpress" </a></li>
             </ul>  
       
-    </div>-->
-  </div>
+    </div>
+  </div>-->
  
 </div>
  {% endblock %}

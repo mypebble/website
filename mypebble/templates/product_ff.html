@@ -11,13 +11,13 @@
                 <div class="box grid3 hero tabbed carousel slide " id="productCarousel">
                     <div class="tabs">
                         <ul>
-                            <li class="active-tab"><a href="#item1">Welcome</a></li>
-                            <li><a href="#item2">Find Grants</a></li>
-                            <li><a href="#item3">Save Time</a></li>
-                            <li><a href="#item4">Develop Skills</a></li>
-                            <li><a href="#item5">Get Advice</a></li>
-                            <li><a href="#item6">Keep Informed</a></li>
-                            <li><a href="#item7">Training Days</a></li>
+                            <li class="active-tab"><a href="#item1" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Welcome']);">Welcome</a></li>
+                            <li><a href="#item2" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Find Grants']);">Find Grants</a></li>
+                            <li><a href="#item3" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Save Time']);">Save Time</a></li>
+                            <li><a href="#item4" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Develop Skills']);">Develop Skills</a></li>
+                            <li><a href="#item5" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Get Advice']);">Get Advice</a></li>
+                            <li><a href="#item6" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Keep Informed']);">Keep Informed</a></li>
+                            <li><a href="#item7" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Training Days']);">Training Days</a></li>
                         </ul>
                     </div>
                         <div class="carousel-inner">
@@ -151,9 +151,9 @@
                     </div>
                     
                     <div class="grid2 box ">
-                            <h2>Prices start from £180 per year </h2>
+                            <h2>Prices start from &pound;195 per year </h2>
                             <p>
-                            £180 for primary/special schools and £250 for secondary schools, which includes full access to School Fund Finder and unlimited support from our experienced team.
+                            &pound;195 for primary/special schools and &pound;275 for secondary schools, which includes full access to School Fund Finder and unlimited support from our experienced team.
 
 Group discounts are available.
                             
@@ -163,10 +163,13 @@ Group discounts are available.
                     <div class="grid1 sidebar extras"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box grid1 sffbox">
                             <div class="box-inner">
-                                <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"><img class="box-img img-brochure" src="{{ STATIC_URL }}img/sff/sff_40x60.png" alt="School Fund Finder brochure "/></a>
+                                <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
+                                onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);"
+                                ><img class="box-img img-brochure" src="{{ STATIC_URL }}img/sff/sff_40x60.png" alt="School Fund Finder brochure "/></a>
                                    <h2 class="title">School Fund Finder brochure</h2>
                                         <div class="description">
-                                           <p>The essential information for you to take away. <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure">Download PDF</a></p>
+                                           <p>The essential information for you to take away. <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
+                                           onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">Download PDF</a></p>
                                         </div>
                             </div>
               </div>
