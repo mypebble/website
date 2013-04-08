@@ -123,11 +123,10 @@ class ContactForm(forms.Form):
     def form_text(self):
       """Prints out the custom text to be displayed on the form.
       """
-      return [_( 'As well as software, we also provide real people'
-                'on hand to offer all the advice and support you'
-                'need. No automated telephone lines - just a'
-                'dedicated team of people who know the products'
-                'inside out.')]
+      return [_( 'As well as software, we also provide real people '
+                'on hand to offer all the advice and support you '
+                'need. No automated telephone lines - just a '
+                'dedicated team of people who know the products inside out.')]
 
 class ContactTraining_PeriodEnd(forms.Form):
     name = forms.CharField(
