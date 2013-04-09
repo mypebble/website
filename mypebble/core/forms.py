@@ -19,7 +19,7 @@ WOULD_LIKE = (
 )
 
 TRAINING_PERIOD_END = (
-  ('Tue 09 April', _('Tuesday 9th April at 9.30am')),
+  ('Tue 09 April', _('Tuesday 9th April at 9.30am COMPLETE')),
   ('Wed 10 April', _('Wednesday 10th April at 9.30am')),
   ('Tue 16 April', _('Tuesday 16th April at 9.30am')),
   ('Wed 17 April', _('Wednesday 17th April at 9.30am')),
