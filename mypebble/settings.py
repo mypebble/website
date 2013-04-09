@@ -256,6 +256,7 @@ CMS_TEMPLATES = (
     ('support_document_mn.html','Manage Names FM Template'),
     ('support_document_st.html','Search Transaction FM Template'),
     ('support_document_wnp.html','Whos not paid FM Template'),
+    ('support_document_pefm.html', 'Period End Closedown FM Template'),
     ('support_document_gs.html','Get Satisfaction FM Template'),
     ('support_document_pa.html','Offers FM Template'),
     ('support_document_bh.html','Bank History FM Template'),
