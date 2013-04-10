@@ -1668,7 +1668,7 @@ table {
 .footer .container {
   position: relative;
   padding: 15px 0 50px 0;
-  background: #ffffff url('../img/pebbles.gif') 790px 24px no-repeat;
+/*  background: #ffffff url('../img/pebbles.gif') 790px 24px no-repeat;*/
 }
 .footer .column {
   float: left;
@@ -2783,3 +2783,7 @@ border-radius: 5px;
   font-size:16px;
 }
 
+.social li{
+display:inline;
+margin:8px 10px;
+}

@@ -74,6 +74,15 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
 		</script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="body" id="body">
 {# Header #}
         <nav id="skiplinks">
@@ -131,7 +140,7 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
                         <li><a href="/about/">The Pebble Story</a></li>
                         <!--<li><a href="/development/">Developers</a></li>-->
                          <!--<li><a href="/blog/">Blog</a></li>-->
-			            <li><a href="/newsletter/">Newsletter</a></li>
+<!--			            <li><a href="/newsletter/">Newsletter</a></li>-->
                     </ul>
                 </div>
                 <div class="column footer-hide">
@@ -167,9 +176,23 @@ pebble, my pebble, mypebble, talktopebble, talk to pebble, talk2pebble, talk 2 p
                 </div>
                 <div class="column footer-hide">
                     <h3>Connect with us</h3>
-                    <ul>
-                        <li><a href="https://twitter.com/#!/PebbleSFF" target="_blank">Follow us on Twitter</a></li>
-                        <li><a href="https://www.facebook.com/pages/Pebble/217743878280547" target="_blank">Pebble on Facebook</a></li>
+                    <ul class="social">
+                        <li>
+                        <!--<a href="https://twitter.com/#!/PebbleSFF" target="_blank">
+                        Follow us on Twitter</a>-->
+                        <a href="https://twitter.com/mypebble" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">
+                            Follow @mypebble
+                        </a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </li>
+                          <div class="fb-like" data-href="https://www.facebook.com/pages/Pebble/217743878280547" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false"></div>
+                        </li>
+                        <li>
+                          <script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-url="http://www.linkedin.com/company/1936847?trk=tyah"></script>
+                        </li>
                     </ul>
                 </div>
                 <div class="nav-meta">
