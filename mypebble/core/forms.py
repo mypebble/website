@@ -188,25 +188,26 @@ class ContactTraining_PeriodEnd(forms.Form):
       """Prints out the custom text to be displayed on the form.
       """
       return [_(
-                'This FREE online training session is specifically for an overview of your End'
-                ' of Year Procedures, more FREE online training sessions will be scheduled for'
-                ' schools with Period Ends later in the year.'),
-                _('Which date(s) would you be able to JOIN the FREE 10 minute online Webinar? '
-                'Places are limited to 8 schools on each online session so you might like to '
-                'choose more than one date.If you would prefer an individual training session'
-                ' then please contact us.')]
+                'This FREE online training session gives you an overview of your End of Year procedures.'
+                ' The session will take about 10 minutes - the perfect way to help you make the most of your '
+                'Fund Manager software.'),
+                _('Please complete the form below and select which date(s) you are available to join a free '
+                'online training session. Places are limited to 8 schools for each online session so you may '
+                'wish to choose more than one date. We\'ll be in touch shortly.'
+                )]
 
     def form_text_details(self):
       """Prints out the custom text to be displayed on the form.
       """
       return _(
-                'We will send you an invitation to join our FREE WebEx training, please watch out '
-                'for it. The email will be from Cisco Systems.  If you do not receive this invitation '
-                'please let us know before the training is due to start.  You will need to follow '
-                'the instructions and login to the session from the email, 10-15 minutes before the '
-                'stated time of the Webinar.  Just before the training is due to start please dial '
-                'the conference telephone number supplied in the email or use your audio on your '
-                'pc/laptop to join the WebEx training.  We will start promptly at the stated time.')
+                'We will send you an invitation to join our FREE WebEx training, so please watch out for it. '
+                'The email will be sent from Cisco Systems. If you do not receive this invitation please let us '
+                'know before the training is due to start. You will need to follow the instructions and log in '
+                'to the session from the email approximately 10 to 15 minutes before the stated time of the Webinar. '
+                'Just before the training is due to start please dial the conference telephone number supplied in the '
+                'email or use your audio on your PC or laptop to join the WebEx training. We will start promptly at '
+                'the stated time. '
+                'More free online training sessions will be scheduled later in the year.')
 
 
 class ContactTraining_Group(forms.Form):
@@ -269,15 +270,15 @@ class ContactTraining_Group(forms.Form):
       """Prints out the custom text to be displayed on the form.
       """
       return [_(
-          'This FREE online training session is specifically for an '
-          'overview of Groups, more FREE online training sessions will '
-          'be scheduled for schools with throughout the year.'
+          'This FREE online training session gives you an overview of the Groups function.'
+          'The session will take about 10 minutes the perfect way to help you make the '
+          'most of your Fund Manager software.'
         ),
         _(
-          'Which date(s) would you be able to JOIN the FREE 10 minute online'
-          ' Webinar? Places are limited to 8 schools on each online session so'
-          ' you might like to choose more than one date. If you would prefer'
-          ' an individual training session then please contact us'
+          'Please complete the form below and select which date(s) you are available '
+          'to join a free online training session. Places are limited to 8 schools '
+          'for each online session so you may wish to choose more than one date. '
+          'We\'ll be in touch shortly.'
         )
       ]
 
@@ -285,15 +286,16 @@ class ContactTraining_Group(forms.Form):
       """Prints out the custom text to be displayed on the form.
       """
       return _(
-        'We will send you an invitation to join our FREE WebEx training, '
-        'please watch out for it. The email will be from Cisco Systems. '
-        'If you do not receive this invitation please let us know before the '
-        'training is due to start.  You will need to follow the instructions '
-        'and login to the session from the email, 10-15 minutes before the '
-        'stated time of the Webinar.  Just before the training is due to start '
-        'please dial the conference telephone number supplied in the email or '
-        'use your audio on your pc/laptop to join the WebEx training. '
-        'We will start promptly at the stated time.'
+        'We will send you an invitation to join our FREE WebEx training, so please '
+        'watch out for it. The email will be sent from Cisco Systems. If you do '
+        'not receive this invitation please let us know before the training is due '
+        'to start. You will need to follow the instructions and log in to the session '
+        'from the email approximately 10 to 15 minutes before the stated time of '
+        'the Webinar. Just before the training is due to start please dial the '
+        'conference telephone number supplied in the email or use your audio on your '
+        'PC or laptop to join the WebEx training. We will start promptly at the stated '
+        'time.'
+        'More free online training sessions will be scheduled later in the year.'
       )
 
 class ContactTraining_Not_Paid(forms.Form):
@@ -354,27 +356,27 @@ class ContactTraining_Not_Paid(forms.Form):
       """Prints out the custom text to be displayed on the form.
       """
       return [_(
-        'This FREE online training session is specifically for an overview '
-        'of Who\'s Not Paid, more FREE online training sessions will be '
-        'scheduled for schools throughout the year.'),
+        'This FREE online training session gives you an overview of the '
+        'Who\'s Not Paid report.  The session will take about 10 minutes'
+        ' the perfect way to help you make the most of your Fund Manager software.'),
         _(
-        'Which date(s) would you be able to JOIN the FREE 10 minute online'
-        ' Webinar? Places are limited to 8 schools on each online session so '
-        'you might like to choose more than one date. If you would prefer an '
-        'individual training session then please contact us.'
+        'Please complete the form below and select which date(s) you are available '
+        'to join a free online training session. Places are limited to 8 schools for '
+        'each online session so you may wish to choose more than one date. '
+        'We\'ll be in touch shortly.'
       )]
 
     def form_text_details(self):
       """Prints out the custom text to be displayed on the form.
       """
       return _(
-        'We will send you an invitation to join our FREE WebEx training, '
-        'please watch out for it. The email will be from Cisco Systems. '
-        'If you do not receive this invitation please let us know before the '
-        'training is due to start.  You will need to follow the instructions '
-        'and login to the session from the email, 10-15 minutes before the '
-        'stated time of the Webinar.  Just before the training is due to '
-        'start please dial the conference telephone number supplied in the '
-        'email or use your audio on your pc/laptop to join the WebEx training.'
-        ' We will start promptly at the stated time.'
+        'We will send you an invitation to join our FREE WebEx training, so please '
+        'watch out for it. The email will be sent from Cisco Systems. If you do not '
+        'receive this invitation please let us know before the training is due to start. '
+        'You will need to follow the instructions and log in to the session from the '
+        'email approximately 10 to 15 minutes before the stated time of the Webinar. '
+        'Just before the training is due to start please dial the conference telephone '
+        'number supplied in the email or use your audio on your PC or laptop to join the '
+        'WebEx training. We will start promptly at the stated time. '
+        'More free online training sessions will be scheduled later in the year.'
       )
