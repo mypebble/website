@@ -43,7 +43,7 @@ TRAINING_NOT_PAID = (
   ('Wed 22 May', _('Wednesday 29th May at 9.30am')),
   ('Wed 05 June', _('Wednesday 12th June at 9.30am')),
   ('Keep Updated',
-    _('I can\'t do any of the above, please send me the Whos Not Paid'
+    _('I can\'t do any of the above, please send me the Who\'s Not Paid'
       ' information')),
 )
 
@@ -126,7 +126,9 @@ class ContactForm(forms.Form):
       return [_( 'As well as software, we also provide real people '
                 'on hand to offer all the advice and support you '
                 'need. No automated telephone lines - just a '
-                'dedicated team of people who know the products inside out.')]
+                'dedicated team of people who know the products inside out.'),
+                _('Please complete the form below. We\'ll be in touch shortly.')
+                ]
 
 class ContactTraining_PeriodEnd(forms.Form):
     name = forms.CharField(
