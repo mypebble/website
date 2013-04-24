@@ -2752,6 +2752,9 @@ input[type="submit"].btn.small {
 .staff li{display:inline;} 
 .staff img{width:140px;}
 
+.partners li{display:inline; margin-left:5px;}
+.partners img{width:12%;}
+
 .story p{
   float:left;
   width:60%;
