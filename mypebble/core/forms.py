@@ -18,18 +18,6 @@ WOULD_LIKE = (
   ('other', _('Other Enquiry')),
 )
 
-TRAINING_PERIOD_END = (
-  ('Tue 09 April', _('Tuesday 9th April at 9.30am COMPLETE')),
-  ('Wed 10 April', _('Wednesday 10th April at 9.30am COMPLETE')),
-  ('Tue 16 April', _('Tuesday 16th April at 9.30am COMPLETE')),
-  ('Wed 17 April', _('Wednesday 17th April at 9.30am COMPLETE')),
-  ('Tue 23 April', _('Tuesday 23rd April at 9.30am')),
-  ('Wed 24 April', _('Wednesday 24th April at 9.30am')),
-  ('Keep Updated',
-    _('I can\'t do any of the above, please send me the End of Year '
-      'information')),
-)
-
 TRAINING_GROUP = (
   ('Wed 01 May', _('Wednesday 1st May at 9.30am')),
   ('Wed 22 May', _('Wednesday 22nd May at 9.30am')),
@@ -143,10 +131,6 @@ class ContactTraining_PeriodEnd(forms.Form):
     telephone = forms.CharField(
       label=_("Telephone"), max_length=15, required=False,
     )
-    training = forms.MultipleChoiceField(
-      label=_("Training Date"), choices=TRAINING_PERIOD_END, required=False,
-      widget=CheckboxSelectMultiple,
-    )
 
     EMAIL_RECIPIENTS = (
       'training@talktopebble.co.uk',
@@ -190,12 +174,11 @@ class ContactTraining_PeriodEnd(forms.Form):
       """Prints out the custom text to be displayed on the form.
       """
       return [_(
-                'This FREE online training session gives you an overview of your End of Year procedures.'
+                ' This FREE online training session gives you an overview of your End of Year procedures.'
                 ' The session will take about 10 minutes - the perfect way to help you make the most of your '
                 'Fund Manager software.'),
-                _('Please complete the form below and select which date(s) you are available to join a free '
-                'online training session. Places are limited to 8 schools for each online session so you may '
-                'wish to choose more than one date. We\'ll be in touch shortly.'
+                _('Please complete the form below and we will let you know when the training dates are announced'
+                ' for schools that have period ends at the end of August.'
                 )]
 
     def form_text_details(self):
