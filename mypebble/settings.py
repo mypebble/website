@@ -136,8 +136,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.media',
     'django.core.context_processors.static',
     'django.core.context_processors.request',
-    'cms.context_processors.media',
     'sekizai.context_processors.sekizai',
+    'cms.context_processors.media',
 )
 
 
@@ -229,7 +229,7 @@ CMS_TEMPLATES = (
 	  ('support_productSFF.html', 'Support Product SFF Template'),
 	  ('support_productSFM.html', 'Support Product SFM Template'),
 	  ('support_document.html', 'Support Document Template'),
-    
+
     ('login.html', 'Login Template'),
     ('404.html', 'Error 404'),
     ('500.html', 'Error 500'),
@@ -262,12 +262,12 @@ CMS_TEMPLATES = (
     ('support_document_bh.html','Bank History FM Template'),
     ('support_document_ct.html','Cancel Transaction FM Template'),
     ('support_document_sq.html','Squid FM Template'),
-    
+
     ('support_document_rpfm.html','Receipts and Record a Payment FM Template'),
     ('support_document_ar.html','Account Report Create Acc FM Template'),
     ('support_document_rbfm.html','Receipt to Bank FM Template'),
     ('support_document_brfm.html','Reconcile Bank FM Template'),
-    
+
     #misc
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),
