@@ -36,7 +36,6 @@ class GeneralEnquiryTestCase(TestCase):
           }
         )
 
-    @skip('Cannot post')
     def test_post_form_specific_period_end(self):
         """Test Training Form Period End
         """
@@ -49,8 +48,6 @@ class GeneralEnquiryTestCase(TestCase):
             'organisation': 'a organisation',
             'telephone': '0123456',
             'training': [
-              'Tue 09 April','Wed 10 April','Tue 16 April','Tue 16 April',
-              'Wed 17 April','Tue 23 April','Wed 24 April','Keep Updated', 
               'August PE',
             ]
           }
