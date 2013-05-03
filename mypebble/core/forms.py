@@ -17,7 +17,9 @@ WOULD_LIKE = (
   ('onsite/training', _('On-site or Online Training')),
   ('other', _('Other Enquiry')),
 )
-
+TRAINING_PERIOD_END = (
+  ('August PE', _('Keep my updated on the next End of Year training session')),
+)
 TRAINING_GROUP = (
   ('Wed 01 May', _('Wednesday 1st May at 9.30am')),
   ('Wed 22 May', _('Wednesday 22nd May at 9.30am')),
@@ -131,7 +133,10 @@ class ContactTraining_PeriodEnd(forms.Form):
     telephone = forms.CharField(
       label=_("Telephone"), max_length=15, required=False,
     )
-
+    training = forms.MultipleChoiceField(
+      label=_("Training Date"), choices=TRAINING_PERIOD_END, required=False,
+      widget=CheckboxSelectMultiple,
+    )
     EMAIL_RECIPIENTS = (
       'training@talktopebble.co.uk',
     )

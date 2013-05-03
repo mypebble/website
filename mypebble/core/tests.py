@@ -50,7 +50,8 @@ class GeneralEnquiryTestCase(TestCase):
             'telephone': '0123456',
             'training': [
               'Tue 09 April','Wed 10 April','Tue 16 April','Tue 16 April',
-              'Wed 17 April','Tue 23 April','Wed 24 April','Keep Updated',
+              'Wed 17 April','Tue 23 April','Wed 24 April','Keep Updated', 
+              'August PE',
             ]
           }
         )
