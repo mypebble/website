@@ -267,6 +267,13 @@ CMS_TEMPLATES = (
     ('support_document_ar.html','Account Report Create Acc FM Template'),
     ('support_document_rbfm.html','Receipt to Bank FM Template'),
     ('support_document_brfm.html','Reconcile Bank FM Template'),
+    
+    ('support_document_iep.html','Import ePayment FM Template'),
+    ('support_document_mt.html','Make Transfer FM Template'),
+    ('support_document_gift.html','Gift Aid FM Template'),
+    ('support_document_sa.html','Settlement Account FM Template'),
+    ('support_document_tsa.html','Transfer Settlement Account FM Template'),
+    ('support_document_ubsabt.html','Reconcile Bank Statement Amend Bank Transfer FM Template'),
 
     #misc
     ('misc.html', 'Misc Template'),
