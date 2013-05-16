@@ -21,7 +21,6 @@ TRAINING_PERIOD_END = (
   ('August PE', _('Keep my updated on the next End of Year training session')),
 )
 TRAINING_GROUP = (
-  ('Wed 01 May', _('Wednesday 1st May at 9.30am')),
   ('Wed 22 May', _('Wednesday 22nd May at 9.30am')),
   ('Wed 05 June', _('Wednesday 5th June at 9.30am')),
   ('Keep Updated',
@@ -29,7 +28,6 @@ TRAINING_GROUP = (
 )
 
 TRAINING_NOT_PAID = (
-  ('Wed 01 May', _('Wednesday 8th May at 9.30am')),
   ('Wed 22 May', _('Wednesday 29th May at 9.30am')),
   ('Wed 05 June', _('Wednesday 12th June at 9.30am')),
   ('Keep Updated',
