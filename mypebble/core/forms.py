@@ -35,11 +35,8 @@ TRAINING_NOT_PAID = (
       ' information')),
 )
 TRAINING_NEW_FEATURES = (
-  ('Wed 22 May', _('Wednesday 29th May at 9.30am')),
-  ('Wed 05 June', _('Wednesday 12th June at 9.30am')),
-  ('Keep Updated',
-    _('I can\'t do any of the above, please send me the Who\'s Not Paid'
-      ' information')),
+  ('Thur 23 May', _('Thursday 23rd May at 9.30am')),
+  ('Thur 06 June', _('Thursday 6th June at 9.30am')),
 )
 
 class ContactForm(forms.Form):

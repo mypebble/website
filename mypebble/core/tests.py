@@ -105,4 +105,3 @@ class GeneralEnquiryTestCase(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.context['form'].is_valid(), True)
         self.assertEqual(len(mail.outbox), 1)
-
