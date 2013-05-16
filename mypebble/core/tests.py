@@ -98,7 +98,7 @@ class GeneralEnquiryTestCase(TestCase):
             'organisation': 'a organisation',
             'telephone': '0123456',
             'training': [
-              'Thur 23 May','Thur 06 June',
+              'Thur 23 May','Thur 06 June','Keep Updated',
             ]
           }
         )        
