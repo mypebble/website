@@ -431,7 +431,7 @@ class ContactTraining_New_Features(forms.Form):
       """
       return [_(
         'This FREE online training session gives you an overview of the '
-        'lastest features on Fund Manager.  The session will take about 10 minutes'
+        'latest features on Fund Manager.  The session will take about 10 minutes'
         ' the perfect way to help you make the most of your Fund Manager software.'),
         _(
         'Please complete the form below and select which date(s) you are available '
