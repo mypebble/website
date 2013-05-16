@@ -34,7 +34,13 @@ TRAINING_NOT_PAID = (
     _('I can\'t do any of the above, please send me the Who\'s Not Paid'
       ' information')),
 )
-
+TRAINING_NEW_FEATURES = (
+  ('Wed 22 May', _('Wednesday 29th May at 9.30am')),
+  ('Wed 05 June', _('Wednesday 12th June at 9.30am')),
+  ('Keep Updated',
+    _('I can\'t do any of the above, please send me the Who\'s Not Paid'
+      ' information')),
+)
 
 class ContactForm(forms.Form):
 
@@ -346,6 +352,89 @@ class ContactTraining_Not_Paid(forms.Form):
       return [_(
         'This FREE online training session gives you an overview of the '
         'Who\'s Not Paid report.  The session will take about 10 minutes'
+        ' the perfect way to help you make the most of your Fund Manager software.'),
+        _(
+        'Please complete the form below and select which date(s) you are available '
+        'to join a free online training session. Places are limited to 8 schools for '
+        'each online session so you may wish to choose more than one date. '
+        'We\'ll be in touch shortly.'
+      )]
+
+    def form_text_details(self):
+      """Prints out the custom text to be displayed on the form.
+      """
+      return _(
+        'We will send you an invitation to join our FREE WebEx training, so please '
+        'watch out for it. The email will be sent from Cisco Systems. If you do not '
+        'receive this invitation please let us know before the training is due to start. '
+        'You will need to follow the instructions and log in to the session from the '
+        'email approximately 10 to 15 minutes before the stated time of the Webinar. '
+        'Just before the training is due to start please dial the conference telephone '
+        'number supplied in the email or use your audio on your PC or laptop to join the '
+        'WebEx training. We will start promptly at the stated time. '
+        'More free online training sessions will be scheduled later in the year.'
+      )
+
+class ContactTraining_New_Features(forms.Form):
+    name = forms.CharField(
+      label=_("Name"), max_length=255, required=True,
+    )
+    email = forms.EmailField(
+      label=_("Email Address"), required=True,
+    )
+    organisation = forms.CharField(
+      label=_("Organisation"), max_length=300, required=False,
+    )
+    telephone = forms.CharField(
+      label=_("Telephone"), max_length=15, required=False,
+    )
+    training = forms.MultipleChoiceField(
+      label=_("Training Date"), choices=TRAINING_NEW_FEATURES, required=False,
+      widget=CheckboxSelectMultiple,
+    )
+    EMAIL_RECIPIENTS = (
+      'training@talktopebble.co.uk',
+    )
+    def save(self):
+      """Send out the email.
+      """
+      name = self.cleaned_data['name']
+      email = self.cleaned_data['email']
+      organisation = self.cleaned_data['organisation']
+      telephone = self.cleaned_data['telephone']
+
+      training = self.cleaned_data['training']
+      session = "New Features"
+
+      send_mail(
+      'Training - Webinar',
+      get_template('core/training').render(
+      Context({
+      'name': name,
+      'email': email,
+      'organisation': organisation,
+      'telephone': telephone,
+
+      'training': training,
+      'session' : session,
+      })
+      ),
+      'mypebble',
+      self.EMAIL_RECIPIENTS,
+      fail_silently = True
+    )
+
+    def form_title(self):
+      """Title of form
+      """
+      return _( 'Training Webinar - New Features')
+
+    def form_text(self):
+      """Prints out the custom text to be displayed on the form.
+      """
+      return [_(
+        'This FREE online training session gives you an overview of the '
+        'lastest features on Fund Manager.  The session will take about 10 minutes'
         ' the perfect way to help you make the most of your Fund Manager software.'),
         _(
         'Please complete the form below and select which date(s) you are available '

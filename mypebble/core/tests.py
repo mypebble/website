@@ -65,7 +65,7 @@ class GeneralEnquiryTestCase(TestCase):
             'organisation': 'a organisation',
             'telephone': '0123456',
             'training': [
-              'Wed 01 May','Wed 22 May','Wed 05 June','Keep Updated',
+              'Wed 22 May','Wed 05 June','Keep Updated',
             ]
           }
         )
@@ -82,10 +82,26 @@ class GeneralEnquiryTestCase(TestCase):
             'organisation': 'a organisation',
             'telephone': '0123456',
             'training': [
-              'Wed 01 May','Wed 22 May','Wed 05 June','Keep Updated',
+              'Wed 22 May','Wed 05 June','Keep Updated',
             ]
           }
         )
+    def test_post_form_specific_new_features(self):
+        """Test Training Form New Features
+        """
+        kwargs = {'form_type': 'training_new_features'}
+        response = self.client.post(
+          reverse('enquiry-form-specific', kwargs=kwargs),
+          {
+            'name': 'a name',
+            'email': 'ah@talktopebble.co.uk',
+            'organisation': 'a organisation',
+            'telephone': '0123456',
+            'training': [
+              'Thur 23 May','Thur 06 June',
+            ]
+          }
+        )        
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.context['form'].is_valid(), True)
         self.assertEqual(len(mail.outbox), 1)
