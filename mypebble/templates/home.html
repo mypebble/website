@@ -6,6 +6,7 @@
 <div class="home">
     <div class="row titlerow">
         <h1 class="title">
+        
             {% placeholder "strapline" or %}{% endplaceholder %}
         </h1>
     </div>
@@ -13,26 +14,66 @@
         <div class="grid3">
         <div class="box hero">
             <div class="text">
-                <div class="image">
+                <!--<div class="image">
                     <img src="{{ STATIC_URL }}img/hotair.png">
-                </div>
+                </div>-->
                 <h1 class="title">{% placeholder "hero" or %} {% endplaceholder %}</h1>
-                <div class="decription">
+                <!--<div class="decription">
                     <p>{% placeholder "hero_p" or %}{% endplaceholder %}</p>
-                </div>
+                </div>-->
         </div>
     </div>
     </div>
     <div class="row">
+    <!-- TEST CSS -->
+    <style>
+    .box.fm.boxh, .box.sff.boxh{
+      min-height:500px;
+      width:43%;
+    }
+    .home .box.fm, .home .box.sff{
+    background-position:400px 15px;
+    }
+    .home .box .footerimage {display:none;}
+    
+    
+    .hero{
+    padding:0px;
+    }
+    </style>
+    <!-- END TEST CSS -->
+    
         <div class="box grid1 fm boxh">
             <div class="box-inner">
                 <h2 class="title"><a href="/fm/">Fund Manager</a></h2>
                     <div class="description">
                         <p>From payments to period-end, keep track of every penny with our cloud based <strong>Fund Manager.</strong></p>
+                        
+                          <ul>
+                            <li>
+                              Record Transactions
+                            </li>
+                            <li>
+                              Create Reports
+                            </li>
+                            <li>
+                              Register & Dinner Money
+                            </li>
+                            <li>
+                              Banking & Reconcilliation
+                            </li>
+                            <li>
+                              Online Payments
+                            </li>
+                            <li>
+                              SMS
+                            </li>
+                          </ul>
                     </div>
-                    <div class="footerimage fm_spacer">
+                    <!--<div class="footerimage fm_spacer">
                         <a href="/fm/"><img alt="Fund Manager Dashboard" src="{{ STATIC_URL }}img/fm/fm_screen.png"/></a>
-                     </div>
+                     </div>-->
+                     
             </div>
         </div>
         <div class="box grid1 sff boxh">
@@ -49,20 +90,19 @@
                    </div>
             </div>
 
-            <!--support/training -->
+            <!--support/training 
         <div class="grid1 device supportbanner">
             <div class="box support">
                 <div class="box-inner">
                     <h2 class="title"> <a href="/training/">FREE Webinar Training</a></h2>
                         <div class="description">
                           <p>Join our FREE online training sessions for <strong>Fund Manager.</strong></p>
-                           <!-- <p>Always here to help, we are proud of our unrivalled customer  <strong>support.</strong></p>-->
                         </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
-<!-- Online training session placeholder-->
+<!-- Online training session placeholder
        <div class="grid1 device supportbanner extras ">
             <div class="box">
                 <div class="box-inner">
@@ -77,15 +117,15 @@
                         </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 <!--End of onlnie training session placeholder  -->
 
     </div>
     </div>
-    <div class="row extras">
+   <!-- <div class="row extras">
     {% testimonials %}
     </div>
-    
+    -->
              <!--  <div class="row extras">
                 <div class="grid2 box support calltoaction">
                       <div class="box-inner">
