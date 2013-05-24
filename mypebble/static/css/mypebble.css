@@ -258,7 +258,7 @@ a:hover {
   margin: 0 20px 10px 0;
 }
 .box.hero {
-  -webkit-border-radius: 10px;
+  -webkit-border-rad.ius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
@@ -271,8 +271,8 @@ a:hover {
 .box.support {
   background-color: #f79f9b;
 }
-.hp{
-background-color:#C0C0C0;
+.alternative{
+background-color:#f1f1f1;
 }
 .home .box .title,
 .productchoice .box .title {
@@ -296,6 +296,7 @@ background-color:#C0C0C0;
 .home .box.sff {
   background-image: url('../img/logo-white-small.png');
   background-position: 413px 15px;
+  height:300px;
 }
 .home .box.fm .title,
 .home .box.sff .title,
@@ -325,6 +326,11 @@ width:418px;
 .box .footerimage IMG {
   position: relative;
   bottom: -12px;
+  display: block;
+}
+.home .box .footerimage IMG {
+  position: absolute;
+  bottom: -0px;
   display: block;
 }
 .box .callout {
@@ -362,16 +368,15 @@ width:418px;
 
 /*home page product alignments*/
 .fm_spacer{margin-top:27px;} 
-.boxh{max-height:235px;}
 
 /* Hero box, used on product homepages */
 .hero {
   /*overflow: hidden;*/
-  padding-top: 12px;
+  padding-top: 20px;
   /* For homepage slideshow styles, see carousel.less */
 
 }
-.hero .text {
+.home .hero .text {
   text-align:center;
 }
 .hero .text .title {
