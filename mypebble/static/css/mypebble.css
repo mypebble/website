@@ -160,13 +160,11 @@ a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  border-width:thin;
-  /*-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);*/
+ -webkit-box-shadow: 1px 1px 5px rgba(50, 50, 57, 0.4);
+ -moz-box-shadow:    1px 1px 5px rgba(50, 50, 57, 0.4); 
+ box-shadow:         1px 1px 5px rgba(50, 50, 57, 0.4);
   *zoom: 1;
   background: #fff;
-  border:1px solid #ccc;
   /* More .box styles in .boxes.less */
 
 }
@@ -190,7 +188,7 @@ a:hover {
 
 }
 .grid1.box {
-  width: 258px;
+  width: 260px;
 }
 .grid2 {
   width: 620px;
@@ -305,7 +303,7 @@ background-color:#f1f1f1;
   padding-right: 31px;
 }
 .home .box.fm, .home .box.sff{
-width:418px;
+  width:418px;
 }
 
 

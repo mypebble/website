@@ -292,7 +292,7 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
   .row {
    width:660px;
    *zoom: 1; 
-   margin-left:-10px;
+   /*margin-left:-10px;*/
    }
   .row:before,
   .row:after {
@@ -306,14 +306,14 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
    width: 640px !important;
    }
    .grid3{
-   width:640px ;
+   width:100%;
    }
   .grid2{
    width:620px !important;
    }
   .grid1{
    width:200px;
-   margin-left:20px !important;
+   margin-left:0px;
    }
    .box .grid1{
    width:290px;
@@ -400,5 +400,11 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
   .supportbanner{
   margin:0px; 
   width:620px !important;
+  }
+  .home .box.fm, .home .box.sff{
+    width:620px;
+  }
+  .home .box.fm, .home .box.sff {
+  background-position:97% 14px;
   }
 }
