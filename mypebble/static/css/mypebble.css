@@ -279,7 +279,8 @@ background-color:#C0C0C0;
   font-size: 18px;
   line-height: 23px;
 }
-/* White Pebble logo in coloured boxes */.box.fm,
+/* White Pebble logo in coloured boxes */
+.box.fm,
 .box.sff {
   background-image: url('../img/logo-white-small.png');
   background-position: 250px 20px;
@@ -292,10 +293,9 @@ background-color:#C0C0C0;
   padding-right: 41px;
 }
 .home .box.fm,
-.home .box.ft,
 .home .box.sff {
   background-image: url('../img/logo-white-small.png');
-  background-position: 255px 15px;
+  background-position: 413px 15px;
 }
 .home .box.fm .title,
 .home .box.sff .title,
@@ -303,6 +303,11 @@ background-color:#C0C0C0;
 .home .box.sff p {
   padding-right: 31px;
 }
+.home .box.fm, .home .box.sff{
+width:418px;
+}
+
+
 /* Product accent colours for headings inside boxes (using class on <body>) */
 .fm .box .title,
 .fm .content h2 {
@@ -362,12 +367,12 @@ background-color:#C0C0C0;
 /* Hero box, used on product homepages */
 .hero {
   /*overflow: hidden;*/
-  padding-top: 20px;
+  padding-top: 12px;
   /* For homepage slideshow styles, see carousel.less */
 
 }
 .hero .text {
-  width: 80%;
+  text-align:center;
 }
 .hero .text .title {
   font-size: 24px;
