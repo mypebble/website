@@ -35,13 +35,14 @@
     clear: both;
   }
   .container  {
-    width: 98%;
+    width: auto;
+    margin:0px 10px;
   }  
   .header .container{
    padding:10px 0 20px 0;
    }
   .grid3{
-   width:96%;   
+   width:100%;   
    }
   .grid2{
    width:98%;
@@ -183,7 +184,7 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
   .grid1 {
    width:93% !important;
    display:block;
-   margin-left:0px;
+   margin-left:10px;
    }  
   .charfield, .charfield.required, .emailfield.required{
   width:460px;
@@ -316,7 +317,7 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
    }
   .grid1{
    width:200px;
-   margin-left:0px;
+   margin-left:10px;
    }
    .box .grid1{
    width:290px;
