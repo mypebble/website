@@ -236,8 +236,11 @@ a:hover {
  */
 .box {
   /* Coloured boxes (on Home and Support) */
-
 }
+.box-unstyled{
+box-shadow:none;
+}
+
 .box .title {
   margin-top: 0;
   margin-bottom: 6px;
@@ -256,7 +259,7 @@ a:hover {
   margin: 0 20px 10px 0;
 }
 .box.hero {
-  -webkit-border-rad.ius: 10px;
+  -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }

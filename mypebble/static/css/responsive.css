@@ -10,6 +10,9 @@
 
 /* SMARTPHONE */
 @media (max-width: 480px) {
+  .box{
+    box-shadow:none;
+  }
   .body {
   /* the area between .header and .footer, not to be confused with <body> */
   /*background: #f8a433 !important;*/
