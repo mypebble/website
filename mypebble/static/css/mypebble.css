@@ -2801,7 +2801,7 @@ margin:8px 10px;
 }
 
 .features {
-
+  display:none;
 }
 .home .box ul{
   margin:0px;
