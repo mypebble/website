@@ -297,7 +297,7 @@ background-color:#f1f1f1;
 .home .box.sff {
   background-image: url('../img/logo-white-small.png');
   background-position: 413px 15px;
-  height:300px;
+  height:400px;
 }
 .home .box.fm .title,
 .home .box.sff .title,
@@ -329,11 +329,7 @@ background-color:#f1f1f1;
   bottom: -12px;
   display: block;
 }
-.home .box .footerimage IMG {
-  position: absolute;
-  bottom: -0px;
-  display: block;
-}
+
 .box .callout {
   position: absolute;
   right: -10px;
@@ -440,7 +436,7 @@ background-color:#f1f1f1;
 }
 .box.calltoaction .btn-calltoaction {
   float: right;
- margin-top: 5px;
+  margin-top: 5px;
 }
 .box.calltoaction form {
   margin-bottom: 0;
@@ -2812,17 +2808,16 @@ margin:8px 10px;
 }
 .features li{
   display:inline-block;
-  width:66px;
-  height:66px;
+  width:200px;
 }
 .features li span{
-  display:none;
   line-height:12px;
   font-size:11px;
 }
 .features li .image{
-  display:block;
-  background:red;
-  width:66px;
-  height:66px;
+  display:inline-block;
+  border:1px solid #f1f1f1;
+  background:#ccc;
+  width:40px;
+  height:40px;
 }

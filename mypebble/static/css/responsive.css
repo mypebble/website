@@ -112,7 +112,7 @@
   .home .titlerow .title{
   margin:0px 10px 5px 0;
   }
-  .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs, .onlinesupportbox, .extras, .upgrade, .gscommunity, video, .video, .partners, .footer-hide{
+  .blog, .team, .phone, .quote, .partners, .logmein,  .carousel-control, .tabs, .onlinesupportbox, .extras, .upgrade, .gscommunity, video, .video, .partners, .footer-hide, .carousel-inner .image {
   display:none ;
   visibility:hidden;
   } 
@@ -219,13 +219,15 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
   .grid3.carousel .item {
   width: 100% !important;
   }
-  .home .box.fm, .home .box.ft, .home .box.sff {
+  .home .box.fm, .home .box.sff {
   background-image: url('');
   }
-  .box.fm, .box.ft, .box.sff {
+  .box.fm, .box.sff {
   background-image: url('');
   }
-  .hero .text{width:100%;}
+  .hero .text
+  {width:100%;
+  }
   .hero .text .title {
   font-size: 20px;
   font-weight: normal;
@@ -249,7 +251,7 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
   margin-top:10px;
   text-decoration: none;
   }  
-  .hero .image, .blog, .partners, .teambanner, .extras, .carousel-control, .tabs, .upgrade, .gscommunity, .video, .footer-hide {
+  .blog, .partners, .teambanner, .extras, .carousel-control, .tabs, .upgrade, .gscommunity, .video, .footer-hide {
   display:none;
   visibility:hidden;
   }
@@ -276,12 +278,11 @@ a#fdbk_tab{display:none !important; visibility:hidden !important;}
   margin-left:0px !important;
   }
   
-  a#fdbk_tab{display:none !important; visibility:hidden !important;}
+  a#fdbk_tab{
+  display:none !important; 
+  visibility:hidden !important;
+  }
   
-    .box .footerimage IMG {
-  bottom: -12px !important;
-  display: block;
-}
 }
 
 /* PORTABLE TABLET */
