@@ -117,7 +117,7 @@ body {
 .body {
   /* the area between .header and .footer, not to be confused with <body> */
 
-  background: #f0f1f0;
+  /*background: #f0f1f0;*/
 }
 .body .container {
   padding: 15px 0 100px 0;
@@ -160,11 +160,13 @@ a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-width:thin;
+  /*-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);*/
   *zoom: 1;
   background: #fff;
+  border:1px solid #ccc;
   /* More .box styles in .boxes.less */
 
 }
@@ -188,7 +190,7 @@ a:hover {
 
 }
 .grid1.box {
-  width: 260px;
+  width: 258px;
 }
 .grid2 {
   width: 620px;
@@ -205,7 +207,7 @@ a:hover {
 }
 /* Grid modules *inside* boxes need to compensate for the box's interior padding */
 .box .grid1 {
-  width: 260px;
+  width: 259px;
   margin-left: 60px;
 }
 .box .grid2 {
