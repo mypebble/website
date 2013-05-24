@@ -197,7 +197,7 @@ a:hover {
   margin-left: 20px;
 }
 .grid2.box {
-  width: 580px;
+  width: 578px;
 }
 .grid3 {
   width: 940px;
@@ -753,7 +753,7 @@ display:block;
 text-align: center;
 }
 
-.team li{ margin:12px 27px; margin-bottom:5px; line-height:25px;}
+.team li{ margin:12px 25px; margin-bottom:5px; line-height:25px;}
 
 .nav a,
 .subnav a {
@@ -2765,7 +2765,7 @@ input[type="submit"].btn.small {
 .staff img{width:140px;}
 
 .partners li{display:inline; margin-left:5px;}
-.partners img{width:12%;}
+.partners img{width:12%; max-height:50px;}
 
 .story p{
   float:left;
