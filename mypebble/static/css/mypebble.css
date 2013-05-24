@@ -2802,3 +2802,26 @@ border-radius: 5px;
 display:inline;
 margin:8px 10px;
 }
+
+.features {
+
+}
+.home .box ul{
+  margin:0px;
+}
+.features li{
+  display:inline-block;
+  width:66px;
+  height:66px;
+}
+.features li span{
+  display:none;
+  line-height:12px;
+  font-size:11px;
+}
+.features li .image{
+  display:block;
+  background:red;
+  width:66px;
+  height:66px;
+}
