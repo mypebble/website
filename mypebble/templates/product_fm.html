@@ -4,15 +4,18 @@
 {% page_attribute "meta_keywords" %}
 {% block primary %}
 <div class="producthome fm"> 
-        <div class="row titlerow">
-            <h1 class="title "><img class="logo" src="{{ STATIC_URL }}img/logo/fm_logo.png" alt="Fund Manager"/>{% placeholder "strapline" or %} {% endplaceholder %}</h1> 
-          <div class="extras">
-                    <a class="btn loginbtn" href="https://apps.mypebble.co.uk" target="_blank">Log in</a>
-                </div>
-                </div>
+  <div class="row titlerow">
+    <h1 class="title ">
+      <img class="logo" src="{{ STATIC_URL }}img/logo/fm_logo.png" alt="Fund Manager"/>
+        {% placeholder "strapline" or %} {% endplaceholder %}
+    </h1> 
+    <div class="device-hide">
+        <a class="btn loginbtn" href="https://apps.mypebble.co.uk" target="_blank">Log in</a>
+    </div>
+  </div>
                 <div class="row">
-                    <div class="box grid3 hero tabbed carousel slide" id="productCarousel">
-                        <div class="tabs">
+                    <div class="box hero tabbed carousel slide" id="productCarousel">
+                        <div class="tabs device-hide">
                             <ul>
                                 <li class="active-tab"><a href="#item1" onClick="_gaq.push(['_trackEvent', 'FM Carousel',  'Click', 'Welcome']);">Welcome</a></li>
                                 <li><a href="#item2" onClick="_gaq.push(['_trackEvent', 'FM Carousel',  'Click', 'Record Transactions']);">Record Transactions</a></li>
@@ -25,7 +28,7 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="active item" id="item1">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_dashboard.png" alt="Fund Manager Dashboard"/>
                                 </div>
                                 <div class="text">
@@ -38,7 +41,7 @@
                                 </div>
                             </div>
                             <div class="item" id="item2">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_receipt.png" alt="Receipts and Payments"/>
                                 </div>
                                 <div class="text">
@@ -55,7 +58,7 @@
                                 </div>
                             </div>
                             <div class="item" id="item3">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_graph.png" alt="Screenshot"/>
                                     
                                 </div>
@@ -74,7 +77,7 @@
                                 </div>
                             </div>
                             <div class="item" id="item4">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_registerapp.png" alt="Manage Catering"/>
                                 </div>
                                 <div class="text">
@@ -90,7 +93,7 @@
                                 </div>
                             </div>
                             <div class="item" id="item5">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_banking.png" alt="Banking &amp; Reconciliation"/>
                                 </div>
                                 <div class="text">
@@ -108,7 +111,7 @@
                                 </div>
                             </div>
                             <div class="item" id="item6">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_offers2.png" alt="Online Payments"/>
                                 </div>
                                 <div class="text">
@@ -127,7 +130,7 @@
                                 </div>
                             </div>
                             <div class="item" id="item7">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_training.png" alt="Support and training for Fund Manager"/>
                                 </div>
                                 <div class="text">
@@ -148,37 +151,25 @@
                         <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
                     </div>
                 </div>
+                
                 <div class="row">
                     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid2 calltoaction">
-                            <div class="box-inner">
-                                <h2 class="title">
-                                    For a free online demonstration and a quotation tailored to your organisation, please get in touch.
-                                
-                                </h2>
-                        
-                                <div class="description">
-                               <a class="btn btn-large btn-calltoaction" href="/enquiries/">FREE demo <i class="i icon-arrow-r-white"></i></a> 
-                             </div>
-                            </div>
-                            
-                            
-
-                        
-                        
-                <!--            <div class="grid2 extras">
-                        <img src="{{ STATIC_URL }}img/fm_filler.png" alt="Store receipts and payments online">
-                    <!--<h3>For an online demonstration and a quotation tailored to your organisation, please get in touch.</h3>-->
+                      <div class="box calltoaction">
+                        <h2 class="title">
+                          For a free online demonstration and a quotation tailored to your organisation, please get in touch.
+                        </h2>
+                        <div class="description">
+                           <a class="btn btn-large btn-calltoaction" href="/enquiries/">FREE demo <i class="i icon-arrow-r-white"></i></a> 
+                         </div>
                     </div>
-                    
-                            <div class="grid2 box ">
-                            <h2>Prices start from as little as £259 per year depending on chosen functionality and school size.</h2>
-                            </div>
+                    <div class="box">
+                      <h2>Prices start from as little as £259 per year depending on chosen functionality and school size.</h2>
                     </div>
+                  </div>
                     
                     
-                    <div class="grid1 sidebar extras"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid1">
+                    <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box">
                             <div class="box-inner">
                                 <h2 class="title">Upgrade to Fund Manager</h2>
                                 <div class="description">
@@ -210,20 +201,20 @@
                                         <small>Rachel Stratton, Finance Officer, All Saints School</small>
                                     </blockquote>
                                 </div>
-                                <div class="grid1 testimonial blog">
+                                <div class="grid1 testimonial device-hide">
                                     <blockquote>
                                         <p>We cannot recommend Fund Manager highly enough, particularly the online and telephone support.</p>
                                         <small>Karen Gentry, School Business Manager, Cranmer Primary School</small>
                                     </blockquote>
                                 </div>
-                                <div class="grid1 testimonial blog">
+                                <div class="grid1 testimonial device-hide">
                                     <blockquote>
                                         <p>The support team are always really helpful and nothing ever seems too much trouble.</p>
                                         <small>Angela, School Business Manager, Ditchling Primary</small>
                                     </blockquote>
                                 </div>
                             </div>
-                        <div class="row extras">
+                        <div class="row device-hide">
                             <div class="grid1 testimonial  ">
                                 <blockquote>
                                     <p>Having recently had the accounts audited, our accountant praised the programme for its detailed and accurate information which was obtained at the press of a button.</p>
