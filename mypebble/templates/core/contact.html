@@ -7,101 +7,93 @@
 
 {% block primary %}
 <div class="enquiries">
-               <div class="row">
-                   <h1>
-                   {{ form.form_title }}
-                   </h1>
-                    <div class="grid2 content">
-                    <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid2">
-                            <div class="box-inner">
-                                {% for text in form.form_text %}
-                                <p>
-                                {{ text }}
-                                </p>
-                                {% endfor %}
-                                <div class="form enquiries-form">
+<div class="row">
+  <h1>
+  {{ form.form_title }}
+  </h1>
+  <div class="grid2 content">
+    <div class="box">
+      {% for text in form.form_text %}
+      <p>
+        {{ text }}
+      </p>
+      {% endfor %}
+      <div class="form enquiries-form">
+          <form action="" method="POST" class="form-horizontal contact-form">
+            {% csrf_token %}
 
-                                <form action="" method="POST" class="form-horizontal contact-form">
-                                  {% csrf_token %}
-                                  
-                                  {% for field in form %}
-                                      {{ field.label_tag }}
-                                      {{ field }}
-                                        {{ field.errors }}
-                                  {% endfor %}
-                                  <div class="clearfix"></div>
-                                  <button type="submit" class="btn"/>
-                                    {% trans "Submit" %}
-                                  </button>
-                                </form>
-                                <p>
-                                  {{ form.form_text_details }}
-                                </p>
-                                <p>We only use your details to provide the information you requested. <a href="/privacy/">Privacy policy</a></p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid1 sidebar device"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="support supportbox onlinesupportbox box grid1">
-                            <div class="box-inner">
-                                <h2 class="title">We're available</h2>
-                                <div class="description">
-                                    <p>
-                                        <i class="i icon-phone-white"></i> Tel: 0845 310 1788<br/>
-                                        <i class="i icon-phone-white"></i> Fax: 0845 310 1777<br/>
-                                        <i class="i icon-blank"></i> <small>Mon to Fri | 8:30am – 5:30pm</small><br/>
-                                        <i class="i icon-email-white"></i> <a href="mailto:info@mypebble.co.uk">info@mypebble.co.uk</a><br/>
-                                        <i class="i icon-email-white"></i> <a href="mailto:support@mypebble.co.uk">support@mypebble.co.uk</a><br/>
-                                        <i class="i icon-twitter-white"></i> <a href="https://twitter.com/pebblesff" target="_blank">@PebbleSFF</a><br/>
-                                    </p>
-                                    <div class="vcard">
-                                        <div class="fn org"><strong>PEBBLE</strong></div>
-                                        <div class="adr">
-                                            <div class="street-address">Media Exchange 3</div>
-                                            <div>Coquet Street</div>
-                                            <div class="locality">Newcastle upon Tyne</div>
-                                            <div class="postal-code">NE1 2QB</div>
-                                            <div class="country-name visuallyhidden">United Kingdom</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="supportcommunitybox box grid1">
-                            <div class="box-inner">
-                                <h2 class="title">Download a brochure</h2>
-                                <div class="description">
-                                    <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure" onClick="_gaq.push(['_trackEvent', 'Brochure', 'FM', 'Fund Manager']);">
-                                        <img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager brochure"/></a>
-                                    <h3>Fund Manager</h3>
-                                    <p>Keep track of every penny.
-                                    <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure"
-                                    onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);">Download PDF</a></p>
-                                    
-                                    <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" title="School Fund Finder brochure"
-                                    onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">
-                                        <img class="box-img" src="{{ STATIC_URL }}img/sff/sff_40x60.png" target="_blank" alt="School Fund Finder brochure"/></a>
-                                    <h3>School Fund Finder</h3>
-                                        <p>Grants for UK schools made easy.                                     <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
-                                        onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">Download PDF</a></p>
-                                </div>
-                            </div>
-                        </div>
-                           <div class="grid1 box">
-                            <div id="mc_embed_signup">
-                                <h3>Keep in touch…</h3>
-                                    <form action="http://talktopebble.us5.list-manage2.com/subscribe/post?u=1c8b9f93d89b4f1e6ddd27ff2&amp;id=8e37535111" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-	                                        <label for="pin">Sign up for the latest finance & fundraising news delivered to your inbox every month.</label>
-	                                        <input type="email" value="" name="EMAIL" class="hpform charfield pin" id="mce-EMAIL" placeholder="email address" required>
-	
-	                                        <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="btn">
-                                        </form>
-                                   </div>
-                        </div>
-                </div>
-            </div><!--/.container-->    
-        </div><!--/.body-->
+            {% for field in form %}
+            {{ field.label_tag }}
+            {{ field }}
+            {{ field.errors }}
+            {% endfor %}
+              <div class="clearfix"></div>
+            <button type="submit" class="btn"/>
+              {% trans "Submit" %}
+            </button>
+        </form>
+        <p>
+          {{ form.form_text_details }}
+        </p>
+        <p>
+          We only use your details to provide the information you requested. 
+            <a href="/privacy/">Privacy policy</a>
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
+    <div class="support box">
+      <h2 class="title">
+        We're available
+      </h2>
+      <div class="description">
+        <p>
+          <i class="i icon-phone-white"></i> Tel: 0845 310 1788<br/>
+          <i class="i icon-phone-white"></i> Fax: 0845 310 1777<br/>
+          <i class="i icon-blank"></i> <small>Mon to Fri | 8:30am – 5:30pm</small><br/>
+          <i class="i icon-email-white"></i> <a href="mailto:info@mypebble.co.uk">info@mypebble.co.uk</a><br/>
+          <i class="i icon-email-white"></i> <a href="mailto:support@mypebble.co.uk">support@mypebble.co.uk</a><br/>
+          <i class="i icon-twitter-white"></i> <a href="https://twitter.com/pebblesff" target="_blank">@PebbleSFF</a><br/>
+        </p>
+      <div class="vcard">
+        <div class="fn org"><strong>PEBBLE</strong></div>
+        <div class="adr">
+        <div class="street-address">Media Exchange 3</div>
+        <div>Coquet Street</div>
+        <div class="locality">Newcastle upon Tyne</div>
+        <div class="postal-code">NE1 2QB</div>
+        <div class="country-name visuallyhidden">United Kingdom</div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="grid1 box device-hide">
+        <h2 class="title">
+          Download a brochure
+        </h2>
+          <div class="description">
+            <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure" onClick="_gaq.push(['_trackEvent',
+             'Brochure', 'FM', 'Fund Manager']);">
+              <img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager brochure"/>
+            </a>
+          <h3>Fund Manager</h3>
+            <p>Keep track of every penny.
+              <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure"
+              onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);">Download PDF</a>
+            </p>
+              <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" title="School Fund Finder brochure"
+              onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">
+                <img class="box-img" src="{{ STATIC_URL }}img/sff/sff_40x60.png" target="_blank" alt="School Fund Finder brochure"/>
+              </a>
+          <h3>School Fund Finder</h3>
+            <p>Grants for UK schools made easy.                                     
+              <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
+              onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">Download PDF</a>
+            </p>
+        </div>
+    </div>
+    </div>
+  </div><!--/.container-->    
+</div><!--/.body-->
  {% endblock %} 
