@@ -6,12 +6,12 @@
   .device-hide{
     display: none !important;
   }
- .box{
+ .box , .box.hero{
     border-radius:0px;
     box-shadow:none;
   }
   
-  .grid3, .grid2, .grid1 {
+  .grid3, .grid2, .grid1, .carousel-inner .text {
   width:auto;
   margin-left:0px;
   }
