@@ -16,8 +16,7 @@
                 <div class="row">
                     <h1>{% placeholder "support_title" or %}{% endplaceholder %}</h1>
                     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid2 tutorial">
-                            <div class="box-inner">
+                        <div class="box tutorial">
                                 {% placeholder "support_intro" or %}{% endplaceholder %}
                                 <h2>{% placeholder "faq title" or %}Frequently asked questions{% endplaceholder %}</h2>
                                     <ul class="video unstyled">
@@ -118,7 +117,7 @@
                                           <a href="/support/fm/get-satisfaction/">How to use the Feedback Tab</a></span>
                                       </li>
                                     </ul>
-                            </div><hr/>
+                          <hr/>
                               <h2>Frequently Asked Questions</h2>
                                 {% placeholder "FAQ_fm" or %} {% endplaceholder %}
                             
@@ -134,9 +133,8 @@
                             </div>
                         </div>-->
                     </div>
-                    <div class="grid1 sidebar device"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="support supportbox onlinesupportbox box grid1">
-                            <div class="box-inner">
+                    <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="support box grid1">
                                 <h2 class="title">We're available</h2>
                                 <div class="description">
                                    <p>
@@ -159,11 +157,9 @@
                                     <input class="pin" type="text" size="20" name="Code" id="Code"/>
                                     <input type="submit" value="Connect" class="btn"/>
                                 </form>
-                            </div>
                         </div>
                         
                                                 <div class="supportcommunitybox box grid1">
-                            <div class="box-inner">
                                 <h2 class="title">User Guides</h2>
                                 <div class="description">
                                 <ul>
@@ -184,10 +180,8 @@ Fund Manager User Manual</a></li>
                                     <li><a href="http://windows.microsoft.com/en-US/windows-vista/Change-Internet-Explorer-9-Privacy-settings" target="_blank">Internet Explorer 9 - Manage pop-ups</a></li>
                                 </ul>
                                 </div>
-                            </div>
                         </div>
-                        <div class="supportcommunitybox box grid1">
-                            <div class="box-inner">
+                        <div class="box grid1">
                                 <h2 class="title">Pebble Support Community</h2>
                                 <div class="description">
                                 <div id='gsfn_search_widget'>
@@ -214,17 +208,14 @@ Fund Manager User Manual</a></li>
                                         if (typeof GSFN !== "undefined") { GSFN.loadWidget(809,{"containerId":"getsat-widget-809"}); }
                                         </script>
                                 </div>
-                            </div>
                         </div>
-                        <div class="grid1 device supportbanner">
+                        <div class="grid1 device-hide">
             <div class="box support">
-                <div class="box-inner">
                     <h2 class="title"> <a href="/training/">FREE Webinar Training</a></h2>
                         <div class="description">
                           <p>Join our FREE online training sessions for <strong>Fund Manager.</strong></p>
                            <!-- <p>Always here to help, we are proud of our unrivalled customer  <strong>support.</strong></p>-->
                         </div>
-                </div>
             </div>
         </div>
                 </div>
