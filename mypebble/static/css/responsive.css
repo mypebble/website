@@ -33,6 +33,9 @@
     border-bottom:none;
     box-shadow:none;
   }
+  .grid1.testimonial{
+    width:auto;
+  }
 }
 
 
