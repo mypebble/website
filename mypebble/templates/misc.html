@@ -2,27 +2,22 @@
 {% load cms_tags %}
 {% block primary %}
 <div class="enquiries">
-    <div class="body" id="body">
-        <div class="row">
-            <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
-                <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                    <div class="box grid2">
-                        <div class="box-inner">
-                            <h2>{% placeholder "main_title" or %} {% endplaceholder %} </h2>
-                            {% placeholder "main_content" or %} {% endplaceholder %} 
-                        </div>
-                    </div> 
-                </div>
-                    <div class="grid1 sidebar partners"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="supportcommunitybox grid1">
-                            <div class="box-inner">
-                                <h2 class="title">{% placeholder "side_secondary_h" or %}{% endplaceholder %}</h2>
-                                    <div class="description">
-                                        {% placeholder "side_secondary_p" or %} {% endplaceholder %}
-                                    </div>
-                </div>
-            </div>
+  <div class="body" id="body">
+    <div class="row">
+      <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
+        <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+            <div class="box">
+              <h2>{% placeholder "main_title" or %} {% endplaceholder %} </h2>
+              {% placeholder "main_content" or %} {% endplaceholder %} 
+            </div> 
+        </div>
+        <div class="grid1 sidebar partners"> <!-- Column. Modules inside will stack vertically -->
+          <h2 class="title">{% placeholder "side_secondary_h" or %}{% endplaceholder %}</h2>
+              <div class="description">
+                  {% placeholder "side_secondary_p" or %} {% endplaceholder %}
+              </div>
         </div>
     </div>        
+  </div>
 </div>
 {% endblock %} 

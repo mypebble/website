@@ -4,24 +4,18 @@
 <div class="enquiries">
     <div class="body" id="body">
         <div class="row">
-            <h1>OOPs... An Error has occured</h1>
-                <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                    <div class="box grid2">
-                        <div class="box-inner">
-                                <p>The server encountered an internal error or misconfiguration and was unable to complete your request.</p>
-                                <p> We are working to fix this issue.</p>
-                        </div>
-                    </div> 
-                </div>
-                    <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="supportcommunitybox grid1">
-                            <div class="box-inner">
-                                    <div class="description">
-                                        <img src="{{ STATIC_URL }}img/500.png" alt="Page could not be found">
-                                    </div>
-                </div>
+          <h1>OOPs... An Error has occured</h1>
+            <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+                <div class="box">
+                    <p>The server encountered an internal error or misconfiguration and was unable to complete your request.</p>
+                    <p> We are working to fix this issue.</p>
+                </div> 
             </div>
-        </div>
+             <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
+                <div class="description">
+                    <img src="{{ STATIC_URL }}img/500.png" alt="Page could not be found">
+                </div>
+             </div>
     </div>        
 </div>
 {% endblock %} 
