@@ -10,7 +10,6 @@
     border-radius:0px;
     box-shadow:none;
   }
-  
   .grid3, .grid2, .grid1, .carousel-inner .text {
     width:auto;
     margin-left:0px;
@@ -35,6 +34,9 @@
   }
   .grid1.testimonial{
     width:auto;
+  }
+  .home .hero {
+    background:none;
   }
 }
 

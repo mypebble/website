@@ -283,8 +283,6 @@ background-color:#f1f1f1;
 /* White Pebble logo in coloured boxes */
 .box.fm,
 .box.sff {
-  background-image: url('../img/logo-white-small.png');
-  background-position: 250px 20px;
   background-repeat: no-repeat;
 }
 .box.fm .title,
@@ -295,8 +293,6 @@ background-color:#f1f1f1;
 }
 .home .box.fm,
 .home .box.sff {
-  background-image: url('../img/logo-white-small.png');
-  background-position: 413px 15px;
 }
 .home .box.fm .title,
 .home .box.sff .title,
@@ -2820,10 +2816,11 @@ list-style-image:url('../img/tick.png');
   width:40px;
   height:40px;
 }
-.home .footerimage{
-  margin-top:40px;
+.home .box img{
+   margin:0px 59px;
 }
 .col{
 display:inline-block;
 width:49%;
 }
+
