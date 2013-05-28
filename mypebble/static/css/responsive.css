@@ -3,7 +3,7 @@
     width:auto;
     margin:0px 5%;
   }
-  .device-hide{
+  .device-hide, #fdbk_tab{
     display: none !important;
   }
  .box , .box.hero{
