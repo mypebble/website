@@ -16,8 +16,7 @@
                 <div class="row">
                     <h1>{% placeholder "support_title" or %}{% endplaceholder %}</h1>
                     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid2">
-                            <div class="box-inner">
+                        <div class="box">
                                 {% placeholder "support_intro" or %}{% endplaceholder %}
                                 <h2>Frequently Asked Questions</h2>
                                 <h3><img class="pull-left img-sff" src="{{ STATIC_URL }}img/sff/sff_40x40.png" alt="School Fund Finder Support Document"/>
@@ -32,12 +31,10 @@
                                 <h3><img class="pull-left img-sff" src="{{ STATIC_URL }}img/sff/sff_40x40.png" alt="School Fund Finder Support Document"/>
                                     {% placeholder "support_decriptin_3h" or %} {% endplaceholder %}</h3>
                                         <p>{% placeholder "support_description_3p" or %}{% endplaceholder %}</p>
-                            </div>
                         </div>
                     </div>
-                    <div class="grid1 sidebar device"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="support supportbox onlinesupportbox box grid1">
-                            <div class="box-inner">
+                    <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="support box">
                                 <h2 class="title">We're available</h2>
                                 <div class="description">
                                     <p>
@@ -46,8 +43,6 @@
                                         <i class="i icon-community-white"></i><a href="https://getsatisfaction.com/pebble" target="_blank">Pebble support community</a><br/>
                                         <i class="i icon-email-white"></i><a href="mailto:support@mypebble.co.uk">support@mypebble.co.uk</a>
                                     </p>
-                                </div>
-                                
                             </div>
                         </div>
                 </div>
