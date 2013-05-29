@@ -2800,6 +2800,7 @@ margin:8px 10px;
 }
 
 .features {
+margin:10px 0px;
 }
 .home .box ul{
   margin:0px;
@@ -2821,11 +2822,11 @@ list-style-image:url('../img/tick.png');
   height:40px;
 }
 .home .box img{
-   margin:0px 59px;
+   margin:10px 59px;
 }
 .col{
-display:inline-block;
-width:47%;
-margin:0px 5px;
+  display:inline-block;
+  width:47%;
+  margin:0px 5px;
 }
 

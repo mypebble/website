@@ -29,7 +29,8 @@
                     <div class="device-hide">
                       <a href="/fm/"><img alt="Fund Manager Dashboard" src="{{ STATIC_URL }}img/fm_homepage.png"/></a>
                    </div>
-                    <div class="features col">
+                   <div class="features">
+                    <div class="col">
                       <ul>
                         <li>
                             Income & Expenditure
@@ -42,7 +43,7 @@
                         </li>
                       </ul>
                       </div>
-                      <div class="features col">
+                      <div class="col">
                       <ul>
                         <li>
                             Online Payments
@@ -55,6 +56,8 @@
                         </li>
                       </ul>
                     </div>
+                    </div>
+                    <a class="btn btn-large pull-right" href="/fm/">Learn more</a>
         </div>
         <div class="box grid1 sff">
                 <h2 class="title"><a href="/sff/">Genius grant finding</a></h2>
@@ -64,35 +67,40 @@
                         </p>
                     </div>
                         <div class="device-hide">
-                            <a href="/sff/"><img alt="School Fund Finder Dashboard" src="{{ STATIC_URL }}img/sff_homepage.png"/></a>
+                            <a href="/sff/">
+                              <img alt="School Fund Finder Dashboard" src="{{ STATIC_URL }}img/sff_homepage.png"/>
+                            </a>
                         </div>
-                     <div class="features col">
-                      <ul>
-                        <li>
-                            Grants for UK schools
-                        </li>
-                        <li>
-                            One-to-one funding advice
-                        </li>
-                        <li>
-                           Email alerts of new grants
-                        </li>
-                      </ul>
-                      </div>
-                      <div class="features col">
-                      <ul>
-                        <li>
-                          Application reviews & feedback
-                        </li>
-                        <li>
-                            Monthly newsletters
-                        </li>
-                        <li>
-                            Deadline reminders
-                        </li>
-                      </ul>
-                    </div>
-                   </div>
+                        <div class="features">
+                         <div class="col">
+                            <ul>
+                              <li>
+                                  Grants for UK schools
+                              </li>
+                              <li>
+                                  One-to-one funding advice
+                              </li>
+                              <li>
+                                 Email alerts of new grants
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col">
+                            <ul>
+                              <li>
+                                Application reviews & feedback
+                              </li>
+                              <li>
+                                  Monthly newsletters
+                              </li>
+                              <li>
+                                  Deadline reminders
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    <a class="btn btn-large pull-right" href="/sff/">Learn more</a>
+                 </div>
       </div>
     <div class="row device-hide">
     {% testimonials %}
