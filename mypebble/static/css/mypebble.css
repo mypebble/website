@@ -368,6 +368,10 @@ background-color:#f1f1f1;
   /* For homepage slideshow styles, see carousel.less */
 
 }
+.home .hero p{
+  width:61%;
+  margin:auto;
+}
 .home .hero .text {
   text-align:center;
 }
@@ -2801,7 +2805,7 @@ margin:8px 10px;
   margin:0px;
 }
 .features li{
-width:200px;
+width:190px;
 margin:10px 30px;
 list-style-image:url('../img/tick.png');
 
@@ -2821,6 +2825,7 @@ list-style-image:url('../img/tick.png');
 }
 .col{
 display:inline-block;
-width:49%;
+width:47%;
+margin:0px 5px;
 }
 
