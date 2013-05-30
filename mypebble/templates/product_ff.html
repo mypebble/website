@@ -7,7 +7,9 @@
       <img class="logo" src="{{ STATIC_URL }}img/logo/sff_logo.png" alt="School Fund Finder"/>{% placeholder "strapline" or %} {% endplaceholder %}
     </h1> 
     <div class="device-hide">
-      <a class="btn loginbtn" href="http://www.schoolfundfinder.co.uk/home" target="_blank">Log in</a>                     
+      <a class="btn loginbtn" href="http://www.schoolfundfinder.co.uk/home" target="_blank"
+         onClick="_gaq.push(['_trackEvent', 'Login',  'Click', 'School Fund Finder Apps']);">
+      Log in</a>                     
     </div>
   </div>
   
