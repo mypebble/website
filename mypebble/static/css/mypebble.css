@@ -2648,6 +2648,10 @@ input[type="submit"].btn.small {
   opacity: 0.6;
   filter: alpha(opacity=60);
 }
+
+.tabs li:last-child{
+width:138px;
+}
 .visuallyhidden {
   position: absolute;
   left: -9999px;
