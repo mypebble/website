@@ -39,10 +39,13 @@
   .grid1.testimonial{
     width:auto;
   }
-  .home .hero {
+  .home .hero, .alternative {
     background:none;
   }
-  .home .hero .text p {text-align:left; width:100%;}
+  .home .hero .text p {
+  text-align:left; 
+  width:100%;
+  }
 }
 
 
