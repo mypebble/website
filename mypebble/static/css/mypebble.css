@@ -2561,7 +2561,8 @@ input[type="submit"].btn.small {
   position: relative;
 }
 
-.carousel-inner .text{width:60%;
+.carousel-inner .text{
+  width:65%;
 }
 .carousel .item {
   display: none;
