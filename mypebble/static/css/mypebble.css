@@ -2809,6 +2809,7 @@ margin:10px 0px;
   margin:0px;
 }
 .features li{
+font-size:12px;
 width:190px;
 margin:10px 30px;
 list-style-image:url('../img/tick.png');

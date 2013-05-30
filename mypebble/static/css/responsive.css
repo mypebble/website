@@ -42,6 +42,7 @@
   .home .hero {
     background:none;
   }
+  .home .hero .text p {text-align:left; width:100%;}
 }
 
 
