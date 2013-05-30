@@ -15,11 +15,15 @@
     margin-left:0px;
   }
   .box.grid1.sff, .box.grid1.fm{
-    background-image:url('');
     margin-left:0px;
     width:auto;
   }
-  
+   .box.grid3{
+   width:91%;
+   }
+   .carousel .text{
+   width:auto;
+   }
   .nav {
     font-size:11px;
     top:70px;
