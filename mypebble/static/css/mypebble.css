@@ -423,7 +423,7 @@ background-color:#f1f1f1;
 /* Main call-to-action box on product pages */
 .box.calltoaction, .brochure {
   /* For button styles in call-to-action boxes, see buttons.less */
-height:105px;
+min-height:105px;
 }
 .box.calltoaction .title {
   font-size: 22px;
