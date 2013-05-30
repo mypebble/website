@@ -167,11 +167,20 @@
             unlimited support from our experienced team. Group discounts are available.
             </p>
         </div>
+        
+        <div class="box">
+          <h2>New to School Fund Finder: Bid Writing Service</h2>
+            <p>
+            We have the knowledge and experience to write winning funding applications so let us help you. We’ll construct a compelling application for you 
+            from scratch for a grant of up to £10,000. The service is available for a one-off fixed fee of £350 (plus VAT) – and we won’t take an additional 
+            fee from your winning grant. Get in touch for more information.
+            </p>
+        </div>
    </div>
                
   <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
-    <div class="box sffbox">
-      <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
+    <div class="box brochure">
+        <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
         onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">
         <img class="box-img img-brochure" src="{{ STATIC_URL }}img/sff/sff_40x60.png" alt="School Fund Finder brochure "/>
       </a>
@@ -182,13 +191,13 @@
       </p>
     </div>
   </div>
-  <div class="box grid1 device-hide">
+  <div class="box grid1 feed device-hide">
     <script charset="utf-8" src="{{ STATIC_URL }}js/twitter.js"></script>
     <script>
     new TWTR.Widget({
     version: 2,
     type: 'profile',
-    rpp: 1,
+    rpp: 2,
     interval: 30000,
     width: 250,
     height: 300,

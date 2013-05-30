@@ -174,26 +174,25 @@
                     
                     
                     <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box">
-                            <div class="box-inner">
+                        <div class="box brochure">
+                            <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure">
+                            <img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager brochure "
+                            onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);"/></a>
+                            <h2 class="title">Fund Manager brochure</h2>
+                              <div class="description">
+                                  <p>The essential information for you to take away. 
+                                  <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure" 
+                                  onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);" >Download PDF</a></p>
+                              </div>     
+                      </div>
+                      <div class="box">
                                 <h2 class="title">Upgrade to Fund Manager</h2>
                                 <div class="description">
                                    <p>If you are using an older version of School Fund Manager, you can upgrade now to enjoy the benefits.
-                                    <a class="callout" href="/fm/upgrade/">Upgrade now</a></small></p>
+                                    </p><a class="callout" href="/fm/upgrade/">Upgrade now</a>
                                 </div>
-                            </div>
                         </div>
-                        <div class="box grid1">
-                            <div class="box-inner">
-                            <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure"><img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager brochure "
-                            onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);"/></a>
-                                    <h2 class="title">Fund Manager brochure</h2>
-                                        <div class="description">
-                                            <p>The essential information for you to take away. <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure" 
-                                            onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);" >Download PDF</a></p>
-                                        </div>     
-                            </div>  
-                    </div>
+                        
                 </div>
                 <div class="row">
                     <div class="box box-unstyled ">

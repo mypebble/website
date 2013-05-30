@@ -421,9 +421,9 @@ background-color:#f1f1f1;
   box-shadow:none;
 }
 /* Main call-to-action box on product pages */
-.box.calltoaction {
+.box.calltoaction, .brochure {
   /* For button styles in call-to-action boxes, see buttons.less */
-
+height:105px;
 }
 .box.calltoaction .title {
   font-size: 22px;
@@ -2120,8 +2120,6 @@ table {
 .sff .titlerow .loginbtn.active {
   background-color: #c17106 \9;
 }
-/*so boxes align in sff page*/
-.sffbox{margin-bottom:12px;}
 
 
 .sff .box.calltoaction-secondary .btn:hover,
@@ -2830,4 +2828,6 @@ list-style-image:url('../img/tick.png');
   width:47%;
   margin:0px 5px;
 }
-
+.feed{
+height:275px;
+}
