@@ -4,15 +4,19 @@
 {% page_attribute "meta_keywords" %}
 {% block primary %}
 <div class="producthome fm"> 
-        <div class="row titlerow">
-            <h1 class="title "><img class="logo" src="{{ STATIC_URL }}img/logo/fm_logo.png" alt="Fund Manager"/>{% placeholder "strapline" or %} {% endplaceholder %}</h1> 
-          <div class="extras">
-                    <a class="btn loginbtn" href="https://apps.mypebble.co.uk" target="_blank">Log in</a>
-                </div>
-                </div>
+  <div class="row titlerow">
+    <h1 class="title device-hide">
+      <img class="logo" src="{{ STATIC_URL }}img/logo/fm_logo.png" alt="Fund Manager"/>
+        {% placeholder "strapline" or %} {% endplaceholder %}
+    </h1> 
+    <div class="device-hide">
+        <a class="btn loginbtn" href="https://apps.mypebble.co.uk" target="_blank"
+        onClick="_gaq.push(['_trackEvent', 'Login',  'Click', 'Fund Manager Apps']);">Log in</a>
+    </div>
+  </div>
                 <div class="row">
                     <div class="box grid3 hero tabbed carousel slide" id="productCarousel">
-                        <div class="tabs">
+                        <div class="tabs device-hide">
                             <ul>
                                 <li class="active-tab"><a href="#item1" onClick="_gaq.push(['_trackEvent', 'FM Carousel',  'Click', 'Welcome']);">Welcome</a></li>
                                 <li><a href="#item2" onClick="_gaq.push(['_trackEvent', 'FM Carousel',  'Click', 'Record Transactions']);">Record Transactions</a></li>
@@ -24,57 +28,61 @@
                             </ul>
                         </div>
                         <div class="carousel-inner">
-                            <div class="active item" id="item1">
-                                <div class="image">
-                                    <img src="{{ STATIC_URL }}img/fm/fm_dashboard.png" alt="Fund Manager Dashboard"/>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title">Keeping track of every penny</h2>
-                                    <div class="description">
-                                        <p>Schools, academies and local authorities manage their voluntary income more effectively and efficiently with Fund Manager. It’s not just for schools – charities, churches and clubs also enjoy the benefits.</p>
-                                        <p>Fund Manager can accurately record, report and bank cash, cheques and online payments for voluntary income like trips, uniform, dinner money and club fees. Now cloud hosted, it gives you the flexibility to securely access your accounts at any internet-enabled computer.</p>
-                                        <p>We pride ourselves on being there for our customers when it matters most. As a result, we offer unlimited telephone and remote access support as part of your license.</p>
-                                    </div>
-                                </div>
+                          <div class="active item" id="item1">
+                            <div class="image device-hide">
+                              <img src="{{ STATIC_URL }}img/fm/fm_dashboard.png" alt="Fund Manager Dashboard"/>
                             </div>
-                            <div class="item" id="item2">
-                                <div class="image">
-                                    <img src="{{ STATIC_URL }}img/fm/fm_receipt.png" alt="Receipts and Payments"/>
-                                </div>
-                                <div class="text">
-                                    <h2 class="title">Record Transactions</h2>
-                                    <div class="description">
-                                        <p>Fund Manager allows you to record receipts and payments accurately and responsibly with the option of printable receipts.</p>
-
-                                            <ul>
-                                                <li>Record monies against individual names for items like dinner money, trips and entry fees.</li>
-                                                <li>Give yourself the ability to enter bulk payments.</li>
-                                                <li>Keep an audit trail for all payments and cancellations, allowing you to relax in the knowledge you are performing your role responsibly.</li>
-                                            </ul>
-                                    </div>
-                                </div>
+                            <div class="text">
+                              <h2 class="title">Keeping track of every penny</h2>
+                              <div class="description">
+                                <p>Schools, academies and local authorities manage their voluntary income more effectively and efficiently with Fund Manager. It’s not just for schools –
+                                 charities, churches and clubs also enjoy the benefits.</p>
+                                <p>Fund Manager can accurately record, report and bank cash, cheques and online payments for voluntary income like trips, uniform, dinner money and club fees.
+                                 Now cloud hosted, it gives you the flexibility to securely access your accounts at any internet-enabled computer.</p>
+                                <p>We pride ourselves on being there for our customers when it matters most. As a result, we offer unlimited telephone and remote access support as part of 
+                                your license.</p>
+                              </div>
                             </div>
-                            <div class="item" id="item3">
-                                <div class="image">
-                                    <img src="{{ STATIC_URL }}img/fm/fm_graph.png" alt="Screenshot"/>
-                                    
-                                </div>
+                          </div>
+                          
+                          <div class="item" id="item2">
+                            <div class="image device-hide">
+                              <img src="{{ STATIC_URL }}img/fm/fm_receipt.png" alt="Receipts and Payments"/>
+                            </div>
+                            <div class="text">
+                              <h2 class="title">Record Transactions</h2>
+                            <div class="description">
+                              <p>Fund Manager allows you to record receipts and payments accurately and responsibly with the option of printable receipts.</p>
+                                <ul>
+                                  <li>Record monies against individual names for items like dinner money, trips and entry fees.</li>
+                                  <li>Give yourself the ability to enter bulk payments.</li>
+                                  <li>Keep an audit trail for all payments and cancellations, allowing you to relax in the knowledge you are performing your role responsibly.</li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                          
+                          <div class="item" id="item3">
+                            <div class="image device-hide">
+                              <img src="{{ STATIC_URL }}img/fm/fm_graph.png" alt="Create Reports"/>
+                            </div>
                                 <div class="text">
-                                    <h2 class="title">Create Reports</h2>
+                                <h2 class="title">Create Reports</h2>
                                     <div class="description">
                                         <p>From simple reports that provide your balance at a glance to in-depth reports for audit, Fund Manager gives you total flexibility.</p>
-                                            <ul>
-                                                <li>Customise the exact report you want to see with easy access to all transactions within your accounts.</li>
-                                                <li>Find discrepancies like double entries by searching for transactions by date, type and value.</li>
-                                                <li>Track the outstanding balance of items that are paid for in instalments. </li>
-                                                <li>Create a report of transactions for an individual if requested.</li>
-                                                <li>Close down your financial year with all the detailed reports you need by using our incredibly simple period end process.</li> 
-                                            </ul>
+                                          <ul>
+                                              <li>Customise the exact report you want to see with easy access to all transactions within your accounts.</li>
+                                              <li>Find discrepancies like double entries by searching for transactions by date, type and value.</li>
+                                              <li>Track the outstanding balance of items that are paid for in instalments. </li>
+                                              <li>Create a report of transactions for an individual if requested.</li>
+                                              <li>Close down your financial year with all the detailed reports you need by using our incredibly simple period end process.</li> 
+                                          </ul>
                                     </div>
                                 </div>
+                                 
                             </div>
                             <div class="item" id="item4">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_registerapp.png" alt="Manage Catering"/>
                                 </div>
                                 <div class="text">
@@ -90,7 +98,7 @@
                                 </div>
                             </div>
                             <div class="item" id="item5">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_banking.png" alt="Banking &amp; Reconciliation"/>
                                 </div>
                                 <div class="text">
@@ -108,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="item" id="item6">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_offers2.png" alt="Online Payments"/>
                                 </div>
                                 <div class="text">
@@ -127,7 +135,7 @@
                                 </div>
                             </div>
                             <div class="item" id="item7">
-                                <div class="image">
+                                <div class="image device-hide">
                                     <img src="{{ STATIC_URL }}img/fm/fm_training.png" alt="Support and training for Fund Manager"/>
                                 </div>
                                 <div class="text">
@@ -148,59 +156,46 @@
                         <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
                     </div>
                 </div>
+                
                 <div class="row">
                     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid2 calltoaction">
-                            <div class="box-inner">
-                                <h2 class="title">
-                                    For a free online demonstration and a quotation tailored to your organisation, please get in touch.
-                                
-                                </h2>
-                        
-                                <div class="description">
-                               <a class="btn btn-large btn-calltoaction" href="/enquiries/">FREE demo <i class="i icon-arrow-r-white"></i></a> 
-                             </div>
-                            </div>
-                            
-                            
-
-                        
-                        
-                <!--            <div class="grid2 extras">
-                        <img src="{{ STATIC_URL }}img/fm_filler.png" alt="Store receipts and payments online">
-                    <!--<h3>For an online demonstration and a quotation tailored to your organisation, please get in touch.</h3>-->
+                      <div class="box calltoaction">
+                        <h2 class="title">
+                          For a free online demonstration and a quotation tailored to your organisation, please get in touch.
+                        </h2>
+                        <div class="description">
+                           <a class="btn btn-large btn-calltoaction" href="/enquiries/">FREE demo <i class="i icon-arrow-r-white"></i></a> 
+                         </div>
                     </div>
-                    
-                            <div class="grid2 box ">
-                            <h2>Prices start from as little as £259 per year depending on chosen functionality and school size.</h2>
-                            </div>
+                    <div class="box">
+                      <h2>Prices start from as little as £259 per year depending on chosen functionality and school size.</h2>
                     </div>
+                  </div>
                     
                     
-                    <div class="grid1 sidebar extras"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid1">
-                            <div class="box-inner">
+                    <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
+                        <div class="box brochure">
+                            <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure">
+                            <img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager brochure "
+                            onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);"/></a>
+                            <h2 class="title">Fund Manager brochure</h2>
+                              <div class="description">
+                                  <p>The essential information for you to take away. 
+                                  <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure" 
+                                  onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);" >Download PDF</a></p>
+                              </div>     
+                      </div>
+                      <div class="box">
                                 <h2 class="title">Upgrade to Fund Manager</h2>
                                 <div class="description">
                                    <p>If you are using an older version of School Fund Manager, you can upgrade now to enjoy the benefits.
-                                    <a class="callout" href="/fm/upgrade/">Upgrade now</a></small></p>
+                                    </p><a class="callout" href="/fm/upgrade/">Upgrade now</a>
                                 </div>
-                            </div>
                         </div>
-                        <div class="box grid1">
-                            <div class="box-inner">
-                            <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure"><img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager brochure "
-                            onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);"/></a>
-                                    <h2 class="title">Fund Manager brochure</h2>
-                                        <div class="description">
-                                            <p>The essential information for you to take away. <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure" 
-                                            onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);" >Download PDF</a></p>
-                                        </div>     
-                            </div>  
-                    </div>
+                        
                 </div>
                 <div class="row">
-                    <div class="box ">
+                    <div class="box box-unstyled ">
                        
                             <h2 class="title">Here’s what our customers have to say…</h2>
                             <div class="row">
@@ -210,20 +205,20 @@
                                         <small>Rachel Stratton, Finance Officer, All Saints School</small>
                                     </blockquote>
                                 </div>
-                                <div class="grid1 testimonial blog">
+                                <div class="grid1 testimonial device-hide">
                                     <blockquote>
                                         <p>We cannot recommend Fund Manager highly enough, particularly the online and telephone support.</p>
                                         <small>Karen Gentry, School Business Manager, Cranmer Primary School</small>
                                     </blockquote>
                                 </div>
-                                <div class="grid1 testimonial blog">
+                                <div class="grid1 testimonial device-hide">
                                     <blockquote>
                                         <p>The support team are always really helpful and nothing ever seems too much trouble.</p>
                                         <small>Angela, School Business Manager, Ditchling Primary</small>
                                     </blockquote>
                                 </div>
                             </div>
-                        <div class="row extras">
+                        <div class="row device-hide">
                             <div class="grid1 testimonial  ">
                                 <blockquote>
                                     <p>Having recently had the accounts audited, our accountant praised the programme for its detailed and accurate information which was obtained at the press of a button.</p>

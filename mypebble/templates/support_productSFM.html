@@ -1,135 +1,138 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 {% block primary %}
- <div class="support">
-                <div class="row titlerow">
-                    <div class="title">
-                        <a href="/support/">
-                            <img class="logo" alt="Support"
-                                src="{{ STATIC_URL }}img/logo/support_logo.png"/>
-                        </a>
-                        <div class="pull-right">
-                            {% placeholder "support_product" or %}{% endplaceholder %}
-                        </div>
+<div class="support">
+    <div class="row titlerow">
+      <div class="title">   
+        <a href="/support/">
+          <img class="logo" alt="Support"
+          src="{{ STATIC_URL }}img/logo/support_logo.png"/>
+        </a>
+        <div class="pull-right">
+        {% placeholder "support_product" or %}{% endplaceholder %}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h1>{% placeholder "support_title" or %}{% endplaceholder %}</h1>
+      <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+        <div class="box">
+          <div class="tutorial device-hide">
+            {% placeholder "support_intro" or %}{% endplaceholder %}
+              <h2>Online Tutorials</h2>
+                <h3>
+                  <img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to create a user login"/>
+                  <a href="/support/sfm/create-user-login/">How to create a user login</a></h3>
+                  <p>{% placeholder "support_description_1p" or %}{% endplaceholder %}</p>
+                <h3>
+                  <img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to apply a license"/>
+                  <a href="/support/sfm/apply-a-licence/">How to apply a license</a></h3>
+                  <p>{% placeholder "support_description_2p" or %}{% endplaceholder %}</p>
+                <h3>
+                  <img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to find your School Fund Manager location"/>
+                  <a href="/support/sfm/software-location/">How to find your School Fund Manager location</a></h3>
+                  <p>{% placeholder "support_description_3p" or %}{% endplaceholder %}</p>
+                <h3>
+                  <img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to reconcile a bank statement"/>
+                  <a href="/support/sfm/reconcile-a-bank-statement/">How to reconcile a bank statement</a></h3>
+                  <p>{% placeholder "support_description_4p" or %}{% endplaceholder %}</p>
+                <h3>
+                  <img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to record a receipt or payment"/>
+                  <a href="/support/sfm/record-receipts-payments/">How to record a receipt or payment</a></h3>
+                  <p>{% placeholder "support_description_5p" or %}{% endplaceholder %}</p>
+                <h3>
+                  <img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to pay receipts to bank"/>
+                  <a href="/support/sfm/pay-receipts-to-bank/">How to pay receipts to bank</a></h3>
+                  <p>{% placeholder "support_description_6p" or %}{% endplaceholder %}</p>
+                <h3>
+                  <img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Period end Closedown - Part 1"/>
+                  <a href="/support/sfm/period-end-closedown-part1/">Period end Closedown - Part 1</a></h3>
+                  <p>{% placeholder "support_description_7p" or %}{% endplaceholder %}</p>
+                <h3>
+                  <img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Period end Closedown - Part 2"/>
+                  <a href="/support/sfm/period-end-closedown-part2/">Period end Closedown - Part 2</a></h3>
+                  <p>{% placeholder "support_description_8p" or %}{% endplaceholder %}</p>
+        </div> 
+        <hr class="device-hide"/>
+        <h2>Frequently Asked Questions</h2>
+        {% placeholder "FAQ" or %} {% endplaceholder %}
+      </div>
+    </div>
+  <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
+          <div class="support onlinesupportbox box">
+      <h2 class="title">We're available</h2>
+        <div class="description">
+          <p>
+          <i class="i icon-phone-white"></i>0845 310 1788<br/>
+          <i class="i icon-blank"></i> <small>Mon to Fri | 8:30am – 5:30pm</small><br/>
+          <i class="i icon-community-white"></i>
+          <a href="https://getsatisfaction.com/pebble" target="_blank"
+            onClick="_gaq.push(['_trackEvent', 'GetSatisfaction',  'Click', 'Community']);">
+            Pebble support community</a><br/>
+          <i class="i icon-email-white"></i><a href="mailto:support@mypebble.co.uk">support@mypebble.co.uk</a>
+          </p>
+          <form action="https://secure.logmeinrescue.com/Customer/Code.aspx" method="post" id="logmein-form" >
+                <h2 class="title">Online support</h2>
+                  <label for="pin">Enter your 6-digit PIN code:</label>
+                    <div class="alert alert-warning errorlist hide">
+                      <ul class="errorlist">
+                          <li>This field is required</li>
+                      </ul>
                     </div>
-                </div>
-                <div class="row">
-                    <h1>{% placeholder "support_title" or %}{% endplaceholder %}</h1>
-                    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid2">
-                            <div class="box-inner extras">
-                                <div class="tutorial extras">
-                                {% placeholder "support_intro" or %}{% endplaceholder %}
-                                <h2>Online Tutorials</h2>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to create a user login"/>
-                                    <a href="/support/sfm/create-user-login/">How to create a user login</a></h3>
-                                        <p>{% placeholder "support_description_1p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to apply a license"/>
-                                    <a href="/support/sfm/apply-a-licence/">How to apply a license</a></h3>
-                                        <p>{% placeholder "support_description_2p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to find your School Fund Manager location"/>
-                                    <a href="/support/sfm/software-location/">How to find your School Fund Manager location</a></h3>
-                                        <p>{% placeholder "support_description_3p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to reconcile a bank statement"/>
-                                    <a href="/support/sfm/reconcile-a-bank-statement/">How to reconcile a bank statement</a></h3>
-                                        <p>{% placeholder "support_description_4p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to record a receipt or payment"/>
-                                    <a href="/support/sfm/record-receipts-payments/">How to record a receipt or payment</a></h3>
-                                        <p>{% placeholder "support_description_5p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="How to pay receipts to bank"/>
-                                    <a href="/support/sfm/pay-receipts-to-bank/">How to pay receipts to bank</a></h3>
-                                        <p>{% placeholder "support_description_6p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Period end Closedown - Part 1"/>
-                                    <a href="/support/sfm/period-end-closedown-part1/">Period end Closedown - Part 1</a></h3>
-                                        <p>{% placeholder "support_description_7p" or %}{% endplaceholder %}</p>
-                                <h3><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Period end Closedown - Part 2"/>
-                                    <a href="/support/sfm/period-end-closedown-part2/">Period end Closedown - Part 2</a></h3>
-                                        <p>{% placeholder "support_description_8p" or %}{% endplaceholder %}</p>
-                              </div> 
-                            </div>
-                            <hr/>
-                            <h2>Frequently Asked Questions</h2>
-                                {% placeholder "FAQ" or %} {% endplaceholder %}
-                        </div>
-                    </div>
-                    <div class="grid1 sidebar device"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="support supportbox onlinesupportbox box grid1">
-                            <div class="box-inner">
-                                <h2 class="title">We're available</h2>
-                                <div class="description">
-                                    <p>
-                                        <i class="i icon-phone-white"></i>0845 310 1788<br/>
-                                        <i class="i icon-blank"></i> <small>Mon to Fri | 8:30am – 5:30pm</small><br/>
-                                        <i class="i icon-community-white"></i><a href="https://getsatisfaction.com/pebble" target="_blank">Pebble support community</a><br/>
-                                        <i class="i icon-email-white"></i><a href="mailto:support@mypebble.co.uk">support@mypebble.co.uk</a>
-                                    </p>
-                                </div>
-                                
-                                <form action="https://secure.logmeinrescue.com/Customer/Code.aspx" method="post" id="logmein-form" class="contact">
-                                    <h2 class="title">Online support 
-					<i class="i icon-help-white" title="Logmein remote support explanation" rel="tooltip"></i></h2>
-                                    <label for="pin">Enter your 6-digit PIN code:</label>
-                                    <div class="alert alert-warning errorlist hide">
-                                        <ul class="errorlist">
-                                            <li>This field is required</li>
-                                        </ul>
-                                    </div>
-                                    <input class="pin" type="text" size="20" name="Code" id="Code"/>
-                                    <input type="submit" value="Connect" class="btn"/>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="supportcommunitybox box grid1">
-                            <div class="box-inner">
-                                <h2 class="title">User Guides</h2>
-                                <div class="description">
-                                  <ul>
-                                      <li><a href="{{ MEDIA_URL }}sfm-guides/v7 user guide final.pdf" target="_blank">School Fund Manager v7 </a></li>
-                                      <li><a href="{{ MEDIA_URL }}sfm-guides/v6.3 user guide final.pdf" target="_blank">School Fund Manager v6.30</a></li>
-                                      <li><a href="{{ MEDIA_URL }}sfm-guides/sfmclassic_userguide.pdf" target="_blank">SFM Classic Edition</a></li>
-                                      <li><a href="{{ MEDIA_URL }}sfm-guides/easyusbooks_userguide.pdf" target="_blank">EasyUSBooks</a></li>
-                                      <li><a href="{{ MEDIA_URL }}sfm-guides/easyusbooks_plus_userguide.pdf" target="_blank">EasyUSBooks+</a></li>
-                                      <li><a href="{{ MEDIA_URL }}sfm-guides/Merge Manager User Guide.pdf" target="_blank">Merge Manager</a></li>
-                                      <li><a href="{{ MEDIA_URL }}sfm-guides/names manager user guide sf update.pdf" target="_blank">Names Manager</a></li>
-                                      <li><a href="{{ MEDIA_URL }}sfm-guides/gfr overview.pdf" target="_blank">GFR</a></li>
-                                      <li><a href="{{ MEDIA_URL }}sfm-guides/sysman.pdf" target="_blank">System Manager</a></li>
-                                  </ul>
-                                </div>
-                            </div>
-                        </div>
-                                
-                                
-                                
-                        <div class="supportcommunitybox box grid1">
-                            <div class="box-inner">
-                                <h2 class="title">Pebble Support Community</h2>
-                                <div class="description">
-                                <div id='gsfn_search_widget'>
-                                        <form accept-charset='utf-8' action='https://getsatisfaction.com/pebble' id='gsfn_search_form' method='get' onsubmit='gsfn_search(this); return false;'>
-                                            <input name='style' type='hidden' value='' />
-                                            <input name='limit' type='hidden' value='3' />
-                                            <input name='utm_medium' type='hidden' value='widget_search' />
-                                            <input name='utm_source' type='hidden' value='widget_pebble' />
-                                            <input name='callback' type='hidden' value='gsfnResultsCallback' />
-                                            <input name='format' type='hidden' value='widget' />
-                                            <label for='gsfn_search_query'>Ask a question, share an idea, or report a problem.</label>
-                                            <input id='gsfn_search_query' maxlength='120' name='query' type='text' placeholder="Search support community" class="search-support" />
-                                            <input id='continue' type='submit' value='Search' class="btn" />
-                                        </form>
-                                        <div id='gsfn_search_results' style='height: auto;'></div>
-                                        </div>
-                                            <div class='powered_by'>
-                                            </div>
-                                        </div>
-                                        <script src="https://getsatisfaction.com/pebble/widgets/javascripts/3613bbf/widgets.js" type="text/javascript"></script>
-                                        <div id="getsat-widget-809" class="gscommunity"></div>
-                                        <script type="text/javascript" src="https://loader.engage.gsfn.us/loader.js"></script>
-                                        <script type="text/javascript">
-                                        if (typeof GSFN !== "undefined") { GSFN.loadWidget(809,{"containerId":"getsat-widget-809"}); }
-                                        </script>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div><!--/.container-->    
- {% endblock %} 
+                      <input class="pin" type="text" size="20" name="Code" id="Code"/>
+                      <input type="submit" value="Connect" class="btn"/>
+              </form>
+    </div>
+  </div>
+  <div class="box grid1">
+    <h2 class="title">User Guides</h2>
+    <div class="description">
+      <ul>
+        <li><a href="{{ MEDIA_URL }}sfm-guides/v7 user guide final.pdf" target="_blank">School Fund Manager v7 </a></li>
+        <li><a href="{{ MEDIA_URL }}sfm-guides/v6.3 user guide final.pdf" target="_blank">School Fund Manager v6.30</a></li>
+        <li><a href="{{ MEDIA_URL }}sfm-guides/sfmclassic_userguide.pdf" target="_blank">SFM Classic Edition</a></li>
+        <li><a href="{{ MEDIA_URL }}sfm-guides/easyusbooks_userguide.pdf" target="_blank">EasyUSBooks</a></li>
+        <li><a href="{{ MEDIA_URL }}sfm-guides/easyusbooks_plus_userguide.pdf" target="_blank">EasyUSBooks+</a></li>
+        <li><a href="{{ MEDIA_URL }}sfm-guides/Merge Manager User Guide.pdf" target="_blank">Merge Manager</a></li>
+        <li><a href="{{ MEDIA_URL }}sfm-guides/names manager user guide sf update.pdf" target="_blank">Names Manager</a></li>
+        <li><a href="{{ MEDIA_URL }}sfm-guides/gfr overview.pdf" target="_blank">GFR</a></li>
+        <li><a href="{{ MEDIA_URL }}sfm-guides/sysman.pdf" target="_blank">System Manager</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class=" box grid1 device-hide">
+      <h2 class="title">Pebble Support Community</h2>
+      <div class="description">
+          <div id='gsfn_search_widget'>
+            <form accept-charset='utf-8' action='https://getsatisfaction.com/pebble' id='gsfn_search_form' method='get' onsubmit='gsfn_search(this); return false;'>
+              <input name='style' type='hidden' value='' />
+              <input name='limit' type='hidden' value='3' />
+              <input name='utm_medium' type='hidden' value='widget_search' />
+              <input name='utm_source' type='hidden' value='widget_pebble' />
+              <input name='callback' type='hidden' value='gsfnResultsCallback' />
+              <input name='format' type='hidden' value='widget' />
+              <label for='gsfn_search_query'>Ask a question, share an idea, or report a problem.</label>
+              <input id='gsfn_search_query' maxlength='120' name='query' type='text' placeholder="Search support community" class="search-support" />
+              <input id='continue' type='submit' value='Search' class="btn" />
+            </form>
+          <div id='gsfn_search_results' style='height: auto;'></div>
+          </div>
+        <div class='powered_by'></div>
+      </div>
+      
+<script src="https://getsatisfaction.com/pebble/widgets/javascripts/3613bbf/widgets.js" type="text/javascript"></script>
+        
+<div id="getsat-widget-809" class="gscommunity"></div>
+  <script type="text/javascript" src="https://loader.engage.gsfn.us/loader.js"></script>
+  <script type="text/javascript">
+    if (typeof GSFN !== "undefined") { GSFN.loadWidget(809,{"containerId":"getsat-widget-809"}); }
+  </script>
+</div>
+
+
+    
+  </div>
+</div><!--/.container-->    
+{% endblock %} 

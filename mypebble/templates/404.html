@@ -2,32 +2,28 @@
 {% load cms_tags %}
 {% block primary %}
 <div class="enquiries">
-    <div class="body" id="body">
-        <div class="row">
-            <h1>OOPs... An error has occured</h1>
-                <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                    <div class="box grid2">
-                        <div class="box-inner">
-                            <h2></h2>
-                                <p>The page that you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
-                                <p>Please try the following:</p>
-                                <ul clsss="bullet">
-                                    <li>Make sure that the web site address displayed in the address bar of your browser is spelled and formatted correctly.</li>
-                                    <li>If you reached this page by clicking a link, please contact the website administrator to alert them that the link is incorrectly formatted.</li>
-                                </ul>
-                                <p><a class="btn" href="/enquiries/">Contact the team</a> </p>
-                        </div>
-                    </div> 
-                </div>
-                    <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="supportcommunitybox grid1">
-                            <div class="box-inner">
-                                    <div class="description">
-                                        <img src="{{ STATIC_URL }}img/404.png" alt="Page could not be found">
-                                    </div>
-                </div>
+  <div class="body" id="body">
+    <div class="row">
+      <h1>OOPs... An error has occured</h1>
+      <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+          <div class="box">
+            <h2></h2>
+                <p>The page that you are looking for might have been removed, had its name changed or is temporarily unavailable.</p>
+                <p>Please try the following:</p>
+                <ul clsss="bullet">
+                    <li>Make sure that the web site address displayed in the address bar of your browser is spelled and formatted correctly.</li>
+                    <li>If you reached this page by clicking a link, please contact the website administrator to alert them that the link is incorrectly formatted.</li>
+                </ul>
+                <p><a class="btn" href="/enquiries/">Contact the team</a> </p>
             </div>
-        </div>
-    </div>        
+      </div>
+      <div class="grid1 sidebar"> <!-- Column. Modules inside will stack vertically -->
+          <div class="supportcommunitybox grid1">
+            <div class="description">
+                <img src="{{ STATIC_URL }}img/404.png" alt="Page could not be found">
+            </div>
+          </div>
+     </div>
+  </div>        
 </div>
 {% endblock %} 

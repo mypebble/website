@@ -1,404 +1,67 @@
-/*!
- * Bootstrap Responsive v2.0.3
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
-
-/* SMARTPHONE */
 @media (max-width: 480px) {
-  .body {
-  /* the area between .header and .footer, not to be confused with <body> */
-  /*background: #f8a433 !important;*/
-}  
-  .body .container{
-  padding-bottom:15px;
+  .container{
+    width:auto;
+    margin:0px 5%;
   }
-   .device{
-   width:100% !important;
-   } 
-  .row {
-    width:100%;
+  .device-hide, #fdbk_tab, .logo{
+    display: none !important;
   }
-  .row:before,
-  .row:after {
-    display: table;
-    content: "";
+ .box , .box.hero{
+    border-radius:0px;
+    box-shadow:none;
   }
-  .row:after {
-    clear: both;
+  .grid3, .grid2, .grid1, .carousel-inner .text {
+    width:auto;
+    margin-left:0px;
   }
-  .container  {
-    width: 98%;
-  }  
-  .header .container{
-   padding:10px 0 20px 0;
+  .box.grid1.sff, .box.grid1.fm{
+    margin-left:0px;
+    width:auto;
+  }
+   .box.grid3{
+   width:91%;
    }
-  .grid3{
-   width:96%;   
+   .carousel .text{
+   width:auto;
    }
-  .grid2{
-   width:98%;
-   }   
-  .grid1 {
-   width:89% !important;
-   display:block;
-   margin-left:0px;
-   }    
-   .charfield, .charfield.required, .emailfield.required{
-   width:90%;
-   }
-   .multiplechoicefield{display:inline;width:100px;}
-   .enquiries-form li label{
-   font-size:11px;
-   width:85%; 
-   display:inline-block; 
-   margin-left:5px; 
-   font-weight:normal;
-   }
-   .enquiries-form li{
-   display:inline;
-   }
-  .grid2.box {
-  width: 85% !important;
-  }
-  .home .box.fm,
-  .home .box.ft,
-  .home .box.sff {
-  background-image: url('../img/logo-white-small.png');
-  background-position: 97% 10%;
-  }
-  .box.fm,
-  .box.ft,
-  .box.sff {
-  background-image: url('../img/logo-white-small.png');
-  background-position: 97% 10%;
-  }
-  .carousel{width:85% !important;
-  } 
-  .grid3.carousel .item {
-  width: 100% !important;
-  }
-  .hero .text {width:100%;
-  }
-  .hero .text .title {
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 22px;
-  color: #333333;
-  } 
-  .hero .text .description p,
-  .hero .text .description li {
-  font-size: 13px;
-  line-height: 17px;
-  }
-  .nav{
-  top:52px;
-  font-size:10px;
+  .nav {
+    font-size:11px;
+    top:70px;
   }
   .nav a{
-  display: block;
-  padding: 4px 4px;
-  margin-left: 2px;
-  text-decoration: none;
-  }
-  .home .titlerow .title{
-  margin:0px 10px 5px 0;
-  }
-  .hero .image, .blog, .team, .phone, .footerimage, .quote, .partners, .logmein, .image, .carousel-control, .tabs, .onlinesupportbox, .extras, .upgrade, .gscommunity, video, .video, .partners, .footer-hide{
-  display:none ;
-  visibility:hidden;
-  } 
-  .postcode{
-  margin-left:0px !important;
-  }
-  .onlinesupportbox .pin, .supportcommunitybox .search-support{
-  width:60%;
-  }  
-  .supportbanner{
-  width:98% !important;
-  }
-    .box.hp {
-  background-image: url('');
-  height:auto;
-}
-
-table{
-  font-size:10px;
-}
-
-.bett p{
-  text-align:center;
-  margin:2px !important;
-  width:35%;
-}
-.bettbox{
-  margin-top:5px !important;
-}
-
-a#fdbk_tab{display:none !important; visibility:hidden !important;}
-
-}
-
-/* SMARTPHONE AND TABLET */
-@media (min-width: 481px) and (max-width: 767px) {
-  .body {
-  /* the area between .header and .footer, not to be confused with <body> */
-  /*background: #00aced !important;*/
-}
-    .body .container{
-  padding-bottom:15px;
-  }
-   .device{
-   margin-left:0px;
-   width:100% !important;
-   }
-  .row {
-    width:100%;
-    *zoom: 1;
-  }
-  .row:before,
-  .row:after {
-    display: table;
-    content: "";
-  }
-  .row:after {
-    clear: both;
-  }
-  .container {
-    width: 99% !important;
-  }  
-  .grid3{
-   width:99%;   
-   }
-  .grid2{
-   width:100%;
-   }   
-  .grid1 {
-   width:90% !important;
-   display:block;
-   margin-left:0px;
-   }  
-  .charfield, .charfield.required, .emailfield.required{
-  width:460px;
-  }
-  .multiplechoicefield{
-  display:inline;
-  width:100px;
-  }
-  .enquiries-form li label{
-  font-size:11px;
-   width:150px; 
-   display:inline; 
-   margin-left:5px; 
-   font-weight:normal;
-   }
-  .enquiries-form li{
-  display:inline;
-  }
-  #id_postcode, #id_telephone, #id_best_time {
-  width:200px;
-  }
-
- .grid2.box {
-  width: 90%;
-  }
-  .carousel{
-  width:90% !important;
-  } 
- .carousel-inner .text{
-  width:100%;
-  }
-  .grid3.carousel .item {
-  width: 100% !important;
-  }
-  .home .box.fm, .home .box.ft, .home .box.sff {
-  background-image: url('');
-  }
-  .box.fm, .box.ft, .box.sff {
-  background-image: url('');
-  }
-  .hero .text{width:100%;}
-  .hero .text .title {
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 22px;
-  color: #333333;
-  }
- .hero .text .description p,
- .hero .text .description li {
-  font-size: 13px;
-  line-height: 17px;
-  }  
-
- .nav{
- top:52px;
- font-size:14px;
- } 
- .nav a {
-  display: block;
-  padding: 5px 10px;
-  margin-left: 2px;
-  margin-top:10px;
-  text-decoration: none;
-  }  
-  .hero .image, .blog, .partners, .teambanner, .extras, .carousel-control, .tabs, .upgrade, .gscommunity, .video, .footer-hide {
-  display:none;
-  visibility:hidden;
-  }
-  .sidebar{
-  width:99% !important;
-  }
-  .supportbanner {
-  margin:0px;
-  width:96% !important;
-  }    
-  .sffbanner {
-  width:90% !important;
-  } 
-  .onlinesupportbox .pin, .supportcommunitybox .search-support{
-  width:80%;
-  }  
-  .postcode{
-  margin-left:50px !important;
-  } 
-  .header{
-  padding-bottom:10px;
-  }
-  .sidebar {
-  margin-left:0px !important;
-  }
-  
-  a#fdbk_tab{display:none !important; visibility:hidden !important;}
-  
-    .box .footerimage IMG {
-  bottom: -12px !important;
-  display: block;
-}
-}
-
-/* PORTABLE TABLET */
-@media (min-width: 768px) and (max-width: 940px) {
-  .body {
-  /* the area between .header and .footer, not to be confused with <body> */
-  /*background: #87746b !important;*/
-  } 
-  .device{
-   width:660px !important;
-   }
-  .row {
-   width:660px;
-   *zoom: 1; 
-   margin-left:-10px;
-   }
-  .row:before,
-  .row:after {
-   display: table;
-   content: "";
-   }
-  .row:after {
-   clear: both;
-   }
-  .container{
-   width: 640px !important;
-   }
-   .grid3{
-   width:640px ;
-   }
-  .grid2{
-   width:620px !important;
-   }
-  .grid1{
-   width:200px;
-   margin-left:20px !important;
-   }
-   .box .grid1{
-   width:290px;
-   }
-   .charfield, .charfield.required, .emailfield.required{
-   width:570px;
-   }
-   .multiplechoicefield{
-   display:inline;
-   width:100px;
-   }
-   .enquiries-form li label{
-   width:177px; 
-   display:inline; 
-   margin-left:10px; 
-   font-weight:normal;
-   }
-   .enquiries-form li{
-   display:inline;}
-   #id_postcode, #id_telephone, #id_best_time {
-   width:300px;
-   }
-   .carousel{
-   width:620px !important;
-   }   
-   .carousel-inner .text{
-   width:100%;
-   }
-   .nav{
-   top:30px;
-   font-size:13px;
-   } 
- .nav a {
-  display: block;
-  padding: 5px 10px;
-  margin-left: 2px;
-  text-decoration: none;
-  }
-  .tabs ul {
-  width:100%;
-  }
-  .fm .tabs li {
-   width:93px;
-  }
-  .sff .tabs li {
-   width:93px;
-  } 
-  .team{
-  width:660px !important;
-  }   
-  .team ul{
-  margin:0px;
-  }
-  .team li{
-  margin:1px; 
-  margin-bottom:2px; 
-  line-height:22px;
-  }   
-  .onlinesupportbox, .supportcommunitybox{
-  width:570px !important; 
-  }
-  .onlinesupportbox .pin, .supportcommunitybox .search-support{
-  width:180px;
-  }
-  .hero .text{
-  width:100%;
-  }  
-  .hero .image, .blog, .teambanner, .partners, .carousel-control, .extras, .upgrade, .video {
-  display:none;
-  visibility:hidden;
-  }
-  .postcode{
-  margin-left:57px !important;
-  }
-  .org{
-  margin-left:10px !important;
+    padding:8px;
+    border-radius:0px;
   }
   .header{
-  padding-bottom:5px;
+    border-bottom:none;
+    box-shadow:none;
   }
-  .sidebar{
-  margin-left:0px !important;
+  .grid1.testimonial{
+    width:auto;
   }
-  .supportbanner{
-  margin:0px; 
-  width:620px !important;
+  .home .hero, .alternative {
+    background:none;
   }
+  .home .hero .text p {
+  text-align:left; 
+  width:100%;
+  }
+  .nav-meta{
+  margin:0px;
+  }
+}
+
+
+@media (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 969px) {
+  
+}
+
+@media (min-width: 970px) {
+}
+
+
+@media (min-width: 1200px) {
 }

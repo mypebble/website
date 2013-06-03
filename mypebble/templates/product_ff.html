@@ -2,239 +2,252 @@
 {% load cms_tags %}
 {% block primary %}
 <div class="producthome sff"> 
-        <div class="row titlerow">
-            <h1 class="title "><img class="logo" src="{{ STATIC_URL }}img/logo/sff_logo.png" alt="School Fund Finder"/>{% placeholder "strapline" or %} {% endplaceholder %}</h1> 
-           <div class="logmein">
-                <a class="btn loginbtn" href="http://www.schoolfundfinder.co.uk/home" target="_blank">Log in</a>                     
-        </div></div>
-            <div class="row">
-                <div class="box grid3 hero tabbed carousel slide " id="productCarousel">
-                    <div class="tabs">
-                        <ul>
-                            <li class="active-tab"><a href="#item1" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Welcome']);">Welcome</a></li>
-                            <li><a href="#item2" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Find Grants']);">Find Grants</a></li>
-                            <li><a href="#item3" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Save Time']);">Save Time</a></li>
-                            <li><a href="#item4" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Develop Skills']);">Develop Skills</a></li>
-                            <li><a href="#item5" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Get Advice']);">Get Advice</a></li>
-                            <li><a href="#item6" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Keep Informed']);">Keep Informed</a></li>
-                            <li><a href="#item7" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Training Days']);">Training Days</a></li>
-                        </ul>
-                    </div>
-                        <div class="carousel-inner">
-                            <div class="active item" id="item1">
-                                <div class="image">
-                                    <img src="{{ STATIC_URL }}img/sff/sff_dashboard.png" alt="School Fund Finder dashboard"/>
-                                </div>
-                                    <div class="text">
-                                        <h2 class="title">Grants for UK schools made easy</h2>
-                                            <div class="description">
-                                                 <p>We’re passionate about fundraising and believe in helping schools achieve their funding potential. We want to share our knowledge and experience with you to identify funding opportunities and write winning applications to make a real difference to your school community.</p>
-                                                 <p>Alongside working with primary, secondary and special schools, we also support academies, local authorities and not-for-profit organisations raise additional funds for educational projects and activities.</p>
-                                            </div>
-                                    </div>
-                                </div>
-                                    <div class="item" id="item2">
-                                        <div class="image">
-                                            <img src="{{ STATIC_URL }}img/sff/sff_grant.png" alt="School Fund Finder grant search feature"/>
-                                        </div>
-                                            <div class="text">
-                                                <h2 class="title">Find Grants</h2>
-                                                    <div class="description">
-                                                        <p>School Fund Finder is your comprehensive guide to grants, awards, competitions, in-kind support and free equipment available to UK schools.</p>
-                                                                <ul>
-                                                                    <li>Updated every week, we give you access to grants from UK government, the European Union, lottery funding, and grant-making trusts and foundations. </li>
-                                                                    <li>Hundreds of grants are available for arts & heritage, community engagement, environment, health & sport, ICT, professional development, school partnerships & international links, school buildings & grounds, school trips and special needs education.</li>
-                                                                </ul>
-                                            </div>
-                                    </div>
-                                </div>
-                                    <div class="item" id="item3">
-                                        <div class="image">
-                                            <img src="{{ STATIC_URL }}img/sff/stopwatch.png" alt="Save time with SFF">
-                                        </div>
-                                            <div class="text">
-                                                <h2 class="title">Save Time</h2>
-                                                    <div class="description">
-                                                        <p>To save you spending hours on sporadic searching using generic search engines, we do all the work for you to provide you with a time efficient service tailored to your specific needs.</p>
-                                                                <ul>
-                                                                    <li>We are constantly researching new grants, adding them to the website as soon as they become available.</li>
-                                                                    <li>Using the grant search, you can define your school type and location, meaning you will only find opportunities you are eligible for.</li>
-                                                                    <li>Refine your search by project type or curriculum subject to find grants for everything you need; from ICT equipment to solar panels and library books to outdoor play.
-                                                                    </li>
-                                                                </ul>
-                                            </div>
-                                    </div>
-                                </div>
-                            <div class="item" id="item4">
-                                <div class="image">
-                                    <img src="{{ STATIC_URL }}img/sff/sff_document.png" alt="School Fund Finder document templates"/>
-                                </div>
-                                        <div class="text">
-                                            <h2 class="title">Develop Skills</h2>
-                                                    <div class="description">
-                                                        <p>We’ll help you develop the practical skills you need for a bright funding future, whether you are new to fundraising or a seasoned fundraiser looking for support.</p>
-                                                                <ul>
-                                                                    <li>Use our documents section to take you step by step through every stage of the application process to help you write a successful grant application.</li>
-                                                                    <li>Download and print templates to help you plan your budget, develop an effective project plan and create a timetable of activities to achieve your fundraising goals.</li>
-                                                                    <li>Read our fundraising factsheets to give you a comprehensive guide to school fundraising; from holding fundraising events to using online fundraising tools.
-                                                                    </li>
-                                                                </ul>
-                                            </div>
-                                    </div>
-                                </div>
-                            <div class="item" id="item5">
-                                <div class="image">
-                                    <img src="{{ STATIC_URL }}img/sff/sff_advice.png" alt="School Fund Finder advice line"/>
-                                </div>
-                                     <div class="text">
-                                            <h2 class="title">Get Advice</h2>
-                                                    <div class="description">
-                                                        <p>We’ll give you the support you need – from finding funding to writing a winning application. Just think of us as an additional member of your fundraising team.</p>
-                                                                <ul>
-                                                                    <li>Talk to us or send an email; our experienced fundraisers are here to help you.</li>
-                                                                    <li>Receive personalised feedback on any application you make; just to make sure that it’s the very best it can be.</li>
-                                                                    <li>Join us for an online fundraising tutorial; we’ll show you how to get the most out of your School Fund Finder experience.</li>
-                                                                </ul>
-                                                       <p>P.S. Our support is unlimited and we don’t take an additional fee from any grants you are awarded.</p>
-                                            </div>
-                                    </div>
-                                </div>
-                            <div class="item" id="item6">
-                                <div class="image">
-                                    <img src="{{ STATIC_URL }}img/sff/sff_newsletter.png" alt="School Fund Finder monthly newsletter"/>
-                                </div>
-                                        <div class="text">
-                                            <h2 class="title">Keep Informed</h2>
-                                                    <div class="description">
-                                                        <p>Make sure you don’t miss out on a funding opportunity ever again!</p>
-                                                                <ul>
-                                                                    <li>Customise your email alerts and we’ll notify you when new grants are added to the website that match your funding objectives.</li>
-                                                                    <li>Receive our monthly newsletters packed full of funding news and advice, new grants and deadline reminders.</li>
-                                                                    <li>Leave a message and share ideas with fellow School Fund Finders on our Fundraising Wall.</li>
-                                                                </ul>
-                                            </div>
-                                    </div>
-                                </div>
-			                <div class="item" id="item7">
-                                <div class="image">
-                                    <img src="{{ STATIC_URL }}img/sff/sff_workshop.png" alt="School Fund Finder training workshop"/>
-                                </div>
-                                        <div class="text">
-                                            <h2 class="title">Training Days</h2>
-                                                    <div class="description">
-                                                        <p>Ask us about our fundraising workshops and training days; we’ll come to you to share our knowledge and develop your practical skills to maximise your funding success.</p>
-                                                                <ul>
-                                                                    <li>Led by our team of experienced fundraisers, we’ll give you the knowledge and skills you need to become confident and successful fundraisers. </li>
-                                                                    <li>We offer a tailor-made programme to meet the needs of your individual school or cluster; from an introduction to fundraising to developing your bid writing skills.</li>
-                                                                     <li>We also work with local authorities and national associations, delivering keynote speeches and fundraising workshops at conferences.</li>
-                                                                </ul>
-                                            </div>
-                                    </div>
-                            </div>                                    
-                        </div>
-                            <a class="carousel-control left" href="#productCarousel" data-slide="prev">&lsaquo;</a>
-                            <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
-                    </div>
-                </div>
-            <div class="row">
-                <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                    <div class="box grid2 calltoaction">
-                        <div class="box-inner">
-                            <!--<h2 class="title">Take a tour of the website and find out how we can help your organisation.</h2>-->
-                            <h2 class="title">
-                            For a free online demonstration and a quotation tailored to your organisation, please get in touch. 
-                            </h2>
-                                <div class="description">
-                                 <a class="btn btn-large btn-calltoaction" href="/enquiries/">FREE demo <i class="i icon-arrow-r-white"></i></a> 
-                                </div>
-                         </div>
-                    </div>
-                    
-                    <div class="grid2 box ">
-                            <h2>Prices start from &pound;195 per year </h2>
-                            <p>
-                            &pound;195 for primary/special schools and &pound;275 for secondary schools, which includes full access to School Fund Finder and unlimited support from our experienced team.
+  <div class="row titlerow">
+    <h1 class="title device-hide">
+      <img class="logo" src="{{ STATIC_URL }}img/logo/sff_logo.png" alt="School Fund Finder"/>{% placeholder "strapline" or %} {% endplaceholder %}
+    </h1> 
+    <div class="device-hide">
+      <a class="btn loginbtn" href="http://www.schoolfundfinder.co.uk/home" target="_blank"
+         onClick="_gaq.push(['_trackEvent', 'Login',  'Click', 'School Fund Finder Apps']);">
+      Log in</a>                     
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="box grid3 hero tabbed carousel slide " id="productCarousel">
+      <div class="tabs device-hide">
+        <ul>
+            <li class="active-tab"><a href="#item1" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Welcome']);">Welcome</a></li>
+            <li><a href="#item2" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Grant Search']);">Grant Search</a></li>
+            <li><a href="#item3" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Instant Updates']);">Instant Updates</a></li>
+            <li><a href="#item4" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', '‘How To’ Documents & Templates']);">Documents & Templates</a></li>
+            <li><a href="#item5" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'One-to-One Support']);">One-to-One Support</a></li>
+            <li><a href="#item6" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Bid Writing']);">Bid Writing</a></li>
+            <li><a href="#item7" onClick="_gaq.push(['_trackEvent', 'SFF Carousel', 'Click', 'Fundraising Workshops']);">Fundraising Workshops</a></li>
+        </ul>
+      </div>
+      <div class="carousel-inner">
+        <div class="active item" id="item1">
+          <div class="image device-hide">
+              <img src="{{ STATIC_URL }}img/sff/sff_dashboard.png" alt="School Fund Finder dashboard"/>
+          </div>
+          <div class="text">
+              <h2 class="title">Grants for UK schools made easy</h2>
+              <div class="description">
+                   <p>We’re passionate about fundraising and believe in helping schools achieve their funding potential. We want to share our knowledge and experience
+                    with you to identify funding opportunities and write winning applications to make a real difference to your school community.</p>
+                   <p>Alongside working with primary, secondary and special schools, we also support academies, local authorities and not-for-profit organisations raise
+                    additional funds for educational projects and activities.</p>
+             </div>
+          </div>
+      </div>
+        <div class="item" id="item2">
+          <div class="image device-hide">
+              <img src="{{ STATIC_URL }}img/sff/sff_grant.png" alt="School Fund Finder grant search feature"/>
+          </div>
+          <div class="text">
+            <h2 class="title">Grant Search</h2>
+              <div class="description">
+                <p>School Fund Finder is your comprehensive guide to grants, awards, competitions, in-kind support and free equipment available to UK schools.</p>
+                <ul>
+                    <li>Updated daily, we give you access to grants from UK government, the European Union, lottery funding, and grant-making trusts
+                     and foundations. </li>
+                    <li>Hundreds of grants are available for arts & heritage, community engagement, environment, health & sport, ICT, professional development,
+                     school partnerships & international links, school buildings & grounds, school trips and special needs education.</li>
+                </ul>
+          </div>
+        </div>
+      </div>
+        <div class="item" id="item3">
+          <div class="image device-hide">
+            <img src="{{ STATIC_URL }}img/sff/stopwatch.png" alt="Save time with SFF">
+          </div>
+            <div class="text">
+              <h2 class="title">Instant Updates</h2>
+              <div class="description">
+                  <p>To save you spending hours on sporadic searching using generic search engines, we do all the work for you to make sure you don’t miss out on a funding opportunity ever again.</p>
+                  <ul>
+                      <li>Using the grant search, you can define your school type and location, meaning you will only find opportunities you are eligible for.</li>
+                      <li>Customise your email alerts and we’ll notify you when new grants are added to the website that match your funding criteria.</li>
+                      <li>Read our monthly newsletters packed full of funding news and advice, new grants and deadline reminders.</li>
+                      <li>Leave a message and share ideas with fellow School Fund Finders on our Fundraising Wall.</li>
+                  </ul>
+          </div>
+        </div>
+      </div>
+        <div class="item" id="item4">
+          <div class="image device-hide">
+          <img src="{{ STATIC_URL }}img/sff/sff_document.png" alt="School Fund Finder document templates"/>
+          </div>
+            <div class="text">
+            <h2 class="title">Documents & Templates</h2>
+              <div class="description">
+                <p>We’ll help you develop the practical skills you need for a bright funding future, whether you are new to fundraising or a seasoned fundraiser looking 
+                for support.</p>
+              <ul>
+                <li>Use our documents section to take you step by step through every stage of the application process to help you write a successful grant application.</li>
+                <li>Download and print templates to help you plan your budget, develop an effective project plan and create a timetable of activities to achieve your
+                 fundraising goals.</li>
+                <li>Read our fundraising factsheets to give you a comprehensive guide to school fundraising; from holding fundraising events to using online fundraising tools.
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item5">
+        <div class="image device-hide">
+          <img src="{{ STATIC_URL }}img/sff/sff_advice.png" alt="School Fund Finder advice line"/>
+        </div>
+          <div class="text">
+          <h2 class="title">One-to-One Support</h2>
+          <div class="description">
+            <p>We’ll give you the support you need – from finding funding to writing a winning application. Just think of us as an additional member of your fundraising team.
+            </p>
+            <ul>
+              <li>Talk to us or send an email; our experienced fundraisers are here to help you.</li>
+              <li>Receive personalised feedback on any application you make; just to make sure that it’s the very best it can be.</li>
+              <li>Join us for an online fundraising tutorial; we’ll show you how to get the most out of your School Fund Finder experience.</li>
+            </ul>
+            <p>P.S. Our support is unlimited and we don’t take an additional fee from any grants you are awarded.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item6">
+        <div class="image device-hide">
+          <img src="{{ STATIC_URL }}img/sff/sff_newsletter.png" alt="School Fund Finder monthly newsletter"/>
+        </div>
+        <div class="text">
+        <h2 class="title">Bid Writing</h2>
+          <div class="description">
+            <p>Make sure you don’t miss out on a funding opportunity ever again!</p>
+            <ul>
+              <li>Customise your email alerts and we’ll notify you when new grants are added to the website that match your funding objectives.</li>
+              <li>Receive our monthly newsletters packed full of funding news and advice, new grants and deadline reminders.</li>
+              <li>Leave a message and share ideas with fellow School Fund Finders on our Fundraising Wall.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item7">
+        <div class="image device-hide">
+          <img src="{{ STATIC_URL }}img/sff/sff_workshop.png" alt="School Fund Finder training workshop"/>
+        </div>
+          <div class="text">
+            <h2 class="title">Fundraising Workshops</h2>
+            <div class="description">
+              <p>We have the knowledge and experience to write winning funding applications – so let us help you.</p>
+              <ul>
+                <li>We’ll construct a compelling application for you from scratch for a grant of up to £10,000.</li>
+                <li>The service is available for a one-off fixed fee of £350 (plus VAT).</li>
+                <li>We won’t take an additional fee from your winning grant.</li>
+              </ul>
+          </div>
+        </div>
+      </div>            
+    </div>
+      <a class="carousel-control left" href="#productCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+</div>
 
-Group discounts are available.
-                            
-                            </p>
-                            </div>
-               </div>
-                    <div class="grid1 sidebar extras"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid1 sffbox">
-                            <div class="box-inner">
-                                <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
-                                onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);"
-                                ><img class="box-img img-brochure" src="{{ STATIC_URL }}img/sff/sff_40x60.png" alt="School Fund Finder brochure "/></a>
-                                   <h2 class="title">School Fund Finder brochure</h2>
-                                        <div class="description">
-                                           <p>The essential information for you to take away. <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
-                                           onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">Download PDF</a></p>
-                                        </div>
-                            </div>
-              </div>
-                   <div class="box grid1 extras">
-                        <div class="box-inner">
-                        <script charset="utf-8" src="{{ STATIC_URL }}js/twitter.js"></script>
-<script>
-new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 1,
-  interval: 30000,
-  width: 250,
-  height: 300,
-  theme: {
+<div class="row">
+    <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+        <div class="box calltoaction">
+                <h2 class="title">
+                For a free online demonstration and a quotation tailored to your organisation, please get in touch. 
+                </h2>
+                    <div class="description">
+                     <a class="btn btn-large btn-calltoaction" href="/enquiries/">FREE demo <i class="i icon-arrow-r-white"></i></a> 
+                    </div>
+        </div>
+        
+        <div class="box">
+          <h2>Prices start from &pound;195 per year </h2>
+            <p>&pound;195 for primary/special schools and &pound;275 for secondary schools, which includes full access to School Fund Finder and 
+            unlimited support from our experienced team. Group discounts are available.
+            </p>
+        </div>
+        
+        <div class="box device-hide">
+          <h2>New to School Fund Finder: Bid Writing Service</h2>
+            <p>
+            We have the knowledge and experience to write winning funding applications so let us help you. We’ll construct a compelling application for you 
+            from scratch for a grant of up to £10,000. The service is available for a one-off fixed fee of £350 (plus VAT) – and we won’t take an additional 
+            fee from your winning grant. Get in touch for more information.
+            </p>
+        </div>
+   </div>
+               
+  <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
+    <div class="box brochure">
+        <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
+        onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">
+        <img class="box-img img-brochure" src="{{ STATIC_URL }}img/sff/sff_40x60.png" alt="School Fund Finder brochure "/>
+      </a>
+    <h2 class="title">School Fund Finder brochure</h2>
+    <div class="description">
+      <p>The essential information for you to take away. <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
+      onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">Download PDF</a>
+      </p>
+    </div>
+  </div>
+  <div class="box grid1 feed device-hide">
+    <script charset="utf-8" src="{{ STATIC_URL }}js/twitter.js"></script>
+    <script>
+    new TWTR.Widget({
+    version: 2,
+    type: 'profile',
+    rpp: 2,
+    interval: 30000,
+    width: 250,
+    height: 300,
+    theme: {
     shell: {
-      background: '#ffffff',
-      color: '#2e2e2e'
+    background: 'none',
+    color: '#2e2e2e'
     },
     tweets: {
-      background: '#ffffff',
-      color: '#292929',
-      links: '#f8a233'
+    background: 'none',
+    color: '#292929',
+    links: '#f8a233'
     }
-  },
-  features: {
+    },
+    features: {
     scrollbar: false,
     loop: true,
     live: false,
     behavior: 'default'
-  }
-}).render().setUser('PebbleSFF').start();
-</script>
-
-                                        </div>
-                            </div>
-                        </div>
-                    </div>
-          
-        <div class="row ">
-        {% placeholder "Feedback" or %}
-        <div class="box ">
-                   <h2 class="title">Here’s what our customers have to say…</h2>
-                    <div class="row">
-                        <div class="grid1 testimonial">
-                            <blockquote>
-                                <p>The service provided is fast and friendly and is a big support to any fundraising team.</p>
-                                    <small>Denise Wilcock, The Lighthouse Group</small>
-                            </blockquote>
-                       </div>
-                       <div class="grid1 testimonial blog">
-                           <blockquote>
-                                <p>The grant search is very useful in helping us to identify specific organisations that provide funding for our particular needs.</p>
-                                    <small>Marian Stoke, Hadrian School</small>
-                            </blockquote>
-                       </div>
-                           <div class="grid1 testimonial blog">
-                           <blockquote>
-                                <p>I have used the website to source several funding opportunities with success already and several awaiting decision and all within 6 months.</p>
-                                    <small>Colin Cartwright, Teesdale School</small>
-                            </blockquote>
-                </div>
-           </div>
-  </div>{% endplaceholder %}
+    }
+    }).render().setUser('PebbleSFF').start();
+    </script>
   </div>
-       </div><!--/.container-->    
-</div><!--/.body-->
-      {% endblock %} 
+</div>
+          
+    <div class="row ">
+      {% placeholder "Feedback" or %}
+        <div class="box box-unstyled">
+          <h2 class="title">Here’s what our customers have to say…</h2>
+          <div class="row">
+            <div class="grid1 testimonial">
+              <blockquote>
+                <p>The service provided is fast and friendly and is a big support to any fundraising team.</p>
+                  <small>Denise Wilcock, The Lighthouse Group</small>
+              </blockquote>
+            </div>
+            <div class="grid1 testimonial device-hide">
+              <blockquote>
+                <p>The grant search is very useful in helping us to identify specific organisations that provide funding for our particular needs.</p>
+                <small>Marian Stoke, Hadrian School</small>
+             </blockquote>
+            </div>
+            <div class="grid1 testimonial device-hide">
+              <blockquote>
+                <p>I have used the website to source several funding opportunities with success already and several awaiting decision and all within 6 months.</p>
+                <small>Colin Cartwright, Teesdale School</small>
+              </blockquote>
+            </div>
+          </div>
+      </div>{% endplaceholder %}
+    </div>
+  </div><!--/.container-->    
+</div><!--/.body-->{% endblock %} 

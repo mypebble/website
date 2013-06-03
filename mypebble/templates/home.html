@@ -2,167 +2,130 @@
 {% load cms_tags %}
 {% load testimonials %}
 {% block primary %}
-
 <div class="home">
-    <div class="row titlerow">
-        <h1 class="title">
-        
-            {% placeholder "strapline" or %}{% endplaceholder %}
-        </h1>
-    </div>
     <div class="row ">
         <div class="grid3">
-        <div class="box hero">
-            <div class="text">
-                <!--<div class="image">
-                    <img src="{{ STATIC_URL }}img/hotair.png">
-                </div>-->
-                <h1 class="title">{% placeholder "hero" or %} {% endplaceholder %}</h1>
-                <!--<div class="decription">
-                    <p>{% placeholder "hero_p" or %}{% endplaceholder %}</p>
-                </div>-->
+          <div class="box hero">
+              <div class="text">
+                  <h1 class="title">Helping schools to find and manage funds since 1992</h1>
+                  <p>
+                  Voluntary fund management for schools and community groups. Committed to our customers, 
+                  we really care about you and will even help you find and secure grants. 
+                  </p>
+              </div>
+          </div>
         </div>
-    </div>
     </div>
     <div class="row">
-    <!-- TEST CSS -->
-    <style>
-    .box.fm.boxh, .box.sff.boxh{
-      min-height:500px;
-      width:43%;
-    }
-    .home .box.fm, .home .box.sff{
-    background-position:400px 15px;
-    }
-    .home .box .footerimage {display:none;}
-    
-    
-    .hero{
-    padding:0px;
-    }
-    </style>
-    <!-- END TEST CSS -->
-    
-        <div class="box grid1 fm boxh">
-            <div class="box-inner">
-                <h2 class="title"><a href="/fm/">Fund Manager</a></h2>
+        <div class="box grid1 fm">
+                <h2 class="title"><a href="/fm/">Clever accounting software</a></h2>
                     <div class="description">
                         <p>From payments to period-end, keep track of every penny with our cloud based <strong>Fund Manager.</strong></p>
-                        
-                          <ul>
-                            <li>
-                              Record Transactions
-                            </li>
-                            <li>
-                              Create Reports
-                            </li>
-                            <li>
-                              Register & Dinner Money
-                            </li>
-                            <li>
-                              Banking & Reconcilliation
-                            </li>
-                            <li>
-                              Online Payments
-                            </li>
-                            <li>
-                              SMS
-                            </li>
-                          </ul>
+                       <!-- <a class="btn btn-calltoaction pull-right" href="/fm/">
+                        Learn More
+                        <i class="i icon-arrow-r-white"></i>
+                        </a>-->
                     </div>
-                    <!--<div class="footerimage fm_spacer">
-                        <a href="/fm/"><img alt="Fund Manager Dashboard" src="{{ STATIC_URL }}img/fm/fm_screen.png"/></a>
-                     </div>-->
-                     
-            </div>
-        </div>
-        <div class="box grid1 sff boxh">
-            <div class="box-inner">
-                <h2 class="title"><a href="/sff/">School Fund Finder</a></h2>
-                    <div class="description">
-                        <p>All the funding information and bid writing support you need to achieve your fundraising objectives with <strong>School Fund Finder.</strong>
-
-</p>
-                    </div>
-                        <div class="footerimage">
-                            <a href="/sff/"><img alt="School Fund Finder Dashboard" src="{{ STATIC_URL }}img/sff/sff_screen.png"/></a>
-                        </div>
+                    <div class="device-hide">
+                      <a href="/fm/"><img alt="Fund Manager Dashboard" src="{{ STATIC_URL }}img/fm_homepage.png"/></a>
                    </div>
-            </div>
-
-            <!--support/training 
-        <div class="grid1 device supportbanner">
-            <div class="box support">
-                <div class="box-inner">
-                    <h2 class="title"> <a href="/training/">FREE Webinar Training</a></h2>
-                        <div class="description">
-                          <p>Join our FREE online training sessions for <strong>Fund Manager.</strong></p>
-                        </div>
-                </div>
-            </div>
-        </div>-->
-
-<!-- Online training session placeholder
-       <div class="grid1 device supportbanner extras ">
-            <div class="box">
-                <div class="box-inner">
-                        <h2 class="title"><a href="/about/">The Pebble Story</a></h2>
-                        <div class="description story">
-                            <p>Find out more about Pebble and meet the team</p>
-                            <a href="/about/">
-                               <img alt="Read the Pebble story" src="{{ STATIC_URL }}img/video_thumb.jpg"/>
+                   <div class="features">
+                    <div class="col">
+                      <ul>
+                        <li>
+                          Income & Expenditure
+                        </li>
+                        <li>
+                          Banking & Reconciliation
+                        </li>
+                        <li>
+                          Dinner Money & Clubs
+                        </li>
+                      </ul>
+                      </div>
+                      <div class="col">
+                      <ul>
+                        <li>
+                          Online Payments
+                        </li>
+                        <li>
+                          Reports & Audit 
+                        </li>
+                        <li>
+                          SMS Messaging
+                        </li>
+                      </ul>
+                    </div>
+                    </div>
+                    <a class="btn btn-large pull-right" href="/fm/">Learn more</a>
+        </div>
+        <div class="box grid1 sff">
+                <h2 class="title"><a href="/sff/">Genius grant finding</a></h2>
+                    <div class="description">
+                        <p>All the funding information and bid writing support you need to achieve your fundraising objectives with 
+                          <strong>School Fund Finder.</strong>
+                        </p>
+                    </div>
+                        <div class="device-hide">
+                            <a href="/sff/">
+                              <img alt="School Fund Finder Dashboard" src="{{ STATIC_URL }}img/sff_homepage.png"/>
                             </a>
-                          
-                            
                         </div>
-                </div>
-            </div>
-        </div>-->
-<!--End of onlnie training session placeholder  -->
-
-    </div>
-    </div>
-   <!-- <div class="row extras">
+                        <div class="features">
+                         <div class="col">
+                            <ul>
+                              <li>
+                                  Grants for UK schools
+                              </li>
+                              <li>
+                                  One-to-one funding advice
+                              </li>
+                              <li>
+                                 Email alerts of new grants
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col">
+                            <ul>
+                              <li>
+                                Application reviews & feedback
+                              </li>
+                              <li>
+                                  Monthly newsletters
+                              </li>
+                              <li>
+                                  Deadline reminders
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    <a class="btn btn-large pull-right" href="/sff/">Learn more</a>
+                 </div>
+      </div>
+    <div class="row device-hide">
     {% testimonials %}
     </div>
-    -->
-             <!--  <div class="row extras">
-                <div class="grid2 box support calltoaction">
-                      <div class="box-inner">
-                   
-                         <h2 class="title">Join a LIVE training session</h2>
-                        
-                            <div class="description">
-                                <p>Be part of our online training sessions. All we need is your school name.</p>
-                                
-                            <a class="btn btn-large btn-calltoaction" href="/en/enquiries/webinar/">
-      Register 
-                            </a>
-                            </div>
-                   </div>
-               </div>
-               
-                <div class="grid1 box extras">
-                    <div id="mc_embed_signup">
-                        <h3>Keep in touch…</h3>
-                            <form action="http://talktopebble.us5.list-manage2.com/subscribe/post?u=1c8b9f93d89b4f1e6ddd27ff2&amp;id=8e37535111" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-	                                <label for="pin">Sign up for the latest finance & fundraising news delivered to your inbox every month.</label>
-	                                <input type="email" value="" name="EMAIL" class="hpform charfield pin" id="mce-EMAIL" placeholder="email address" required>
-	
-	                                <input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="btn">
-                                </form>
-                           </div>
-                </div>
-    <!--<div class="social grid1 box pull-right">
-        <h3>Connect with us</h3>
-            <ul>
-                <li><a href="https://twitter.com/pebblesff" target="_blank"><img src="{{ STATIC_URL }}img/tw.png" alt="Pebble on Twitter @PebbleSFF"></a></li>
-                <li><a href="https://www.facebook.com/pages/Pebble/217743878280547" target="_blank"><img src="{{ STATIC_URL }}img/fb.png" alt="Pebble on Facebook"></a></li>
-                <li><a href="http://talktopebble.wordpress.com/" target="_blank"><img src="{{ STATIC_URL }}img/wp.png" alt="Pebble on Wordpress" </a></li>
-            </ul>  
-      
+    <div class="row">
+      <div class="grid2">
+        <div class="box alternative story">
+              <h2 class="title">
+                <a href="/about/">The Pebble Story</a>
+              </h2>
+              <div class="description">
+                <p>Find out more about Pebble and meet the team</p>
+                <a class="btn btn-calltoaction pull-right" href="/about/">
+                  Read Story
+                </a>
+              </div>
+          </div>
     </div>
-  </div>-->
- 
+      <!--<div class="social grid1 box pull-right">
+      <h3>Connect with us</h3>
+        <ul>
+          <li><a href="https://twitter.com/pebblesff" target="_blank"><img src="{{ STATIC_URL }}img/tw.png" alt="Pebble on Twitter @PebbleSFF"></a></li>
+          <li><a href="https://www.facebook.com/pages/Pebble/217743878280547" target="_blank"><img src="{{ STATIC_URL }}img/fb.png" alt="Pebble on Facebook"></a></li>
+        </ul>  
+      </div>  -->
+    </div>
 </div>
  {% endblock %}

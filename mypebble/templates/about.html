@@ -2,140 +2,143 @@
 {% load cms_tags %}
 {% block primary %}
 <div class="enquiries">
-        <div class="body" id="body">
-                <div class="row">
-                    <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
-                    <div class="gri2 content"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid2">
-                            <div class="box-inner">
-                                {% placeholder "main_content" or %} {% endplaceholder %} 
-                                <div class="extras"><h3>Introducing Pebble video</h3>
-                                <video controls="controls" width="580"  onClick="_gaq.push(['_trackEvent', 'Video',  'Play', 'Pebble Story']);">
-                                        <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.webm" type="video/webm" />
-                                        <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.ogg" type="video/ogg" />
-                                    </video>
-                                        <!--[if IE 9]>
-                                        <h4>Can’t see the video? Are you trying to watch in Internet Explorer 9?</h4>
-                                        <p>You can download the following plugin - <a href="https://tools.google.com/dlpage/webmmf" target="_blank">WebM-Video plugin</a></p>
-                                        <![endif]-->
-                                        <!--[if lte IE 8 ]>
-                                        <h4>Can't see the video? Are you trying to watch in Internet Explorer? </h4>
-                                        <p>Your browser does not support this video type. Please upgrade your browser or try a different browser.</p>
-                                        <h5>Recommended Browsers</h5>
-                                        <ol>
-                                            <li><a href="http://www.mozilla.org/en-US/firefox/fx/#desktop" target="_blank">Mozilla Firefox</a></li>
-                                            <li><a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Google Chrome</a></li>
-                                        </ol>
+  <div class="body" id="body">
+    <div class="row">
+      <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
+        <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+            <div class="box">
+              {% placeholder "main_content" or %} {% endplaceholder %} 
+              <div class="device-hide"><h3>Introducing Pebble video</h3>
+              <video controls="controls" width="580"  onClick="_gaq.push(['_trackEvent', 'Video',  'Play', 'Pebble Story']);">
+                      <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.webm" type="video/webm" />
+                      <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.ogg" type="video/ogg" />
+                  </video>
+                      <!--[if IE 9]>
+                      <h4>Can’t see the video? Are you trying to watch in Internet Explorer 9?</h4>
+                      <p>You can download the following plugin - <a href="https://tools.google.com/dlpage/webmmf" target="_blank">
+                      WebM-Video plugin</a></p>
+                      <![endif]-->
+                      <!--[if lte IE 8 ]>
+                      <h4>Can't see the video? Are you trying to watch in Internet Explorer? </h4>
+                      <p>Your browser does not support this video type. Please upgrade your browser or try a different browser.</p>
+                      <h5>Recommended Browsers</h5>
+                      <ol>
+                          <li><a href="http://www.mozilla.org/en-US/firefox/fx/#desktop" target="_blank">Mozilla Firefox</a></li>
+                          <li><a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Google Chrome</a></li>
+                      </ol>
 
-                                        <![endif]-->
-                            </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="grid1 sidebar "> 
-                        <div class="supportcommunitybox box grid1 ">
-                            <div class="box-inner">
-                              <h2>Pebble Supports Make a Wish Foundation in 2013</h2>
-                                <p>
-                                  We’re delighted to announce our chosen charity for 2013 is the Make a Wish Foundation.  
-                                  We’ll be fundraising by sharing the physical challenge of a triathlon – with some of us 
-                                  swimming, others cycling, and the rest of us running, to clock up the miles and the sponsorship. 
-                                  We’ll also be holding a charity music event in the summer with local bands – including our very own 
-                                  Dan Wakenshaw – right here in Newcastle-upon-Tyne.  More details to follow!
-                                </p>
-                                <hr>
-                               <h2 class="title">2012 Miles for Charity</h2>
-                                    <p>We challenged ourselves to cycle 2012 miles to raise £2,012 for ChildLine
-                                        over the summer. We had a fantastic time on our bike ride to Tynemouth on
-                                        the 10th June, cycling from Pebble HQ in Ouseburn, Newcastle, along the
-                                        cycle route to the coast.</p>
-                                        <p>Thank you to everyone who sponsored us and
-                                        supported this worthwhile cause.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                <div class="row extras">
-                    <div class=" box grid3">
-                    <h2 class="title">Partners</h2>
-                    <p>We are proud to work with the following companies:</p>
-                           <ul class="partners">
-                                        <li>
-                                          <a href="http://www.squidcard.com/" target="_blank" title="sQuid">
-                                          <img alt="sQid" src="{{ STATIC_URL }}img/partner/squid_logo.jpg"></a>
-                                        </li>
-                                        <li>
-                                          <a href="http://www.1st4schoolsinsurance.co.uk/pebble/" target="_blank" title="Genesis">
-                                          <img alt="Genesis" src="{{ STATIC_URL }}img/partner/genesis_logo.png"></a>
-                                        </li>
-                                        <li>
-                                          <a href="http://www.the-contactgroup.com/products/call-parents/" target="_blank" 
-                                          title="Call Parents">
-                                          <img alt="CallParents" src="{{ STATIC_URL }}img/partner/cparent_logo.png"></a>
-                                        </li>
-                                        <li>
-                                          <a href="http://schoolcomms.com/" target="_blank" title="Schoolcomms">
-                                          <img alt="Schoolcomms" src="{{ STATIC_URL }}img/partner/scoms_logo.png"></a>
-                                        </li>
-                                        <li>
-                                          <a href="https://www.parentmail.co.uk/index.html" target="_blank" title="Parentmail">
-                                          <img alt="ParentMail" src="{{ STATIC_URL }}img/partner/Pmail_logo.png"></a>
-                                        </li>
-                                        <li>
-                                          <a href="http://www.civica.co.uk/education" target="_blank" title="Civica">
-                                          <img alt="Civica" src="{{ STATIC_URL }}img/partner/civica_logo.png"></a>
-                                        </li>
-                                        <li>
-                                          <a href="http://www.civica.co.uk/education" target="_blank" title="ParentPay">
-                                          <img alt="ParentPay" src="{{ STATIC_URL }}img/partner/ppay.gif"></a>
-                                        </li>
-                                    </ul>
-                </div></div>
-                <div class="row extras">
-                    <div class="box supportfocus carousel" id="supportCarousel">
-                        <div class="team">
-                        <h2 class="title">The Pebble Team</h2>
-                            <div class="carousel-inner">
-                                <div class="active item">
-                                    <div class="support-portrait">
-                                            <ul>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/jg.jpg" alt="Janis Green"><span>Janis Green</span></li>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/rg.jpg" alt="Ryan Green"><span>Ryan Green</span></li>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/mg.jpg" alt="Michael Green"><span>Michael Green</span></li>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/wh.jpg" alt="Wendy Haswell"><span>Wendy Haswell</span></li>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/scw.jpg" alt="Scott Walton"><span>Scott Walton</span></li>
-                                               
-                                           </ul>                                     
-                                   </div>
-                                </div>
-                                <div class="item">
-                                    <div class="support-portrait">
-                                            <ul>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/ll.jpg" alt="Liz Lawson"><span>Liz Lawson</span></li>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/rjg.jpg" alt="Rachel Gordon"><span>Rachel Gordon</span></li>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/dw.jpg" alt="Daniel Wakenshaw"><span>Daniel Wakenshaw</span></li>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/rb.jpg" alt="Rebecca Bell"><span>Rebecca Bell</span></li>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/rh.jpg" alt="Ross Hearnshaw"><span>Ross Hearnshaw</span></li>
-                                           </ul>                                   
-                                    </div>
-                                </div>
-                                
-                                <div class="item">
-                                    <div class="support-portrait">
-                                            <ul>
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/ah.jpg" alt="Adam Hogg"><span>Adam Hogg</span></li>
-                                                
-                                                <li><img alt="alt text" src="{{ STATIC_URL }}img/staff/mk.jpg" alt="Marc Kirkwood"><span>Marc Kirkwood</span></li>
-                                                
-                                           </ul>                                   
-                                    </div>
-                                </div>
-                            </div>                                
-                    </div>
-                        <a class="carousel-control left" href="#supportCarousel" data-slide="prev">&lsaquo;</a>
-                        <a class="carousel-control right" href="#supportCarousel" data-slide="next">&rsaquo;</a>
+                      <![endif]-->
+            </div>
+        </div> 
+    </div>
+    <div class="grid1 sidebar device-hide "> 
+        <div class="box alternative">
+              <h2>Pebble Supports Make a Wish Foundation in 2013</h2>
+                <p>
+                  We’re delighted to announce our chosen charity for 2013 is the Make a Wish Foundation.  
+                  We’ll be fundraising by sharing the physical challenge of a triathlon – with some of us 
+                  swimming, others cycling, and the rest of us running, to clock up the miles and the sponsorship. 
+                  We’ll also be holding a charity music event in the summer with local bands – including our very own 
+                  Dan Wakenshaw – right here in Newcastle-upon-Tyne.  More details to follow!
+                </p>
+                <hr>
+               <h2 class="title">2012 Miles for Charity</h2>
+                <p>We challenged ourselves to cycle 2012 miles to raise £2,012 for ChildLine
+                    over the summer. We had a fantastic time on our bike ride to Tynemouth on
+                    the 10th June, cycling from Pebble HQ in Ouseburn, Newcastle, along the
+                    cycle route to the coast.</p>
+                    <p>Thank you to everyone who sponsored us and
+                    supported this worthwhile cause.</p>
+            </div>
+      </div>
+    </div> 
+  <div class="row device-hide">
+    <div class=" box grid3">
+      <h2 class="title">Partners</h2>
+        <p>We are proud to work with the following companies:</p>
+           <ul class="partners">
+              <li>
+                <a href="http://www.squidcard.com/" target="_blank" title="sQuid" 
+                   onClick="_gaq.push(['_trackEvent', 'Partner', 'Click', 'sQuid']);">
+                <img alt="sQid" src="{{ STATIC_URL }}img/partner/squid_logo.jpg"></a>
+              </li>
+              <li>
+                <a href="http://www.1st4schoolsinsurance.co.uk/pebble/" target="_blank" title="Genesis"
+                   onClick="_gaq.push(['_trackEvent', 'Partner', 'Click', 'Genesis']);">
+                <img alt="Genesis" src="{{ STATIC_URL }}img/partner/genesis_logo.png"></a>
+              </li>
+              <li>
+                <a href="http://www.the-contactgroup.com/products/call-parents/" target="_blank" 
+                   title="Call Parents"
+                   onClick="_gaq.push(['_trackEvent', 'Partner', 'Click', 'Call Parents']);">
+                <img alt="CallParents" src="{{ STATIC_URL }}img/partner/cparent_logo.png"></a>
+              </li>
+              <li>
+                <a href="http://schoolcomms.com/" target="_blank" title="Schoolcomms"
+                   onClick="_gaq.push(['_trackEvent', 'Partner', 'Click', 'Schoolcomms']);">
+                <img alt="Schoolcomms" src="{{ STATIC_URL }}img/partner/scoms_logo.png"></a>
+              </li>
+              <li>
+                <a href="https://www.parentmail.co.uk/index.html" target="_blank" title="Parentmail"
+                   onClick="_gaq.push(['_trackEvent', 'Partner', 'Click', 'Parentmail']);">
+                <img alt="ParentMail" src="{{ STATIC_URL }}img/partner/Pmail_logo.png"></a>
+              </li>
+              <li>
+                <a href="http://www.civica.co.uk/education" target="_blank" title="Civica"
+                   onClick="_gaq.push(['_trackEvent', 'Partner', 'Click', 'Civica']);">
+                <img alt="Civica" src="{{ STATIC_URL }}img/partner/civica_logo.png"></a>
+              </li>
+              <li>
+                <a href="http://www.civica.co.uk/education" target="_blank" title="ParentPay"
+                onClick="_gaq.push(['_trackEvent', 'Partner', 'Click', 'ParentPay']);">
+                <img alt="ParentPay" src="{{ STATIC_URL }}img/partner/ppay.gif"></a>
+              </li>
+          </ul>
+    </div>
+  </div>
+  <div class="row device-hide">
+    <div class="box box-unstyled supportfocus carousel" id="supportCarousel">
+      <div class="team">
+        <h2 class="title">The Pebble Team</h2>
+          <div class="carousel-inner">
+            <div class="active item">
+              <div class="support-portrait">
+                <ul>
+                  <li><img src="{{ STATIC_URL }}img/staff/jg.jpg" alt="Janis Green"><span>Janis Green</span></li>
+                  <li><img src="{{ STATIC_URL }}img/staff/rg.jpg" alt="Ryan Green"><span>Ryan Green</span></li>
+                  <li><img src="{{ STATIC_URL }}img/staff/mg.jpg" alt="Michael Green"><span>Michael Green</span></li>
+                  <li><img src="{{ STATIC_URL }}img/staff/wh.jpg" alt="Wendy Haswell"><span>Wendy Haswell</span></li>
+                  <li><img src="{{ STATIC_URL }}img/staff/ll.jpg" alt="Liz Lawson"><span>Liz Lawson</span></li>
+               </ul>                                     
+             </div>
+            </div>
+            <div class="item">
+                <div class="support-portrait">
+                  <ul>
+                    <li><img src="{{ STATIC_URL }}img/staff/scw.jpg" alt="Scott Walton"><span>Scott Walton</span></li>
+                    <li><img src="{{ STATIC_URL }}img/staff/mk.jpg" alt="Marc Kirkwood"><span>Marc Kirkwood</span></li>
+                    <li><img src="{{ STATIC_URL }}img/staff/ah.jpg" alt="Adam Hogg"><span>Adam Hogg</span></li>
+                    <li><img src="{{ STATIC_URL }}img/staff/dw.jpg" alt="Daniel Wakenshaw"><span>Daniel Wakenshaw</span></li>  
+                    <li><img src="{{ STATIC_URL }}img/staff/rjg.jpg" alt="Rachel Gordon"><span>Rachel Gordon</span></li>
+                  </ul>                                   
                 </div>
-</div></div>
+            </div>
+            <div class="item">
+                <div class="support-portrait">
+                  <ul>
+                    <li><img src="{{ STATIC_URL }}img/staff/rb.jpg" alt="Rebecca Bell"><span>Rebecca Bell</span></li>
+                    <li><img src="{{ STATIC_URL }}img/staff/rh.jpg" alt="Ross Hearnshaw"><span>Ross Hearnshaw</span></li>
+                   <li><img src="{{ STATIC_URL }}img/staff/ds.jpg" alt="Dan Step"><span>Dan Step</span></li>
+                    <li><img src="{{ STATIC_URL }}img/staff/sn.jpg" alt="Scott Neve"><span>Scott Neve</span></li>
+                  </ul>                                   
+                </div>
+            </div>
+          </div>                                
+        </div>
+          <a class="carousel-control left" href="#supportCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#supportCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+    </div>
+  </div>
 </div>
  {% endblock %} 
-

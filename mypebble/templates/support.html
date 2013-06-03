@@ -20,52 +20,50 @@
 {% endaddtoblock %}
 
 <div class="support">
-                <div class="row titlerow">{% placeholder "Strapline" or %}
-                    <h1 class="title"><img class="logo" src="{{ STATIC_URL}}img/logo/support_logo.png" alt="Support"/> </h1>
-{% endplaceholder %}
-                </div>
-                <div class="row">
-
-         <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
-                        <div class="box grid2">
-                            <div class="box-inner">
-                                {% placeholder "support_welcome" or %}{% endplaceholder %}
-                            </div>
-                        </div>
+  <div class="row titlerow">
+    {% placeholder "Strapline" or %}
+        <h1 class="title device-hide"><img class="logo" src="{{ STATIC_URL}}img/logo/support_logo.png" alt="Support"/> </h1>
+    {% endplaceholder %}
+  </div>
+  <div class="row">
+        <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
+          <div class="box">
+            {% placeholder "support_welcome" or %}{% endplaceholder %}
+          </div>
+        </div>
+        <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
+          <div class="support onlinesupportbox box">
+            <h2 class="title">Existing Customers</h2>
+              <div class="description">
+                <p>
+                  <i class="i icon-phone-white"></i>0845 310 1788<br/>
+                  <i class="i icon-blank"></i> <small>Mon to Fri | 8:30am – 5:30pm</small><br/>
+                  <i class="i icon-community-white"></i>
+                  <a href="https://getsatisfaction.com/pebble" target="_blank"
+                  onClick="_gaq.push(['_trackEvent', 'GetSatisfaction',  'Click', 'Community']);">
+                  Pebble support community</a><br/>
+                  <i class="i icon-email-white"></i><a href="mailto:support@mypebble.co.uk">support@mypebble.co.uk</a>
+                </p>
+              </div>
+              <form action="https://secure.logmeinrescue.com/Customer/Code.aspx" method="post" id="logmein-form" >
+                <h2 class="title">Online support</h2>
+                  <label for="pin">Enter your 6-digit PIN code:</label>
+                    <div class="alert alert-warning errorlist hide">
+                      <ul class="errorlist">
+                          <li>This field is required</li>
+                      </ul>
                     </div>
-                    <div class="grid1 sidebar logmein "> <!-- Column. Modules inside will stack vertically -->
-                        <div class="support onlinesupportbox box grid1 ">
-                            <div class="box-inner">
-                                <h2 class="title">Existing Customers</h2>
-                                <div class="description">
-                                    <p>
-                                        <i class="i icon-phone-white"></i>0845 310 1788<br/>
-                                        <i class="i icon-blank"></i> <small>Mon to Fri | 8:30am – 5:30pm</small><br/>
-                                        <i class="i icon-community-white"></i><a href="https://getsatisfaction.com/pebble" target="_blank">Pebble support community</a><br/>
-                                        <i class="i icon-email-white"></i><a href="mailto:support@mypebble.co.uk">support@mypebble.co.uk</a>
-                                    </p>
-                                </div>
-                                <form action="https://secure.logmeinrescue.com/Customer/Code.aspx" method="post" id="logmein-form" >
-                                    <h2 class="title">Online support 
-					<i class="i icon-help-white"></i></h2>
-                                    <label for="pin">Enter your 6-digit PIN code:</label>
-                                    <div class="alert alert-warning errorlist hide">
-                                        <ul class="errorlist">
-                                            <li>This field is required</li>
-                                        </ul>
-                                    </div>
-                                    <input class="pin" type="text" size="20" name="Code" id="Code"/>
-                                    <input type="submit" value="Connect" class="btn"/>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="grid1 box extras">
-                            <h4>Your browser</h4>
-                            <div class="browser bname"></div>
-                            <p class="browser bhelp"></p>
-                        </div>
-                    </div>
-                </div>
+                      <input class="pin" type="text" size="20" name="Code" id="Code"/>
+                      <input type="submit" value="Connect" class="btn"/>
+              </form>
+            </div>
+              <div class="grid1 box extras">
+                  <h4>Your browser</h4>
+                  <div class="browser bname"></div>
+                  <p class="browser bhelp"></p>
+              </div>
+            </div>
+        </div>
                 <h2>For online tutorials and user guides, please select your current product:</h2>
                 <div class="row productchoice ">
                        <div class="box grid1 fm">
@@ -74,7 +72,7 @@
                                 <div class="description">
                                     <p>View our online tutorials and read our frequently asked questions to make the most of Fund Manager.</p>
                                 </div>
-                                <div class="footerimage">
+                                <div class="footerimage device-hide">
                                     <a href="/support/fm/"><img alt="alt text" src="{{ STATIC_URL }}img/fm/fm_screen.png"/></a>
                                 </div>
                             </div>
@@ -85,7 +83,7 @@
                             <div class="description">
                                 <p>If you’re using an older version of School Fund Manager, you can access support documents here. <a class="callout" href="/fm/upgrade/">Upgrade now</a></p>
                             </div>
-                            <div class="footerimage">
+                            <div class="footerimage device-hide">
                                 <a href="/support/sfm/"><img alt="alt text" src="{{ STATIC_URL }}img/fm7_screen.png"/></a>
                             </div>
                         </div>
@@ -96,7 +94,7 @@
                             <div class="description">
                                 <p>All the funding information and application support you need for successful school fundraising.</p>
                             </div>
-                            <div class="footerimage extras">
+                            <div class="footerimage device-hide extras">
                                 <a href="/support/sff/"><img alt="alt text" src="{{ STATIC_URL }}img/sff/sff_screen.png"/></a>
                             </div>
                         </div>

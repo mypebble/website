@@ -117,7 +117,7 @@ body {
 .body {
   /* the area between .header and .footer, not to be confused with <body> */
 
-  background: #f0f1f0;
+  /*background: #f0f1f0;*/
 }
 .body .container {
   padding: 15px 0 100px 0;
@@ -160,9 +160,9 @@ a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+ -webkit-box-shadow: 1px 1px 5px rgba(50, 50, 57, 0.4);
+ -moz-box-shadow:    1px 1px 5px rgba(50, 50, 57, 0.4); 
+ box-shadow:         1px 1px 5px rgba(50, 50, 57, 0.4);
   *zoom: 1;
   background: #fff;
   /* More .box styles in .boxes.less */
@@ -195,7 +195,7 @@ a:hover {
   margin-left: 20px;
 }
 .grid2.box {
-  width: 580px;
+  width: 578px;
 }
 .grid3 {
   width: 940px;
@@ -205,7 +205,7 @@ a:hover {
 }
 /* Grid modules *inside* boxes need to compensate for the box's interior padding */
 .box .grid1 {
-  width: 260px;
+  width: 259px;
   margin-left: 60px;
 }
 .box .grid2 {
@@ -236,8 +236,11 @@ a:hover {
  */
 .box {
   /* Coloured boxes (on Home and Support) */
-
 }
+.box-unstyled{
+box-shadow:none;
+}
+
 .box .title {
   margin-top: 0;
   margin-bottom: 6px;
@@ -269,18 +272,17 @@ a:hover {
 .box.support {
   background-color: #f79f9b;
 }
-.hp{
-background-color:#C0C0C0;
+.alternative{
+background-color:#f1f1f1;
 }
 .home .box .title,
 .productchoice .box .title {
   font-size: 18px;
   line-height: 23px;
 }
-/* White Pebble logo in coloured boxes */.box.fm,
+/* White Pebble logo in coloured boxes */
+.box.fm,
 .box.sff {
-  background-image: url('../img/logo-white-small.png');
-  background-position: 250px 20px;
   background-repeat: no-repeat;
 }
 .box.fm .title,
@@ -290,10 +292,7 @@ background-color:#C0C0C0;
   padding-right: 41px;
 }
 .home .box.fm,
-.home .box.ft,
 .home .box.sff {
-  background-image: url('../img/logo-white-small.png');
-  background-position: 255px 15px;
 }
 .home .box.fm .title,
 .home .box.sff .title,
@@ -301,6 +300,11 @@ background-color:#C0C0C0;
 .home .box.sff p {
   padding-right: 31px;
 }
+.home .box.fm, .home .box.sff{
+  width:418px;
+}
+
+
 /* Product accent colours for headings inside boxes (using class on <body>) */
 .fm .box .title,
 .fm .content h2 {
@@ -320,6 +324,7 @@ background-color:#C0C0C0;
   bottom: -12px;
   display: block;
 }
+
 .box .callout {
   position: absolute;
   right: -10px;
@@ -355,7 +360,6 @@ background-color:#C0C0C0;
 
 /*home page product alignments*/
 .fm_spacer{margin-top:27px;} 
-.boxh{max-height:235px;}
 
 /* Hero box, used on product homepages */
 .hero {
@@ -364,8 +368,12 @@ background-color:#C0C0C0;
   /* For homepage slideshow styles, see carousel.less */
 
 }
-.hero .text {
-  width: 80%;
+.home .hero p{
+  width:61%;
+  margin:auto;
+}
+.home .hero .text {
+  text-align:center;
 }
 .hero .text .title {
   font-size: 24px;
@@ -413,9 +421,9 @@ background-color:#C0C0C0;
   box-shadow:none;
 }
 /* Main call-to-action box on product pages */
-.box.calltoaction {
+.box.calltoaction, .brochure {
   /* For button styles in call-to-action boxes, see buttons.less */
-
+min-height:105px;
 }
 .box.calltoaction .title {
   font-size: 22px;
@@ -427,7 +435,7 @@ background-color:#C0C0C0;
 }
 .box.calltoaction .btn-calltoaction {
   float: right;
- margin-top: 5px;
+  margin-top: 5px;
 }
 .box.calltoaction form {
   margin-bottom: 0;
@@ -741,7 +749,7 @@ display:block;
 text-align: center;
 }
 
-.team li{ margin:12px 27px; margin-bottom:5px; line-height:25px;}
+.team li{ margin:12px 25px; margin-bottom:5px; line-height:25px;}
 
 .nav a,
 .subnav a {
@@ -1171,11 +1179,10 @@ textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 22px;
 }
 label {
   display: block;
-  margin-bottom: 5px;
   color: #333333;
 }
 input,
@@ -2112,8 +2119,6 @@ table {
 .sff .titlerow .loginbtn.active {
   background-color: #c17106 \9;
 }
-/*so boxes align in sff page*/
-.sffbox{margin-bottom:12px;}
 
 
 .sff .box.calltoaction-secondary .btn:hover,
@@ -2553,7 +2558,8 @@ input[type="submit"].btn.small {
   position: relative;
 }
 
-.carousel-inner .text{width:60%;
+.carousel-inner .text{
+  width:65%;
 }
 .carousel .item {
   display: none;
@@ -2640,6 +2646,10 @@ input[type="submit"].btn.small {
   text-decoration: none;
   opacity: 0.6;
   filter: alpha(opacity=60);
+}
+
+.tabs li:last-child{
+width:138px;
 }
 .visuallyhidden {
   position: absolute;
@@ -2753,7 +2763,7 @@ input[type="submit"].btn.small {
 .staff img{width:140px;}
 
 .partners li{display:inline; margin-left:5px;}
-.partners img{width:12%;}
+.partners img{width:12%; max-height:50px;}
 
 .story p{
   float:left;
@@ -2789,4 +2799,43 @@ border-radius: 5px;
 .social li{
 display:inline;
 margin:8px 10px;
+}
+
+.features {
+margin:10px 0px;
+}
+.home .box ul{
+  margin:0px;
+}
+.features li{
+font-size:12px;
+width:190px;
+margin:10px 30px;
+list-style-image:url('../img/tick.png');
+
+}
+.features li span{
+  line-height:12px;
+  font-size:11px;
+}
+.features li .image{
+  border:1px solid #f1f1f1;
+  background:#ccc;
+  width:40px;
+  height:40px;
+}
+.home .box img{
+   margin:10px 59px;
+}
+.col{
+  display:inline-block;
+  width:47%;
+  margin:0px 5px;
+}
+.feed{
+height:275px;
+}
+
+.twtr-ft{
+display:none;
 }
