@@ -60,7 +60,11 @@
 }
 
 @media (min-width: 970px) {
+.home .box.fm, .home .box.sff{
+  width:418px !important;
 }
+}
+
 
 
 @media (min-width: 1200px) {
