@@ -65,7 +65,7 @@ class GeneralEnquiryTestCase(TestCase):
             'organisation': 'a organisation',
             'telephone': '0123456',
             'training': [
-              'Wed 22 May','Wed 05 June','Keep Updated',
+              'Keep Updated',
             ]
           }
         )
@@ -82,7 +82,7 @@ class GeneralEnquiryTestCase(TestCase):
             'organisation': 'a organisation',
             'telephone': '0123456',
             'training': [
-              'Wed 22 May','Wed 05 June','Keep Updated',
+              'Keep Updated',
             ]
           }
         )
@@ -98,7 +98,7 @@ class GeneralEnquiryTestCase(TestCase):
             'organisation': 'a organisation',
             'telephone': '0123456',
             'training': [
-              'Thur 23 May','Thur 06 June','Keep Updated',
+              'Keep Updated',
             ]
           }
         )        

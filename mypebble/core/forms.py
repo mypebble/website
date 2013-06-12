@@ -18,28 +18,20 @@ WOULD_LIKE = (
   ('other', _('Other Enquiry')),
 )
 TRAINING_PERIOD_END = (
-  ('August PE', _('Keep my updated on the next End of Year training session')),
+  ('August PE', _('Keep my updated on the next "End of Year" training session')),
 )
 TRAINING_GROUP = (
-  ('Wed 22 May', _('Wednesday 22nd May at 9.30am')),
-  ('Wed 05 June', _('Wednesday 5th June at 9.30am')),
-  ('Keep Updated',
-    _('I can\'t do any of the above, please send me the Group information')),
+  ('Keep Updated', _('Keep my updated on the next "Groups Overview" training session')),
 )
 
 TRAINING_NOT_PAID = (
-  ('Wed 22 May', _('Wednesday 29th May at 9.30am')),
-  ('Wed 05 June', _('Wednesday 12th June at 9.30am')),
-  ('Keep Updated',
-    _('I can\'t do any of the above, please send me the Who\'s Not Paid'
-      ' information')),
+  ('Keep Updated', _('Keep my updated on the next "Who\'s Not Paid"'
+      ' training session')),
 )
 TRAINING_NEW_FEATURES = (
-  ('Thur 23 May', _('Thursday 23rd May at 9.30am')),
-  ('Thur 06 June', _('Thursday 6th June at 9.30am')),
   ('Keep Updated',
-    _('I can\'t do any of the above, please send me the New Features'
-      ' information')),
+    _('Keep my updated on the next "New Features"'
+      ' training session')),
 )
 
 class ContactForm(forms.Form):
