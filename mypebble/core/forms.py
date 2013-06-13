@@ -49,7 +49,7 @@ class ContactForm(forms.Form):
       label=_("Postcode"), max_length=10, required=False,
     )
     telephone = forms.CharField(
-      label=_("Telephone"), max_length=15, required=False,
+      label=_("Telephone"), max_length=25, required=True,
     )
     interested = forms.MultipleChoiceField(
       widget=CheckboxSelectMultiple,
