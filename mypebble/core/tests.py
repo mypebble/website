@@ -48,7 +48,7 @@ class GeneralEnquiryTestCase(TestCase):
             'organisation': 'a organisation',
             'telephone': '0123456',
             'training': [
-              'August PE',
+              'August PE', 'Wed 10 July 2013', 'Wed 17 July 2013',
             ]
           }
         )

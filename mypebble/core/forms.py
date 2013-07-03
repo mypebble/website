@@ -18,6 +18,8 @@ WOULD_LIKE = (
   ('other', _('Other Enquiry')),
 )
 TRAINING_PERIOD_END = (
+  ('Wed 10 July 2013', _('Wednesday 10th July 2013 at 9.30am')),
+  ('Wed 17 July 2013', _('Wednesday 17th July 2013 at 9.30am')),
   ('August PE', _('Keep my updated on the next "End of Year" training session')),
 )
 TRAINING_GROUP = (
