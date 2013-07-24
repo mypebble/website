@@ -53,55 +53,55 @@ class GeneralEnquiryTestCase(TestCase):
           }
         )
 
-    def test_post_form_specific_groups(self):
-        """Test Training Form Groups
-        """
-        kwargs = {'form_type': 'training_group'}
-        response = self.client.post(
-          reverse('enquiry-form-specific', kwargs=kwargs),
-          {
-            'name': 'a name',
-            'email': 'ah@talktopebble.co.uk',
-            'organisation': 'a organisation',
-            'telephone': '0123456',
-            'training': [
-              'Keep Updated',
-            ]
-          }
-        )
+    #def test_post_form_specific_groups(self):
+    #    """Test Training Form Groups
+    #    """
+    #    kwargs = {'form_type': 'training_group'}
+    #    response = self.client.post(
+    #      reverse('enquiry-form-specific', kwargs=kwargs),
+    #      {
+    #        'name': 'a name',
+    #        'email': 'ah@talktopebble.co.uk',
+    #        'organisation': 'a organisation',
+    #        'telephone': '0123456',
+    #        'training': [
+    #          'Keep Updated',
+    #        ]
+    #      }
+    #    )
 
-    def test_post_form_specific_not_paid(self):
-        """Test Training Form Not Paid
-        """
-        kwargs = {'form_type': 'training_not_paid'}
-        response = self.client.post(
-          reverse('enquiry-form-specific', kwargs=kwargs),
-          {
-            'name': 'a name',
-            'email': 'ah@talktopebble.co.uk',
-            'organisation': 'a organisation',
-            'telephone': '0123456',
-            'training': [
-              'Keep Updated',
-            ]
-          }
-        )
-    def test_post_form_specific_new_features(self):
-        """Test Training Form New Features
-        """
-        kwargs = {'form_type': 'training_new_features'}
-        response = self.client.post(
-          reverse('enquiry-form-specific', kwargs=kwargs),
-          {
-            'name': 'a name',
-            'email': 'ah@talktopebble.co.uk',
-            'organisation': 'a organisation',
-            'telephone': '0123456',
-            'training': [
-              'Keep Updated',
-            ]
-          }
-        )
+    #def test_post_form_specific_not_paid(self):
+    #    """Test Training Form Not Paid
+    #    """
+    #    kwargs = {'form_type': 'training_not_paid'}
+    #    response = self.client.post(
+    #      reverse('enquiry-form-specific', kwargs=kwargs),
+    #      {
+    #        'name': 'a name',
+    #        'email': 'ah@talktopebble.co.uk',
+    #        'organisation': 'a organisation',
+    #        'telephone': '0123456',
+    #        'training': [
+    #          'Keep Updated',
+    #        ]
+    #      }
+    #    )
+    #def test_post_form_specific_new_features(self):
+    #    """Test Training Form New Features
+    #    """
+    #    kwargs = {'form_type': 'training_new_features'}
+    #    response = self.client.post(
+    #      reverse('enquiry-form-specific', kwargs=kwargs),
+    #      {
+    #        'name': 'a name',
+    #        'email': 'ah@talktopebble.co.uk',
+    #        'organisation': 'a organisation',
+    #        'telephone': '0123456',
+    #        'training': [
+    #          'Keep Updated',
+    #        ]
+    #      }
+    #    )
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.context['form'].is_valid(), True)
         self.assertEqual(len(mail.outbox), 1)
