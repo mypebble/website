@@ -48,7 +48,7 @@ class GeneralEnquiryTestCase(TestCase):
             'organisation': 'a organisation',
             'telephone': '0123456',
             'training': [
-              'August PE', 'Wed 10 July 2013', 'Wed 17 July 2013',
+              'Keep updated', 'Wed 4 Sep 2013', 'Wed 11 Sep 2013',
             ]
           }
         )
@@ -101,7 +101,7 @@ class GeneralEnquiryTestCase(TestCase):
               'Keep Updated',
             ]
           }
-        )        
+        )
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.context['form'].is_valid(), True)
         self.assertEqual(len(mail.outbox), 1)
