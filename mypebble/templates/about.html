@@ -1,13 +1,12 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 {% block primary %}
-<div class="enquiries">
-  <div class="body" id="body">
+<div class="body" id="body">
     <div class="row">
       <h1>{% placeholder "pgtitle" or  %}{% endplaceholder %}</h1>
         <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
             <div class="box">
-              {% placeholder "main_content" or %} {% endplaceholder %} 
+              {% placeholder "main_content" or %} {% endplaceholder %}
               <div class="device-hide"><h3>Introducing Pebble video</h3>
               <video controls="controls" width="580"  onClick="_gaq.push(['_trackEvent', 'Video',  'Play', 'Pebble Story']);">
                       <source src="https://s3-eu-west-1.amazonaws.com/mypebble/pebble.webm" type="video/webm" />
@@ -29,16 +28,16 @@
 
                       <![endif]-->
             </div>
-        </div> 
+        </div>
     </div>
-    <div class="grid1 sidebar device-hide "> 
+    <div class="grid1 sidebar device-hide ">
         <div class="box alternative">
               <h2>Pebble Supports Make a Wish Foundation in 2013</h2>
                 <p>
-                  We’re delighted to announce our chosen charity for 2013 is the Make a Wish Foundation.  
-                  We’ll be fundraising by sharing the physical challenge of a triathlon – with some of us 
-                  swimming, others cycling, and the rest of us running, to clock up the miles and the sponsorship. 
-                  We’ll also be holding a charity music event in the summer with local bands – including our very own 
+                  We’re delighted to announce our chosen charity for 2013 is the Make a Wish Foundation.
+                  We’ll be fundraising by sharing the physical challenge of a triathlon – with some of us
+                  swimming, others cycling, and the rest of us running, to clock up the miles and the sponsorship.
+                  We’ll also be holding a charity music event in the summer with local bands – including our very own
                   Dan Wakenshaw – right here in Newcastle-upon-Tyne.  More details to follow!
                 </p>
                 <hr>
@@ -51,19 +50,19 @@
                     supported this worthwhile cause.</p>
             </div>
       </div>
-    </div> 
+    </div>
   <div class="row device-hide">
     <div class=" box grid3">
       <h2 class="title">Partners</h2>
         <p>We are proud to work with the following companies:</p>
            <ul class="partners">
               <li>
-                <a href="http://www.squidcard.com/" target="_blank" title="sQuid" 
+                <a href="http://www.squidcard.com/" target="_blank" title="sQuid"
                    onClick="_gaq.push(['_trackEvent', 'Partner', 'Click', 'sQuid']);">
                 <img alt="sQid" src="{{ STATIC_URL }}img/partner/squid_logo.jpg"></a>
               </li>
               <li>
-                <a href="http://www.the-contactgroup.com/products/call-parents/" target="_blank" 
+                <a href="http://www.the-contactgroup.com/products/call-parents/" target="_blank"
                    title="Call Parents"
                    onClick="_gaq.push(['_trackEvent', 'Partner', 'Click', 'Call Parents']);">
                 <img alt="CallParents" src="{{ STATIC_URL }}img/partner/cparent_logo.png"></a>
@@ -91,49 +90,94 @@
           </ul>
     </div>
   </div>
-  <div class="row device-hide">
-    <div class="box box-unstyled supportfocus carousel" id="supportCarousel">
-      <div class="team">
-        <h2 class="title">The Pebble Team</h2>
-          <div class="carousel-inner">
-            <div class="active item">
-              <div class="support-portrait">
-                <ul>
-                  <li><img src="{{ STATIC_URL }}img/staff/jg.jpg" alt="Janis Green"><span>Janis Green</span></li>
-                  <li><img src="{{ STATIC_URL }}img/staff/rg.jpg" alt="Ryan Green"><span>Ryan Green</span></li>
-                  <li><img src="{{ STATIC_URL }}img/staff/mg.jpg" alt="Michael Green"><span>Michael Green</span></li>
-                  <li><img src="{{ STATIC_URL }}img/staff/wh.jpg" alt="Wendy Haswell"><span>Wendy Haswell</span></li>
-                  <li><img src="{{ STATIC_URL }}img/staff/ll.jpg" alt="Liz Lawson"><span>Liz Lawson</span></li>
-               </ul>                                     
-             </div>
-            </div>
-            <div class="item">
-                <div class="support-portrait">
-                  <ul>
-                    <li><img src="{{ STATIC_URL }}img/staff/scw.jpg" alt="Scott Walton"><span>Scott Walton</span></li>
-                    <li><img src="{{ STATIC_URL }}img/staff/mk.jpg" alt="Marc Kirkwood"><span>Marc Kirkwood</span></li>
-                    <li><img src="{{ STATIC_URL }}img/staff/ah.jpg" alt="Adam Hogg"><span>Adam Hogg</span></li>
-                    <li><img src="{{ STATIC_URL }}img/staff/dw.jpg" alt="Daniel Wakenshaw"><span>Daniel Wakenshaw</span></li>  
-                    <li><img src="{{ STATIC_URL }}img/staff/rjg.jpg" alt="Rachel Gordon"><span>Rachel Gordon</span></li>
-                  </ul>                                   
-                </div>
-            </div>
-            <div class="item">
-                <div class="support-portrait">
-                  <ul>
-                    <li><img src="{{ STATIC_URL }}img/staff/rb.jpg" alt="Rebecca Bell"><span>Rebecca Bell</span></li>
-                    <li><img src="{{ STATIC_URL }}img/staff/rh.jpg" alt="Ross Hearnshaw"><span>Ross Hearnshaw</span></li>
-                   <li><img src="{{ STATIC_URL }}img/staff/ds.jpg" alt="Dan Step"><span>Dan Step</span></li>
-                    <li><img src="{{ STATIC_URL }}img/staff/sn.jpg" alt="Scott Neve"><span>Scott Neve</span></li>
-                  </ul>                                   
-                </div>
-            </div>
-          </div>                                
-        </div>
-          <a class="carousel-control left" href="#supportCarousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#supportCarousel" data-slide="next">&rsaquo;</a>
-      </div>
+
+<div class="row device-hide">
+  <div class="box grid3">
+  <h3>The Team</h3>
+  <div class="team">
+    <ul class="staff">
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/jg.jpg" alt="Janis Green"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'JG']);">
+          <span>Janis Green</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/rg.jpg" alt="Ryan Green"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'RG']);">
+          <span>Ryan Green</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/mg.jpg" alt="Michael Green"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'MG']);">
+          <span>Michael Green</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/wh.jpg" alt="Wendy Haswell"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'WH']);">
+          <span>Wendy Haswell</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/ll.jpg" alt="Liz Lawson"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'LL']);">
+          <span>Liz Lawson</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/scw.jpg" alt="Scott Walton"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'SCW']);">
+          <span>Scott Walton</span>
+        </li>
+        <li><img src="{{ STATIC_URL }}img/staff/mk.jpg" alt="Marc Kirkwood"
+        onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'MK']);">
+        <span>Marc Kirkwood</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/ah.jpg" alt="Adam Hogg"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'AH']);">
+          <span>Adam Hogg</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/dw.jpg" alt="Daniel Wakenshaw"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'DW']);">
+          <span>Daniel Wakenshaw</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/rjg.jpg" alt="Rachel Gordon"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'RJG']);">
+          <span>Rachel Gordon</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/rb.jpg" alt="Rebecca Bell"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'RB']);">
+          <span>Rebecca Bell</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/rh.jpg" alt="Ross Hearnshaw"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'RH']);">
+          <span>Ross Hearnshaw</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/ds.jpg" alt="Dan Step"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'DS']);">
+          <span>Dan Step</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/sn.jpg" alt="Scott Neve"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'SN']);">
+          <span>Scott Neve</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/sb.jpg" alt="Samantha Burton"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'SB']);">
+          <span>Samantha Burton</span>
+        </li>
+        <li>
+          <img src="{{ STATIC_URL }}img/staff/eh.jpg" alt="Eloise Hall"
+          onClick="_gaq.push(['_trackEvent', 'Staff',  'Image', 'EH']);">
+          <span>Eloise Hall</span>
+        </li>
+      </ul>
     </div>
-  </div>
+    </div>
 </div>
- {% endblock %} 
+</div>
+ {% endblock %}

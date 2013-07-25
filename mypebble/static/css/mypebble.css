@@ -2,7 +2,7 @@
  * mypebble.co.uk
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 article,
 aside,
@@ -104,7 +104,7 @@ textarea {
  * Basic and global styles
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 body {
   margin: 0;
@@ -151,7 +151,7 @@ a:hover {
  * Grid and box system
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 .box {
   position: relative;
@@ -161,7 +161,7 @@ a:hover {
   -moz-border-radius: 5px;
   border-radius: 5px;
  -webkit-box-shadow: 1px 1px 5px rgba(50, 50, 57, 0.4);
- -moz-box-shadow:    1px 1px 5px rgba(50, 50, 57, 0.4); 
+ -moz-box-shadow:    1px 1px 5px rgba(50, 50, 57, 0.4);
  box-shadow:         1px 1px 5px rgba(50, 50, 57, 0.4);
   *zoom: 1;
   background: #fff;
@@ -232,7 +232,7 @@ a:hover {
  * Call-to-action boxes, hero box at top of page, tabbed box, etc.
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 .box {
   /* Coloured boxes (on Home and Support) */
@@ -359,7 +359,7 @@ background-color:#f1f1f1;
 .img-brochure{margin-bottom:45px !important;}
 
 /*home page product alignments*/
-.fm_spacer{margin-top:27px;} 
+.fm_spacer{margin-top:27px;}
 
 /* Hero box, used on product homepages */
 .hero {
@@ -403,7 +403,7 @@ background-color:#f1f1f1;
   z-index: 995;
   top: 0;
   right: 0;
-  
+
   overflow:hidden;
 }
 .fm .hero {
@@ -701,7 +701,7 @@ width:60% !important;
  * Navigation (header and section sub-nav menus)
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 .header {
   position: relative;
@@ -741,15 +741,22 @@ width:60% !important;
   float: left;
   line-height: 1;
 }
-.social UL{margin:auto; width:150px;}
-.social li{margin-left:20px;}
+.social UL{
+margin:auto;
+width:150px;
+}
+.social li{
+margin-left:20px;
+}
 
 .team span {
 display:block;
 text-align: center;
 }
 
-.team li{ margin:12px 25px; margin-bottom:5px; line-height:25px;}
+.team li{
+line-height:25px;
+margin:0px 10px;}
 
 .nav a,
 .subnav a {
@@ -789,7 +796,6 @@ text-align: center;
 .subnav {
   /* Navigation within section, e.g. School Fund Finder */
   /* VERSION 1: ALONGSIDE PRODUCT LOGO [UNUSED] */
-
   position: relative;
   left: -8px;
   top: auto;
@@ -871,7 +877,7 @@ margin:2px;
  * Portions based on Bootstrap from Twitter
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 p {
   margin: 0 0 9px;
@@ -967,7 +973,7 @@ li {
   line-height: 18px;
 }
 .bullet{
-  list-style-type:disc; 
+  list-style-type:disc;
 }
 ul.unstyled {
   margin-left: 0;
@@ -1130,7 +1136,7 @@ pre code {
 }
 /*misc text*/
 .tutorial h3, .tutorial span{
-  line-height:50px; 
+  line-height:50px;
 }
 .tutorial span{
   font-size: 16px;
@@ -1150,7 +1156,7 @@ video{
  * Base styles for various input types, form layouts, and states
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 form {
   margin: 0 0 18px;
@@ -1342,7 +1348,7 @@ width:100px;
 margin:5px;
 }
 .enquiries-form li label{
-width:100%; 
+width:100%;
 display:block;
 font-weight:normal;
 }
@@ -1579,7 +1585,7 @@ select:focus:required:invalid:focus {
  * Adapted from Twitter Bootstrap
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 table {
   max-width: 100%;
@@ -1597,7 +1603,7 @@ table {
   line-height: 15px;
   text-align: left;
   border-top: 1px solid #ddd;
-  
+
 }
 .table th {
   font-weight: bold;
@@ -1664,7 +1670,7 @@ table {
  * Footer
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 .footer {
   clear: both;
@@ -1737,7 +1743,7 @@ table {
  * Glyphs and icons for buttons, nav, and more
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 .i {
   display: inline-block;
@@ -1868,7 +1874,7 @@ table {
  * Button styles [based on Twitter Bootstrap]
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 .btn {
   position: relative;
@@ -2511,7 +2517,7 @@ input[type="submit"].btn.small {
  * Uses collapse.js plugin
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 .accordion-heading .accordion-toggle {
   display: block;
@@ -2547,7 +2553,7 @@ input[type="submit"].btn.small {
  * Using fade-in rather than slide
  *
  * Copyright 2012 Pebble Ltd
- * 
+ *
  */
 .carousel {
   position: relative;
@@ -2715,22 +2721,22 @@ width:138px;
   visibility: hidden;
 }
 .powered_by {
-  margin-top: 8px; 
-  padding-top: 8px; 
+  margin-top: 8px;
+  padding-top: 8px;
   border-top: 1px solid #DDD;
 }
 .partners ul
   {padding:5px;
 }
-.partners li{ 
-  text-align:center; 
+.partners li{
+  text-align:center;
   padding:5px;
 }
   .bname{
   font-size:14px;
   text-align:center;
   padding:10px;
-}  
+}
 .bhelp{
   text-align:center;
 }
@@ -2738,13 +2744,13 @@ width:138px;
   margin-bottom:40px;
 }
 .blog_name{
-  width:85%; 
+  width:85%;
   float:left;
 }
 .blog_date{
   font-size:15px;
-  width:15%; 
-  float:left; 
+  width:15%;
+  float:left;
   color:#87746B;
 }
 .blog_creator{
@@ -2759,11 +2765,11 @@ width:138px;
   background:#f1f1f1;
   box-shadow:none;
 }
-.staff li{display:inline;} 
-.staff img{width:140px;}
+.staff li{display:inline;}
+.staff img{width:130px;}
 
 .partners li{display:inline; margin-left:5px;}
-.partners img{width:12%; max-height:50px;}
+.partners img{width:14%; max-height:50px;}
 
 .story p{
   float:left;
