@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 {% load cms_tags %}
 {% block primary %}
-<div class="producthome sff"> 
+<div class="producthome sff">
   <div class="row titlerow">
     <h1 class="title device-hide">
       <img class="logo" src="{{ STATIC_URL }}img/logo/sff_logo.png" alt="School Fund Finder"/>{% placeholder "strapline" or %} {% endplaceholder %}
-    </h1> 
+    </h1>
     <div class="device-hide">
       <a class="btn loginbtn" href="http://www.schoolfundfinder.co.uk/home" target="_blank"
          onClick="_gaq.push(['_trackEvent', 'Login',  'Click', 'School Fund Finder Apps']);">
-      Log in</a>                     
+      Log in</a>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="box grid3 hero tabbed carousel slide " id="productCarousel">
       <div class="tabs device-hide">
@@ -82,7 +82,7 @@
             <div class="text">
             <h2 class="title">Documents & Templates</h2>
               <div class="description">
-                <p>We’ll help you develop the practical skills you need for a bright funding future, whether you are new to fundraising or a seasoned fundraiser looking 
+                <p>We’ll help you develop the practical skills you need for a bright funding future, whether you are new to fundraising or a seasoned fundraiser looking
                 for support.</p>
               <ul>
                 <li>Use our documents section to take you step by step through every stage of the application process to help you write a successful grant application.</li>
@@ -119,12 +119,21 @@
         <div class="text">
         <h2 class="title">Bid Writing</h2>
           <div class="description">
+            <p>We have the knowledge and experience to write winning funding applications – so let us help you. </p>
+            <ul>
+              <li>We’ll construct a compelling application for you from scratch for a grant of up to £10,000.</li>
+              <li>The service is available for a one-off fixed fee of £350 (plus VAT).</li>
+              <li>We won’t take an additional fee from your winning grant.</li>
+            </ul>
+
+
+<!--
             <p>Make sure you don’t miss out on a funding opportunity ever again!</p>
             <ul>
               <li>Customise your email alerts and we’ll notify you when new grants are added to the website that match your funding objectives.</li>
               <li>Receive our monthly newsletters packed full of funding news and advice, new grants and deadline reminders.</li>
               <li>Leave a message and share ideas with fellow School Fund Finders on our Fundraising Wall.</li>
-            </ul>
+            </ul>-->
           </div>
         </div>
       </div>
@@ -135,15 +144,18 @@
           <div class="text">
             <h2 class="title">Fundraising Workshops</h2>
             <div class="description">
-              <p>We have the knowledge and experience to write winning funding applications – so let us help you.</p>
+              <p>Ask us about our fundraising workshops and training days; we’ll come to you to share our knowledge and develop your practical skills to maximise your funding success.</p>
               <ul>
-                <li>We’ll construct a compelling application for you from scratch for a grant of up to £10,000.</li>
-                <li>The service is available for a one-off fixed fee of £350 (plus VAT).</li>
-                <li>We won’t take an additional fee from your winning grant.</li>
+                <li>Led by our team of experienced fundraisers, we’ll give you the knowledge and skills you need to become confident and successful
+                 fundraisers. </li>
+                <li>We offer a tailor-made programme to meet the needs of your individual school or cluster; from an introduction to fundraising to developing
+                your bid writing skills.</li>
+                <li>We also work with local authorities and national associations, delivering keynote speeches and fundraising workshops at conferences.</li>
               </ul>
+
           </div>
         </div>
-      </div>            
+      </div>
     </div>
       <a class="carousel-control left" href="#productCarousel" data-slide="prev">&lsaquo;</a>
       <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
@@ -154,30 +166,30 @@
     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
         <div class="box calltoaction">
                 <h2 class="title">
-                For a free online demonstration and a quotation tailored to your organisation, please get in touch. 
+                For a free online demonstration and a quotation tailored to your organisation, please get in touch.
                 </h2>
                     <div class="description">
-                     <a class="btn btn-large btn-calltoaction" href="/enquiries/">FREE demo <i class="i icon-arrow-r-white"></i></a> 
+                     <a class="btn btn-large btn-calltoaction" href="/enquiries/">FREE demo <i class="i icon-arrow-r-white"></i></a>
                     </div>
         </div>
-        
+
         <div class="box">
           <h2>Prices start from &pound;195 per year </h2>
-            <p>&pound;195 for primary/special schools and &pound;275 for secondary schools, which includes full access to School Fund Finder and 
+            <p>&pound;195 for primary/special schools and &pound;275 for secondary schools, which includes full access to School Fund Finder and
             unlimited support from our experienced team. Group discounts are available.
             </p>
         </div>
-        
+
         <div class="box device-hide">
           <h2>New to School Fund Finder: Bid Writing Service</h2>
             <p>
-            We have the knowledge and experience to write winning funding applications so let us help you. We’ll construct a compelling application for you 
-            from scratch for a grant of up to £10,000. The service is available for a one-off fixed fee of £350 (plus VAT) – and we won’t take an additional 
+            We have the knowledge and experience to write winning funding applications so let us help you. We’ll construct a compelling application for you
+            from scratch for a grant of up to £10,000. The service is available for a one-off fixed fee of £350 (plus VAT) – and we won’t take an additional
             fee from your winning grant. Get in touch for more information.
             </p>
         </div>
    </div>
-               
+
   <div class="grid1 sidebar device-hide"> <!-- Column. Modules inside will stack vertically -->
     <div class="box brochure">
         <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
@@ -197,7 +209,7 @@
 
   </div>
 </div>
-          
+
     <div class="row ">
       {% placeholder "Feedback" or %}
         <div class="box box-unstyled">
@@ -224,5 +236,5 @@
           </div>
       </div>{% endplaceholder %}
     </div>
-  </div><!--/.container-->    
-</div><!--/.body-->{% endblock %} 
+  </div><!--/.container-->
+</div><!--/.body-->{% endblock %}
