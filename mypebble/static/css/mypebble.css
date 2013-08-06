@@ -303,7 +303,9 @@ background-color:#f1f1f1;
 .home .box.fm, .home .box.sff{
   width:418px;
 }
-
+.home .box.fm p{
+  padding-bottom:26px;
+}
 
 /* Product accent colours for headings inside boxes (using class on <body>) */
 .fm .box .title,
