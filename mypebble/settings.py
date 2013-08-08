@@ -267,7 +267,7 @@ CMS_TEMPLATES = (
     ('support_document_ar.html','Account Report Create Acc FM Template'),
     ('support_document_rbfm.html','Receipt to Bank FM Template'),
     ('support_document_brfm.html','Reconcile Bank FM Template'),
-    
+
     ('support_document_iep.html','Import ePayment FM Template'),
     ('support_document_mt.html','Make Transfer FM Template'),
     ('support_document_gift.html','Gift Aid FM Template'),
@@ -279,6 +279,7 @@ CMS_TEMPLATES = (
     ('misc.html', 'Misc Template'),
     ('about.html', 'About Template'),
     ('upgrade.html', 'Upgrade Template'),
+    ('misapp.html', 'Misapp Template'),
     ('test.html', 'Test Template'),
     ('newsletter.html', 'Newsletter'),
     ('blog.html', 'blog Template'),
