@@ -11,6 +11,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 25
 LOG_FILE = os.path.join(PROJECT_PATH, 'mypebble.log')
+INTERNAL_IPS = ('127.0.0.1',)
 
 # Django settings for mypebble project.
 try:
