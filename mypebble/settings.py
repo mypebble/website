@@ -285,6 +285,12 @@ CMS_TEMPLATES = (
     ('newsletter.html', 'Newsletter'),
     ('blog.html', 'blog Template'),
     #('cmsplugin_blog_base.html', 'cmsplugin_blog'),
+
+
+    ('FM_terms.html', 'FM Terms Template'),
+    ('Joinos_terms.html', 'Joinos Template'),
+
+
 )
 
 #SEO
