@@ -30,13 +30,10 @@ setup(
         'django-classy-tags==0.3.4.1',
         'django-reversion==1.6.1',
         'django-coverage==1.2.2',
-        'django_email_auth==0.1.3',
         'django_logtail==0.0.2',
 
         'cmsplugin_blog==1.1.2',
 
-        'ssh',
-        'fabric',
         'cmsplugin-randomquote==0.1.3',
     ],
 )
