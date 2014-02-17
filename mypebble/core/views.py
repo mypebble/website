@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
 
-from mypebble.core.forms import ContactForm, ContactTraining_PeriodEnd, ContactTraining_Group, ContactTraining_Not_Paid, ContactTraining_New_Features
+from mypebble.core.forms import ContactForm
 
 FORMS = {
   'general': ContactForm,
