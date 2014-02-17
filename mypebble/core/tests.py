@@ -36,22 +36,22 @@ class GeneralEnquiryTestCase(TestCase):
           }
         )
 
-    def test_post_form_specific_period_end(self):
-        """Test Training Form Period End
-        """
-        kwargs = {'form_type': 'training_period_end'}
-        response = self.client.post(
-          reverse('enquiry-form-specific', kwargs=kwargs),
-          {
-            'name': 'a name',
-            'email': 'ah@talktopebble.co.uk',
-            'organisation': 'a organisation',
-            'telephone': '0123456',
-            'training': [
-              'Keep updated', 'Wed 11 Sep 2013', 'Wed 2 Oct 2013',
-            ]
-          }
-        )
+    #def test_post_form_specific_period_end(self):
+    #    """Test Training Form Period End
+    #    """
+    #    kwargs = {'form_type': 'training_period_end'}
+    #    response = self.client.post(
+    #      reverse('enquiry-form-specific', kwargs=kwargs),
+    #      {
+    #        'name': 'a name',
+    #        'email': 'ah@talktopebble.co.uk',
+    #        'organisation': 'a organisation',
+    #        'telephone': '0123456',
+    #        'training': [
+    #          'Keep updated', 'Wed 11 Sep 2013', 'Wed 2 Oct 2013',
+    #        ]
+    #      }
+    #    )
 
     #def test_post_form_specific_groups(self):
     #    """Test Training Form Groups
