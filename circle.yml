@@ -1,6 +1,3 @@
-dependencies:
-    post:
-        - cd mypebble && python manage.py collectstatic --noinput
 test:
     override:
         - python mypebble/manage.py test core testimonials
