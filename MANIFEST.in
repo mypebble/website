@@ -1,0 +1,10 @@
+recursive-include mypebble *.html
+recursive-include mypebble/static *
+recursive-include mypebble/*/static *
+exclude mypebble/local_settings.py
+
+recursive-include mypebble/*/migrations *.sql
+
+recursive-include mypebble/*/fixtures initial_data.json
+
+recursive-include data *.yaml
