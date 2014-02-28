@@ -29,15 +29,18 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mypebble_cms',
-        'USER': 'pebble',
-        'PASSWORD': 'pebble',
+        'NAME': 'circle_test',
+        'USER': 'ubuntu',
+        'PASSWORD': ':',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
-
+try:
+    from local_settings import DEFAULT_DATABASE
+except ImportError:
+    pass
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
