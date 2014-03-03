@@ -6,8 +6,6 @@ when you run "manage.py test".
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 
-from mypebble.testimonials.models import Testimonial
-
 
 class TestimonialTestCase(TestCase):
     """Confirms that testimonials are correctly displayed in extended form."""

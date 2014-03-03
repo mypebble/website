@@ -1,3 +1,7 @@
+dependencies:
+    post:
+        - python mypebble/manage.py syncdb --noinput
+        - python mypebble/manage.py migrate --noinput
 test:
     override:
         - python mypebble/manage.py test core testimonials
