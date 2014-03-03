@@ -1,8 +1,3 @@
-"""
-This file demonstrates writing tests using the unittest module. These will pass
-when you run "manage.py test".
-"""
-
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 
@@ -11,7 +6,7 @@ class TestimonialTestCase(TestCase):
     """Confirms that testimonials are correctly displayed in extended form."""
 
     fixtures = [
-        'test_data/testimonials.json',
+        'testimonials/testimonials.json',
     ]
 
     def test_index(self):
