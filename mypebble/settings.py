@@ -31,7 +31,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'circle_test',
         'USER': 'ubuntu',
-        'PASSWORD': ':',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -39,6 +39,7 @@ DATABASES = {
 
 try:
     from local_settings import DEFAULT_DATABASE
+    DATABASES['default'] = DEFAULT_DATABASE
 except ImportError:
     pass
 

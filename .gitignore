@@ -34,3 +34,11 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Pebble
+venv/*
+.*.un~
+.*.swp
+mypebble/collected-static/*
+mypebble/local_settings.py
+*.log
