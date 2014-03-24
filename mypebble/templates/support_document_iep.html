@@ -3,10 +3,10 @@
 {% block primary %}
 <div class="support">
                 <div class="row titlerow">
-                    <div class="title"><a href="support.html"><img class="logo" src="{{ STATIC_URL}}img/logo/support_logo.png" alt="Support"/></a> 
+                    <div class="title"><a href="support.html"><img class="logo" src="{{ STATIC_URL}}img/logo/support_logo.png" alt="Support"/></a>
 <div class="pull-right"><img src="{{ MEDIA_URL }}cms_page_media/21/fm_logo_1.png" alt="Fund Manager support"/></div></div>
                 </div>
-                
+
                 <div class="row">
 
                     <h1>{% placeholder "support_description_h1" or %}{% endplaceholder %}</h1>
@@ -18,8 +18,8 @@
 <source src="https://s3-eu-west-1.amazonaws.com/mypebble/importepayment.webm" type="video/webm" />
 <source src="https://s3-eu-west-1.amazonaws.com/mypebble/importepayment.ogg" type="video/ogg" />
 </video>
-<!--[if IE 9]>
-<h4>Can’t see the video? Are you trying to watch in Internet Explorer 9?</h4>
+<!--[if lte IE 11 ]>
+<h4>Can’t see the video? Are you trying to watch in Internet Explorer 11?</h4>
 <p>You can download the following plugin - <a href="https://tools.google.com/dlpage/webmmf" target="_blank">WebM-Video plugin</a></p>
 <![endif]-->
 <!--[if lte IE 8 ]>
@@ -50,7 +50,7 @@
                                     </p>
                                 </div>
                                 <form action="https://secure.logmeinrescue.com/Customer/Code.aspx" method="post" id="logmein-form"  class="logmein">
-                                    <h2 class="title">Online support 
+                                    <h2 class="title">Online support
 					<i class="i icon-help-white"></i></h2>
                                     <label for="pin">Enter your 6-digit PIN code:</label>
                                     <div class="alert alert-warning errorlist hide">
@@ -67,7 +67,7 @@
                             <div class="box-inner">
                                 <h2 class="title">Pebble Support Community</h2>
                                 <div class="description">
-                                
+
                                 <div id='gsfn_search_widget'>
                                         <form accept-charset='utf-8' action='https://getsatisfaction.com/pebble' id='gsfn_search_form' method='get' onsubmit='gsfn_search(this); return false;'>
                                             <input name='style' type='hidden' value='' />
@@ -95,5 +95,5 @@
                         </div>
                     </div>
                 </div>
-            </div><!--/.container-->    
- {% endblock %} 
+            </div><!--/.container-->
+ {% endblock %}
