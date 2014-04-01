@@ -42,3 +42,4 @@ venv/*
 mypebble/collected-static/*
 mypebble/local_settings.py
 *.log
+*~
