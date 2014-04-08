@@ -2853,3 +2853,8 @@ display:none;
   font-weight:bold;
   margin-bottom:9px;
 }
+
+
+.flip-list-header{
+  display:none !important;
+}
