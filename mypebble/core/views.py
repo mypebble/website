@@ -1,4 +1,5 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 
 from mypebble.core.forms import ContactForm
 
@@ -12,6 +13,7 @@ def _get_form(form_type):
   """
   return FORMS[form_type]
 
+@csrf_exempt
 def contact(request, form_type='general'):
     form_class = _get_form(form_type)
 
