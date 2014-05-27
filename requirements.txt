@@ -3,7 +3,7 @@ psycopg2==2.4.5
 html5lib==0.95
 Django==1.4
 South==0.7.5
-django-cms==2.3
+django-cms==2.3.8
 django-forms-builder==0.7.10
 django-mptt==0.5.1
 django-picklefield==0.2.1
