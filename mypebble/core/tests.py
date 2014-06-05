@@ -27,12 +27,6 @@ class GeneralEnquiryTestCase(TestCase):
             'postcode': 'aa1-11a',
             'telephone': '0123456',
             'message': 'a message',
-            'interested': [
-              'FM','SFF',
-            ],
-            'wouldlike': [
-              'demo','onsite/demo','other',
-            ]
           }
         )
 
