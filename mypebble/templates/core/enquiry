@@ -4,17 +4,6 @@ F.A.O. Sales
 
 We have a new enquiry from {{ name }} from {{ organisation }} - {{ postcode }}.
 
-They are interested in:
-{% endblocktrans %}
-{% for c in interested %}
-* {{ c }}
-{% endfor %}
-
-and would like the following information:
-{% for c in wouldlike %}
-* {{ c }}
-{% endfor %}
-
 They also left the following message:
 {{ message }}
 
