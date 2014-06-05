@@ -12,7 +12,7 @@
   {{ form.form_title }}
   </h1>
 </div>
-<div class="row">  
+<div class="row">
   <div class="grid2 content">
     <div class="box">
       {% for text in form.form_text %}
@@ -38,7 +38,7 @@
           {{ form.form_text_details }}
         </p>
         <p>
-          We only use your details to provide the information you requested. 
+          We only use your details to provide the information you requested.
             <a href="/privacy/">Privacy policy</a>
           </p>
       </div>
@@ -70,7 +70,7 @@
       </div>
     </div>
   </div>
-      <div class="grid1 box device-hide">
+      <!--<div class="grid1 box device-hide">
         <h2 class="title">
           Download a brochure
         </h2>
@@ -89,13 +89,13 @@
                 <img class="box-img" src="{{ STATIC_URL }}img/sff/sff_40x60.png" target="_blank" alt="School Fund Finder brochure"/>
               </a>
           <h3>School Fund Finder</h3>
-            <p>Grants for UK schools made easy.                                     
+            <p>Grants for UK schools made easy.
               <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure"
               onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'School Fund Finder']);">Download PDF</a>
             </p>
         </div>
+    </div>-->
     </div>
-    </div>
-  </div><!--/.container-->    
+  </div><!--/.container-->
 </div><!--/.body-->
- {% endblock %} 
+ {% endblock %}
