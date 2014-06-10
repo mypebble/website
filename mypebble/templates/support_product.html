@@ -17,8 +17,58 @@
                     <h1>{% placeholder "support_title" or %}{% endplaceholder %}</h1>
                     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
                         <div class="box tutorial">
-                                {% placeholder "support_intro" or %}{% endplaceholder %}
-                                <h2>{% placeholder "faq title" or %}Frequently asked questions{% endplaceholder %}</h2>
+                        <h2>Support Library</h2>
+                        <p>At Pebble, we're dedicated to providing a range of content to help you get the most out of our products. See below for our library of user guides, FAQs, videos and more.
+
+Need more help? Get in touch with Pebble Support using the contact information provided. </p>
+
+                      <div class="accordion" id="accordion2">
+                        <div class="accordion-group">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                              <h3 class="account-title">Getting Started</h3>
+                            </a>
+                          <div id="collapseOne" class="collapse in">
+                            <iframe src="https://drive.google.com/embeddedfolderview?id=0B6raEzaZ_V1tcndldjU4XzBnM0E#list" width="600px" frameborder="0"></iframe>
+                          </div>
+                        </div>
+                        <!-- 2-->
+                        <div class="accordion-group">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                              <h3 class="account-title">Frequently Asked Questions</h3>
+                            </a>
+                          <div id="collapseTwo" class="collapse">
+                            <iframe src="https://drive.google.com/embeddedfolderview?id=0B6raEzaZ_V1tUm1MRVdKWXdzV0k#list" width="600px" height="400px" frameborder="0"></iframe>
+                          </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="accordion-group">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                              <h3 class="account-title">User Guides</h3>
+                            </a>
+                          <div id="collapseThree" class="collapse">
+                             <iframe src="https://drive.google.com/embeddedfolderview?id=0B6raEzaZ_V1tenRpZUpVVWlIcWc#list" width="600px" height="400px"  frameborder="0"></iframe>
+                          </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="accordion-group">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+                              <h3 class="account-title">Troubleshooting</h3>
+                            </a>
+                          <div id="collapseFour" class="collapse">
+                             <iframe src="https://drive.google.com/embeddedfolderview?id=0B6raEzaZ_V1tWnRFQlFtazhieGc#list" width="600px" height="250px"  frameborder="0"></iframe>
+                          </div>
+                        </div>
+                        <!--5-->
+                        <div class="accordion-group">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
+                              <h3 class="account-title">General Support</h3>
+                            </a>
+                          <div id="collapseFive" class="collapse">
+                             <iframe src="https://drive.google.com/embeddedfolderview?id=0B6raEzaZ_V1taHlSWml5aW00Q0E#list" width="600px" frameborder="0"></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <hr/>
                                     <ul class="video unstyled">
                                       <h3>Transactions</h3>
                                       <li>
@@ -53,8 +103,9 @@
                                          <a href="/support/fm/search-transactions/">How to Search Transactions and Export Data</a></span>
                                       </li>
                                       <li>
-                                           <span><img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Who's Not Paid"/>
-                                           <a href="/support/fm/whos-not-paid/">Find out Who's Not Paid</a></span>
+                                         <span>
+                                          <img class="pull-left" src="{{ STATIC_URL }}img/fm/video_40x40.png" alt="Who's Not Paid"/>
+                                         <a href="/support/fm/whos-not-paid/">Find out Who's Not Paid</a></span>
                                       </li>
                                     </ul>
                                     <ul class="video unstyled">
@@ -117,11 +168,6 @@
                                           <a href="/support/fm/get-satisfaction/">How to use the Feedback Tab</a></span>
                                       </li>
                                     </ul>
-                          <hr/>
-                              <h2>Frequently Asked Questions</h2>
-                                {% placeholder "FAQ_fm" or %} {% endplaceholder %}
-
-
                         </div>
 
                         <!-- training -->
@@ -162,19 +208,10 @@
                                 </form>
                         </div>
 
-                                                <div class="supportcommunitybox box grid1">
-                                <h2 class="title">User Guides</h2>
+                          <div class="supportcommunitybox box grid1">
+                                <h2 class="title">MISApp</h2>
                                 <div class="description">
                                 <ul>
-                                    <li><a href="{{ STATIC_URL }}supportdoc/Fund Manager User Guide.pdf"
-                                     onClick="_gaq.push(['_trackEvent', 'Support',  'Download', 'Fund Manager Guide']);">
-Fund Manager User Guide</a></li>
-                                    <li><a href="{{ MEDIA_URL }}supportdoc/Fund Manager Quick Start Guide.pdf"
-                                    onClick="_gaq.push(['_trackEvent', 'Support',  'Download', 'Quick Start Guide']);">
-                                    Quick Start Guide</a></li>
-                                    <li><a href="{{ STATIC_URL }}supportdoc/MIS app User Guide.pdf"
-                                     onClick="_gaq.push(['_trackEvent', 'Support',  'Download', 'Fund Manager MISAPP']);">
-MISapp User Guide</a></li>
                                       <li><a href="https://s3-eu-west-1.amazonaws.com/misapp/pebble-misapp.msi"
                                                                            onClick="_gaq.push(['_trackEvent', 'Support',  'Download', 'Fund Manager MISAPP Download']);" target="_blank">
                                       MISapp Download</a></li>

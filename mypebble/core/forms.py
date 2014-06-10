@@ -7,17 +7,6 @@ from django.core.mail import send_mail
 from django.template.loader import get_template
 from django.template import Context
 
-INTERESTED = (
-  ('FM', _('Fund Manager')),
-  ('SFF', _('School Fund Finder')),
-)
-
-WOULD_LIKE = (
-  ('demo', _('Online Demo')),
-  ('onsite/training', _('On-site or Online Training')),
-  ('other', _('Other Enquiry')),
-)
-
 class ContactForm(forms.Form):
 
     name = forms.CharField(
@@ -34,14 +23,6 @@ class ContactForm(forms.Form):
     )
     telephone = forms.CharField(
       label=_("Telephone"), max_length=25, required=True,
-    )
-    interested = forms.MultipleChoiceField(
-      widget=CheckboxSelectMultiple,
-      label=_("I'm interested in"), choices=INTERESTED, required=False,
-    )
-    wouldlike = forms.MultipleChoiceField(
-      widget=CheckboxSelectMultiple,
-      label=_("I would like"), choices=WOULD_LIKE, required=False,
     )
     message = forms.CharField(
       widget=forms.Textarea,
@@ -60,8 +41,6 @@ class ContactForm(forms.Form):
       postcode = self.cleaned_data['postcode']
       telephone = self.cleaned_data['telephone']
 
-      interested = self.cleaned_data['interested']
-      wouldlike = self.cleaned_data['wouldlike']
       message = self.cleaned_data['message']
 
       send_mail(
@@ -73,9 +52,6 @@ class ContactForm(forms.Form):
             'organisation': organisation,
             'postcode': postcode,
             'telephone': telephone,
-
-            'interested': interested,
-            'wouldlike': wouldlike,
             'message': message,
             })
         ),
