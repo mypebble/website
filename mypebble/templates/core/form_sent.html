@@ -2,7 +2,7 @@
 {% load cms_tags %}
 {% block primary %}
 <div class="enquiries">
-        <div class="body" id="body">{% placeholder "Welcome" %} 
+        <div class="body" id="body">{% placeholder "Welcome" %}
                               <div class="row">
                     <h1>Message Sent</h1>
                     <div class="grid2 content"> <!-- Column. Modules inside will stack vertically -->
@@ -10,10 +10,12 @@
                             <div class="box-inner">
                                 <div class="form enquiries-form form-sent">
                                         <p>
-                                          <span>Thank you for your enquiry.</span> 
+                                          <span>Thank you for your enquiry.</span>
                                           A member of the team will be in touch with you shortly.
                                         </p>
-                                        
+
+                                        <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/978265195/?label=zD8SCNWbjQsQ68i80gM&amp;guid=ON&amp;script=0"/>
+
    <img alt="Message Sent" class="pull-right" src="{{ STATIC_URL }}img/newsletter.png"/>
                                 </div>
                             </div>
@@ -49,24 +51,23 @@
                             <div class="box-inner">
                                 <h2 class="title">Download a brochure</h2>
                                 <div class="description">
-                                    <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure" 
+                                    <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure"
                                       onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);">
                                         <img class="box-img" src="{{ STATIC_URL }}img/fm/fm_40x60.png" alt="Fund Manager brochure"/></a>
                                     <h3>Fund Manager</h3>
                                     <p>Keep track of every penny.
                                     <a href="{{ MEDIA_URL }}brochures/FM_brochure.pdf" target="_blank" title="Fund Manager brochure"
                                     onClick="_gaq.push(['_trackEvent', 'Brochure',  'Download', 'Fund Manager']);">Download PDF</a></p>
-                                    
+
                                     <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure">
                                         <img class="box-img" src="{{ STATIC_URL }}img/sff/sff_40x60.png"  alt="School Fund Manager brochure"/></a>
                                     <h3>School Fund Finder</h3>
-                                        <p>Grants for UK schools made easy. 
+                                        <p>Grants for UK schools made easy.
                                     <a href="{{ MEDIA_URL }}brochures/SFF_brochure.pdf" target="_blank" title="School Fund Finder brochure">Download PDF</a></p>
                                 </div>
                             </div>
                         </div>
                 </div>
-            </div><!--/.container-->    
+            </div><!--/.container-->
         </div><!--/.body-->
- {% endblock %} 
-
+ {% endblock %}
