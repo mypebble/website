@@ -28,6 +28,6 @@ def contact(request, form_type='general'):
     else:
         form = form_class() # An unbound form
 
-    return render(request, 'core/contact.html', {
+    return render(request, 'contact.html', {
         'form': form
     })
