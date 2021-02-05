@@ -1,7 +1,7 @@
 gunicorn==0.14.3
 psycopg2>=2.4.5
 html5lib==0.95
-Django==1.4.16
+Django==1.11.29
 South==0.7.5
 django-cms==2.3.8
 django-forms-builder==0.7.10
